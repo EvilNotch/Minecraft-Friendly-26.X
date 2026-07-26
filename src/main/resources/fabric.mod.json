@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "minecraftfriendly",
+	"version": "${version}",
+	"name": "Minecraft Friendly",
+	"description": "Adding simple features that were in the game or isn't properly ported. All thanks to CanadianLionMC",
+	"authors": [
+		"Evil_Notch"
+	],
+	"contact": {
+		"fabric-homepage": "https://fabricmc.net/",
+		"inspiration": "https://www.youtube.com/@canadianlion",
+		"fabric-template": "https://github.com/FabricMC/fabric-example-mod",
+		"github": "TOBEWRITTEN"
+	},
+	"license": "MIT-License",
+	"icon": "assets/minecraftfriendly/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.evilnotch.minecraftfriendly.MinecraftFriendly"
+		],
+		"fabric-datagen": [
+			"net.evilnotch.minecraftfriendly.MinecraftFriendlyDataGenerator"
+		]
+	},
+	"mixins": [
+		"minecraftfriendly.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
