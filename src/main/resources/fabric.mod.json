@@ -8,10 +8,11 @@
 		"Evil_Notch"
 	],
 	"contact": {
+		"email": "MrAnonymous135@proton.me",
 		"fabric-homepage": "https://fabricmc.net/",
 		"inspiration": "https://www.youtube.com/@canadianlion",
 		"fabric-template": "https://github.com/FabricMC/fabric-example-mod",
-		"github": "TOBEWRITTEN"
+		"source-code": "https://github.com/EvilNotch/Minecraft-Friendly-26.X"
 	},
 	"license": "MIT-License",
 	"icon": "assets/minecraftfriendly/icon.png",
