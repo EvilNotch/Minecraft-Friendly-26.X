@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "boat",
+  "key": {
+    "#": "minecraft:bamboo_planks",
+    "s": [
+      "minecraft:wooden_shovel"
+    ]
+  },
+  "pattern": [
+    "#s#",
+    "###"
+  ],
+  "result": {
+    "id": "minecraft:bamboo_raft"
+  }
+}
