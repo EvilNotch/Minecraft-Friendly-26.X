@@ -1,0 +1,11 @@
+{
+  "gives": {
+    "id": "minecraft:rose_bush"
+  },
+  "max_uses": 4.0,
+  "reputation_discount": 0.05,
+  "wants": {
+    "count": 2.0,
+    "id": "minecraft:emerald"
+  }
+}
