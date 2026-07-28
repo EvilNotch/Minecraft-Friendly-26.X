@@ -16,5 +16,8 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
     @Override
     public void generate() {
         dropSelf(ModBlocks.TEST_BLOCK);
+
+        dropSelf(ModBlocks.WHITE_CONCRETE_STAIRS);
+        add(ModBlocks.WHITE_CONCRETE_SLAB, this::createSlabItemTable);
     }
 }

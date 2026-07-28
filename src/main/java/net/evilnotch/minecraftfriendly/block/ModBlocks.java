@@ -10,8 +10,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
@@ -26,6 +25,14 @@ public class ModBlocks {
                     .mapColor(MapColor.EMERALD)
                     .instrument(NoteBlockInstrument.BIT)
                     .strength(5.0F, 6.0F)));
+
+    public static final Block WHITE_CONCRETE_STAIRS = registerBlock("white_concrete_stairs",
+            properties -> new StairBlock(Blocks.CONCRETE.white().defaultBlockState(), properties.strength(1.8F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
+
+    public static final Block WHITE_CONCRETE_SLAB = registerBlock("white_concrete_slab",
+            properties -> new SlabBlock(properties.strength(1.8F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
 
 
     public static ResourceKey<Block> getRK(Block block) {

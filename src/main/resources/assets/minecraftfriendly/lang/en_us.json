@@ -5,6 +5,9 @@
   "item.minecraftfriendly.test_block": "Test Block",
   "block.minecraftfriendly.test_block": "Test Block",
 
+  "block.minecraftfriendly.white_concrete_slab": "White Concrete Slab",
+  "block.minecraftfriendly.white_concrete_stairs": "White Concrete Stairs",
+
 
   "creativemodetab.minecraftfriendly.extra_renditions": "Extra Renditions"
 }
