@@ -1,5 +1,7 @@
 package net.evilnotch.minecraftfriendly;
 
+import net.evilnotch.minecraftfriendly.block.ModBlocks;
+import net.evilnotch.minecraftfriendly.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.resources.Identifier;
@@ -13,7 +15,9 @@ public class MinecraftFriendly implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Hello Fabric world!");
+		LOGGER.info("Hello Minecraft and Fabric Friendly Peeps! This is initialization for all non-datapack things in this mod.");
+		ModItems.registerItems(); //Accepts Items.
+		ModBlocks.registerBlocks();//Accepts Blocks.
 	}
 
 	public static Identifier id(String path) {
