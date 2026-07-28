@@ -1,0 +1,29 @@
+package net.evilnotch.minecraftfriendly.tabs;
+
+import net.evilnotch.minecraftfriendly.MinecraftFriendly;
+import net.evilnotch.minecraftfriendly.block.ModBlocks;
+import net.evilnotch.minecraftfriendly.item.ModItems;
+import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab;
+import net.minecraft.core.Registry;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.network.chat.Component;
+import net.minecraft.resources.Identifier;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.block.Blocks;
+
+public class ModCreativeModeTabs {
+    public static final CreativeModeTab EXTRA_RENDITIONS = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB,
+            Identifier.fromNamespaceAndPath(MinecraftFriendly.MOD_ID, "extra_renditions"),
+            FabricCreativeModeTab.builder()
+                    .icon(() -> new ItemStack(Blocks.PETRIFIED_OAK_SLAB))
+                    .title(Component.translatable("creativemodetab.minecraftfriendly.extra_renditions"))
+                    .displayItems((parameters, output) -> {
+                        output.accept(ModBlocks.TEST_BLOCK);
+                        output.accept(Blocks.PETRIFIED_OAK_SLAB);
+                    })
+                    .build());
+    public static void registerModCreativeTabs() {
+        MinecraftFriendly.LOGGER.info("This registers any custom creative mode tabs from " + MinecraftFriendly.MOD_ID + "!");
+    }
+}

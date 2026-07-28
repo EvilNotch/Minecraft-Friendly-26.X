@@ -2,6 +2,7 @@ package net.evilnotch.minecraftfriendly;
 
 import net.evilnotch.minecraftfriendly.block.ModBlocks;
 import net.evilnotch.minecraftfriendly.item.ModItems;
+import net.evilnotch.minecraftfriendly.tabs.ModCreativeModeTabs;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.resources.Identifier;
@@ -18,6 +19,7 @@ public class MinecraftFriendly implements ModInitializer {
 		LOGGER.info("Hello Minecraft and Fabric Friendly Peeps! This is initialization for all non-datapack things in this mod.");
 		ModItems.registerItems(); //Accepts Items.
 		ModBlocks.registerBlocks();//Accepts Blocks.
+		ModCreativeModeTabs.registerModCreativeTabs();//Accepts any custom Creative Tabs and entries.
 	}
 
 	public static Identifier id(String path) {

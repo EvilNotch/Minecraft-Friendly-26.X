@@ -3,5 +3,8 @@
   "item.minecraftfriendly.test_item_2": "Test Item 2",
 
   "item.minecraftfriendly.test_block": "Test Block",
-  "block.minecraftfriendly.test_block": "Test Block"
+  "block.minecraftfriendly.test_block": "Test Block",
+
+
+  "creativemodetab.minecraftfriendly.extra_renditions": "Extra Renditions"
 }

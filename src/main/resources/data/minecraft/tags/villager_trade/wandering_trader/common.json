@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "minecraft:wandering_trader/emerald_rose_bush"
+    "minecraft:wandering_trader/emerald_rose_bush",
+    "minecraft:wandering_trader/emerald_peony"
   ]
 }

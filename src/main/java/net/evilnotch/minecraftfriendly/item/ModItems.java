@@ -24,12 +24,15 @@ public class ModItems {
                 function.apply(new Item.Properties().setId(ResourceKey.create(Registries.ITEM,
                         Identifier.fromNamespaceAndPath(MinecraftFriendly.MOD_ID, name)))));
     };
+
+    public static ResourceKey<Item> getRK(Item item) {
+        return BuiltInRegistries.ITEM.getResourceKey(item).get();
+    }
     public static void registerItems() {
         MinecraftFriendly.LOGGER.info("Registering Items and their Creative Entries for " + MinecraftFriendly.MOD_ID);
 
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.OP_BLOCKS).register(output -> {
             output.accept(TEST_ITEM);
-            output.accept(TEST_ITEM_2);
         });
     }
 
