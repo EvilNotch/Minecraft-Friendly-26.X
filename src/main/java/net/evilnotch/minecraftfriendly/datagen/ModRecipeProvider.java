@@ -29,7 +29,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .define('S', Blocks.BARRIER)
                         .unlockedBy(getHasName(Blocks.BARRIER), has(Blocks.BARRIER))
                         .group("testing")
-                        .save(output, "structure_void_from_barrier_blocks");//By default without identifier it takes the name of the output.
+                        .save(output, "structure_void_from_barrier_blocks");//By default, without identifier it takes the name of the output.
 
                 shapeless(RecipeCategory.MISC, Blocks.BARRIER, 9)
                         .requires(Blocks.STRUCTURE_VOID)
@@ -46,6 +46,156 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(Blocks.CONCRETE.white()), has(Blocks.CONCRETE.white()))
                         .group("building")
                         .save(output, "white_concrete_stairs_from_white_concrete");
+
+                slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_GRAY_CONCRETE_SLAB, Ingredient.of(Blocks.CONCRETE.lightGray()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.lightGray()), has(Blocks.CONCRETE.lightGray()))
+                        .group("building")
+                        .save(output, "light_gray_concrete_slab_from_light_gray_concrete");
+
+                stairBuilder(ModBlocks.LIGHT_GRAY_CONCRETE_STAIRS, Ingredient.of(Blocks.CONCRETE.lightGray()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.lightGray()), has(Blocks.CONCRETE.lightGray()))
+                        .group("building")
+                        .save(output, "light_gray_concrete_stairs_from_light_gray_concrete");
+
+                slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GRAY_CONCRETE_SLAB, Ingredient.of(Blocks.CONCRETE.gray()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.gray()), has(Blocks.CONCRETE.gray()))
+                        .group("building")
+                        .save(output, "gray_concrete_slab_from_gray_concrete");
+
+                stairBuilder(ModBlocks.GRAY_CONCRETE_STAIRS, Ingredient.of(Blocks.CONCRETE.gray()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.gray()), has(Blocks.CONCRETE.gray()))
+                        .group("building")
+                        .save(output, "gray_concrete_stairs_from_gray_concrete");
+
+                slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLACK_CONCRETE_SLAB, Ingredient.of(Blocks.CONCRETE.black()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.black()), has(Blocks.CONCRETE.black()))
+                        .group("building")
+                        .save(output, "black_concrete_slab_from_black_concrete");
+
+                stairBuilder(ModBlocks.BLACK_CONCRETE_STAIRS, Ingredient.of(Blocks.CONCRETE.black()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.black()), has(Blocks.CONCRETE.black()))
+                        .group("building")
+                        .save(output, "black_concrete_stairs_from_black_concrete");
+
+                slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BROWN_CONCRETE_SLAB, Ingredient.of(Blocks.CONCRETE.brown()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.brown()), has(Blocks.CONCRETE.brown()))
+                        .group("building")
+                        .save(output, "brown_concrete_slab_from_brown_concrete");
+
+                stairBuilder(ModBlocks.BROWN_CONCRETE_STAIRS, Ingredient.of(Blocks.CONCRETE.brown()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.brown()), has(Blocks.CONCRETE.brown()))
+                        .group("building")
+                        .save(output, "brown_concrete_stairs_from_brown_concrete");
+
+                slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_CONCRETE_SLAB, Ingredient.of(Blocks.CONCRETE.red()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.red()), has(Blocks.CONCRETE.red()))
+                        .group("building")
+                        .save(output, "red_concrete_slab_from_red_concrete");
+
+                stairBuilder(ModBlocks.RED_CONCRETE_STAIRS, Ingredient.of(Blocks.CONCRETE.red()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.red()), has(Blocks.CONCRETE.red()))
+                        .group("building")
+                        .save(output, "red_concrete_stairs_from_red_concrete");
+
+                slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ORANGE_CONCRETE_SLAB, Ingredient.of(Blocks.CONCRETE.orange()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.orange()), has(Blocks.CONCRETE.orange()))
+                        .group("building")
+                        .save(output, "orange_concrete_slab_from_orange_concrete");
+
+                stairBuilder(ModBlocks.ORANGE_CONCRETE_STAIRS, Ingredient.of(Blocks.CONCRETE.orange()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.orange()), has(Blocks.CONCRETE.orange()))
+                        .group("building")
+                        .save(output, "orange_concrete_stairs_from_orange_concrete");
+
+                slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.YELLOW_CONCRETE_SLAB, Ingredient.of(Blocks.CONCRETE.yellow()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.yellow()), has(Blocks.CONCRETE.yellow()))
+                        .group("building")
+                        .save(output, "yellow_concrete_slab_from_yellow_concrete");
+
+                stairBuilder(ModBlocks.YELLOW_CONCRETE_STAIRS, Ingredient.of(Blocks.CONCRETE.yellow()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.yellow()), has(Blocks.CONCRETE.yellow()))
+                        .group("building")
+                        .save(output, "yellow_concrete_stairs_from_yellow_concrete");
+
+                slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIME_CONCRETE_SLAB, Ingredient.of(Blocks.CONCRETE.lime()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.lime()), has(Blocks.CONCRETE.lime()))
+                        .group("building")
+                        .save(output, "lime_concrete_slab_from_lime_concrete");
+
+                stairBuilder(ModBlocks.LIME_CONCRETE_STAIRS, Ingredient.of(Blocks.CONCRETE.lime()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.lime()), has(Blocks.CONCRETE.lime()))
+                        .group("building")
+                        .save(output, "lime_concrete_stairs_from_lime_concrete");
+
+                slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GREEN_CONCRETE_SLAB, Ingredient.of(Blocks.CONCRETE.green()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.green()), has(Blocks.CONCRETE.green()))
+                        .group("building")
+                        .save(output, "green_concrete_slab_from_green_concrete");
+
+                stairBuilder(ModBlocks.GREEN_CONCRETE_STAIRS, Ingredient.of(Blocks.CONCRETE.green()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.green()), has(Blocks.CONCRETE.green()))
+                        .group("building")
+                        .save(output, "green_concrete_stairs_from_green_concrete");
+
+                slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CYAN_CONCRETE_SLAB, Ingredient.of(Blocks.CONCRETE.cyan()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.cyan()), has(Blocks.CONCRETE.cyan()))
+                        .group("building")
+                        .save(output, "cyan_concrete_slab_from_cyan_concrete");
+
+                stairBuilder(ModBlocks.CYAN_CONCRETE_STAIRS, Ingredient.of(Blocks.CONCRETE.cyan()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.cyan()), has(Blocks.CONCRETE.cyan()))
+                        .group("building")
+                        .save(output, "cyan_concrete_stairs_from_cyan_concrete");
+
+                slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_BLUE_CONCRETE_SLAB, Ingredient.of(Blocks.CONCRETE.lightBlue()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.lightBlue()), has(Blocks.CONCRETE.lightBlue()))
+                        .group("building")
+                        .save(output, "light_blue_concrete_slab_from_light_blue_concrete");
+
+                stairBuilder(ModBlocks.LIGHT_BLUE_CONCRETE_STAIRS, Ingredient.of(Blocks.CONCRETE.lightBlue()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.lightBlue()), has(Blocks.CONCRETE.lightBlue()))
+                        .group("building")
+                        .save(output, "light_blue_concrete_stairs_from_light_blue_concrete");
+
+                slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLUE_CONCRETE_SLAB, Ingredient.of(Blocks.CONCRETE.blue()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.blue()), has(Blocks.CONCRETE.blue()))
+                        .group("building")
+                        .save(output, "blue_concrete_slab_from_blue_concrete");
+
+                stairBuilder(ModBlocks.BLUE_CONCRETE_STAIRS, Ingredient.of(Blocks.CONCRETE.blue()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.blue()), has(Blocks.CONCRETE.blue()))
+                        .group("building")
+                        .save(output, "blue_concrete_stairs_from_blue_concrete");
+
+                slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PURPLE_CONCRETE_SLAB, Ingredient.of(Blocks.CONCRETE.purple()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.purple()), has(Blocks.CONCRETE.purple()))
+                        .group("building")
+                        .save(output, "purple_concrete_slab_from_purple_concrete");
+
+                stairBuilder(ModBlocks.PURPLE_CONCRETE_STAIRS, Ingredient.of(Blocks.CONCRETE.purple()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.purple()), has(Blocks.CONCRETE.purple()))
+                        .group("building")
+                        .save(output, "purple_concrete_stairs_from_purple_concrete");
+
+                slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAGENTA_CONCRETE_SLAB, Ingredient.of(Blocks.CONCRETE.magenta()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.magenta()), has(Blocks.CONCRETE.magenta()))
+                        .group("building")
+                        .save(output, "magenta_concrete_slab_from_magenta_concrete");
+
+                stairBuilder(ModBlocks.MAGENTA_CONCRETE_STAIRS, Ingredient.of(Blocks.CONCRETE.magenta()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.magenta()), has(Blocks.CONCRETE.magenta()))
+                        .group("building")
+                        .save(output, "magenta_concrete_stairs_from_magenta_concrete");
+
+                slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_CONCRETE_SLAB, Ingredient.of(Blocks.CONCRETE.pink()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.pink()), has(Blocks.CONCRETE.pink()))
+                        .group("building")
+                        .save(output, "pink_concrete_slab_from_pink_concrete");
+
+                stairBuilder(ModBlocks.PINK_CONCRETE_STAIRS, Ingredient.of(Blocks.CONCRETE.pink()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.pink()), has(Blocks.CONCRETE.pink()))
+                        .group("building")
+                        .save(output, "pink_concrete_stairs_from_pink_concrete");
 
             }
         };
