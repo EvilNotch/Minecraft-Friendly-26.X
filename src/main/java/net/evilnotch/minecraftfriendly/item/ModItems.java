@@ -32,7 +32,7 @@ public class ModItems {
         MinecraftFriendly.LOGGER.info("Registering Items and their Creative Entries for " + MinecraftFriendly.MOD_ID);
 
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.OP_BLOCKS).register(output -> {
-            output.accept(TEST_ITEM);
+            //output.accept(TEST_ITEM);
         });
     }
 
