@@ -26,7 +26,8 @@ There may be a variant of emerald block in the future to fit with the programmer
 Who said there couldn't be more fences, slabs, stairs, or walls?
 Potential additions to right-click functionality on tools with fire aspect, similar to bedrock.
 May consider readding invisible pixels to paintings in later versions of Fabric with the new Vulkan rendering system.
-Replace Vanilla Door output recipe to 2 instead of 3 since everyone is extra and a half 🥰
+Replacing Vanilla Door output recipe to 2 instead of 3 since everyone is extra and a half 🥰
+Bark or some other substitute for fuel and/or log unstripping.
 
 ## Developers and Ideas are needed.
 Contact me through MrAnonymous@proton.me
