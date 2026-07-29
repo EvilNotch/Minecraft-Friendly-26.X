@@ -25,7 +25,7 @@ There will eventually be a dragon headed banner.
 There may be a variant of emerald block in the future to fit with the programmer art.
 Who said there couldn't be more fences, slabs, stairs, or walls?
 Potential additions to right-click functionality on tools with fire aspect, similar to bedrock.
-May consider readding invisible pixels to paintings in later versions of fabric with the new Vulkan rendering system.
+May consider readding invisible pixels to paintings in later versions of Fabric with the new Vulkan rendering system.
 
 ## Developers and Ideas are needed.
 Contact me through MrAnonymous@proton.me
