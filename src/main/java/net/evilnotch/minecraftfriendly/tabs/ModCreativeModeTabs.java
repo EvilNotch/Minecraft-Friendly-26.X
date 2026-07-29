@@ -19,7 +19,6 @@ public class ModCreativeModeTabs {
                     .icon(() -> new ItemStack(Blocks.PETRIFIED_OAK_SLAB))
                     .title(Component.translatable("creativemodetab.minecraftfriendly.extra_renditions"))
                     .displayItems((parameters, output) -> {
-                        output.accept(ModBlocks.TEST_BLOCK);
                         output.accept(Blocks.PETRIFIED_OAK_SLAB);
                         output.accept(ModBlocks.WHITE_CONCRETE_SLAB);
                         output.accept(ModBlocks.WHITE_CONCRETE_STAIRS);
