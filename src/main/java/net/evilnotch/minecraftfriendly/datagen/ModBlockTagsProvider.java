@@ -54,7 +54,13 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(PINK_CONCRETE_STAIRS));
 
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(ModBlocks.getRK(GOLD_SLAB))
+                .add(ModBlocks.getRK(GOLD_STAIRS))
                 .add(ModBlocks.getRK(CHISELED_EMERALD))
+                .add(ModBlocks.getRK(EMERALD_SLAB))
+                .add(ModBlocks.getRK(EMERALD_STAIRS))
+                .add(ModBlocks.getRK(DIAMOND_SLAB))
+                .add(ModBlocks.getRK(DIAMOND_STAIRS))
                 .add(ModBlocks.getRK(WHITE_CONCRETE_SLAB))
                 .add(ModBlocks.getRK(WHITE_CONCRETE_STAIRS))
                 .add(ModBlocks.getRK(LIGHT_GRAY_CONCRETE_SLAB))
@@ -89,7 +95,13 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(PINK_CONCRETE_STAIRS));
 
         tag(BlockTags.NEEDS_IRON_TOOL)
-                .add(ModBlocks.getRK(CHISELED_EMERALD));
+                .add(ModBlocks.getRK(GOLD_SLAB))
+                .add(ModBlocks.getRK(GOLD_STAIRS))
+                .add(ModBlocks.getRK(CHISELED_EMERALD))
+                .add(ModBlocks.getRK(EMERALD_SLAB))
+                .add(ModBlocks.getRK(EMERALD_STAIRS))
+                .add(ModBlocks.getRK(DIAMOND_SLAB))
+                .add(ModBlocks.getRK(DIAMOND_STAIRS));
 
         tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.WHITE_CONCRETE_SLAB));
         tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.WHITE_CONCRETE_STAIRS));

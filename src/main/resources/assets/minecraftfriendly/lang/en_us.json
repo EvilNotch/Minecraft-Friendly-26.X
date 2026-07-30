@@ -2,7 +2,15 @@
   "item.minecraftfriendly.test_item": "Test Item",
   "item.minecraftfriendly.test_item_2": "Test Item 2",
 
+  "block.minecraftfriendly.gold_slab": "Gold Slab",
+  "block.minecraftfriendly.gold_stairs": "Gold Stairs",
+
   "block.minecraftfriendly.chiseled_emerald": "Chiseled Emerald",
+  "block.minecraftfriendly.emerald_slab": "Emerald Slab",
+  "block.minecraftfriendly.emerald_stairs": "Emerald Stairs",
+
+  "block.minecraftfriendly.diamond_slab": "Diamond Slab",
+  "block.minecraftfriendly.diamond_stairs": "Diamond Stairs",
 
   "block.minecraftfriendly.white_concrete_slab": "White Concrete Slab",
   "block.minecraftfriendly.white_concrete_stairs": "White Concrete Stairs",

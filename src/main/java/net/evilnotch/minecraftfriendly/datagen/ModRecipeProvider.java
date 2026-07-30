@@ -7,6 +7,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.Blocks;
 
@@ -36,6 +37,43 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(Blocks.STRUCTURE_VOID), has(Blocks.STRUCTURE_VOID))
                         .group("testing")
                         .save(output, "barrier_blocks_from_structure_void");
+
+                shapeless(RecipeCategory.MISC, Items.EMERALD, 9)
+                        .requires(ModBlocks.CHISELED_EMERALD)
+                                .unlockedBy(getHasName(Items.EMERALD), has(Items.EMERALD))
+                                        .unlockedBy(getHasName(ModBlocks.CHISELED_EMERALD), has(ModBlocks.CHISELED_EMERALD))
+                                                .group("misc")
+                                                        .save(output, "emeralds_from_chiseled_emerald_block");
+
+                slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GOLD_SLAB, Ingredient.of(Blocks.GOLD_BLOCK))
+                        .unlockedBy(getHasName(Blocks.GOLD_BLOCK), has(Blocks.GOLD_BLOCK))
+                        .group("building")
+                        .save(output, "gold_slab_from_gold_block");
+
+                stairBuilder(ModBlocks.GOLD_STAIRS, Ingredient.of(Blocks.GOLD_BLOCK))
+                        .unlockedBy(getHasName(Blocks.GOLD_BLOCK), has(Blocks.GOLD_BLOCK))
+                        .group("building")
+                        .save(output, "gold_stairs_from_gold_block");
+
+                slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.EMERALD_SLAB, Ingredient.of(Blocks.EMERALD_BLOCK))
+                        .unlockedBy(getHasName(Blocks.EMERALD_BLOCK), has(Blocks.EMERALD_BLOCK))
+                        .group("building")
+                        .save(output, "emerald_slab_from_emerald_block");
+
+                stairBuilder(ModBlocks.EMERALD_STAIRS, Ingredient.of(Blocks.EMERALD_BLOCK))
+                        .unlockedBy(getHasName(Blocks.EMERALD_BLOCK), has(Blocks.EMERALD_BLOCK))
+                        .group("building")
+                        .save(output, "emerald_stairs_from_emerald_block");
+
+                slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DIAMOND_SLAB, Ingredient.of(Blocks.DIAMOND_BLOCK))
+                        .unlockedBy(getHasName(Blocks.DIAMOND_BLOCK), has(Blocks.DIAMOND_BLOCK))
+                        .group("building")
+                        .save(output, "diamond_slab_from_diamond_block");
+
+                stairBuilder(ModBlocks.DIAMOND_STAIRS, Ingredient.of(Blocks.DIAMOND_BLOCK))
+                        .unlockedBy(getHasName(Blocks.DIAMOND_BLOCK), has(Blocks.DIAMOND_BLOCK))
+                        .group("building")
+                        .save(output, "diamond_stairs_from_diamond_block");
 
                 slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WHITE_CONCRETE_SLAB, Ingredient.of(Blocks.CONCRETE.white()))
                         .unlockedBy(getHasName(Blocks.CONCRETE.white()), has(Blocks.CONCRETE.white()))

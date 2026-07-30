@@ -26,10 +26,33 @@ public class ModBlocks {
                     .instrument(NoteBlockInstrument.BIT)
                     .strength(5.0F, 6.0F)));
 
+    public static final Block GOLD_SLAB = registerBlock("gold_slab",
+            properties -> new SlabBlock(properties.strength(3.0F, 6.0F)
+                    .requiresCorrectToolForDrops().mapColor(MapColor.GOLD).instrument(NoteBlockInstrument.BELL)));
+
+    public static final Block GOLD_STAIRS = registerBlock("gold_stairs",
+            properties -> new StairBlock(Blocks.GOLD_BLOCK.defaultBlockState(), properties.strength(3.0F, 6.0F)
+                    .requiresCorrectToolForDrops().mapColor(MapColor.GOLD).instrument(NoteBlockInstrument.BELL)));
+
+    public static final Block EMERALD_SLAB = registerBlock("emerald_slab",
+            properties -> new SlabBlock(properties.strength(5.0F, 6.0F)
+                    .mapColor(MapColor.EMERALD).requiresCorrectToolForDrops()));
+
+    public static final Block EMERALD_STAIRS = registerBlock("emerald_stairs",
+            properties -> new StairBlock(Blocks.EMERALD_BLOCK.defaultBlockState(), properties.strength(5.0F, 6.0F)
+                    .requiresCorrectToolForDrops().mapColor(MapColor.EMERALD).instrument(NoteBlockInstrument.BIT)));
+
+    public static final Block DIAMOND_SLAB = registerBlock("diamond_slab",
+            properties -> new SlabBlock(properties.strength(5.0F, 6.0F)
+                    .requiresCorrectToolForDrops().mapColor(MapColor.DIAMOND).sound(SoundType.METAL)));
+
+    public static final Block DIAMOND_STAIRS = registerBlock("diamond_stairs",
+            properties -> new StairBlock(Blocks.DIAMOND_BLOCK.defaultBlockState(), properties.strength(5.0F, 6.0F)
+                    .requiresCorrectToolForDrops().mapColor(MapColor.DIAMOND).sound(SoundType.METAL)));
+
     public static final Block WHITE_CONCRETE_STAIRS = registerBlock("white_concrete_stairs",
             properties -> new StairBlock(Blocks.CONCRETE.white().defaultBlockState(), properties.strength(1.8F)
                     .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
-
     public static final Block WHITE_CONCRETE_SLAB = registerBlock("white_concrete_slab",
             properties -> new SlabBlock(properties.strength(1.8F)
                     .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
