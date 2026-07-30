@@ -16,7 +16,7 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockModelGenerators blockModelGenerators) {
-        blockModelGenerators.createTrivialCube(ModBlocks.TEST_BLOCK);
+        blockModelGenerators.createTrivialCube(ModBlocks.CHISELED_EMERALD);
 
         blockModelGenerators.family(Blocks.CONCRETE.white())
                 .slab(ModBlocks.WHITE_CONCRETE_SLAB)

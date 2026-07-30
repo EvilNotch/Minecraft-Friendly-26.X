@@ -18,7 +18,7 @@ import net.minecraft.world.level.material.MapColor;
 import java.util.function.Function;
 
 public class ModBlocks {
-    public static final Block TEST_BLOCK = registerBlock("test_block",
+    public static final Block CHISELED_EMERALD = registerBlock("chiseled_emerald",
             properties -> new Block(properties
                     .sound(SoundType.METAL)
                     .requiresCorrectToolForDrops()
@@ -174,7 +174,7 @@ public class ModBlocks {
         MinecraftFriendly.LOGGER.info("Registering Blocks and their Creative Entries for " + MinecraftFriendly.MOD_ID);
 
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.OP_BLOCKS).register(output -> {
-
+            output.accept(ModBlocks.CHISELED_EMERALD);
         });
     }
 }
