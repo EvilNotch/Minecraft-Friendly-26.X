@@ -90,6 +90,10 @@ public class ModModelProvider extends FabricModelProvider {
                 .slab(ModBlocks.GOLD_SLAB)
                 .stairs(ModBlocks.GOLD_STAIRS);
 
+        blockModelGenerators.family(Blocks.REDSTONE_BLOCK)
+                .slab(ModBlocks.REDSTONE_SLAB)
+                .stairs(ModBlocks.REDSTONE_STAIRS);
+
         blockModelGenerators.family(Blocks.EMERALD_BLOCK)
                 .slab(ModBlocks.EMERALD_SLAB)
                 .stairs(ModBlocks.EMERALD_STAIRS);

@@ -58,12 +58,30 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .group("building")
                         .save(output, "gold_stairs_from_gold_block");
 
+                slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.REDSTONE_SLAB, Ingredient.of(Blocks.REDSTONE_BLOCK))
+                        .unlockedBy(getHasName(Blocks.REDSTONE_BLOCK), has(Blocks.REDSTONE_BLOCK))
+                        .group("building")
+                        .save(output, "redstone_slab_from_redstone_block");
+
+                stairBuilder(ModBlocks.REDSTONE_STAIRS, Ingredient.of(Blocks.REDSTONE_BLOCK))
+                        .unlockedBy(getHasName(Blocks.REDSTONE_BLOCK), has(Blocks.REDSTONE_BLOCK))
+                        .group("building")
+                        .save(output, "redstone_stairs_from_redstone_block");
+
                 shapeless(RecipeCategory.MISC, Items.EMERALD, 9)
                         .requires(ModBlocks.CHISELED_EMERALD)
                         .unlockedBy(getHasName(Items.EMERALD), has(Items.EMERALD))
                         .unlockedBy(getHasName(ModBlocks.CHISELED_EMERALD), has(ModBlocks.CHISELED_EMERALD))
                         .group("misc")
                         .save(output, "emeralds_from_chiseled_emerald_block");
+
+                shapeless(RecipeCategory.MISC, Blocks.GILDED_BLACKSTONE, 1)
+                        .requires(Items.GOLD_INGOT)
+                                .requires(Blocks.BLACKSTONE)
+                                .unlockedBy(getHasName(Blocks.BLACKSTONE), has(Blocks.BLACKSTONE))
+                                .unlockedBy(getHasName(Items.GOLD_INGOT), has(Items.GOLD_INGOT))
+                                .group("building")
+                                .save(output, "gilded_blackstone_from_gold_ingot_and_blackstone_block");
 
                 slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.EMERALD_SLAB, Ingredient.of(Blocks.EMERALD_BLOCK))
                         .unlockedBy(getHasName(Blocks.EMERALD_BLOCK), has(Blocks.EMERALD_BLOCK))

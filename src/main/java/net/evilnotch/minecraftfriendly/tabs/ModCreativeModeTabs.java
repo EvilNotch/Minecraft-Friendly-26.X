@@ -56,6 +56,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.IRON_STAIRS);
                         output.accept(ModBlocks.GOLD_SLAB);
                         output.accept(ModBlocks.GOLD_STAIRS);
+                        //output.accept(ModBlocks.REDSTONE_SLAB);
+                        //output.accept(ModBlocks.REDSTONE_STAIRS);
                         output.accept(ModBlocks.EMERALD_SLAB);
                         output.accept(ModBlocks.EMERALD_STAIRS);
                         output.accept(ModBlocks.LAPIS_SLAB);

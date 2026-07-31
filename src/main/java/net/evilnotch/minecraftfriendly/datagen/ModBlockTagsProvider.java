@@ -58,6 +58,8 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(IRON_STAIRS))
                 .add(ModBlocks.getRK(GOLD_SLAB))
                 .add(ModBlocks.getRK(GOLD_STAIRS))
+                .add(ModBlocks.getRK(REDSTONE_SLAB))
+                .add(ModBlocks.getRK(REDSTONE_STAIRS))
                 .add(ModBlocks.getRK(CHISELED_EMERALD))
                 .add(ModBlocks.getRK(EMERALD_SLAB))
                 .add(ModBlocks.getRK(EMERALD_STAIRS))
@@ -107,6 +109,8 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.getRK(GOLD_SLAB))
                 .add(ModBlocks.getRK(GOLD_STAIRS))
+                .add(ModBlocks.getRK(REDSTONE_SLAB))
+                .add(ModBlocks.getRK(REDSTONE_STAIRS))
                 .add(ModBlocks.getRK(CHISELED_EMERALD))
                 .add(ModBlocks.getRK(EMERALD_SLAB))
                 .add(ModBlocks.getRK(EMERALD_STAIRS))
@@ -166,6 +170,9 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
 
         tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.GOLD_SLAB));
         tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.GOLD_STAIRS));
+
+        tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.REDSTONE_SLAB));
+        tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.REDSTONE_STAIRS));
 
         tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.EMERALD_SLAB));
         tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.EMERALD_STAIRS));

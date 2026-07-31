@@ -35,6 +35,16 @@ public class ModBlocks {
             properties -> new StairBlock(Blocks.GOLD_BLOCK.defaultBlockState(), properties.strength(3.0F, 6.0F)
                     .requiresCorrectToolForDrops().mapColor(MapColor.GOLD).instrument(NoteBlockInstrument.BELL)));
 
+    public static final Block REDSTONE_SLAB = registerBlock("redstone_slab",
+            properties -> new SlabBlock(properties.strength(5.0F, 6.0F)
+                    .requiresCorrectToolForDrops().sound(SoundType.METAL).mapColor(MapColor.FIRE)
+                    .isRedstoneConductor(Blocks::never)));
+
+    public static final Block REDSTONE_STAIRS = registerBlock("redstone_stairs",
+            properties -> new StairBlock(Blocks.REDSTONE_BLOCK.defaultBlockState(), properties.strength(5.0F, 6.0F)
+                    .requiresCorrectToolForDrops().sound(SoundType.METAL).mapColor(MapColor.FIRE)
+                    .isRedstoneConductor(Blocks::never)));
+
     public static final Block CHISELED_EMERALD = registerBlock("chiseled_emerald",
             properties -> new Block(properties
                     .sound(SoundType.METAL)
