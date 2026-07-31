@@ -18,13 +18,14 @@ import net.minecraft.world.level.material.MapColor;
 import java.util.function.Function;
 
 public class ModBlocks {
-    public static final Block CHISELED_EMERALD = registerBlock("chiseled_emerald",
-            properties -> new Block(properties
-                    .sound(SoundType.METAL)
-                    .requiresCorrectToolForDrops()
-                    .mapColor(MapColor.EMERALD)
-                    .instrument(NoteBlockInstrument.BIT)
-                    .strength(5.0F, 6.0F)));
+
+    public static final Block IRON_SLAB = registerBlock("iron_slab",
+            properties -> new SlabBlock(properties.strength(5.0F, 6.0F)
+                    .requiresCorrectToolForDrops().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)));
+
+    public static final Block IRON_STAIRS = registerBlock("iron_stairs",
+            properties -> new StairBlock(Blocks.IRON_BLOCK.defaultBlockState(), properties.strength(5.0F, 6.0F)
+                    .requiresCorrectToolForDrops().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)));
 
     public static final Block GOLD_SLAB = registerBlock("gold_slab",
             properties -> new SlabBlock(properties.strength(3.0F, 6.0F)
@@ -34,6 +35,13 @@ public class ModBlocks {
             properties -> new StairBlock(Blocks.GOLD_BLOCK.defaultBlockState(), properties.strength(3.0F, 6.0F)
                     .requiresCorrectToolForDrops().mapColor(MapColor.GOLD).instrument(NoteBlockInstrument.BELL)));
 
+    public static final Block CHISELED_EMERALD = registerBlock("chiseled_emerald",
+            properties -> new Block(properties
+                    .sound(SoundType.METAL)
+                    .requiresCorrectToolForDrops()
+                    .mapColor(MapColor.EMERALD)
+                    .instrument(NoteBlockInstrument.BIT)
+                    .strength(5.0F, 6.0F)));
     public static final Block EMERALD_SLAB = registerBlock("emerald_slab",
             properties -> new SlabBlock(properties.strength(5.0F, 6.0F)
                     .mapColor(MapColor.EMERALD).requiresCorrectToolForDrops()));
@@ -41,6 +49,14 @@ public class ModBlocks {
     public static final Block EMERALD_STAIRS = registerBlock("emerald_stairs",
             properties -> new StairBlock(Blocks.EMERALD_BLOCK.defaultBlockState(), properties.strength(5.0F, 6.0F)
                     .requiresCorrectToolForDrops().mapColor(MapColor.EMERALD).instrument(NoteBlockInstrument.BIT)));
+
+    public static final Block LAPIS_SLAB = registerBlock("lapis_slab",
+            properties -> new SlabBlock(properties.strength(3.0F, 3.0F)
+                    .requiresCorrectToolForDrops().mapColor(MapColor.LAPIS)));
+
+    public static final Block LAPIS_STAIRS = registerBlock("lapis_stairs",
+            properties -> new StairBlock(Blocks.LAPIS_BLOCK.defaultBlockState(), properties.strength(3.0F, 3.0F)
+                    .requiresCorrectToolForDrops().mapColor(MapColor.LAPIS)));
 
     public static final Block DIAMOND_SLAB = registerBlock("diamond_slab",
             properties -> new SlabBlock(properties.strength(5.0F, 6.0F)
@@ -197,7 +213,7 @@ public class ModBlocks {
         MinecraftFriendly.LOGGER.info("Registering Blocks and their Creative Entries for " + MinecraftFriendly.MOD_ID);
 
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.OP_BLOCKS).register(output -> {
-            output.accept(ModBlocks.CHISELED_EMERALD);
+            //output.accept(ModBlocks.CHISELED_EMERALD);
         });
     }
 }

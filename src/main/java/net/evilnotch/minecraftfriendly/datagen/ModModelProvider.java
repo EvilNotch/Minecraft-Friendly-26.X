@@ -82,6 +82,10 @@ public class ModModelProvider extends FabricModelProvider {
                 .slab(ModBlocks.PINK_CONCRETE_SLAB)
                 .stairs(ModBlocks.PINK_CONCRETE_STAIRS);
 
+        blockModelGenerators.family(Blocks.IRON_BLOCK)
+                .slab(ModBlocks.IRON_SLAB)
+                .stairs(ModBlocks.IRON_STAIRS);
+
         blockModelGenerators.family(Blocks.GOLD_BLOCK)
                 .slab(ModBlocks.GOLD_SLAB)
                 .stairs(ModBlocks.GOLD_STAIRS);
@@ -89,6 +93,10 @@ public class ModModelProvider extends FabricModelProvider {
         blockModelGenerators.family(Blocks.EMERALD_BLOCK)
                 .slab(ModBlocks.EMERALD_SLAB)
                 .stairs(ModBlocks.EMERALD_STAIRS);
+
+        blockModelGenerators.family(Blocks.LAPIS_BLOCK)
+                .slab(ModBlocks.LAPIS_SLAB)
+                .stairs(ModBlocks.LAPIS_STAIRS);
 
         blockModelGenerators.family(Blocks.DIAMOND_BLOCK)
                 .slab(ModBlocks.DIAMOND_SLAB)

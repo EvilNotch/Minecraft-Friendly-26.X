@@ -54,11 +54,15 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(PINK_CONCRETE_STAIRS));
 
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(ModBlocks.getRK(IRON_SLAB))
+                .add(ModBlocks.getRK(IRON_STAIRS))
                 .add(ModBlocks.getRK(GOLD_SLAB))
                 .add(ModBlocks.getRK(GOLD_STAIRS))
                 .add(ModBlocks.getRK(CHISELED_EMERALD))
                 .add(ModBlocks.getRK(EMERALD_SLAB))
                 .add(ModBlocks.getRK(EMERALD_STAIRS))
+                .add(ModBlocks.getRK(LAPIS_SLAB))
+                .add(ModBlocks.getRK(LAPIS_STAIRS))
                 .add(ModBlocks.getRK(DIAMOND_SLAB))
                 .add(ModBlocks.getRK(DIAMOND_STAIRS))
                 .add(ModBlocks.getRK(WHITE_CONCRETE_SLAB))
@@ -93,6 +97,12 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(MAGENTA_CONCRETE_STAIRS))
                 .add(ModBlocks.getRK(PINK_CONCRETE_SLAB))
                 .add(ModBlocks.getRK(PINK_CONCRETE_STAIRS));
+
+        tag(BlockTags.NEEDS_STONE_TOOL)
+                .add(ModBlocks.getRK(IRON_SLAB))
+                .add(ModBlocks.getRK(IRON_STAIRS))
+                .add(ModBlocks.getRK(LAPIS_SLAB))
+                .add(ModBlocks.getRK(LAPIS_STAIRS));
 
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.getRK(GOLD_SLAB))
@@ -150,5 +160,20 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
 
         tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.PINK_CONCRETE_SLAB));
         tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.PINK_CONCRETE_STAIRS));
+
+        tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.IRON_SLAB));
+        tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.IRON_STAIRS));
+
+        tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.GOLD_SLAB));
+        tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.GOLD_STAIRS));
+
+        tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.EMERALD_SLAB));
+        tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.EMERALD_STAIRS));
+
+        tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.LAPIS_SLAB));
+        tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.LAPIS_STAIRS));
+
+        tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.DIAMOND_SLAB));
+        tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.DIAMOND_STAIRS));
     }
 }

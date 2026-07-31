@@ -38,12 +38,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .group("testing")
                         .save(output, "barrier_blocks_from_structure_void");
 
-                shapeless(RecipeCategory.MISC, Items.EMERALD, 9)
-                        .requires(ModBlocks.CHISELED_EMERALD)
-                                .unlockedBy(getHasName(Items.EMERALD), has(Items.EMERALD))
-                                        .unlockedBy(getHasName(ModBlocks.CHISELED_EMERALD), has(ModBlocks.CHISELED_EMERALD))
-                                                .group("misc")
-                                                        .save(output, "emeralds_from_chiseled_emerald_block");
+                slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.IRON_SLAB, Ingredient.of(Blocks.IRON_BLOCK))
+                        .unlockedBy(getHasName(Blocks.IRON_BLOCK), has(Blocks.IRON_BLOCK))
+                        .group("building")
+                        .save(output, "iron_slab_from_iron_block");
+
+                stairBuilder(ModBlocks.IRON_STAIRS, Ingredient.of(Blocks.IRON_BLOCK))
+                        .unlockedBy(getHasName(Blocks.IRON_BLOCK), has(Blocks.IRON_BLOCK))
+                        .group("building")
+                        .save(output, "iron_stairs_from_iron_block");
 
                 slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GOLD_SLAB, Ingredient.of(Blocks.GOLD_BLOCK))
                         .unlockedBy(getHasName(Blocks.GOLD_BLOCK), has(Blocks.GOLD_BLOCK))
@@ -55,6 +58,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .group("building")
                         .save(output, "gold_stairs_from_gold_block");
 
+                shapeless(RecipeCategory.MISC, Items.EMERALD, 9)
+                        .requires(ModBlocks.CHISELED_EMERALD)
+                        .unlockedBy(getHasName(Items.EMERALD), has(Items.EMERALD))
+                        .unlockedBy(getHasName(ModBlocks.CHISELED_EMERALD), has(ModBlocks.CHISELED_EMERALD))
+                        .group("misc")
+                        .save(output, "emeralds_from_chiseled_emerald_block");
+
                 slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.EMERALD_SLAB, Ingredient.of(Blocks.EMERALD_BLOCK))
                         .unlockedBy(getHasName(Blocks.EMERALD_BLOCK), has(Blocks.EMERALD_BLOCK))
                         .group("building")
@@ -64,6 +74,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(Blocks.EMERALD_BLOCK), has(Blocks.EMERALD_BLOCK))
                         .group("building")
                         .save(output, "emerald_stairs_from_emerald_block");
+
+                slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LAPIS_SLAB, Ingredient.of(Blocks.LAPIS_BLOCK))
+                        .unlockedBy(getHasName(Blocks.LAPIS_BLOCK), has(Blocks.LAPIS_BLOCK))
+                        .group("building")
+                        .save(output, "lapis_slab_from_lapis_block");
+
+                stairBuilder(ModBlocks.LAPIS_STAIRS, Ingredient.of(Blocks.LAPIS_BLOCK))
+                        .unlockedBy(getHasName(Blocks.LAPIS_BLOCK), has(Blocks.LAPIS_BLOCK))
+                        .group("building")
+                        .save(output, "lapis_stairs_from_lapis_block");
 
                 slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DIAMOND_SLAB, Ingredient.of(Blocks.DIAMOND_BLOCK))
                         .unlockedBy(getHasName(Blocks.DIAMOND_BLOCK), has(Blocks.DIAMOND_BLOCK))

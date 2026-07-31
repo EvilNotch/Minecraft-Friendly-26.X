@@ -52,10 +52,14 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.MAGENTA_CONCRETE_STAIRS);
                         output.accept(ModBlocks.PINK_CONCRETE_SLAB);
                         output.accept(ModBlocks.PINK_CONCRETE_STAIRS);
+                        output.accept(ModBlocks.IRON_SLAB);
+                        output.accept(ModBlocks.IRON_STAIRS);
                         output.accept(ModBlocks.GOLD_SLAB);
                         output.accept(ModBlocks.GOLD_STAIRS);
                         output.accept(ModBlocks.EMERALD_SLAB);
                         output.accept(ModBlocks.EMERALD_STAIRS);
+                        output.accept(ModBlocks.LAPIS_SLAB);
+                        output.accept(ModBlocks.LAPIS_STAIRS);
                         output.accept(ModBlocks.DIAMOND_SLAB);
                         output.accept(ModBlocks.DIAMOND_STAIRS);
                     })
