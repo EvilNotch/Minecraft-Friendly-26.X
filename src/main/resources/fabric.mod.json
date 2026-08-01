@@ -3,14 +3,14 @@
 	"id": "minecraftfriendly",
 	"version": "${version}",
 	"name": "Minecraft Friendly",
-	"description": "Adding simple features that were in the game or isn't properly ported. All thanks to CanadianLionMC",
+	"description": "Adding simple features that were in the game or isn't properly ported. All thanks to CanadianLionMC's inspiration.",
 	"authors": [
 		"Evil_Notch"
 	],
 	"contact": {
 		"email": "MrAnonymous135@proton.me",
 		"fabric-homepage": "https://fabricmc.net/",
-		"inspiration": "https://www.youtube.com/@canadianlion",
+		"inspirations": "https://www.youtube.com/@canadianlion",
 		"fabric-template": "https://github.com/FabricMC/fabric-example-mod",
 		"source-code": "https://github.com/EvilNotch/Minecraft-Friendly-26.X"
 	},

@@ -13,6 +13,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraft.world.level.material.MapColor;
 
 import java.util.function.Function;
@@ -83,12 +84,36 @@ public class ModBlocks {
             properties -> new SlabBlock(properties.strength(1.8F)
                     .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
 
+    public static final Block WHITE_CONCRETE_FENCE = registerBlock("white_concrete_fence",
+            properties -> new FenceBlock(properties.strength(1.8F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
+
+    public static final Block WHITE_CONCRETE_FENCE_GATE = registerBlock("white_concrete_fence_gate",
+            properties -> new FenceGateBlock(WoodType.WARPED, properties.strength(1.8F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
+
+    public static final Block WHITE_CONCRETE_WALL = registerBlock("white_concrete_wall",
+            properties -> new WallBlock(properties.strength(1.8F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
+
     public static final Block LIGHT_GRAY_CONCRETE_STAIRS = registerBlock("light_gray_concrete_stairs",
             properties -> new StairBlock(Blocks.CONCRETE.lightGray().defaultBlockState(), properties.strength(1.8F)
                     .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
 
     public static final Block LIGHT_GRAY_CONCRETE_SLAB = registerBlock("light_gray_concrete_slab",
             properties -> new SlabBlock(properties.strength(1.8F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
+
+    public static final Block LIGHT_GRAY_CONCRETE_FENCE = registerBlock("light_gray_concrete_fence",
+            properties -> new FenceBlock(properties.strength(1.8F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
+
+    public static final Block LIGHT_GRAY_CONCRETE_FENCE_GATE = registerBlock("light_gray_concrete_fence_gate",
+            properties -> new FenceGateBlock(WoodType.WARPED, properties.strength(1.8F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
+
+    public static final Block LIGHT_GRAY_CONCRETE_WALL = registerBlock("light_gray_concrete_wall",
+            properties -> new WallBlock(properties.strength(1.8F)
                     .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
 
     public static final Block GRAY_CONCRETE_STAIRS = registerBlock("gray_concrete_stairs",
@@ -99,12 +124,36 @@ public class ModBlocks {
             properties -> new SlabBlock(properties.strength(1.8F)
                     .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
 
+    public static final Block GRAY_CONCRETE_FENCE = registerBlock("gray_concrete_fence",
+            properties -> new FenceBlock(properties.strength(1.8F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
+
+    public static final Block GRAY_CONCRETE_FENCE_GATE = registerBlock("gray_concrete_fence_gate",
+            properties -> new FenceGateBlock(WoodType.WARPED, properties.strength(1.8F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
+
+    public static final Block GRAY_CONCRETE_WALL = registerBlock("gray_concrete_wall",
+            properties -> new WallBlock(properties.strength(1.8F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
+
     public static final Block BLACK_CONCRETE_STAIRS = registerBlock("black_concrete_stairs",
             properties -> new StairBlock(Blocks.CONCRETE.black().defaultBlockState(), properties.strength(1.8F)
                     .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
 
     public static final Block BLACK_CONCRETE_SLAB = registerBlock("black_concrete_slab",
             properties -> new SlabBlock(properties.strength(1.8F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
+
+    public static final Block BLACK_CONCRETE_FENCE = registerBlock("black_concrete_fence",
+            properties -> new FenceBlock(properties.strength(1.8F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
+
+    public static final Block BLACK_CONCRETE_FENCE_GATE = registerBlock("black_concrete_fence_gate",
+            properties -> new FenceGateBlock(WoodType.WARPED, properties.strength(1.8F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
+
+    public static final Block BLACK_CONCRETE_WALL = registerBlock("black_concrete_wall",
+            properties -> new WallBlock(properties.strength(1.8F)
                     .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
 
     public static final Block BROWN_CONCRETE_STAIRS = registerBlock("brown_concrete_stairs",
@@ -115,12 +164,36 @@ public class ModBlocks {
             properties -> new SlabBlock(properties.strength(1.8F)
                     .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
 
+    public static final Block BROWN_CONCRETE_FENCE = registerBlock("brown_concrete_fence",
+            properties -> new FenceBlock(properties.strength(1.8F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
+
+    public static final Block BROWN_CONCRETE_FENCE_GATE = registerBlock("brown_concrete_fence_gate",
+            properties -> new FenceGateBlock(WoodType.WARPED, properties.strength(1.8F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
+
+    public static final Block BROWN_CONCRETE_WALL = registerBlock("brown_concrete_wall",
+            properties -> new WallBlock(properties.strength(1.8F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
+
     public static final Block RED_CONCRETE_STAIRS = registerBlock("red_concrete_stairs",
             properties -> new StairBlock(Blocks.CONCRETE.red().defaultBlockState(), properties.strength(1.8F)
                     .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
 
     public static final Block RED_CONCRETE_SLAB = registerBlock("red_concrete_slab",
             properties -> new SlabBlock(properties.strength(1.8F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
+
+    public static final Block RED_CONCRETE_FENCE = registerBlock("red_concrete_fence",
+            properties -> new FenceBlock(properties.strength(1.8F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
+
+    public static final Block RED_CONCRETE_FENCE_GATE = registerBlock("red_concrete_fence_gate",
+            properties -> new FenceGateBlock(WoodType.WARPED, properties.strength(1.8F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
+
+    public static final Block RED_CONCRETE_WALL = registerBlock("red_concrete_wall",
+            properties -> new WallBlock(properties.strength(1.8F)
                     .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
 
     public static final Block ORANGE_CONCRETE_STAIRS = registerBlock("orange_concrete_stairs",
@@ -131,12 +204,36 @@ public class ModBlocks {
             properties -> new SlabBlock(properties.strength(1.8F)
                     .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
 
+    public static final Block ORANGE_CONCRETE_FENCE = registerBlock("orange_concrete_fence",
+            properties -> new FenceBlock(properties.strength(1.8F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
+
+    public static final Block ORANGE_CONCRETE_FENCE_GATE = registerBlock("orange_concrete_fence_gate",
+            properties -> new FenceGateBlock(WoodType.WARPED, properties.strength(1.8F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
+
+    public static final Block ORANGE_CONCRETE_WALL = registerBlock("orange_concrete_wall",
+            properties -> new WallBlock(properties.strength(1.8F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
+
     public static final Block YELLOW_CONCRETE_STAIRS = registerBlock("yellow_concrete_stairs",
             properties -> new StairBlock(Blocks.CONCRETE.yellow().defaultBlockState(), properties.strength(1.8F)
                     .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
 
     public static final Block YELLOW_CONCRETE_SLAB = registerBlock("yellow_concrete_slab",
             properties -> new SlabBlock(properties.strength(1.8F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
+
+    public static final Block YELLOW_CONCRETE_FENCE = registerBlock("yellow_concrete_fence",
+            properties -> new FenceBlock(properties.strength(1.8F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
+
+    public static final Block YELLOW_CONCRETE_FENCE_GATE = registerBlock("yellow_concrete_fence_gate",
+            properties -> new FenceGateBlock(WoodType.WARPED, properties.strength(1.8F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
+
+    public static final Block YELLOW_CONCRETE_WALL = registerBlock("yellow_concrete_wall",
+            properties -> new WallBlock(properties.strength(1.8F)
                     .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
 
     public static final Block LIME_CONCRETE_STAIRS = registerBlock("lime_concrete_stairs",
@@ -147,12 +244,36 @@ public class ModBlocks {
             properties -> new SlabBlock(properties.strength(1.8F)
                     .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
 
+    public static final Block LIME_CONCRETE_FENCE = registerBlock("lime_concrete_fence",
+            properties -> new FenceBlock(properties.strength(1.8F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
+
+    public static final Block LIME_CONCRETE_FENCE_GATE = registerBlock("lime_concrete_fence_gate",
+            properties -> new FenceGateBlock(WoodType.WARPED, properties.strength(1.8F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
+
+    public static final Block LIME_CONCRETE_WALL = registerBlock("lime_concrete_wall",
+            properties -> new WallBlock(properties.strength(1.8F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
+
     public static final Block GREEN_CONCRETE_STAIRS = registerBlock("green_concrete_stairs",
             properties -> new StairBlock(Blocks.CONCRETE.green().defaultBlockState(), properties.strength(1.8F)
                     .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
 
     public static final Block GREEN_CONCRETE_SLAB = registerBlock("green_concrete_slab",
             properties -> new SlabBlock(properties.strength(1.8F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
+
+    public static final Block GREEN_CONCRETE_FENCE = registerBlock("green_concrete_fence",
+            properties -> new FenceBlock(properties.strength(1.8F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
+
+    public static final Block GREEN_CONCRETE_FENCE_GATE = registerBlock("green_concrete_fence_gate",
+            properties -> new FenceGateBlock(WoodType.WARPED, properties.strength(1.8F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
+
+    public static final Block GREEN_CONCRETE_WALL = registerBlock("green_concrete_wall",
+            properties -> new WallBlock(properties.strength(1.8F)
                     .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
 
     public static final Block CYAN_CONCRETE_STAIRS = registerBlock("cyan_concrete_stairs",
@@ -163,12 +284,36 @@ public class ModBlocks {
             properties -> new SlabBlock(properties.strength(1.8F)
                     .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
 
+    public static final Block CYAN_CONCRETE_FENCE = registerBlock("cyan_concrete_fence",
+            properties -> new FenceBlock(properties.strength(1.8F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
+
+    public static final Block CYAN_CONCRETE_FENCE_GATE = registerBlock("cyan_concrete_fence_gate",
+            properties -> new FenceGateBlock(WoodType.WARPED, properties.strength(1.8F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
+
+    public static final Block CYAN_CONCRETE_WALL = registerBlock("cyan_concrete_wall",
+            properties -> new WallBlock(properties.strength(1.8F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
+
     public static final Block LIGHT_BLUE_CONCRETE_STAIRS = registerBlock("light_blue_concrete_stairs",
             properties -> new StairBlock(Blocks.CONCRETE.lightBlue().defaultBlockState(), properties.strength(1.8F)
                     .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
 
     public static final Block LIGHT_BLUE_CONCRETE_SLAB = registerBlock("light_blue_concrete_slab",
             properties -> new SlabBlock(properties.strength(1.8F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
+
+    public static final Block LIGHT_BLUE_CONCRETE_FENCE = registerBlock("light_blue_concrete_fence",
+            properties -> new FenceBlock(properties.strength(1.8F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
+
+    public static final Block LIGHT_BLUE_CONCRETE_FENCE_GATE = registerBlock("light_blue_concrete_fence_gate",
+            properties -> new FenceGateBlock(WoodType.WARPED, properties.strength(1.8F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
+
+    public static final Block LIGHT_BLUE_CONCRETE_WALL = registerBlock("light_blue_concrete_wall",
+            properties -> new WallBlock(properties.strength(1.8F)
                     .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
 
     public static final Block BLUE_CONCRETE_STAIRS = registerBlock("blue_concrete_stairs",
@@ -179,12 +324,36 @@ public class ModBlocks {
             properties -> new SlabBlock(properties.strength(1.8F)
                     .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
 
+    public static final Block BLUE_CONCRETE_FENCE = registerBlock("blue_concrete_fence",
+            properties -> new FenceBlock(properties.strength(1.8F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
+
+    public static final Block BLUE_CONCRETE_FENCE_GATE = registerBlock("blue_concrete_fence_gate",
+            properties -> new FenceGateBlock(WoodType.WARPED, properties.strength(1.8F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
+
+    public static final Block BLUE_CONCRETE_WALL = registerBlock("blue_concrete_wall",
+            properties -> new WallBlock(properties.strength(1.8F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
+
     public static final Block PURPLE_CONCRETE_STAIRS = registerBlock("purple_concrete_stairs",
             properties -> new StairBlock(Blocks.CONCRETE.purple().defaultBlockState(), properties.strength(1.8F)
                     .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
 
     public static final Block PURPLE_CONCRETE_SLAB = registerBlock("purple_concrete_slab",
             properties -> new SlabBlock(properties.strength(1.8F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
+
+    public static final Block PURPLE_CONCRETE_FENCE = registerBlock("purple_concrete_fence",
+            properties -> new FenceBlock(properties.strength(1.8F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
+
+    public static final Block PURPLE_CONCRETE_FENCE_GATE = registerBlock("purple_concrete_fence_gate",
+            properties -> new FenceGateBlock(WoodType.WARPED, properties.strength(1.8F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
+
+    public static final Block PURPLE_CONCRETE_WALL = registerBlock("purple_concrete_wall",
+            properties -> new WallBlock(properties.strength(1.8F)
                     .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
 
     public static final Block MAGENTA_CONCRETE_STAIRS = registerBlock("magenta_concrete_stairs",
@@ -195,12 +364,36 @@ public class ModBlocks {
             properties -> new SlabBlock(properties.strength(1.8F)
                     .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
 
+    public static final Block MAGENTA_CONCRETE_FENCE = registerBlock("magenta_concrete_fence",
+            properties -> new FenceBlock(properties.strength(1.8F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
+
+    public static final Block MAGENTA_CONCRETE_FENCE_GATE = registerBlock("magenta_concrete_fence_gate",
+            properties -> new FenceGateBlock(WoodType.WARPED, properties.strength(1.8F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
+
+    public static final Block MAGENTA_CONCRETE_WALL = registerBlock("magenta_concrete_wall",
+            properties -> new WallBlock(properties.strength(1.8F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
+
     public static final Block PINK_CONCRETE_STAIRS = registerBlock("pink_concrete_stairs",
             properties -> new StairBlock(Blocks.CONCRETE.pink().defaultBlockState(), properties.strength(1.8F)
                     .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
 
     public static final Block PINK_CONCRETE_SLAB = registerBlock("pink_concrete_slab",
             properties -> new SlabBlock(properties.strength(1.8F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
+
+    public static final Block PINK_CONCRETE_FENCE = registerBlock("pink_concrete_fence",
+            properties -> new FenceBlock(properties.strength(1.8F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
+
+    public static final Block PINK_CONCRETE_FENCE_GATE = registerBlock("pink_concrete_fence_gate",
+            properties -> new FenceGateBlock(WoodType.WARPED, properties.strength(1.8F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
+
+    public static final Block PINK_CONCRETE_WALL = registerBlock("pink_concrete_wall",
+            properties -> new WallBlock(properties.strength(1.8F)
                     .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
 
 
@@ -217,7 +410,7 @@ public class ModBlocks {
         Registry.register(BuiltInRegistries.ITEM, Identifier.fromNamespaceAndPath(MinecraftFriendly.MOD_ID, name),
                 new BlockItem(block, new Item.Properties().useBlockDescriptionPrefix()
                         .setId(ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(MinecraftFriendly.MOD_ID, name)))));
-    };
+    }
 
     public static void registerBlocks() {
         MinecraftFriendly.LOGGER.info("Registering Blocks and their Creative Entries for " + MinecraftFriendly.MOD_ID);

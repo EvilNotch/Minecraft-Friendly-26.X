@@ -123,6 +123,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .group("building")
                         .save(output, "white_concrete_stairs_from_white_concrete");
 
+                fenceBuilder(ModBlocks.WHITE_CONCRETE_FENCE, Ingredient.of(Blocks.CONCRETE.white()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.white()), has(Blocks.CONCRETE.white()))
+                        .group("building")
+                        .save(output, "white_concrete_fence_from_white_concrete");
+
+                fenceGateBuilder(ModBlocks.WHITE_CONCRETE_FENCE_GATE, Ingredient.of(Blocks.CONCRETE.white()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.white()), has(Blocks.CONCRETE.white()))
+                        .group("building")
+                        .save(output, "white_concrete_fence_gate_from_white_concrete");
+
+                wall(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WHITE_CONCRETE_WALL, Blocks.CONCRETE.white());
+
                 slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_GRAY_CONCRETE_SLAB, Ingredient.of(Blocks.CONCRETE.lightGray()))
                         .unlockedBy(getHasName(Blocks.CONCRETE.lightGray()), has(Blocks.CONCRETE.lightGray()))
                         .group("building")
@@ -132,6 +144,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(Blocks.CONCRETE.lightGray()), has(Blocks.CONCRETE.lightGray()))
                         .group("building")
                         .save(output, "light_gray_concrete_stairs_from_light_gray_concrete");
+
+                fenceBuilder(ModBlocks.LIGHT_GRAY_CONCRETE_FENCE, Ingredient.of(Blocks.CONCRETE.lightGray()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.lightGray()), has(Blocks.CONCRETE.lightGray()))
+                        .group("building")
+                        .save(output, "light_gray_concrete_fence_from_light_gray_concrete");
+
+                fenceGateBuilder(ModBlocks.LIGHT_GRAY_CONCRETE_FENCE_GATE, Ingredient.of(Blocks.CONCRETE.lightGray()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.lightGray()), has(Blocks.CONCRETE.lightGray()))
+                        .group("building")
+                        .save(output, "light_gray_concrete_fence_gate_from_light_gray_concrete");
+
+                wall(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_GRAY_CONCRETE_WALL, Blocks.CONCRETE.lightGray());
 
                 slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GRAY_CONCRETE_SLAB, Ingredient.of(Blocks.CONCRETE.gray()))
                         .unlockedBy(getHasName(Blocks.CONCRETE.gray()), has(Blocks.CONCRETE.gray()))
@@ -143,6 +167,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .group("building")
                         .save(output, "gray_concrete_stairs_from_gray_concrete");
 
+                fenceBuilder(ModBlocks.GRAY_CONCRETE_FENCE, Ingredient.of(Blocks.CONCRETE.gray()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.gray()), has(Blocks.CONCRETE.gray()))
+                        .group("building")
+                        .save(output, "gray_concrete_fence_from_gray_concrete");
+
+                fenceGateBuilder(ModBlocks.GRAY_CONCRETE_FENCE_GATE, Ingredient.of(Blocks.CONCRETE.gray()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.gray()), has(Blocks.CONCRETE.gray()))
+                        .group("building")
+                        .save(output, "gray_concrete_fence_gate_from_gray_concrete");
+
+                wall(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GRAY_CONCRETE_WALL, Blocks.CONCRETE.gray());
+
                 slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLACK_CONCRETE_SLAB, Ingredient.of(Blocks.CONCRETE.black()))
                         .unlockedBy(getHasName(Blocks.CONCRETE.black()), has(Blocks.CONCRETE.black()))
                         .group("building")
@@ -152,6 +188,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(Blocks.CONCRETE.black()), has(Blocks.CONCRETE.black()))
                         .group("building")
                         .save(output, "black_concrete_stairs_from_black_concrete");
+
+                fenceBuilder(ModBlocks.BLACK_CONCRETE_FENCE, Ingredient.of(Blocks.CONCRETE.black()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.black()), has(Blocks.CONCRETE.black()))
+                        .group("building")
+                        .save(output, "black_concrete_fence_from_black_concrete");
+
+                fenceGateBuilder(ModBlocks.BLACK_CONCRETE_FENCE_GATE, Ingredient.of(Blocks.CONCRETE.black()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.black()), has(Blocks.CONCRETE.black()))
+                        .group("building")
+                        .save(output, "black_concrete_fence_gate_from_black_concrete");
+
+                wall(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLACK_CONCRETE_WALL, Blocks.CONCRETE.black());
 
                 slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BROWN_CONCRETE_SLAB, Ingredient.of(Blocks.CONCRETE.brown()))
                         .unlockedBy(getHasName(Blocks.CONCRETE.brown()), has(Blocks.CONCRETE.brown()))
@@ -163,6 +211,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .group("building")
                         .save(output, "brown_concrete_stairs_from_brown_concrete");
 
+                fenceBuilder(ModBlocks.BROWN_CONCRETE_FENCE, Ingredient.of(Blocks.CONCRETE.brown()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.brown()), has(Blocks.CONCRETE.brown()))
+                        .group("building")
+                        .save(output, "brown_concrete_fence_from_brown_concrete");
+
+                fenceGateBuilder(ModBlocks.BROWN_CONCRETE_FENCE_GATE, Ingredient.of(Blocks.CONCRETE.brown()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.brown()), has(Blocks.CONCRETE.brown()))
+                        .group("building")
+                        .save(output, "brown_concrete_fence_gate_from_brown_concrete");
+
+                wall(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BROWN_CONCRETE_WALL, Blocks.CONCRETE.brown());
+
                 slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_CONCRETE_SLAB, Ingredient.of(Blocks.CONCRETE.red()))
                         .unlockedBy(getHasName(Blocks.CONCRETE.red()), has(Blocks.CONCRETE.red()))
                         .group("building")
@@ -172,6 +232,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(Blocks.CONCRETE.red()), has(Blocks.CONCRETE.red()))
                         .group("building")
                         .save(output, "red_concrete_stairs_from_red_concrete");
+
+                fenceBuilder(ModBlocks.RED_CONCRETE_FENCE, Ingredient.of(Blocks.CONCRETE.red()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.red()), has(Blocks.CONCRETE.red()))
+                        .group("building")
+                        .save(output, "red_concrete_fence_from_red_concrete");
+
+                fenceGateBuilder(ModBlocks.RED_CONCRETE_FENCE_GATE, Ingredient.of(Blocks.CONCRETE.red()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.red()), has(Blocks.CONCRETE.red()))
+                        .group("building")
+                        .save(output, "red_concrete_fence_gate_from_red_concrete");
+
+                wall(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_CONCRETE_WALL, Blocks.CONCRETE.red());
 
                 slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ORANGE_CONCRETE_SLAB, Ingredient.of(Blocks.CONCRETE.orange()))
                         .unlockedBy(getHasName(Blocks.CONCRETE.orange()), has(Blocks.CONCRETE.orange()))
@@ -183,6 +255,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .group("building")
                         .save(output, "orange_concrete_stairs_from_orange_concrete");
 
+                fenceBuilder(ModBlocks.ORANGE_CONCRETE_FENCE, Ingredient.of(Blocks.CONCRETE.orange()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.orange()), has(Blocks.CONCRETE.orange()))
+                        .group("building")
+                        .save(output, "orange_concrete_fence_from_orange_concrete");
+
+                fenceGateBuilder(ModBlocks.ORANGE_CONCRETE_FENCE_GATE, Ingredient.of(Blocks.CONCRETE.orange()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.orange()), has(Blocks.CONCRETE.orange()))
+                        .group("building")
+                        .save(output, "orange_concrete_fence_gate_from_orange_concrete");
+
+                wall(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ORANGE_CONCRETE_WALL, Blocks.CONCRETE.orange());
+
                 slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.YELLOW_CONCRETE_SLAB, Ingredient.of(Blocks.CONCRETE.yellow()))
                         .unlockedBy(getHasName(Blocks.CONCRETE.yellow()), has(Blocks.CONCRETE.yellow()))
                         .group("building")
@@ -192,6 +276,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(Blocks.CONCRETE.yellow()), has(Blocks.CONCRETE.yellow()))
                         .group("building")
                         .save(output, "yellow_concrete_stairs_from_yellow_concrete");
+
+                fenceBuilder(ModBlocks.YELLOW_CONCRETE_FENCE, Ingredient.of(Blocks.CONCRETE.yellow()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.yellow()), has(Blocks.CONCRETE.yellow()))
+                        .group("building")
+                        .save(output, "yellow_concrete_fence_from_yellow_concrete");
+
+                fenceGateBuilder(ModBlocks.YELLOW_CONCRETE_FENCE_GATE, Ingredient.of(Blocks.CONCRETE.yellow()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.yellow()), has(Blocks.CONCRETE.yellow()))
+                        .group("building")
+                        .save(output, "yellow_concrete_fence_gate_from_yellow_concrete");
+
+                wall(RecipeCategory.BUILDING_BLOCKS, ModBlocks.YELLOW_CONCRETE_WALL, Blocks.CONCRETE.yellow());
 
                 slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIME_CONCRETE_SLAB, Ingredient.of(Blocks.CONCRETE.lime()))
                         .unlockedBy(getHasName(Blocks.CONCRETE.lime()), has(Blocks.CONCRETE.lime()))
@@ -203,6 +299,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .group("building")
                         .save(output, "lime_concrete_stairs_from_lime_concrete");
 
+                fenceBuilder(ModBlocks.LIME_CONCRETE_FENCE, Ingredient.of(Blocks.CONCRETE.lime()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.lime()), has(Blocks.CONCRETE.lime()))
+                        .group("building")
+                        .save(output, "lime_concrete_fence_from_lime_concrete");
+
+                fenceGateBuilder(ModBlocks.LIME_CONCRETE_FENCE_GATE, Ingredient.of(Blocks.CONCRETE.lime()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.lime()), has(Blocks.CONCRETE.lime()))
+                        .group("building")
+                        .save(output, "lime_concrete_fence_gate_from_lime_concrete");
+
+                wall(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIME_CONCRETE_WALL, Blocks.CONCRETE.lime());
+
                 slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GREEN_CONCRETE_SLAB, Ingredient.of(Blocks.CONCRETE.green()))
                         .unlockedBy(getHasName(Blocks.CONCRETE.green()), has(Blocks.CONCRETE.green()))
                         .group("building")
@@ -212,6 +320,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(Blocks.CONCRETE.green()), has(Blocks.CONCRETE.green()))
                         .group("building")
                         .save(output, "green_concrete_stairs_from_green_concrete");
+
+                fenceBuilder(ModBlocks.GREEN_CONCRETE_FENCE, Ingredient.of(Blocks.CONCRETE.green()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.green()), has(Blocks.CONCRETE.green()))
+                        .group("building")
+                        .save(output, "green_concrete_fence_from_green_concrete");
+
+                fenceGateBuilder(ModBlocks.GREEN_CONCRETE_FENCE_GATE, Ingredient.of(Blocks.CONCRETE.green()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.green()), has(Blocks.CONCRETE.green()))
+                        .group("building")
+                        .save(output, "green_concrete_fence_gate_from_green_concrete");
+
+                wall(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GREEN_CONCRETE_WALL, Blocks.CONCRETE.green());
 
                 slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CYAN_CONCRETE_SLAB, Ingredient.of(Blocks.CONCRETE.cyan()))
                         .unlockedBy(getHasName(Blocks.CONCRETE.cyan()), has(Blocks.CONCRETE.cyan()))
@@ -223,6 +343,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .group("building")
                         .save(output, "cyan_concrete_stairs_from_cyan_concrete");
 
+                fenceBuilder(ModBlocks.CYAN_CONCRETE_FENCE, Ingredient.of(Blocks.CONCRETE.cyan()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.cyan()), has(Blocks.CONCRETE.cyan()))
+                        .group("building")
+                        .save(output, "cyan_concrete_fence_from_cyan_concrete");
+
+                fenceGateBuilder(ModBlocks.CYAN_CONCRETE_FENCE_GATE, Ingredient.of(Blocks.CONCRETE.cyan()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.cyan()), has(Blocks.CONCRETE.cyan()))
+                        .group("building")
+                        .save(output, "cyan_concrete_fence_gate_from_cyan_concrete");
+
+                wall(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CYAN_CONCRETE_WALL, Blocks.CONCRETE.cyan());
+
                 slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_BLUE_CONCRETE_SLAB, Ingredient.of(Blocks.CONCRETE.lightBlue()))
                         .unlockedBy(getHasName(Blocks.CONCRETE.lightBlue()), has(Blocks.CONCRETE.lightBlue()))
                         .group("building")
@@ -232,6 +364,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(Blocks.CONCRETE.lightBlue()), has(Blocks.CONCRETE.lightBlue()))
                         .group("building")
                         .save(output, "light_blue_concrete_stairs_from_light_blue_concrete");
+
+                fenceBuilder(ModBlocks.LIGHT_BLUE_CONCRETE_FENCE, Ingredient.of(Blocks.CONCRETE.lightBlue()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.lightBlue()), has(Blocks.CONCRETE.lightBlue()))
+                        .group("building")
+                        .save(output, "light_blue_concrete_fence_from_light_blue_concrete");
+
+                fenceGateBuilder(ModBlocks.LIGHT_BLUE_CONCRETE_FENCE_GATE, Ingredient.of(Blocks.CONCRETE.lightBlue()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.lightBlue()), has(Blocks.CONCRETE.lightBlue()))
+                        .group("building")
+                        .save(output, "light_blue_concrete_fence_gate_from_light_blue_concrete");
+
+                wall(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_BLUE_CONCRETE_WALL, Blocks.CONCRETE.lightBlue());
 
                 slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLUE_CONCRETE_SLAB, Ingredient.of(Blocks.CONCRETE.blue()))
                         .unlockedBy(getHasName(Blocks.CONCRETE.blue()), has(Blocks.CONCRETE.blue()))
@@ -243,6 +387,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .group("building")
                         .save(output, "blue_concrete_stairs_from_blue_concrete");
 
+                fenceBuilder(ModBlocks.BLUE_CONCRETE_FENCE, Ingredient.of(Blocks.CONCRETE.blue()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.blue()), has(Blocks.CONCRETE.blue()))
+                        .group("building")
+                        .save(output, "blue_concrete_fence_from_blue_concrete");
+
+                fenceGateBuilder(ModBlocks.BLUE_CONCRETE_FENCE_GATE, Ingredient.of(Blocks.CONCRETE.blue()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.blue()), has(Blocks.CONCRETE.blue()))
+                        .group("building")
+                        .save(output, "blue_concrete_fence_gate_from_blue_concrete");
+
+                wall(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLUE_CONCRETE_WALL, Blocks.CONCRETE.blue());
+
                 slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PURPLE_CONCRETE_SLAB, Ingredient.of(Blocks.CONCRETE.purple()))
                         .unlockedBy(getHasName(Blocks.CONCRETE.purple()), has(Blocks.CONCRETE.purple()))
                         .group("building")
@@ -252,6 +408,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(Blocks.CONCRETE.purple()), has(Blocks.CONCRETE.purple()))
                         .group("building")
                         .save(output, "purple_concrete_stairs_from_purple_concrete");
+
+                fenceBuilder(ModBlocks.PURPLE_CONCRETE_FENCE, Ingredient.of(Blocks.CONCRETE.purple()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.purple()), has(Blocks.CONCRETE.purple()))
+                        .group("building")
+                        .save(output, "purple_concrete_fence_from_purple_concrete");
+
+                fenceGateBuilder(ModBlocks.PURPLE_CONCRETE_FENCE_GATE, Ingredient.of(Blocks.CONCRETE.purple()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.purple()), has(Blocks.CONCRETE.purple()))
+                        .group("building")
+                        .save(output, "purple_concrete_fence_gate_from_purple_concrete");
+
+                wall(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PURPLE_CONCRETE_WALL, Blocks.CONCRETE.purple());
 
                 slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAGENTA_CONCRETE_SLAB, Ingredient.of(Blocks.CONCRETE.magenta()))
                         .unlockedBy(getHasName(Blocks.CONCRETE.magenta()), has(Blocks.CONCRETE.magenta()))
@@ -263,6 +431,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .group("building")
                         .save(output, "magenta_concrete_stairs_from_magenta_concrete");
 
+                fenceBuilder(ModBlocks.MAGENTA_CONCRETE_FENCE, Ingredient.of(Blocks.CONCRETE.magenta()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.magenta()), has(Blocks.CONCRETE.magenta()))
+                        .group("building")
+                        .save(output, "magenta_concrete_fence_from_magenta_concrete");
+
+                fenceGateBuilder(ModBlocks.MAGENTA_CONCRETE_FENCE_GATE, Ingredient.of(Blocks.CONCRETE.magenta()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.magenta()), has(Blocks.CONCRETE.magenta()))
+                        .group("building")
+                        .save(output, "magenta_concrete_fence_gate_from_magenta_concrete");
+
+                wall(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAGENTA_CONCRETE_WALL, Blocks.CONCRETE.magenta());
+
                 slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_CONCRETE_SLAB, Ingredient.of(Blocks.CONCRETE.pink()))
                         .unlockedBy(getHasName(Blocks.CONCRETE.pink()), has(Blocks.CONCRETE.pink()))
                         .group("building")
@@ -272,6 +452,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(Blocks.CONCRETE.pink()), has(Blocks.CONCRETE.pink()))
                         .group("building")
                         .save(output, "pink_concrete_stairs_from_pink_concrete");
+
+                fenceBuilder(ModBlocks.PINK_CONCRETE_FENCE, Ingredient.of(Blocks.CONCRETE.pink()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.pink()), has(Blocks.CONCRETE.pink()))
+                        .group("building")
+                        .save(output, "pink_concrete_fence_from_pink_concrete");
+
+                fenceGateBuilder(ModBlocks.PINK_CONCRETE_FENCE_GATE, Ingredient.of(Blocks.CONCRETE.pink()))
+                        .unlockedBy(getHasName(Blocks.CONCRETE.pink()), has(Blocks.CONCRETE.pink()))
+                        .group("building")
+                        .save(output, "pink_concrete_fence_gate_from_pink_concrete");
+
+                wall(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_CONCRETE_WALL, Blocks.CONCRETE.pink());
 
             }
         };
