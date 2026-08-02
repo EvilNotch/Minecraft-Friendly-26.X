@@ -16,6 +16,8 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
     @Override
     public void generate() {
 
+        dropSelf(ModBlocks.NETHER_BRICK_FENCE_GATE);
+
         dropSelf(ModBlocks.IRON_STAIRS);
         add(ModBlocks.IRON_SLAB, this::createSlabItemTable);
 

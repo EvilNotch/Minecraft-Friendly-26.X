@@ -2,6 +2,7 @@ package net.evilnotch.minecraftfriendly;
 
 import net.evilnotch.minecraftfriendly.block.ModBlocks;
 import net.evilnotch.minecraftfriendly.item.ModItems;
+import net.evilnotch.minecraftfriendly.pack.BuiltinResourcePacks;
 import net.evilnotch.minecraftfriendly.tabs.ModCreativeModeTabs;
 import net.fabricmc.api.ModInitializer;
 

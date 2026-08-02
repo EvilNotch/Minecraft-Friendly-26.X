@@ -117,6 +117,9 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(PINK_CONCRETE_WALL));
 
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
+
+                .add(ModBlocks.getRK(NETHER_BRICK_FENCE_GATE))
+
                 .add(ModBlocks.getRK(IRON_SLAB))
                 .add(ModBlocks.getRK(IRON_STAIRS))
 
@@ -248,6 +251,8 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(EMERALD_STAIRS))
                 .add(ModBlocks.getRK(DIAMOND_SLAB))
                 .add(ModBlocks.getRK(DIAMOND_STAIRS));
+
+        tag(BlockTags.FENCE_GATES).add(ModBlocks.getRK(NETHER_BRICK_FENCE_GATE));
 
         tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.WHITE_CONCRETE_SLAB));
         tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.WHITE_CONCRETE_STAIRS));

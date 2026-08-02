@@ -38,6 +38,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .group("testing")
                         .save(output, "barrier_blocks_from_structure_void");
 
+                shaped(RecipeCategory.MISC, ModBlocks.NETHER_BRICK_FENCE_GATE)
+                        .pattern("   ")
+                        .pattern("BNB")
+                        .pattern("BNB")
+                        .define('B', Items.NETHER_BRICK)
+                        .define('N', Blocks.NETHER_BRICKS)
+                        .unlockedBy(getHasName(Blocks.NETHER_BRICKS), has(Blocks.NETHER_BRICKS))
+                        .group("building")
+                        .save(output, "nether_fence_gate_from_nether_bricks_and_nether_brick_blocks");
+
                 slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.IRON_SLAB, Ingredient.of(Blocks.IRON_BLOCK))
                         .unlockedBy(getHasName(Blocks.IRON_BLOCK), has(Blocks.IRON_BLOCK))
                         .group("building")

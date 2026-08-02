@@ -20,6 +20,11 @@ import java.util.function.Function;
 
 public class ModBlocks {
 
+    public static final Block NETHER_BRICK_FENCE_GATE = registerBlock("nether_brick_fence_gate",
+            properties -> new FenceGateBlock(WoodType.CRIMSON, properties.strength(2.0F, 6.0F)
+                    .requiresCorrectToolForDrops().mapColor(MapColor.NETHER).instrument(NoteBlockInstrument.BASEDRUM)
+                    .sound(SoundType.NETHER_BRICKS)));
+
     public static final Block IRON_SLAB = registerBlock("iron_slab",
             properties -> new SlabBlock(properties.strength(5.0F, 6.0F)
                     .requiresCorrectToolForDrops().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)));
@@ -415,8 +420,122 @@ public class ModBlocks {
     public static void registerBlocks() {
         MinecraftFriendly.LOGGER.info("Registering Blocks and their Creative Entries for " + MinecraftFriendly.MOD_ID);
 
-        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.OP_BLOCKS).register(output -> {
-            //output.accept(ModBlocks.CHISELED_EMERALD);
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.BUILDING_BLOCKS).register(output -> {
+            output.insertAfter(Blocks.OAK_SLAB, Blocks.PETRIFIED_OAK_SLAB);
+            output.insertAfter(Blocks.NETHER_BRICK_FENCE, ModBlocks.NETHER_BRICK_FENCE_GATE);
+
+            output.insertAfter(Blocks.IRON_BLOCK, ModBlocks.IRON_STAIRS);
+            output.insertAfter(ModBlocks.IRON_STAIRS, ModBlocks.IRON_SLAB);
+
+            output.insertAfter(Blocks.GOLD_BLOCK, ModBlocks.GOLD_STAIRS);
+            output.insertAfter(ModBlocks.GOLD_STAIRS, ModBlocks.GOLD_SLAB);
+
+            output.insertAfter(Blocks.EMERALD_BLOCK, ModBlocks.EMERALD_STAIRS);
+            output.insertAfter(ModBlocks.EMERALD_STAIRS, ModBlocks.EMERALD_SLAB);
+
+            output.insertAfter(Blocks.LAPIS_BLOCK, ModBlocks.LAPIS_STAIRS);
+            output.insertAfter(ModBlocks.LAPIS_STAIRS, ModBlocks.LAPIS_SLAB);
+
+            output.insertAfter(Blocks.DIAMOND_BLOCK, ModBlocks.DIAMOND_STAIRS);
+            output.insertAfter(ModBlocks.DIAMOND_STAIRS, ModBlocks.DIAMOND_SLAB);
+        });
+
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.COLORED_BLOCKS).register(output -> {
+            output.insertAfter(Blocks.CONCRETE.white(), ModBlocks.WHITE_CONCRETE_STAIRS);
+            output.insertAfter(ModBlocks.WHITE_CONCRETE_STAIRS, ModBlocks.WHITE_CONCRETE_SLAB);
+            output.insertAfter(ModBlocks.WHITE_CONCRETE_SLAB, ModBlocks.WHITE_CONCRETE_FENCE);
+            output.insertAfter(ModBlocks.WHITE_CONCRETE_FENCE, ModBlocks.WHITE_CONCRETE_FENCE_GATE);
+            output.insertAfter(ModBlocks.WHITE_CONCRETE_FENCE_GATE, ModBlocks.WHITE_CONCRETE_WALL);
+
+            output.insertAfter(Blocks.CONCRETE.lightGray(), ModBlocks.LIGHT_GRAY_CONCRETE_STAIRS);
+            output.insertAfter(ModBlocks.LIGHT_GRAY_CONCRETE_STAIRS, ModBlocks.LIGHT_GRAY_CONCRETE_SLAB);
+            output.insertAfter(ModBlocks.LIGHT_GRAY_CONCRETE_SLAB, ModBlocks.LIGHT_GRAY_CONCRETE_FENCE);
+            output.insertAfter(ModBlocks.LIGHT_GRAY_CONCRETE_FENCE, ModBlocks.LIGHT_GRAY_CONCRETE_FENCE_GATE);
+            output.insertAfter(ModBlocks.LIGHT_GRAY_CONCRETE_FENCE_GATE, ModBlocks.LIGHT_GRAY_CONCRETE_WALL);
+
+            output.insertAfter(Blocks.CONCRETE.gray(), ModBlocks.GRAY_CONCRETE_STAIRS);
+            output.insertAfter(ModBlocks.GRAY_CONCRETE_STAIRS, ModBlocks.GRAY_CONCRETE_SLAB);
+            output.insertAfter(ModBlocks.GRAY_CONCRETE_SLAB, ModBlocks.GRAY_CONCRETE_FENCE);
+            output.insertAfter(ModBlocks.GRAY_CONCRETE_FENCE, ModBlocks.GRAY_CONCRETE_FENCE_GATE);
+            output.insertAfter(ModBlocks.GRAY_CONCRETE_FENCE_GATE, ModBlocks.GRAY_CONCRETE_WALL);
+
+            output.insertAfter(Blocks.CONCRETE.black(), ModBlocks.BLACK_CONCRETE_STAIRS);
+            output.insertAfter(ModBlocks.BLACK_CONCRETE_STAIRS, ModBlocks.BLACK_CONCRETE_SLAB);
+            output.insertAfter(ModBlocks.BLACK_CONCRETE_SLAB, ModBlocks.BLACK_CONCRETE_FENCE);
+            output.insertAfter(ModBlocks.BLACK_CONCRETE_FENCE, ModBlocks.BLACK_CONCRETE_FENCE_GATE);
+            output.insertAfter(ModBlocks.BLACK_CONCRETE_FENCE_GATE, ModBlocks.BLACK_CONCRETE_WALL);
+
+            output.insertAfter(Blocks.CONCRETE.brown(), ModBlocks.BROWN_CONCRETE_STAIRS);
+            output.insertAfter(ModBlocks.BROWN_CONCRETE_STAIRS, ModBlocks.BROWN_CONCRETE_SLAB);
+            output.insertAfter(ModBlocks.BROWN_CONCRETE_SLAB, ModBlocks.BROWN_CONCRETE_FENCE);
+            output.insertAfter(ModBlocks.BROWN_CONCRETE_FENCE, ModBlocks.BROWN_CONCRETE_FENCE_GATE);
+            output.insertAfter(ModBlocks.BROWN_CONCRETE_FENCE_GATE, ModBlocks.BROWN_CONCRETE_WALL);
+
+            output.insertAfter(Blocks.CONCRETE.red(), ModBlocks.RED_CONCRETE_STAIRS);
+            output.insertAfter(ModBlocks.RED_CONCRETE_STAIRS, ModBlocks.RED_CONCRETE_SLAB);
+            output.insertAfter(ModBlocks.RED_CONCRETE_SLAB, ModBlocks.RED_CONCRETE_FENCE);
+            output.insertAfter(ModBlocks.RED_CONCRETE_FENCE, ModBlocks.RED_CONCRETE_FENCE_GATE);
+            output.insertAfter(ModBlocks.RED_CONCRETE_FENCE_GATE, ModBlocks.RED_CONCRETE_WALL);
+
+            output.insertAfter(Blocks.CONCRETE.orange(), ModBlocks.ORANGE_CONCRETE_STAIRS);
+            output.insertAfter(ModBlocks.ORANGE_CONCRETE_STAIRS, ModBlocks.ORANGE_CONCRETE_SLAB);
+            output.insertAfter(ModBlocks.ORANGE_CONCRETE_SLAB, ModBlocks.ORANGE_CONCRETE_FENCE);
+            output.insertAfter(ModBlocks.ORANGE_CONCRETE_FENCE, ModBlocks.ORANGE_CONCRETE_FENCE_GATE);
+            output.insertAfter(ModBlocks.ORANGE_CONCRETE_FENCE_GATE, ModBlocks.ORANGE_CONCRETE_WALL);
+
+            output.insertAfter(Blocks.CONCRETE.yellow(), ModBlocks.YELLOW_CONCRETE_STAIRS);
+            output.insertAfter(ModBlocks.YELLOW_CONCRETE_STAIRS, ModBlocks.YELLOW_CONCRETE_SLAB);
+            output.insertAfter(ModBlocks.YELLOW_CONCRETE_SLAB, ModBlocks.YELLOW_CONCRETE_FENCE);
+            output.insertAfter(ModBlocks.YELLOW_CONCRETE_FENCE, ModBlocks.YELLOW_CONCRETE_FENCE_GATE);
+            output.insertAfter(ModBlocks.YELLOW_CONCRETE_FENCE_GATE, ModBlocks.YELLOW_CONCRETE_WALL);
+
+            output.insertAfter(Blocks.CONCRETE.lime(), ModBlocks.LIME_CONCRETE_STAIRS);
+            output.insertAfter(ModBlocks.LIME_CONCRETE_STAIRS, ModBlocks.LIME_CONCRETE_SLAB);
+            output.insertAfter(ModBlocks.LIME_CONCRETE_SLAB, ModBlocks.LIME_CONCRETE_FENCE);
+            output.insertAfter(ModBlocks.LIME_CONCRETE_FENCE, ModBlocks.LIME_CONCRETE_FENCE_GATE);
+            output.insertAfter(ModBlocks.LIME_CONCRETE_FENCE_GATE, ModBlocks.LIME_CONCRETE_WALL);
+
+            output.insertAfter(Blocks.CONCRETE.green(), ModBlocks.GREEN_CONCRETE_STAIRS);
+            output.insertAfter(ModBlocks.GREEN_CONCRETE_STAIRS, ModBlocks.GREEN_CONCRETE_SLAB);
+            output.insertAfter(ModBlocks.GREEN_CONCRETE_SLAB, ModBlocks.GREEN_CONCRETE_FENCE);
+            output.insertAfter(ModBlocks.GREEN_CONCRETE_FENCE, ModBlocks.GREEN_CONCRETE_FENCE_GATE);
+            output.insertAfter(ModBlocks.GREEN_CONCRETE_FENCE_GATE, ModBlocks.GREEN_CONCRETE_WALL);
+
+            output.insertAfter(Blocks.CONCRETE.cyan(), ModBlocks.CYAN_CONCRETE_STAIRS);
+            output.insertAfter(ModBlocks.CYAN_CONCRETE_STAIRS, ModBlocks.CYAN_CONCRETE_SLAB);
+            output.insertAfter(ModBlocks.CYAN_CONCRETE_SLAB, ModBlocks.CYAN_CONCRETE_FENCE);
+            output.insertAfter(ModBlocks.CYAN_CONCRETE_FENCE, ModBlocks.CYAN_CONCRETE_FENCE_GATE);
+            output.insertAfter(ModBlocks.CYAN_CONCRETE_FENCE_GATE, ModBlocks.CYAN_CONCRETE_WALL);
+
+            output.insertAfter(Blocks.CONCRETE.lightBlue(), ModBlocks.LIGHT_BLUE_CONCRETE_STAIRS);
+            output.insertAfter(ModBlocks.LIGHT_BLUE_CONCRETE_STAIRS, ModBlocks.LIGHT_BLUE_CONCRETE_SLAB);
+            output.insertAfter(ModBlocks.LIGHT_BLUE_CONCRETE_SLAB, ModBlocks.LIGHT_BLUE_CONCRETE_FENCE);
+            output.insertAfter(ModBlocks.LIGHT_BLUE_CONCRETE_FENCE, ModBlocks.LIGHT_BLUE_CONCRETE_FENCE_GATE);
+            output.insertAfter(ModBlocks.LIGHT_BLUE_CONCRETE_FENCE_GATE, ModBlocks.LIGHT_BLUE_CONCRETE_WALL);
+
+            output.insertAfter(Blocks.CONCRETE.blue(), ModBlocks.BLUE_CONCRETE_STAIRS);
+            output.insertAfter(ModBlocks.BLUE_CONCRETE_STAIRS, ModBlocks.BLUE_CONCRETE_SLAB);
+            output.insertAfter(ModBlocks.BLUE_CONCRETE_SLAB, ModBlocks.BLUE_CONCRETE_FENCE);
+            output.insertAfter(ModBlocks.BLUE_CONCRETE_FENCE, ModBlocks.BLUE_CONCRETE_FENCE_GATE);
+            output.insertAfter(ModBlocks.BLUE_CONCRETE_FENCE_GATE, ModBlocks.BLUE_CONCRETE_WALL);
+
+            output.insertAfter(Blocks.CONCRETE.purple(), ModBlocks.PURPLE_CONCRETE_STAIRS);
+            output.insertAfter(ModBlocks.PURPLE_CONCRETE_STAIRS, ModBlocks.PURPLE_CONCRETE_SLAB);
+            output.insertAfter(ModBlocks.PURPLE_CONCRETE_SLAB, ModBlocks.PURPLE_CONCRETE_FENCE);
+            output.insertAfter(ModBlocks.PURPLE_CONCRETE_FENCE, ModBlocks.PURPLE_CONCRETE_FENCE_GATE);
+            output.insertAfter(ModBlocks.PURPLE_CONCRETE_FENCE_GATE, ModBlocks.PURPLE_CONCRETE_WALL);
+
+            output.insertAfter(Blocks.CONCRETE.magenta(), ModBlocks.MAGENTA_CONCRETE_STAIRS);
+            output.insertAfter(ModBlocks.MAGENTA_CONCRETE_STAIRS, ModBlocks.MAGENTA_CONCRETE_SLAB);
+            output.insertAfter(ModBlocks.MAGENTA_CONCRETE_SLAB, ModBlocks.MAGENTA_CONCRETE_FENCE);
+            output.insertAfter(ModBlocks.MAGENTA_CONCRETE_FENCE, ModBlocks.MAGENTA_CONCRETE_FENCE_GATE);
+            output.insertAfter(ModBlocks.MAGENTA_CONCRETE_FENCE_GATE, ModBlocks.MAGENTA_CONCRETE_WALL);
+
+            output.insertAfter(Blocks.CONCRETE.pink(), ModBlocks.PINK_CONCRETE_STAIRS);
+            output.insertAfter(ModBlocks.PINK_CONCRETE_STAIRS, ModBlocks.PINK_CONCRETE_SLAB);
+            output.insertAfter(ModBlocks.PINK_CONCRETE_SLAB, ModBlocks.PINK_CONCRETE_FENCE);
+            output.insertAfter(ModBlocks.PINK_CONCRETE_FENCE, ModBlocks.PINK_CONCRETE_FENCE_GATE);
+            output.insertAfter(ModBlocks.PINK_CONCRETE_FENCE_GATE, ModBlocks.PINK_CONCRETE_WALL);
         });
     }
 }

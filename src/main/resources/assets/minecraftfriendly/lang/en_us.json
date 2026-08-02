@@ -1,6 +1,7 @@
 {
   "item.minecraftfriendly.test_item": "Test Item",
-  "item.minecraftfriendly.test_item_2": "Test Item 2",
+
+  "block.minecraftfriendly.nether_brick_fence_gate": "Nether Brick Fence Gate",
 
   "block.minecraftfriendly.iron_slab": "Iron Slab",
   "block.minecraftfriendly.iron_stairs": "Iron Stairs",

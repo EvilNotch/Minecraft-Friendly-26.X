@@ -15,7 +15,6 @@ import java.util.function.Function;
 
 public class ModItems {
     public static final Item TEST_ITEM = registerItem("test_item", Item::new);
-    public static final Item TEST_ITEM_2 = registerItem("test_item_2", properties -> new Item(properties.stacksTo(32)));
 
 
     //Helper and register.

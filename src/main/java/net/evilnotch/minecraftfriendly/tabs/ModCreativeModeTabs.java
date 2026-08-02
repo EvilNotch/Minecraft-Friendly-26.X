@@ -16,102 +16,12 @@ public class ModCreativeModeTabs {
     public static final CreativeModeTab EXTRA_RENDITIONS = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB,
             Identifier.fromNamespaceAndPath(MinecraftFriendly.MOD_ID, "extra_renditions"),
             FabricCreativeModeTab.builder()
-                    .icon(() -> new ItemStack(Blocks.PETRIFIED_OAK_SLAB))
+                    .icon(() -> new ItemStack(ModBlocks.CHISELED_EMERALD))
                     .title(Component.translatable("creativemodetab.minecraftfriendly.extra_renditions"))
                     .displayItems((parameters, output) -> {
-                        output.accept(Blocks.PETRIFIED_OAK_SLAB);
-                        output.accept(ModBlocks.WHITE_CONCRETE_SLAB);
-                        output.accept(ModBlocks.WHITE_CONCRETE_STAIRS);
-                        output.accept(ModBlocks.WHITE_CONCRETE_FENCE);
-                        output.accept(ModBlocks.WHITE_CONCRETE_FENCE_GATE);
-                        output.accept(ModBlocks.WHITE_CONCRETE_WALL);
-                        output.accept(ModBlocks.LIGHT_GRAY_CONCRETE_SLAB);
-                        output.accept(ModBlocks.LIGHT_GRAY_CONCRETE_STAIRS);
-                        output.accept(ModBlocks.LIGHT_GRAY_CONCRETE_FENCE);
-                        output.accept(ModBlocks.LIGHT_GRAY_CONCRETE_FENCE_GATE);
-                        output.accept(ModBlocks.LIGHT_GRAY_CONCRETE_WALL);
-                        output.accept(ModBlocks.GRAY_CONCRETE_SLAB);
-                        output.accept(ModBlocks.GRAY_CONCRETE_STAIRS);
-                        output.accept(ModBlocks.GRAY_CONCRETE_FENCE);
-                        output.accept(ModBlocks.GRAY_CONCRETE_FENCE_GATE);
-                        output.accept(ModBlocks.GRAY_CONCRETE_WALL);
-                        output.accept(ModBlocks.BLACK_CONCRETE_SLAB);
-                        output.accept(ModBlocks.BLACK_CONCRETE_STAIRS);
-                        output.accept(ModBlocks.BLACK_CONCRETE_FENCE);
-                        output.accept(ModBlocks.BLACK_CONCRETE_FENCE_GATE);
-                        output.accept(ModBlocks.BLACK_CONCRETE_WALL);
-                        output.accept(ModBlocks.BROWN_CONCRETE_SLAB);
-                        output.accept(ModBlocks.BROWN_CONCRETE_STAIRS);
-                        output.accept(ModBlocks.BROWN_CONCRETE_FENCE);
-                        output.accept(ModBlocks.BROWN_CONCRETE_FENCE_GATE);
-                        output.accept(ModBlocks.BROWN_CONCRETE_WALL);
-                        output.accept(ModBlocks.RED_CONCRETE_SLAB);
-                        output.accept(ModBlocks.RED_CONCRETE_STAIRS);
-                        output.accept(ModBlocks.RED_CONCRETE_FENCE);
-                        output.accept(ModBlocks.RED_CONCRETE_FENCE_GATE);
-                        output.accept(ModBlocks.RED_CONCRETE_WALL);
-                        output.accept(ModBlocks.ORANGE_CONCRETE_SLAB);
-                        output.accept(ModBlocks.ORANGE_CONCRETE_STAIRS);
-                        output.accept(ModBlocks.ORANGE_CONCRETE_FENCE);
-                        output.accept(ModBlocks.ORANGE_CONCRETE_FENCE_GATE);
-                        output.accept(ModBlocks.ORANGE_CONCRETE_WALL);
-                        output.accept(ModBlocks.YELLOW_CONCRETE_SLAB);
-                        output.accept(ModBlocks.YELLOW_CONCRETE_STAIRS);
-                        output.accept(ModBlocks.YELLOW_CONCRETE_FENCE);
-                        output.accept(ModBlocks.YELLOW_CONCRETE_FENCE_GATE);
-                        output.accept(ModBlocks.YELLOW_CONCRETE_WALL);
-                        output.accept(ModBlocks.LIME_CONCRETE_SLAB);
-                        output.accept(ModBlocks.LIME_CONCRETE_STAIRS);
-                        output.accept(ModBlocks.LIME_CONCRETE_FENCE);
-                        output.accept(ModBlocks.LIME_CONCRETE_FENCE_GATE);
-                        output.accept(ModBlocks.LIME_CONCRETE_WALL);
-                        output.accept(ModBlocks.GREEN_CONCRETE_SLAB);
-                        output.accept(ModBlocks.GREEN_CONCRETE_STAIRS);
-                        output.accept(ModBlocks.GREEN_CONCRETE_FENCE);
-                        output.accept(ModBlocks.GREEN_CONCRETE_FENCE_GATE);
-                        output.accept(ModBlocks.GREEN_CONCRETE_WALL);
-                        output.accept(ModBlocks.CYAN_CONCRETE_SLAB);
-                        output.accept(ModBlocks.CYAN_CONCRETE_STAIRS);
-                        output.accept(ModBlocks.CYAN_CONCRETE_FENCE);
-                        output.accept(ModBlocks.CYAN_CONCRETE_FENCE_GATE);
-                        output.accept(ModBlocks.CYAN_CONCRETE_WALL);
-                        output.accept(ModBlocks.LIGHT_BLUE_CONCRETE_SLAB);
-                        output.accept(ModBlocks.LIGHT_BLUE_CONCRETE_STAIRS);
-                        output.accept(ModBlocks.LIGHT_BLUE_CONCRETE_FENCE);
-                        output.accept(ModBlocks.LIGHT_BLUE_CONCRETE_FENCE_GATE);
-                        output.accept(ModBlocks.LIGHT_BLUE_CONCRETE_WALL);
-                        output.accept(ModBlocks.BLUE_CONCRETE_SLAB);
-                        output.accept(ModBlocks.BLUE_CONCRETE_STAIRS);
-                        output.accept(ModBlocks.BLUE_CONCRETE_FENCE);
-                        output.accept(ModBlocks.BLUE_CONCRETE_FENCE_GATE);
-                        output.accept(ModBlocks.BLUE_CONCRETE_WALL);
-                        output.accept(ModBlocks.PURPLE_CONCRETE_SLAB);
-                        output.accept(ModBlocks.PURPLE_CONCRETE_STAIRS);
-                        output.accept(ModBlocks.PURPLE_CONCRETE_FENCE);
-                        output.accept(ModBlocks.PURPLE_CONCRETE_FENCE_GATE);
-                        output.accept(ModBlocks.PURPLE_CONCRETE_WALL);
-                        output.accept(ModBlocks.MAGENTA_CONCRETE_SLAB);
-                        output.accept(ModBlocks.MAGENTA_CONCRETE_STAIRS);
-                        output.accept(ModBlocks.MAGENTA_CONCRETE_FENCE);
-                        output.accept(ModBlocks.MAGENTA_CONCRETE_FENCE_GATE);
-                        output.accept(ModBlocks.MAGENTA_CONCRETE_WALL);
-                        output.accept(ModBlocks.PINK_CONCRETE_SLAB);
-                        output.accept(ModBlocks.PINK_CONCRETE_STAIRS);
-                        output.accept(ModBlocks.PINK_CONCRETE_FENCE);
-                        output.accept(ModBlocks.PINK_CONCRETE_FENCE_GATE);
-                        output.accept(ModBlocks.PINK_CONCRETE_WALL);
-                        output.accept(ModBlocks.IRON_SLAB);
-                        output.accept(ModBlocks.IRON_STAIRS);
-                        output.accept(ModBlocks.GOLD_SLAB);
-                        output.accept(ModBlocks.GOLD_STAIRS);
                         //output.accept(ModBlocks.REDSTONE_SLAB);
                         //output.accept(ModBlocks.REDSTONE_STAIRS);
-                        output.accept(ModBlocks.EMERALD_SLAB);
-                        output.accept(ModBlocks.EMERALD_STAIRS);
-                        output.accept(ModBlocks.LAPIS_SLAB);
-                        output.accept(ModBlocks.LAPIS_STAIRS);
-                        output.accept(ModBlocks.DIAMOND_SLAB);
-                        output.accept(ModBlocks.DIAMOND_STAIRS);
+                        output.accept(ModBlocks.CHISELED_EMERALD);
                     })
                     .build());
     public static void registerModCreativeTabs() {

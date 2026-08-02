@@ -18,6 +18,9 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockModelGenerators blockModelGenerators) {
         blockModelGenerators.createTrivialCube(ModBlocks.CHISELED_EMERALD);
 
+        blockModelGenerators.family(Blocks.NETHER_BRICKS)
+                        .fenceGate(ModBlocks.NETHER_BRICK_FENCE_GATE);
+
         blockModelGenerators.family(Blocks.CONCRETE.white())
                 .slab(ModBlocks.WHITE_CONCRETE_SLAB)
                 .stairs(ModBlocks.WHITE_CONCRETE_STAIRS)
@@ -160,6 +163,5 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerators itemModelGenerators) {
         itemModelGenerators.generateFlatItem(ModItems.TEST_ITEM, ModelTemplates.FLAT_ITEM);
-        itemModelGenerators.generateFlatItem(ModItems.TEST_ITEM_2, ModelTemplates.FLAT_ITEM);
     }
 }
