@@ -2,7 +2,7 @@
 
 Welcome to Minecraft Friendly, a mod dedicated to keeping true to vanilla wants.
 
-## Features
+## Features:
 Shovels are now needed to make boats.
 Crafting recipes should make more sense.
 Stone cutters need loving too with new functionality for wooden blocks.
@@ -15,16 +15,16 @@ Cat to Dog bug is reintroduced.
 Replacing Vanilla Door output recipe to 2 instead of 3 since everyone is extra and a half 🥰
 Added Metal Slab and Stair Variants, along with Concrete Slabs, Stairs, Fences, Fence Gates, and Walls.
 
-## Experimental Features
+## Experimental Features:
 From here on out, there will no longer be blocks/items in the creative menu that aren't finished.
 
-## License(s)
+## License(s):
 The Fabric-Generated template is available under the CC0 license. 
 Feel free to learn from it and incorporate it in your own projects.
 This mod, however, is under the MIT license;
 feel free to use it in any way that abides by Fabric and Minecraft Legal Terms.
 
-## TODO
+## TODO:
 There is to be more petrified slabs and perhaps vertical slabs after I finish all sawmill recipes.
 There will eventually be a dragon headed banner.
 There may be a variant of emerald block in the future to fit with the programmer art. (Currently In CMD Prompt)
@@ -40,3 +40,8 @@ Contact me through MrAnonymous@proton.me
 Madame Rose.
 CanadianLionMC.
 Punisher_09.
+
+## DISCLAIMER:
+
+I cannot work on this project for at least a day or two for certain circumstances.
+Thanks for your wait.
