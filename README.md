@@ -13,6 +13,7 @@ Nether wart blocks are reversible.
 Wool can be used to make string, and so can cobwebs.
 Cat to Dog bug is reintroduced.
 Replacing Vanilla Door output recipe to 2 instead of 3 since everyone is extra and a half 🥰
+Added Sand Layers.
 Added Metal Slab and Stair Variants, along with Concrete Slabs, Stairs, Fences, Fence Gates, and Walls.
 
 ## Experimental Features:
