@@ -117,7 +117,8 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(PINK_CONCRETE_WALL));
 
         tag(BlockTags.MINEABLE_WITH_SHOVEL)
-                .add(ModBlocks.getRK(SAND_LAYER_BLOCK));
+                .add(ModBlocks.getRK(SAND_LAYER_BLOCK))
+                .add(ModBlocks.getRK(RED_SAND_LAYER_BLOCK));
 
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
 

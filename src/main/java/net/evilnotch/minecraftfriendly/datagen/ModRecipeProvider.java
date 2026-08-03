@@ -57,6 +57,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .group("building")
                         .save(output, "layered_sand_from_sand_block");
 
+                slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_SAND_LAYER_BLOCK, Ingredient.of(Blocks.RED_SAND))
+                        .unlockedBy(getHasName(Blocks.RED_SAND), has(Blocks.RED_SAND))
+                        .group("building")
+                        .save(output, "layered_red_sand_from_red_sand_block");
 
                 slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.TUBE_CORAL_SLAB, Ingredient.of(Blocks.TUBE_CORAL))
                         .unlockedBy(getHasName(Blocks.TUBE_CORAL), has(Blocks.TUBE_CORAL))

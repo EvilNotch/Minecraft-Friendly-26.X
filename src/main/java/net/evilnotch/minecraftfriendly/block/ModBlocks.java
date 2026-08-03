@@ -27,10 +27,17 @@ public class ModBlocks {
                     .sound(SoundType.NETHER_BRICKS)));
 
     public static final Block SAND_LAYER_BLOCK = registerBlock("sand_layer_block",
-            properties -> new SnowLayerBlock(properties.strength(0.1F).sound(SoundType.SAND).mapColor(MapColor.SAND)
+            properties -> new SnowLayerBlock(properties.strength(0.2F).sound(SoundType.SAND).mapColor(MapColor.SAND)
                     .isViewBlocking((statex, level, pos) -> statex.getValue(SnowLayerBlock.LAYERS) >= 8)
                     .pushReaction(PushReaction.DESTROY)
-                    .mapColor(MapColor.SNOW)
+                    .replaceable()
+                    .randomTicks()
+                    .requiresCorrectToolForDrops()));
+
+    public static final Block RED_SAND_LAYER_BLOCK = registerBlock("red_sand_layer_block",
+            properties -> new SnowLayerBlock(properties.strength(0.2F).sound(SoundType.SAND).mapColor(MapColor.FIRE)
+                    .isViewBlocking((statex, level, pos) -> statex.getValue(SnowLayerBlock.LAYERS) >= 8)
+                    .pushReaction(PushReaction.DESTROY)
                     .replaceable()
                     .randomTicks()
                     .requiresCorrectToolForDrops()));
@@ -38,7 +45,6 @@ public class ModBlocks {
     public static final Block TUBE_CORAL_SLAB = registerBlock("tube_coral_slab",
             properties -> new SlabBlock(properties.strength(1.5F, 6.0F)
                     .instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.CORAL_BLOCK).mapColor(MapColor.COLOR_BLUE)));
-
     public static final Block IRON_SLAB = registerBlock("iron_slab",
             properties -> new SlabBlock(properties.strength(5.0F, 6.0F)
                     .requiresCorrectToolForDrops().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)));
@@ -554,7 +560,7 @@ public class ModBlocks {
 
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.NATURAL_BLOCKS).register(output -> {
             output.insertAfter(Blocks.SAND, ModBlocks.SAND_LAYER_BLOCK);
-
+            output.insertAfter(Blocks.RED_SAND, ModBlocks.RED_SAND_LAYER_BLOCK);
         });
     }
 }
