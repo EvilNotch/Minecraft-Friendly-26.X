@@ -21,6 +21,9 @@ public class ModModelProvider extends FabricModelProvider {
         blockModelGenerators.family(Blocks.NETHER_BRICKS)
                         .fenceGate(ModBlocks.NETHER_BRICK_FENCE_GATE);
 
+        blockModelGenerators.family(Blocks.TUBE_CORAL_BLOCK)
+                        .slab(ModBlocks.TUBE_CORAL_SLAB);
+
         blockModelGenerators.family(Blocks.CONCRETE.white())
                 .slab(ModBlocks.WHITE_CONCRETE_SLAB)
                 .stairs(ModBlocks.WHITE_CONCRETE_STAIRS)
@@ -162,6 +165,7 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerators itemModelGenerators) {
-        itemModelGenerators.generateFlatItem(ModItems.TEST_ITEM, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.RAW_CALAMARI, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.COOKED_CALAMARI, ModelTemplates.FLAT_ITEM);
     }
 }

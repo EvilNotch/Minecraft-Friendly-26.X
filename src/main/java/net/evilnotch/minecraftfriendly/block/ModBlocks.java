@@ -15,6 +15,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.PushReaction;
 
 import java.util.function.Function;
 
@@ -24,6 +25,19 @@ public class ModBlocks {
             properties -> new FenceGateBlock(WoodType.CRIMSON, properties.strength(2.0F, 6.0F)
                     .requiresCorrectToolForDrops().mapColor(MapColor.NETHER).instrument(NoteBlockInstrument.BASEDRUM)
                     .sound(SoundType.NETHER_BRICKS)));
+
+    public static final Block SAND_LAYER_BLOCK = registerBlock("sand_layer_block",
+            properties -> new SnowLayerBlock(properties.strength(0.1F).sound(SoundType.SAND).mapColor(MapColor.SAND)
+                    .isViewBlocking((statex, level, pos) -> statex.getValue(SnowLayerBlock.LAYERS) >= 8)
+                    .pushReaction(PushReaction.DESTROY)
+                    .mapColor(MapColor.SNOW)
+                    .replaceable()
+                    .randomTicks()
+                    .requiresCorrectToolForDrops()));
+
+    public static final Block TUBE_CORAL_SLAB = registerBlock("tube_coral_slab",
+            properties -> new SlabBlock(properties.strength(1.5F, 6.0F)
+                    .instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.CORAL_BLOCK).mapColor(MapColor.COLOR_BLUE)));
 
     public static final Block IRON_SLAB = registerBlock("iron_slab",
             properties -> new SlabBlock(properties.strength(5.0F, 6.0F)
@@ -536,6 +550,11 @@ public class ModBlocks {
             output.insertAfter(ModBlocks.PINK_CONCRETE_SLAB, ModBlocks.PINK_CONCRETE_FENCE);
             output.insertAfter(ModBlocks.PINK_CONCRETE_FENCE, ModBlocks.PINK_CONCRETE_FENCE_GATE);
             output.insertAfter(ModBlocks.PINK_CONCRETE_FENCE_GATE, ModBlocks.PINK_CONCRETE_WALL);
+        });
+
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.NATURAL_BLOCKS).register(output -> {
+            output.insertAfter(Blocks.SAND, ModBlocks.SAND_LAYER_BLOCK);
+
         });
     }
 }

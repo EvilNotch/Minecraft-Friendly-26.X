@@ -1,6 +1,7 @@
 package net.evilnotch.minecraftfriendly.datagen;
 
 import net.evilnotch.minecraftfriendly.block.ModBlocks;
+import net.evilnotch.minecraftfriendly.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.core.HolderLookup;
@@ -8,6 +9,7 @@ import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.CampfireCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.Blocks;
 
@@ -38,6 +40,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .group("testing")
                         .save(output, "barrier_blocks_from_structure_void");
 
+                //Insert Later Datagen Food Recipes here: starting with calamari.
+
                 shaped(RecipeCategory.MISC, ModBlocks.NETHER_BRICK_FENCE_GATE)
                         .pattern("   ")
                         .pattern("BNB")
@@ -47,6 +51,17 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(Blocks.NETHER_BRICKS), has(Blocks.NETHER_BRICKS))
                         .group("building")
                         .save(output, "nether_fence_gate_from_nether_bricks_and_nether_brick_blocks");
+
+                slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SAND_LAYER_BLOCK, Ingredient.of(Blocks.SAND))
+                        .unlockedBy(getHasName(Blocks.SAND), has(Blocks.SAND))
+                        .group("building")
+                        .save(output, "layered_sand_from_sand_block");
+
+
+                slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.TUBE_CORAL_SLAB, Ingredient.of(Blocks.TUBE_CORAL))
+                        .unlockedBy(getHasName(Blocks.TUBE_CORAL), has(Blocks.TUBE_CORAL))
+                        .group("building")
+                        .save(output, "tube_coral_slab_from_tube_coral_block");
 
                 slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.IRON_SLAB, Ingredient.of(Blocks.IRON_BLOCK))
                         .unlockedBy(getHasName(Blocks.IRON_BLOCK), has(Blocks.IRON_BLOCK))

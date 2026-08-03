@@ -1,6 +1,7 @@
 package net.evilnotch.minecraftfriendly.item;
 
 import net.evilnotch.minecraftfriendly.MinecraftFriendly;
+import net.evilnotch.minecraftfriendly.food.ModFoods;
 import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -9,15 +10,19 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.TestBlock;
 
 import java.util.function.Function;
 
 public class ModItems {
-    public static final Item TEST_ITEM = registerItem("test_item", Item::new);
+    public static final Item RAW_CALAMARI = registerItem("raw_calamari", properties -> new Item(properties
+            .food(ModFoods.RAW_CALAMARI, ModFoods.RAW_CALAMARI_CONSUMABLE)));
+
+    public static final Item COOKED_CALAMARI = registerItem("cooked_calamari", properties -> new Item(properties
+            .food(ModFoods.COOKED_CALAMARI, ModFoods.COOKED_CALAMARI_CONSUMABLE)));
 
 
-    //Helper and register.
     private static Item registerItem(String name, Function<Item.Properties, Item> function) {
         return Registry.register(BuiltInRegistries.ITEM, Identifier.fromNamespaceAndPath(MinecraftFriendly.MOD_ID, name),
                 function.apply(new Item.Properties().setId(ResourceKey.create(Registries.ITEM,
@@ -30,8 +35,9 @@ public class ModItems {
     public static void registerItems() {
         MinecraftFriendly.LOGGER.info("Registering Items and their Creative Entries for " + MinecraftFriendly.MOD_ID);
 
-        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.OP_BLOCKS).register(output -> {
-            //output.accept(TEST_ITEM);
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.FOOD_AND_DRINKS).register(output -> {
+            output.insertAfter(Items.TROPICAL_FISH, ModItems.RAW_CALAMARI);
+            output.insertAfter(ModItems.RAW_CALAMARI, ModItems.COOKED_CALAMARI);
         });
     }
 

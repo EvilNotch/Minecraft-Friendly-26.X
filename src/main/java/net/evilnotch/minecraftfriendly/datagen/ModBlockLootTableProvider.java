@@ -18,6 +18,10 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
 
         dropSelf(ModBlocks.NETHER_BRICK_FENCE_GATE);
 
+        dropSelf(ModBlocks.SAND_LAYER_BLOCK);
+
+        add(ModBlocks.TUBE_CORAL_SLAB, this::createSlabItemTable);
+
         dropSelf(ModBlocks.IRON_STAIRS);
         add(ModBlocks.IRON_SLAB, this::createSlabItemTable);
 

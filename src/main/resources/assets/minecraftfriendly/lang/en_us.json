@@ -1,7 +1,13 @@
 {
-  "item.minecraftfriendly.test_item": "Test Item",
+  "item.minecraftfriendly.raw_calamari": "Raw Calamari",
+  "item.minecraftfriendly.cooked_calamari": "Cooked Calamari",
 
   "block.minecraftfriendly.nether_brick_fence_gate": "Nether Brick Fence Gate",
+
+  "block.minecraft.sand": "Sand Block",
+  "block.minecraftfriendly.sand_layer_block": "Sand",
+
+  "block.minecraftfriendly.tube_coral_slab": "Tube Coral Slab",
 
   "block.minecraftfriendly.iron_slab": "Iron Slab",
   "block.minecraftfriendly.iron_stairs": "Iron Stairs",
