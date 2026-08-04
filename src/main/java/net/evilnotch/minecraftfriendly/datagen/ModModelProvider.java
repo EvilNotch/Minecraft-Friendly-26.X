@@ -160,7 +160,9 @@ public class ModModelProvider extends FabricModelProvider {
                 .slab(ModBlocks.DIAMOND_SLAB)
                 .stairs(ModBlocks.DIAMOND_STAIRS);
 
-
+        blockModelGenerators.family(Blocks.NETHERITE_BLOCK)
+                .slab(ModBlocks.NETHERITE_SLAB)
+                .stairs(ModBlocks.NETHERITE_STAIRS);
     }
 
     @Override

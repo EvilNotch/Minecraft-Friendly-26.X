@@ -7,6 +7,18 @@
 	"authors": [
 		"Evil_Notch"
 	],
+	"custom": {
+		"modmenu": {
+			"parent": {
+				"id": "minecraftfriendly",
+				"name": "Minecraft Friendly!",
+				"description": "Adding Features, that we all wanted.",
+				"icon": "assets/minecraftfriendly/icon.png",
+				"badges": [ "environment" ]
+			},
+			"update_checker": true
+		}
+	},
 	"contact": {
 		"email": "MrAnonymous135@proton.me",
 		"fabric-homepage": "https://fabricmc.net/",

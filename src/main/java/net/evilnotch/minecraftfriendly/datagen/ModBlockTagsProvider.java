@@ -145,6 +145,9 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(DIAMOND_SLAB))
                 .add(ModBlocks.getRK(DIAMOND_STAIRS))
 
+                .add(ModBlocks.getRK(NETHERITE_SLAB))
+                .add(ModBlocks.getRK(NETHERITE_STAIRS))
+
                 .add(ModBlocks.getRK(WHITE_CONCRETE_SLAB))
                 .add(ModBlocks.getRK(WHITE_CONCRETE_STAIRS))
                 .add(ModBlocks.getRK(WHITE_CONCRETE_FENCE))
@@ -257,6 +260,10 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(EMERALD_STAIRS))
                 .add(ModBlocks.getRK(DIAMOND_SLAB))
                 .add(ModBlocks.getRK(DIAMOND_STAIRS));
+
+        tag(BlockTags.NEEDS_DIAMOND_TOOL)
+                .add(ModBlocks.getRK(NETHERITE_SLAB))
+                .add(ModBlocks.getRK(NETHERITE_STAIRS));
 
         tag(BlockTags.FENCE_GATES).add(ModBlocks.getRK(NETHER_BRICK_FENCE_GATE));
 
@@ -373,5 +380,8 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
 
         tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.DIAMOND_SLAB));
         tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.DIAMOND_STAIRS));
+
+        tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.NETHERITE_SLAB));
+        tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.NETHERITE_STAIRS));
     }
 }

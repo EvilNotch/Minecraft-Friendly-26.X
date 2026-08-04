@@ -12,6 +12,7 @@ import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraft.world.level.material.MapColor;
@@ -101,6 +102,14 @@ public class ModBlocks {
     public static final Block DIAMOND_STAIRS = registerBlock("diamond_stairs",
             properties -> new StairBlock(Blocks.DIAMOND_BLOCK.defaultBlockState(), properties.strength(5.0F, 6.0F)
                     .requiresCorrectToolForDrops().mapColor(MapColor.DIAMOND).sound(SoundType.METAL)));
+
+    public static final Block NETHERITE_SLAB = registerBlock("netherite_slab",
+            properties -> new SlabBlock(properties.strength(50.0F, 1200.0F)
+                    .requiresCorrectToolForDrops().mapColor(MapColor.COLOR_BLACK).sound(SoundType.NETHERITE_BLOCK)));
+
+    public static final Block NETHERITE_STAIRS = registerBlock("netherite_stairs",
+            properties -> new StairBlock(Blocks.NETHERITE_BLOCK.defaultBlockState(), properties.strength(50.0F, 1200.0F)
+                    .requiresCorrectToolForDrops().mapColor(MapColor.COLOR_BLACK).sound(SoundType.NETHERITE_BLOCK)));
 
     public static final Block WHITE_CONCRETE_STAIRS = registerBlock("white_concrete_stairs",
             properties -> new StairBlock(Blocks.CONCRETE.white().defaultBlockState(), properties.strength(1.8F)
