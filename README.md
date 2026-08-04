@@ -37,6 +37,9 @@ Bark or some other substitute for fuel and/or log unstripping.
 ## Developers and Ideas are needed.
 Contact me through MrAnonymous@proton.me
 
+##
+I was the leaker by the way.
+
 ### Special Thanks:
 Madame Rose.
 CanadianLionMC.
