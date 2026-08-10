@@ -67,6 +67,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .group("building")
                         .save(output, "tube_coral_slab_from_tube_coral_block");
 
+                stairBuilder(ModBlocks.SMOOTH_STONE_STAIRS, Ingredient.of(Blocks.SMOOTH_STONE))
+                        .unlockedBy(getHasName(Blocks.SMOOTH_STONE), has(Blocks.SMOOTH_STONE))
+                        .group("building")
+                        .save(output, "smooth_stone_stairs_from_smooth_stone_block");
+
+                wall(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SMOOTH_STONE_WALL, Blocks.SMOOTH_STONE);
+
                 slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.IRON_SLAB, Ingredient.of(Blocks.IRON_BLOCK))
                         .unlockedBy(getHasName(Blocks.IRON_BLOCK), has(Blocks.IRON_BLOCK))
                         .group("building")

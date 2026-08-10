@@ -126,6 +126,9 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
 
                 .add(ModBlocks.getRK(TUBE_CORAL_SLAB))
 
+                .add(ModBlocks.getRK(SMOOTH_STONE_STAIRS))
+                .add(ModBlocks.getRK(SMOOTH_STONE_WALL))
+
                 .add(ModBlocks.getRK(IRON_SLAB))
                 .add(ModBlocks.getRK(IRON_STAIRS))
 
@@ -266,6 +269,9 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(NETHERITE_STAIRS));
 
         tag(BlockTags.FENCE_GATES).add(ModBlocks.getRK(NETHER_BRICK_FENCE_GATE));
+
+        tag(BlockTags.STAIRS).add(ModBlocks.getRK(SMOOTH_STONE_STAIRS));
+        tag(BlockTags.WALLS).add(ModBlocks.getRK(SMOOTH_STONE_WALL));
 
         tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.WHITE_CONCRETE_SLAB));
         tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.WHITE_CONCRETE_STAIRS));

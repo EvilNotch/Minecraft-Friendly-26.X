@@ -23,6 +23,9 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
 
         add(ModBlocks.TUBE_CORAL_SLAB, this::createSlabItemTable);
 
+        dropSelf(ModBlocks.SMOOTH_STONE_STAIRS);
+        dropSelf(ModBlocks.SMOOTH_STONE_WALL);
+
         dropSelf(ModBlocks.IRON_STAIRS);
         add(ModBlocks.IRON_SLAB, this::createSlabItemTable);
 

@@ -46,6 +46,14 @@ public class ModBlocks {
     public static final Block TUBE_CORAL_SLAB = registerBlock("tube_coral_slab",
             properties -> new SlabBlock(properties.strength(1.5F, 6.0F)
                     .instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.CORAL_BLOCK).mapColor(MapColor.COLOR_BLUE)));
+
+    public static final Block SMOOTH_STONE_STAIRS = registerBlock("smooth_stone_stairs",
+            properties -> new StairBlock(Blocks.SMOOTH_STONE.defaultBlockState(), properties.strength(2.0F, 6.0F)
+                    .requiresCorrectToolForDrops().mapColor(MapColor.STONE)));
+
+    public static final Block SMOOTH_STONE_WALL = registerBlock("smooth_stone_wall",
+            properties -> new WallBlock(properties.strength(2.0F, 6.0F)
+                    .requiresCorrectToolForDrops().mapColor(MapColor.STONE)));
     public static final Block IRON_SLAB = registerBlock("iron_slab",
             properties -> new SlabBlock(properties.strength(5.0F, 6.0F)
                     .requiresCorrectToolForDrops().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)));
@@ -111,6 +119,8 @@ public class ModBlocks {
             properties -> new StairBlock(Blocks.NETHERITE_BLOCK.defaultBlockState(), properties.strength(50.0F, 1200.0F)
                     .requiresCorrectToolForDrops().mapColor(MapColor.COLOR_BLACK).sound(SoundType.NETHERITE_BLOCK)));
 
+
+    //Concrete
     public static final Block WHITE_CONCRETE_STAIRS = registerBlock("white_concrete_stairs",
             properties -> new StairBlock(Blocks.CONCRETE.white().defaultBlockState(), properties.strength(1.8F)
                     .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
@@ -430,6 +440,10 @@ public class ModBlocks {
             properties -> new WallBlock(properties.strength(1.8F)
                     .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
 
+    //Terracotta
+
+
+
 
     public static ResourceKey<Block> getRK(Block block) {
         return BuiltInRegistries.BLOCK.getResourceKey(block).get();
@@ -452,6 +466,9 @@ public class ModBlocks {
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.BUILDING_BLOCKS).register(output -> {
             output.insertAfter(Blocks.OAK_SLAB, Blocks.PETRIFIED_OAK_SLAB);
             output.insertAfter(Blocks.NETHER_BRICK_FENCE, ModBlocks.NETHER_BRICK_FENCE_GATE);
+
+            output.insertAfter(Blocks.SMOOTH_STONE, ModBlocks.SMOOTH_STONE_STAIRS);
+            output.insertAfter(Blocks.SMOOTH_STONE_SLAB, ModBlocks.SMOOTH_STONE_WALL);
 
             output.insertAfter(Blocks.IRON_BLOCK, ModBlocks.IRON_STAIRS);
             output.insertAfter(ModBlocks.IRON_STAIRS, ModBlocks.IRON_SLAB);
