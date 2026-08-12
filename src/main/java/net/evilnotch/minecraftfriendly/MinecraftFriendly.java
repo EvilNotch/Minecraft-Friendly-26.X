@@ -3,6 +3,7 @@ package net.evilnotch.minecraftfriendly;
 import net.evilnotch.minecraftfriendly.block.ModBlocks;
 import net.evilnotch.minecraftfriendly.item.ModItems;
 import net.evilnotch.minecraftfriendly.pack.BuiltinResourcePacks;
+import net.evilnotch.minecraftfriendly.sound.ModSounds;
 import net.evilnotch.minecraftfriendly.tabs.ModCreativeModeTabs;
 import net.fabricmc.api.ModInitializer;
 
@@ -21,6 +22,7 @@ public class MinecraftFriendly implements ModInitializer {
 		ModItems.registerItems(); //Accepts Items.
 		ModBlocks.registerBlocks();//Accepts Blocks.
 		ModCreativeModeTabs.registerModCreativeTabs();//Accepts any custom Creative Tabs and entries.
+		ModSounds.registerSounds();//Accepts any custom Sound Entries.
 	}
 
 	public static Identifier id(String path) {

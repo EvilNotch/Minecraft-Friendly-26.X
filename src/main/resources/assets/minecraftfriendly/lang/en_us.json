@@ -4,6 +4,11 @@
 
   "item.minecraftfriendly.prismarine": "Prismarine",
 
+  "item.minecraftfriendly.test": "Test",
+  "jukebox_song.minecraftfriendly.test": "Test",
+  "jukebox_song.minecraftfriendly.test.desc": "Test",
+  "subtitles.minecraftfriendly.test": "Test",
+
   "block.minecraftfriendly.nether_brick_fence_gate": "Nether Brick Fence Gate",
 
   "block.minecraftfriendly.sand_layer_block": "Sand",

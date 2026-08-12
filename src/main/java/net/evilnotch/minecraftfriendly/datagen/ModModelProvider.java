@@ -177,5 +177,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerators.generateFlatItem(ModItems.RAW_CALAMARI, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.COOKED_CALAMARI, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.PRISMARINE, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.TEST, ModelTemplates.FLAT_ITEM);
     }
 }

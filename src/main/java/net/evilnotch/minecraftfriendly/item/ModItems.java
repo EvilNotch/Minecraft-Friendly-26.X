@@ -1,6 +1,7 @@
 package net.evilnotch.minecraftfriendly.item;
 
 import net.evilnotch.minecraftfriendly.MinecraftFriendly;
+import net.evilnotch.minecraftfriendly.datagen.ModJukeboxSongs;
 import net.evilnotch.minecraftfriendly.food.ModFoods;
 import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.minecraft.core.Registry;
@@ -11,6 +12,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.Rarity;
 
 import java.util.function.Function;
 
@@ -22,6 +24,9 @@ public class ModItems {
             .food(ModFoods.COOKED_CALAMARI, ModFoods.COOKED_CALAMARI_CONSUMABLE)));
 
     public static final Item PRISMARINE = registerItem("prismarine", properties -> new Item(properties.fireResistant()));
+
+    public static final Item TEST = registerItem("test", properties -> new Item(properties.stacksTo(1)
+            .jukeboxPlayable(ModJukeboxSongs.TEST_KEY).rarity(Rarity.UNCOMMON)));
 
     private static Item registerItem(String name, Function<Item.Properties, Item> function) {
         return Registry.register(BuiltInRegistries.ITEM, Identifier.fromNamespaceAndPath(MinecraftFriendly.MOD_ID, name),
@@ -41,7 +46,7 @@ public class ModItems {
         });
 
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS).register(output -> {
-            output.insertAfter(Items.LAPIS_LAZULI, ModItems.PRISMARINE);
+            output.insertAfter(Items.DIAMOND, ModItems.PRISMARINE);
         });
     }
 
