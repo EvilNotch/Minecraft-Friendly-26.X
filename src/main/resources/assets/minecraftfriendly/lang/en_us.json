@@ -2,6 +2,8 @@
   "item.minecraftfriendly.raw_calamari": "Raw Calamari",
   "item.minecraftfriendly.cooked_calamari": "Cooked Calamari",
 
+  "item.minecraftfriendly.prismarine": "Prismarine",
+
   "block.minecraftfriendly.nether_brick_fence_gate": "Nether Brick Fence Gate",
 
   "block.minecraftfriendly.sand_layer_block": "Sand",
@@ -12,12 +14,15 @@
   "block.minecraftfriendly.smooth_stone_stairs": "Smooth Stone Stairs",
   "block.minecraftfriendly.smooth_stone_wall": "Smooth Stone Wall",
 
-
+  "block.minecraftfriendly.iron_button": "Ironic Button",
   "block.minecraftfriendly.iron_slab": "Iron Slab",
   "block.minecraftfriendly.iron_stairs": "Iron Stairs",
 
+  "block.minecraftfriendly.gold_button": "Golden Button",
   "block.minecraftfriendly.gold_slab": "Gold Slab",
   "block.minecraftfriendly.gold_stairs": "Gold Stairs",
+  "block.minecraftfriendly.gold_chain": "Gold Chain",
+  "block.minecraftfriendly.gold_bars": "Gold Bars",
 
   "block.minecraftfriendly.redstone_slab": "Redstone Slab",
   "block.minecraftfriendly.redstone_stairs": "Redstone Stairs",

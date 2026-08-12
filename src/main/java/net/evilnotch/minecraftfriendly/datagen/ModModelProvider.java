@@ -138,11 +138,13 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockModelGenerators.family(Blocks.IRON_BLOCK)
                 .slab(ModBlocks.IRON_SLAB)
-                .stairs(ModBlocks.IRON_STAIRS);
+                .stairs(ModBlocks.IRON_STAIRS)
+                .button(ModBlocks.IRON_BUTTON);
 
         blockModelGenerators.family(Blocks.GOLD_BLOCK)
                 .slab(ModBlocks.GOLD_SLAB)
-                .stairs(ModBlocks.GOLD_STAIRS);
+                .stairs(ModBlocks.GOLD_STAIRS)
+                .button(ModBlocks.GOLD_BUTTON);
 
         blockModelGenerators.family(Blocks.REDSTONE_BLOCK)
                 .slab(ModBlocks.REDSTONE_SLAB)
@@ -174,5 +176,6 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerators itemModelGenerators) {
         itemModelGenerators.generateFlatItem(ModItems.RAW_CALAMARI, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.COOKED_CALAMARI, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.PRISMARINE, ModelTemplates.FLAT_ITEM);
     }
 }

@@ -129,11 +129,15 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(SMOOTH_STONE_STAIRS))
                 .add(ModBlocks.getRK(SMOOTH_STONE_WALL))
 
+                .add(ModBlocks.getRK(IRON_BUTTON))
                 .add(ModBlocks.getRK(IRON_SLAB))
                 .add(ModBlocks.getRK(IRON_STAIRS))
 
+                .add(ModBlocks.getRK(GOLD_BUTTON))
                 .add(ModBlocks.getRK(GOLD_SLAB))
                 .add(ModBlocks.getRK(GOLD_STAIRS))
+                .add(ModBlocks.getRK(GOLD_CHAIN))
+                //.add(ModBlocks.getRK(GOLD_BARS))
 
                 .add(ModBlocks.getRK(REDSTONE_SLAB))
                 .add(ModBlocks.getRK(REDSTONE_STAIRS))
@@ -248,14 +252,18 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(PINK_CONCRETE_WALL));
 
         tag(BlockTags.NEEDS_STONE_TOOL)
+                .add(ModBlocks.getRK(IRON_BUTTON))
                 .add(ModBlocks.getRK(IRON_SLAB))
                 .add(ModBlocks.getRK(IRON_STAIRS))
                 .add(ModBlocks.getRK(LAPIS_SLAB))
                 .add(ModBlocks.getRK(LAPIS_STAIRS));
 
         tag(BlockTags.NEEDS_IRON_TOOL)
+                .add(ModBlocks.getRK(GOLD_BUTTON))
                 .add(ModBlocks.getRK(GOLD_SLAB))
                 .add(ModBlocks.getRK(GOLD_STAIRS))
+                .add(ModBlocks.getRK(GOLD_CHAIN))
+                //.add(ModBlocks.getRK(GOLD_BARS))
                 .add(ModBlocks.getRK(REDSTONE_SLAB))
                 .add(ModBlocks.getRK(REDSTONE_STAIRS))
                 .add(ModBlocks.getRK(CHISELED_EMERALD))
@@ -369,11 +377,15 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
         tag(BlockTags.FENCE_GATES).add(ModBlocks.getRK(PINK_CONCRETE_FENCE_GATE));
         tag(BlockTags.WALLS).add(ModBlocks.getRK(PINK_CONCRETE_WALL));
 
+        tag(BlockTags.BUTTONS).add(ModBlocks.getRK(ModBlocks.IRON_BUTTON));
         tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.IRON_SLAB));
         tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.IRON_STAIRS));
 
+        tag(BlockTags.BUTTONS).add(ModBlocks.getRK(ModBlocks.GOLD_BUTTON));
         tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.GOLD_SLAB));
         tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.GOLD_STAIRS));
+        tag(BlockTags.CHAINS).add(ModBlocks.getRK(ModBlocks.GOLD_CHAIN));
+        //tag(BlockTags.BARS).add(ModBlocks.getRK(ModBlocks.GOLD_BARS));
 
         tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.REDSTONE_SLAB));
         tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.REDSTONE_STAIRS));

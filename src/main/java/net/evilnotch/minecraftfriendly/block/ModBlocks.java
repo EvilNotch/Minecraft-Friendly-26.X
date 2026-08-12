@@ -12,6 +12,7 @@ import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.properties.WoodType;
@@ -54,6 +55,10 @@ public class ModBlocks {
     public static final Block SMOOTH_STONE_WALL = registerBlock("smooth_stone_wall",
             properties -> new WallBlock(properties.strength(2.0F, 6.0F)
                     .requiresCorrectToolForDrops().mapColor(MapColor.STONE)));
+
+    public static final Block IRON_BUTTON = registerBlock("iron_button",
+            properties -> new ButtonBlock(BlockSetType.IRON, 30, properties.strength(5.0F, 6.0F)
+                    .requiresCorrectToolForDrops().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE).noCollision()));
     public static final Block IRON_SLAB = registerBlock("iron_slab",
             properties -> new SlabBlock(properties.strength(5.0F, 6.0F)
                     .requiresCorrectToolForDrops().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)));
@@ -62,6 +67,10 @@ public class ModBlocks {
             properties -> new StairBlock(Blocks.IRON_BLOCK.defaultBlockState(), properties.strength(5.0F, 6.0F)
                     .requiresCorrectToolForDrops().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)));
 
+    public static final Block GOLD_BUTTON = registerBlock("gold_button",
+            properties -> new ButtonBlock(BlockSetType.GOLD, 5, properties.strength(3.0F, 6.0F)
+                    .requiresCorrectToolForDrops().mapColor(MapColor.GOLD).instrument(NoteBlockInstrument.BELL).noCollision()));
+
     public static final Block GOLD_SLAB = registerBlock("gold_slab",
             properties -> new SlabBlock(properties.strength(3.0F, 6.0F)
                     .requiresCorrectToolForDrops().mapColor(MapColor.GOLD).instrument(NoteBlockInstrument.BELL)));
@@ -69,6 +78,12 @@ public class ModBlocks {
     public static final Block GOLD_STAIRS = registerBlock("gold_stairs",
             properties -> new StairBlock(Blocks.GOLD_BLOCK.defaultBlockState(), properties.strength(3.0F, 6.0F)
                     .requiresCorrectToolForDrops().mapColor(MapColor.GOLD).instrument(NoteBlockInstrument.BELL)));
+
+    public static final Block GOLD_CHAIN = registerBlock("gold_chain", properties -> new ChainBlock(properties.strength(3.0F,
+            6.0F).forceSolidOn().requiresCorrectToolForDrops().sound(SoundType.CHAIN).noOcclusion()));
+
+    //public static final Block GOLD_BARS = registerBlock("gold_bars", properties -> new IronBarsBlock(properties.strength(3.0F,
+            //6.0F).noOcclusion().sound(SoundType.METAL).requiresCorrectToolForDrops()));
 
     public static final Block REDSTONE_SLAB = registerBlock("redstone_slab",
             properties -> new SlabBlock(properties.strength(5.0F, 6.0F)
@@ -472,9 +487,11 @@ public class ModBlocks {
 
             output.insertAfter(Blocks.IRON_BLOCK, ModBlocks.IRON_STAIRS);
             output.insertAfter(ModBlocks.IRON_STAIRS, ModBlocks.IRON_SLAB);
+            output.insertAfter(Blocks.HEAVY_WEIGHTED_PRESSURE_PLATE, ModBlocks.IRON_BUTTON);
 
             output.insertAfter(Blocks.GOLD_BLOCK, ModBlocks.GOLD_STAIRS);
             output.insertAfter(ModBlocks.GOLD_STAIRS, ModBlocks.GOLD_SLAB);
+            output.insertAfter(Blocks.LIGHT_WEIGHTED_PRESSURE_PLATE, ModBlocks.GOLD_BUTTON);
 
             output.insertAfter(Blocks.EMERALD_BLOCK, ModBlocks.EMERALD_STAIRS);
             output.insertAfter(ModBlocks.EMERALD_STAIRS, ModBlocks.EMERALD_SLAB);

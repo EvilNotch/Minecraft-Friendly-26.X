@@ -21,6 +21,8 @@ public class ModItems {
     public static final Item COOKED_CALAMARI = registerItem("cooked_calamari", properties -> new Item(properties
             .food(ModFoods.COOKED_CALAMARI, ModFoods.COOKED_CALAMARI_CONSUMABLE)));
 
+    public static final Item PRISMARINE = registerItem("prismarine", properties -> new Item(properties.fireResistant()));
+
     private static Item registerItem(String name, Function<Item.Properties, Item> function) {
         return Registry.register(BuiltInRegistries.ITEM, Identifier.fromNamespaceAndPath(MinecraftFriendly.MOD_ID, name),
                 function.apply(new Item.Properties().setId(ResourceKey.create(Registries.ITEM,
@@ -36,6 +38,10 @@ public class ModItems {
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.FOOD_AND_DRINKS).register(output -> {
             output.insertAfter(Items.TROPICAL_FISH, ModItems.RAW_CALAMARI);
             output.insertAfter(ModItems.RAW_CALAMARI, ModItems.COOKED_CALAMARI);
+        });
+
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS).register(output -> {
+            output.insertAfter(Items.LAPIS_LAZULI, ModItems.PRISMARINE);
         });
     }
 
