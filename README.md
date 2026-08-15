@@ -18,6 +18,7 @@ Added Metal Slab and Stair Variants, along with Concrete Slabs, Stairs, Fences, 
 Added Calamari, WIP Textures.
 Added Prismarine from Dungeons to make Cauldron crafting harder.
 Added Iron and Golden Buttons.
+Fixed Music Disc Naming issues, and added C418 - Independent Accident found through creepers.
 
 ## Experimental Features:
 From here on out, there will no longer be blocks/items in the creative menu that aren't near finished.
