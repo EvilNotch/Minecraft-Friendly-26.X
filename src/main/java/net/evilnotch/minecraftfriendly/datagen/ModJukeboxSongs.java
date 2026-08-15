@@ -13,14 +13,14 @@ import net.minecraft.util.Util;
 import net.minecraft.world.item.JukeboxSong;
 
 public class ModJukeboxSongs {
-    public static final ResourceKey<JukeboxSong> TEST_KEY = ResourceKey.create(Registries.JUKEBOX_SONG,
-            Identifier.fromNamespaceAndPath(MinecraftFriendly.MOD_ID, "test"));
+    public static final ResourceKey<JukeboxSong> INDEPENDENT_ACCIDENT_KEY = ResourceKey.create(Registries.JUKEBOX_SONG,
+            Identifier.fromNamespaceAndPath(MinecraftFriendly.MOD_ID, "independent_accident"));
 
 
 
 
     public static void bootstrap(BootstrapContext<JukeboxSong> context) {
-        register(context, TEST_KEY, ModSounds.TEST, 164, 15);
+        register(context, INDEPENDENT_ACCIDENT_KEY, ModSounds.INDEPENDENT_ACCIDENT, 251, 15);
     }
 
     private static void register(BootstrapContext<JukeboxSong> context, ResourceKey<JukeboxSong> key,

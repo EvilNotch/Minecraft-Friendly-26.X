@@ -1,5 +1,113 @@
 {
   "block.minecraft.sand": "Sand Block",
-  "block.minecraft.red_sand": "Red Sand Block"
+  "block.minecraft.red_sand": "Red Sand Block",
 
+  "item.minecraft.music_disc_5": "Music Disc",
+  "item.minecraft.music_disc_5.desc": "Samuel Åberg - 5",
+
+
+  "item.minecraft.music_disc_11": "Music Disc",
+  "item.minecraft.music_disc_11.desc": "C418 - 11",
+
+
+  "item.minecraft.music_disc_13": "Music Disc",
+  "item.minecraft.music_disc_13.desc": "C418 - 13",
+
+
+  "item.minecraft.music_disc_blocks": "Music Disc",
+  "item.minecraft.music_disc_blocks.desc": "C418 - Blocks",
+  "item.minecraft.music_disc_bounce": "Music Disc",
+  "item.minecraft.music_disc_bounce.desc": "Fingerspit - Bounce",
+
+
+  "item.minecraft.music_disc_cat": "Music Disc",
+  "item.minecraft.music_disc_cat.desc": "C418 - Cat",
+
+
+  "item.minecraft.music_disc_chirp": "Music Disc",
+  "item.minecraft.music_disc_chirp.desc": "C418 - Chirp",
+
+
+  "item.minecraft.music_disc_creator": "Music Disc",
+  "item.minecraft.music_disc_creator_music_box": "Music Disc",
+
+
+  "item.minecraft.music_disc_creator_music_box.desc": "Lena Raine - Creator (Music Box)",
+  "item.minecraft.music_disc_creator.desc": "Lena Raine - Creator",
+
+
+  "item.minecraft.music_disc_far": "Music Disc",
+  "item.minecraft.music_disc_far.desc": "C418 - Far",
+
+
+  "item.minecraft.music_disc_lava_chicken": "Music Disc",
+  "item.minecraft.music_disc_lava_chicken.desc": "Hyper Potions - Lava Chicken",
+
+
+  "item.minecraft.music_disc_mall": "Music Disc",
+  "item.minecraft.music_disc_mall.desc": "C418 - Mall",
+
+
+  "item.minecraft.music_disc_mellohi": "Music Disc",
+  "item.minecraft.music_disc_mellohi.desc": "C418 - Mellohi",
+
+
+  "item.minecraft.music_disc_otherside": "Music Disc",
+  "item.minecraft.music_disc_otherside.desc": "Lena Raine - Otherside",
+
+
+  "item.minecraft.music_disc_pigstep": "Music Disc",
+  "item.minecraft.music_disc_pigstep.desc": "Lena Raine - Pigstep",
+
+
+  "item.minecraft.music_disc_precipice": "Music Disc",
+  "item.minecraft.music_disc_precipice.desc": "Aaron Cherof - Precipice",
+
+
+  "item.minecraft.music_disc_relic": "Music Disc",
+  "item.minecraft.music_disc_relic.desc": "Aaron Cherof - Relic",
+
+
+  "item.minecraft.music_disc_stal": "Music Disc",
+  "item.minecraft.music_disc_stal.desc": "C418 - Stal",
+
+
+  "item.minecraft.music_disc_strad": "Music Disc",
+  "item.minecraft.music_disc_strad.desc": "C418 - Strad",
+
+
+  "item.minecraft.music_disc_tears": "Music Disc",
+  "item.minecraft.music_disc_tears.desc": "Amos Roddy - Tears",
+
+
+  "item.minecraft.music_disc_wait": "Music Disc",
+  "item.minecraft.music_disc_wait.desc": "C418 - Wait",
+
+
+  "item.minecraft.music_disc_ward": "Music Disc",
+  "item.minecraft.music_disc_ward.desc": "C418 - Ward",
+
+
+  "jukebox_song.minecraft.5": "Samuel Åberg - 5",
+  "jukebox_song.minecraft.11": "C418 - 11",
+  "jukebox_song.minecraft.13": "C418 - 13",
+  "jukebox_song.minecraft.blocks": "C418 - Blocks",
+  "jukebox_song.minecraft.bounce": "Fingerspit - Bounce",
+  "jukebox_song.minecraft.cat": "C418 - Cat",
+  "jukebox_song.minecraft.chirp": "C418 - Chirp",
+  "jukebox_song.minecraft.creator": "Lena Raine - Creator",
+  "jukebox_song.minecraft.creator_music_box": "Lena Raine - Creator (Music Box)",
+  "jukebox_song.minecraft.far": "C418 - Far",
+  "jukebox_song.minecraft.lava_chicken": "Hyper Potions - Lava Chicken",
+  "jukebox_song.minecraft.mall": "C418 - Mall",
+  "jukebox_song.minecraft.mellohi": "C418 - Mellohi",
+  "jukebox_song.minecraft.otherside": "Lena Raine - Otherside",
+  "jukebox_song.minecraft.pigstep": "Lena Raine - Pigstep",
+  "jukebox_song.minecraft.precipice": "Aaron Cherof - Precipice",
+  "jukebox_song.minecraft.relic": "Aaron Cherof - Relic",
+  "jukebox_song.minecraft.stal": "C418 - Stal",
+  "jukebox_song.minecraft.strad": "C418 - Strad",
+  "jukebox_song.minecraft.tears": "Amos Roddy - Tears",
+  "jukebox_song.minecraft.wait": "C418 - Wait",
+  "jukebox_song.minecraft.ward": "C418 - Ward"
 }

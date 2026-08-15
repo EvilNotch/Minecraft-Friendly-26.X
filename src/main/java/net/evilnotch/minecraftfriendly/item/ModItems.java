@@ -25,8 +25,10 @@ public class ModItems {
 
     public static final Item PRISMARINE = registerItem("prismarine", properties -> new Item(properties.fireResistant()));
 
-    public static final Item TEST = registerItem("test", properties -> new Item(properties.stacksTo(1)
-            .jukeboxPlayable(ModJukeboxSongs.TEST_KEY).rarity(Rarity.UNCOMMON)));
+    public static final Item INDEPENDENT_ACCIDENT = registerItem("independent_accident", properties -> new Item(properties.stacksTo(1)
+            .jukeboxPlayable(ModJukeboxSongs.INDEPENDENT_ACCIDENT_KEY).rarity(Rarity.UNCOMMON)));
+
+
 
     private static Item registerItem(String name, Function<Item.Properties, Item> function) {
         return Registry.register(BuiltInRegistries.ITEM, Identifier.fromNamespaceAndPath(MinecraftFriendly.MOD_ID, name),
@@ -47,6 +49,10 @@ public class ModItems {
 
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS).register(output -> {
             output.insertAfter(Items.DIAMOND, ModItems.PRISMARINE);
+        });
+
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.TOOLS_AND_UTILITIES).register(output -> {
+            output.insertAfter(Items.MUSIC_DISC_MALL, ModItems.INDEPENDENT_ACCIDENT);
         });
     }
 

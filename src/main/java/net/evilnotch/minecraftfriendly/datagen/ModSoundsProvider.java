@@ -17,8 +17,8 @@ public class ModSoundsProvider extends FabricSoundsProvider {
 
     @Override
     protected void configure(HolderLookup.Provider registryLookup, SoundExporter exporter) {
-        exporter.add(ModSounds.TEST, SoundTypeBuilder.of(ModSounds.TEST.value())
-                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Identifier.fromNamespaceAndPath(MinecraftFriendly.MOD_ID, "test")).stream(true)));
+        exporter.add(ModSounds.INDEPENDENT_ACCIDENT, SoundTypeBuilder.of(ModSounds.INDEPENDENT_ACCIDENT.value())
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Identifier.fromNamespaceAndPath(MinecraftFriendly.MOD_ID, "independent_accident")).stream(true)));
     }
 
     @Override

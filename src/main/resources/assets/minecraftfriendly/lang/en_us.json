@@ -4,10 +4,10 @@
 
   "item.minecraftfriendly.prismarine": "Prismarine",
 
-  "item.minecraftfriendly.test": "Test",
-  "jukebox_song.minecraftfriendly.test": "Test",
-  "jukebox_song.minecraftfriendly.test.desc": "Test",
-  "subtitles.minecraftfriendly.test": "Test",
+  "item.minecraftfriendly.independent_accident": "Music Disc",
+  "jukebox_song.minecraftfriendly.independent_accident": "C418 - Independent Accident",
+  "jukebox_song.minecraftfriendly.independent_accident.desc": "C418 - Independent Accident",
+  "subtitles.minecraftfriendly.independent_accident": "C418 - Independent Accident",
 
   "block.minecraftfriendly.nether_brick_fence_gate": "Nether Brick Fence Gate",
 

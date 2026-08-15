@@ -11,7 +11,7 @@ import static net.evilnotch.minecraftfriendly.MinecraftFriendly.MOD_ID;
 
 public class ModSounds {
 
-    public static final Holder.Reference<SoundEvent> TEST = registerJukeboxSong("test");
+    public static final Holder.Reference<SoundEvent> INDEPENDENT_ACCIDENT = registerJukeboxSong("independent_accident");
 
     private static Holder.Reference<SoundEvent> registerJukeboxSong(String name) {
         Identifier id = Identifier.fromNamespaceAndPath(MinecraftFriendly.MOD_ID, name);
