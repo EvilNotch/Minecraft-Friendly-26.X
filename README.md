@@ -20,12 +20,13 @@ Added Calamari, WIP Textures.
 Added Prismarine from Dungeons to make Cauldron crafting harder.
 Added Iron and Golden Buttons.
 Fixed Music Disc Naming issues, and added C418 - Independent Accident found through creepers.
-Added Chiseled Emerald Block from Jappa Textures.
+Added Chiseled Blocks for metals from Jappa Textures.
 Reverted Birch Textures to a better Jappa feel.
 
 ## Experimental Features:
 From here on out, there will no longer be blocks/items in the creative menu that aren't near finished.
 I decided to lean more towards vanilla, yet give the option for people to relive their olden days.
+Working on updating vanilla textures.
 
 ## License(s):
 The Fabric-Generated template is available under the CC0 license. 
