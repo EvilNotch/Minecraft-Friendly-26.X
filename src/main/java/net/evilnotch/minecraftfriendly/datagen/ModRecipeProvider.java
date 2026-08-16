@@ -53,6 +53,112 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .group("testing")
                         .save(output, "barrier_blocks_from_structure_void");
 
+                shapeless(RecipeCategory.MISC, Blocks.PETRIFIED_OAK_SLAB, 1)
+                        .requires(Blocks.OAK_SLAB)
+                        .requires(Items.RESIN_CLUMP)
+                        .unlockedBy(getHasName(Blocks.OAK_SLAB), has(Blocks.OAK_SLAB))
+                        .unlockedBy(getHasName(Items.RESIN_CLUMP), has(Blocks.RESIN_CLUMP))
+                        .group("building")
+                        .save(output, "petrified_oak_slab_from_resin_and_oak_slab");
+
+                shapeless(RecipeCategory.MISC, ModBlocks.PETRIFIED_SPRUCE_SLAB, 1)
+                        .requires(Blocks.SPRUCE_SLAB)
+                        .requires(Items.RESIN_CLUMP)
+                        .unlockedBy(getHasName(Blocks.SPRUCE_SLAB), has(Blocks.SPRUCE_SLAB))
+                        .unlockedBy(getHasName(Items.RESIN_CLUMP), has(Blocks.RESIN_CLUMP))
+                        .group("building")
+                        .save(output, "petrified_spruce_slab_from_resin_and_spruce_slab");
+
+                shapeless(RecipeCategory.MISC, ModBlocks.PETRIFIED_BIRCH_SLAB, 1)
+                        .requires(Blocks.BIRCH_SLAB)
+                        .requires(Items.RESIN_CLUMP)
+                        .unlockedBy(getHasName(Blocks.BIRCH_SLAB), has(Blocks.BIRCH_SLAB))
+                        .unlockedBy(getHasName(Items.RESIN_CLUMP), has(Blocks.RESIN_CLUMP))
+                        .group("building")
+                        .save(output, "petrified_birch_slab_from_resin_and_birch_slab");
+
+                shapeless(RecipeCategory.MISC, ModBlocks.PETRIFIED_JUNGLE_SLAB, 1)
+                        .requires(Blocks.JUNGLE_SLAB)
+                        .requires(Items.RESIN_CLUMP)
+                        .unlockedBy(getHasName(Blocks.JUNGLE_SLAB), has(Blocks.JUNGLE_SLAB))
+                        .unlockedBy(getHasName(Items.RESIN_CLUMP), has(Blocks.RESIN_CLUMP))
+                        .group("building")
+                        .save(output, "petrified_jungle_slab_from_resin_and_jungle_slab");
+
+                shapeless(RecipeCategory.MISC, ModBlocks.PETRIFIED_ACACIA_SLAB, 1)
+                        .requires(Blocks.ACACIA_SLAB)
+                        .requires(Items.RESIN_CLUMP)
+                        .unlockedBy(getHasName(Blocks.ACACIA_SLAB), has(Blocks.ACACIA_SLAB))
+                        .unlockedBy(getHasName(Items.RESIN_CLUMP), has(Blocks.RESIN_CLUMP))
+                        .group("building")
+                        .save(output, "petrified_acacia_slab_from_resin_and_acacia_slab");
+
+                shapeless(RecipeCategory.MISC, ModBlocks.PETRIFIED_DARK_OAK_SLAB, 1)
+                        .requires(Blocks.DARK_OAK_SLAB)
+                        .requires(Items.RESIN_CLUMP)
+                        .unlockedBy(getHasName(Blocks.DARK_OAK_SLAB), has(Blocks.DARK_OAK_SLAB))
+                        .unlockedBy(getHasName(Items.RESIN_CLUMP), has(Blocks.RESIN_CLUMP))
+                        .group("building")
+                        .save(output, "petrified_dark_oak_slab_from_resin_and_dark_oak_slab");
+
+                shapeless(RecipeCategory.MISC, ModBlocks.PETRIFIED_MANGROVE_SLAB, 1)
+                        .requires(Blocks.MANGROVE_SLAB)
+                        .requires(Items.RESIN_CLUMP)
+                        .unlockedBy(getHasName(Blocks.MANGROVE_SLAB), has(Blocks.MANGROVE_SLAB))
+                        .unlockedBy(getHasName(Items.RESIN_CLUMP), has(Blocks.RESIN_CLUMP))
+                        .group("building")
+                        .save(output, "petrified_mangrove_slab_from_resin_and_mangrove_slab");
+
+                shapeless(RecipeCategory.MISC, ModBlocks.PETRIFIED_CHERRY_SLAB, 1)
+                        .requires(Blocks.CHERRY_SLAB)
+                        .requires(Items.RESIN_CLUMP)
+                        .unlockedBy(getHasName(Blocks.CHERRY_SLAB), has(Blocks.CHERRY_SLAB))
+                        .unlockedBy(getHasName(Items.RESIN_CLUMP), has(Blocks.RESIN_CLUMP))
+                        .group("building")
+                        .save(output, "petrified_cherry_slab_from_resin_and_cherry_slab");
+
+                shapeless(RecipeCategory.MISC, ModBlocks.PETRIFIED_PALE_OAK_SLAB, 1)
+                        .requires(Blocks.PALE_OAK_SLAB)
+                        .requires(Items.RESIN_CLUMP)
+                        .unlockedBy(getHasName(Blocks.PALE_OAK_SLAB), has(Blocks.PALE_OAK_SLAB))
+                        .unlockedBy(getHasName(Items.RESIN_CLUMP), has(Blocks.RESIN_CLUMP))
+                        .group("building")
+                        .save(output, "petrified_pale_oak_slab_from_resin_and_pale_oak_slab");
+
+                shapeless(RecipeCategory.MISC, ModBlocks.PETRIFIED_BAMBOO_SLAB, 1)
+                        .requires(Blocks.BAMBOO_SLAB)
+                        .requires(Items.RESIN_CLUMP)
+                        .unlockedBy(getHasName(Blocks.BAMBOO_SLAB), has(Blocks.BAMBOO_SLAB))
+                        .unlockedBy(getHasName(Items.RESIN_CLUMP), has(Blocks.RESIN_CLUMP))
+                        .group("building")
+                        .save(output, "petrified_bamboo_slab_from_resin_and_bamboo_slab");
+
+                shapeless(RecipeCategory.MISC, ModBlocks.PETRIFIED_BAMBOO_MOSAIC_SLAB, 1)
+                        .requires(Blocks.BAMBOO_MOSAIC_SLAB)
+                        .requires(Items.RESIN_CLUMP)
+                        .unlockedBy(getHasName(Blocks.BAMBOO_MOSAIC_SLAB), has(Blocks.BAMBOO_MOSAIC_SLAB))
+                        .unlockedBy(getHasName(Items.RESIN_CLUMP), has(Blocks.RESIN_CLUMP))
+                        .group("building")
+                        .save(output, "petrified_bamboo_mosaic_slab_from_resin_and_bamboo_mosaic_slab");
+
+                shapeless(RecipeCategory.MISC, ModBlocks.PETRIFIED_CRIMSON_SLAB, 1)
+                        .requires(Blocks.CRIMSON_SLAB)
+                        .requires(Items.RESIN_CLUMP)
+                        .unlockedBy(getHasName(Blocks.CRIMSON_SLAB), has(Blocks.CRIMSON_SLAB))
+                        .unlockedBy(getHasName(Items.RESIN_CLUMP), has(Blocks.RESIN_CLUMP))
+                        .group("building")
+                        .save(output, "petrified_crimson_slab_from_resin_and_crimson_slab");
+
+                shapeless(RecipeCategory.MISC, ModBlocks.PETRIFIED_WARPED_SLAB, 1)
+                        .requires(Blocks.WARPED_SLAB)
+                        .requires(Items.RESIN_CLUMP)
+                        .unlockedBy(getHasName(Blocks.WARPED_SLAB), has(Blocks.WARPED_SLAB))
+                        .unlockedBy(getHasName(Items.RESIN_CLUMP), has(Blocks.RESIN_CLUMP))
+                        .group("building")
+                        .save(output, "petrified_warped_slab_from_resin_and_warped_slab");
+
+
+
                 //Insert Later Datagen Food Recipes here: starting with calamari.
 
                 shaped(RecipeCategory.MISC, ModBlocks.NETHER_BRICK_FENCE_GATE)

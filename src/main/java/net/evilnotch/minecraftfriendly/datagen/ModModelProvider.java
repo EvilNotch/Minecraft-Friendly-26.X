@@ -21,6 +21,44 @@ public class ModModelProvider extends FabricModelProvider {
         blockModelGenerators.family(Blocks.NETHER_BRICKS)
                         .fenceGate(ModBlocks.NETHER_BRICK_FENCE_GATE);
 
+        blockModelGenerators.family(Blocks.SPRUCE_PLANKS)
+                        .slab(ModBlocks.PETRIFIED_SPRUCE_SLAB);
+
+        blockModelGenerators.family(Blocks.BIRCH_PLANKS)
+                        .slab(ModBlocks.PETRIFIED_BIRCH_SLAB);
+
+        blockModelGenerators.family(Blocks.JUNGLE_PLANKS)
+                .slab(ModBlocks.PETRIFIED_JUNGLE_SLAB);
+
+        blockModelGenerators.family(Blocks.ACACIA_PLANKS)
+                .slab(ModBlocks.PETRIFIED_ACACIA_SLAB);
+
+        blockModelGenerators.family(Blocks.DARK_OAK_PLANKS)
+                .slab(ModBlocks.PETRIFIED_DARK_OAK_SLAB);
+
+        blockModelGenerators.family(Blocks.MANGROVE_PLANKS)
+                .slab(ModBlocks.PETRIFIED_MANGROVE_SLAB);
+
+        blockModelGenerators.family(Blocks.CHERRY_PLANKS)
+                .slab(ModBlocks.PETRIFIED_CHERRY_SLAB);
+
+        blockModelGenerators.family(Blocks.PALE_OAK_PLANKS)
+                .slab(ModBlocks.PETRIFIED_PALE_OAK_SLAB);
+
+        blockModelGenerators.family(Blocks.BAMBOO_PLANKS)
+                .slab(ModBlocks.PETRIFIED_BAMBOO_SLAB);
+
+        blockModelGenerators.family(Blocks.BAMBOO_MOSAIC)
+                .slab(ModBlocks.PETRIFIED_BAMBOO_MOSAIC_SLAB);
+
+        blockModelGenerators.family(Blocks.CRIMSON_PLANKS)
+                .slab(ModBlocks.PETRIFIED_CRIMSON_SLAB);
+
+        blockModelGenerators.family(Blocks.WARPED_PLANKS)
+                .slab(ModBlocks.PETRIFIED_WARPED_SLAB);
+
+
+
         blockModelGenerators.family(Blocks.TUBE_CORAL_BLOCK)
                         .slab(ModBlocks.TUBE_CORAL_SLAB);
 

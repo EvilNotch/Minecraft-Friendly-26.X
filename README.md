@@ -3,6 +3,7 @@
 Welcome to Minecraft Friendly, a mod dedicated to keeping true to vanilla wants.
 
 ## Features:
+Added Recipes and all wood types of petrified slabs!
 Shovels are now needed to make boats.
 Crafting recipes should make more sense.
 Stone cutters need loving too with new functionality for wooden blocks.
@@ -30,7 +31,7 @@ This *mod*, however, is under the MIT license;
 feel free to use it in any way that abides by Fabric and Minecraft Legal Terms.
 
 ## TODO:
-There is to be more petrified slabs and perhaps vertical slabs after I finish all sawmill recipes.
+Sawmill Recipes, and Concrete Stonecutter Recipes.
 There will eventually be a dragon headed banner.
 There may be a variant of emerald block in the future to fit with the programmer art. (Currently In CMD Prompt & Extra Renditions Tab.)
 Who said there couldn't be more fences, slabs, stairs, or walls?

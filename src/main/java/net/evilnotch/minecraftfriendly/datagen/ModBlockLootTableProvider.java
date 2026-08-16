@@ -21,6 +21,20 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
         dropSelf(ModBlocks.SAND_LAYER_BLOCK);
         dropSelf(ModBlocks.RED_SAND_LAYER_BLOCK);
 
+        add(ModBlocks.PETRIFIED_SPRUCE_SLAB, this::createSlabItemTable);
+        add(ModBlocks.PETRIFIED_BIRCH_SLAB, this::createSlabItemTable);
+        add(ModBlocks.PETRIFIED_JUNGLE_SLAB, this::createSlabItemTable);
+        add(ModBlocks.PETRIFIED_ACACIA_SLAB, this::createSlabItemTable);
+        add(ModBlocks.PETRIFIED_DARK_OAK_SLAB, this::createSlabItemTable);
+        add(ModBlocks.PETRIFIED_MANGROVE_SLAB, this::createSlabItemTable);
+        add(ModBlocks.PETRIFIED_CHERRY_SLAB, this::createSlabItemTable);
+        add(ModBlocks.PETRIFIED_PALE_OAK_SLAB, this::createSlabItemTable);
+        add(ModBlocks.PETRIFIED_BAMBOO_SLAB, this::createSlabItemTable);
+        add(ModBlocks.PETRIFIED_BAMBOO_MOSAIC_SLAB, this::createSlabItemTable);
+        add(ModBlocks.PETRIFIED_CRIMSON_SLAB, this::createSlabItemTable);
+        add(ModBlocks.PETRIFIED_WARPED_SLAB, this::createSlabItemTable);
+
+
         add(ModBlocks.TUBE_CORAL_SLAB, this::createSlabItemTable);
 
         dropSelf(ModBlocks.SMOOTH_STONE_STAIRS);

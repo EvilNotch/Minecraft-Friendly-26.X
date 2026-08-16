@@ -124,6 +124,20 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
 
                 .add(ModBlocks.getRK(NETHER_BRICK_FENCE_GATE))
 
+                .add(ModBlocks.getRK(PETRIFIED_SPRUCE_SLAB))
+                .add(ModBlocks.getRK(PETRIFIED_BIRCH_SLAB))
+                .add(ModBlocks.getRK(PETRIFIED_JUNGLE_SLAB))
+                .add(ModBlocks.getRK(PETRIFIED_ACACIA_SLAB))
+                .add(ModBlocks.getRK(PETRIFIED_DARK_OAK_SLAB))
+                .add(ModBlocks.getRK(PETRIFIED_MANGROVE_SLAB))
+                .add(ModBlocks.getRK(PETRIFIED_CHERRY_SLAB))
+                .add(ModBlocks.getRK(PETRIFIED_PALE_OAK_SLAB))
+                .add(ModBlocks.getRK(PETRIFIED_BAMBOO_SLAB))
+                .add(ModBlocks.getRK(PETRIFIED_BAMBOO_MOSAIC_SLAB))
+                .add(ModBlocks.getRK(PETRIFIED_CRIMSON_SLAB))
+                .add(ModBlocks.getRK(PETRIFIED_WARPED_SLAB))
+
+
                 .add(ModBlocks.getRK(TUBE_CORAL_SLAB))
 
                 .add(ModBlocks.getRK(SMOOTH_STONE_STAIRS))
@@ -275,6 +289,22 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.getRK(NETHERITE_SLAB))
                 .add(ModBlocks.getRK(NETHERITE_STAIRS));
+
+
+        tag(BlockTags.SLABS).add(ModBlocks.getRK(PETRIFIED_SPRUCE_SLAB));
+        tag(BlockTags.SLABS).add(ModBlocks.getRK(PETRIFIED_BIRCH_SLAB));
+        tag(BlockTags.SLABS).add(ModBlocks.getRK(PETRIFIED_JUNGLE_SLAB));
+        tag(BlockTags.SLABS).add(ModBlocks.getRK(PETRIFIED_ACACIA_SLAB));
+        tag(BlockTags.SLABS).add(ModBlocks.getRK(PETRIFIED_DARK_OAK_SLAB));
+        tag(BlockTags.SLABS).add(ModBlocks.getRK(PETRIFIED_MANGROVE_SLAB));
+        tag(BlockTags.SLABS).add(ModBlocks.getRK(PETRIFIED_CHERRY_SLAB));
+        tag(BlockTags.SLABS).add(ModBlocks.getRK(PETRIFIED_PALE_OAK_SLAB));
+        tag(BlockTags.SLABS).add(ModBlocks.getRK(PETRIFIED_BAMBOO_SLAB));
+        tag(BlockTags.SLABS).add(ModBlocks.getRK(PETRIFIED_BAMBOO_MOSAIC_SLAB));
+        tag(BlockTags.SLABS).add(ModBlocks.getRK(PETRIFIED_CRIMSON_SLAB));
+        tag(BlockTags.SLABS).add(ModBlocks.getRK(PETRIFIED_WARPED_SLAB));
+
+
 
         tag(BlockTags.FENCE_GATES).add(ModBlocks.getRK(NETHER_BRICK_FENCE_GATE));
 

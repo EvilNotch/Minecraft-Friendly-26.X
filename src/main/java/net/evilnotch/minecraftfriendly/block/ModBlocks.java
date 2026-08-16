@@ -48,6 +48,54 @@ public class ModBlocks {
             properties -> new SlabBlock(properties.strength(1.5F, 6.0F)
                     .instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.CORAL_BLOCK).mapColor(MapColor.COLOR_BLUE)));
 
+    public static final Block PETRIFIED_SPRUCE_SLAB = registerBlock("petrified_spruce_slab",
+            properties -> new SlabBlock(properties.strength(2.0F, 6.0F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.WOOD)));
+
+    public static final Block PETRIFIED_BIRCH_SLAB = registerBlock("petrified_birch_slab",
+            properties -> new SlabBlock(properties.strength(2.0F, 6.0F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.WOOD)));
+
+    public static final Block PETRIFIED_JUNGLE_SLAB = registerBlock("petrified_jungle_slab",
+            properties -> new SlabBlock(properties.strength(2.0F, 6.0F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.WOOD)));
+
+    public static final Block PETRIFIED_ACACIA_SLAB = registerBlock("petrified_acacia_slab",
+            properties -> new SlabBlock(properties.strength(2.0F, 6.0F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.WOOD)));
+
+    public static final Block PETRIFIED_DARK_OAK_SLAB = registerBlock("petrified_dark_oak_slab",
+            properties -> new SlabBlock(properties.strength(2.0F, 6.0F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.WOOD)));
+
+    public static final Block PETRIFIED_MANGROVE_SLAB = registerBlock("petrified_mangrove_slab",
+            properties -> new SlabBlock(properties.strength(2.0F, 6.0F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.WOOD)));
+
+    public static final Block PETRIFIED_CHERRY_SLAB = registerBlock("petrified_cherry_slab",
+            properties -> new SlabBlock(properties.strength(2.0F, 6.0F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.WOOD)));
+
+    public static final Block PETRIFIED_PALE_OAK_SLAB = registerBlock("petrified_pale_oak_slab",
+            properties -> new SlabBlock(properties.strength(2.0F, 6.0F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.WOOD)));
+
+    public static final Block PETRIFIED_BAMBOO_SLAB = registerBlock("petrified_bamboo_slab",
+            properties -> new SlabBlock(properties.strength(2.0F, 6.0F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.WOOD)));
+
+    public static final Block PETRIFIED_BAMBOO_MOSAIC_SLAB = registerBlock("petrified_bamboo_mosaic_slab",
+            properties -> new SlabBlock(properties.strength(2.0F, 6.0F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.WOOD)));
+
+    public static final Block PETRIFIED_CRIMSON_SLAB = registerBlock("petrified_crimson_slab",
+            properties -> new SlabBlock(properties.strength(2.0F, 6.0F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.WOOD)));
+
+    public static final Block PETRIFIED_WARPED_SLAB = registerBlock("petrified_warped_slab",
+            properties -> new SlabBlock(properties.strength(2.0F, 6.0F)
+                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.WOOD)));
+
     public static final Block SMOOTH_STONE_STAIRS = registerBlock("smooth_stone_stairs",
             properties -> new StairBlock(Blocks.SMOOTH_STONE.defaultBlockState(), properties.strength(2.0F, 6.0F)
                     .requiresCorrectToolForDrops().mapColor(MapColor.STONE)));
@@ -480,6 +528,20 @@ public class ModBlocks {
 
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.BUILDING_BLOCKS).register(output -> {
             output.insertAfter(Blocks.OAK_SLAB, Blocks.PETRIFIED_OAK_SLAB);
+            output.insertAfter(Blocks.SPRUCE_SLAB, ModBlocks.PETRIFIED_SPRUCE_SLAB);
+            output.insertAfter(Blocks.BIRCH_SLAB, ModBlocks.PETRIFIED_BIRCH_SLAB);
+            output.insertAfter(Blocks.JUNGLE_SLAB, ModBlocks.PETRIFIED_JUNGLE_SLAB);
+            output.insertAfter(Blocks.ACACIA_SLAB, ModBlocks.PETRIFIED_ACACIA_SLAB);
+            output.insertAfter(Blocks.DARK_OAK_SLAB, ModBlocks.PETRIFIED_DARK_OAK_SLAB);
+            output.insertAfter(Blocks.MANGROVE_SLAB, ModBlocks.PETRIFIED_MANGROVE_SLAB);
+            output.insertAfter(Blocks.CHERRY_SLAB, ModBlocks.PETRIFIED_CHERRY_SLAB);
+            output.insertAfter(Blocks.PALE_OAK_SLAB, ModBlocks.PETRIFIED_PALE_OAK_SLAB);
+            output.insertAfter(Blocks.BAMBOO_SLAB, ModBlocks.PETRIFIED_BAMBOO_SLAB);
+            output.insertAfter(Blocks.BAMBOO_MOSAIC_SLAB, ModBlocks.PETRIFIED_BAMBOO_MOSAIC_SLAB);
+            output.insertAfter(Blocks.CRIMSON_SLAB, ModBlocks.PETRIFIED_CRIMSON_SLAB);
+            output.insertAfter(Blocks.WARPED_SLAB, ModBlocks.PETRIFIED_WARPED_SLAB);
+
+
             output.insertAfter(Blocks.NETHER_BRICK_FENCE, ModBlocks.NETHER_BRICK_FENCE_GATE);
 
             output.insertAfter(Blocks.SMOOTH_STONE, ModBlocks.SMOOTH_STONE_STAIRS);
