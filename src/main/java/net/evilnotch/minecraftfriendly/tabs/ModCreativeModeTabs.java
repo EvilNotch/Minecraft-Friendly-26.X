@@ -21,7 +21,10 @@ public class ModCreativeModeTabs {
                     .displayItems((parameters, output) -> {
                         //output.accept(ModBlocks.REDSTONE_SLAB);
                         //output.accept(ModBlocks.REDSTONE_STAIRS);
+                        output.accept(ModBlocks.CHISELED_GOLD);
                         output.accept(ModBlocks.CHISELED_EMERALD);
+                        output.accept(ModBlocks.CHISELED_LAPIS);
+                        output.accept(ModBlocks.CHISELED_DIAMOND);
                     })
                     .build());
     public static void registerModCreativeTabs() {

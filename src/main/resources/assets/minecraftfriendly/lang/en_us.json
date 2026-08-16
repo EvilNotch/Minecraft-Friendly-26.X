@@ -33,10 +33,13 @@
   "block.minecraftfriendly.smooth_stone_stairs": "Smooth Stone Stairs",
   "block.minecraftfriendly.smooth_stone_wall": "Smooth Stone Wall",
 
+  "block.minecraftfriendly.chiseled_iron": "Block of Chiseled Iron",
   "block.minecraftfriendly.iron_button": "Ironic Button",
   "block.minecraftfriendly.iron_slab": "Iron Slab",
   "block.minecraftfriendly.iron_stairs": "Iron Stairs",
 
+
+  "block.minecraftfriendly.chiseled_gold": "Block of Chiseled Gold",
   "block.minecraftfriendly.gold_button": "Golden Button",
   "block.minecraftfriendly.gold_slab": "Gold Slab",
   "block.minecraftfriendly.gold_stairs": "Gold Stairs",
@@ -50,9 +53,13 @@
   "block.minecraftfriendly.emerald_slab": "Emerald Slab",
   "block.minecraftfriendly.emerald_stairs": "Emerald Stairs",
 
+
+  "block.minecraftfriendly.chiseled_lapis": "Block of Chiseled Lapis Lazuli",
   "block.minecraftfriendly.lapis_slab": "Lapis Lazuli Slab",
   "block.minecraftfriendly.lapis_stairs": "Lapis Lazuli Stairs",
 
+
+  "block.minecraftfriendly.chiseled_diamond": "Block of Chiseled Diamond",
   "block.minecraftfriendly.diamond_slab": "Diamond Slab",
   "block.minecraftfriendly.diamond_stairs": "Diamond Stairs",
 

@@ -20,9 +20,12 @@ Added Calamari, WIP Textures.
 Added Prismarine from Dungeons to make Cauldron crafting harder.
 Added Iron and Golden Buttons.
 Fixed Music Disc Naming issues, and added C418 - Independent Accident found through creepers.
+Added Chiseled Emerald Block from Jappa Textures.
+Reverted Birch Textures to a better Jappa feel.
 
 ## Experimental Features:
 From here on out, there will no longer be blocks/items in the creative menu that aren't near finished.
+I decided to lean more towards vanilla, yet give the option for people to relive their olden days.
 
 ## License(s):
 The Fabric-Generated template is available under the CC0 license. 
@@ -33,7 +36,6 @@ feel free to use it in any way that abides by Fabric and Minecraft Legal Terms.
 ## TODO:
 Sawmill Recipes, and Concrete Stonecutter Recipes.
 There will eventually be a dragon headed banner.
-There may be a variant of emerald block in the future to fit with the programmer art. (Currently In CMD Prompt & Extra Renditions Tab.)
 Who said there couldn't be more fences, slabs, stairs, or walls?
 Potential additions to right-click functionality on tools with fire aspect, similar to bedrock.
 May consider readding invisible pixels to paintings in later versions of Fabric with the new Vulkan rendering system.

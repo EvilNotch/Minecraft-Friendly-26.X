@@ -143,10 +143,12 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(SMOOTH_STONE_STAIRS))
                 .add(ModBlocks.getRK(SMOOTH_STONE_WALL))
 
+                .add(ModBlocks.getRK(CHISELED_IRON))
                 .add(ModBlocks.getRK(IRON_BUTTON))
                 .add(ModBlocks.getRK(IRON_SLAB))
                 .add(ModBlocks.getRK(IRON_STAIRS))
 
+                .add(ModBlocks.getRK(CHISELED_GOLD))
                 .add(ModBlocks.getRK(GOLD_BUTTON))
                 .add(ModBlocks.getRK(GOLD_SLAB))
                 .add(ModBlocks.getRK(GOLD_STAIRS))
@@ -160,9 +162,11 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(EMERALD_SLAB))
                 .add(ModBlocks.getRK(EMERALD_STAIRS))
 
+                .add(ModBlocks.getRK(CHISELED_LAPIS))
                 .add(ModBlocks.getRK(LAPIS_SLAB))
                 .add(ModBlocks.getRK(LAPIS_STAIRS))
 
+                .add(ModBlocks.getRK(CHISELED_DIAMOND))
                 .add(ModBlocks.getRK(DIAMOND_SLAB))
                 .add(ModBlocks.getRK(DIAMOND_STAIRS))
 
@@ -266,13 +270,16 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(PINK_CONCRETE_WALL));
 
         tag(BlockTags.NEEDS_STONE_TOOL)
+                .add(ModBlocks.getRK(CHISELED_IRON))
                 .add(ModBlocks.getRK(IRON_BUTTON))
                 .add(ModBlocks.getRK(IRON_SLAB))
                 .add(ModBlocks.getRK(IRON_STAIRS))
+                .add(ModBlocks.getRK(CHISELED_LAPIS))
                 .add(ModBlocks.getRK(LAPIS_SLAB))
                 .add(ModBlocks.getRK(LAPIS_STAIRS));
 
         tag(BlockTags.NEEDS_IRON_TOOL)
+                .add(ModBlocks.getRK(CHISELED_GOLD))
                 .add(ModBlocks.getRK(GOLD_BUTTON))
                 .add(ModBlocks.getRK(GOLD_SLAB))
                 .add(ModBlocks.getRK(GOLD_STAIRS))
@@ -283,12 +290,20 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(CHISELED_EMERALD))
                 .add(ModBlocks.getRK(EMERALD_SLAB))
                 .add(ModBlocks.getRK(EMERALD_STAIRS))
+                .add(ModBlocks.getRK(CHISELED_DIAMOND))
                 .add(ModBlocks.getRK(DIAMOND_SLAB))
                 .add(ModBlocks.getRK(DIAMOND_STAIRS));
 
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.getRK(NETHERITE_SLAB))
                 .add(ModBlocks.getRK(NETHERITE_STAIRS));
+
+        tag(BlockTags.BEACON_BASE_BLOCKS)
+                .add(ModBlocks.getRK(CHISELED_IRON))
+                .add(ModBlocks.getRK(CHISELED_EMERALD))
+                .add(ModBlocks.getRK(CHISELED_LAPIS))
+                .add(ModBlocks.getRK(CHISELED_GOLD))
+                .add(ModBlocks.getRK(CHISELED_DIAMOND));
 
 
         tag(BlockTags.SLABS).add(ModBlocks.getRK(PETRIFIED_SPRUCE_SLAB));

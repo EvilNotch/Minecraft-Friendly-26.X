@@ -16,7 +16,12 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockModelGenerators blockModelGenerators) {
+
+        blockModelGenerators.createTrivialCube(ModBlocks.CHISELED_IRON);
+        blockModelGenerators.createTrivialCube(ModBlocks.CHISELED_GOLD);
         blockModelGenerators.createTrivialCube(ModBlocks.CHISELED_EMERALD);
+        blockModelGenerators.createTrivialCube(ModBlocks.CHISELED_LAPIS);
+        blockModelGenerators.createTrivialCube(ModBlocks.CHISELED_DIAMOND);
 
         blockModelGenerators.family(Blocks.NETHER_BRICKS)
                         .fenceGate(ModBlocks.NETHER_BRICK_FENCE_GATE);

@@ -10,6 +10,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.component.SuspiciousStewEffects;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
@@ -104,6 +105,14 @@ public class ModBlocks {
             properties -> new WallBlock(properties.strength(2.0F, 6.0F)
                     .requiresCorrectToolForDrops().mapColor(MapColor.STONE)));
 
+    public static final Block CHISELED_IRON = registerBlock("chiseled_iron",
+            properties -> new Block(properties
+                    .sound(SoundType.METAL)
+                    .requiresCorrectToolForDrops()
+                    .mapColor(MapColor.METAL)
+                    .instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+                    .strength(5.0F, 6.0F)));
+
     public static final Block IRON_BUTTON = registerBlock("iron_button",
             properties -> new ButtonBlock(BlockSetType.IRON, 30, properties.strength(5.0F, 6.0F)
                     .requiresCorrectToolForDrops().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE).noCollision()));
@@ -114,6 +123,14 @@ public class ModBlocks {
     public static final Block IRON_STAIRS = registerBlock("iron_stairs",
             properties -> new StairBlock(Blocks.IRON_BLOCK.defaultBlockState(), properties.strength(5.0F, 6.0F)
                     .requiresCorrectToolForDrops().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)));
+
+    public static final Block CHISELED_GOLD = registerBlock("chiseled_gold",
+            properties -> new Block(properties
+                    .sound(SoundType.METAL)
+                    .requiresCorrectToolForDrops()
+                    .mapColor(MapColor.GOLD)
+                    .instrument(NoteBlockInstrument.BELL)
+                    .strength(3.0F, 6.0F)));
 
     public static final Block GOLD_BUTTON = registerBlock("gold_button",
             properties -> new ButtonBlock(BlockSetType.GOLD, 5, properties.strength(3.0F, 6.0F)
@@ -158,6 +175,11 @@ public class ModBlocks {
             properties -> new StairBlock(Blocks.EMERALD_BLOCK.defaultBlockState(), properties.strength(5.0F, 6.0F)
                     .requiresCorrectToolForDrops().mapColor(MapColor.EMERALD).instrument(NoteBlockInstrument.BIT)));
 
+    public static final Block CHISELED_LAPIS = registerBlock("chiseled_lapis",
+            properties -> new Block(properties
+                    .requiresCorrectToolForDrops()
+                    .mapColor(MapColor.LAPIS)
+                    .strength(3.0F, 3.0F)));
     public static final Block LAPIS_SLAB = registerBlock("lapis_slab",
             properties -> new SlabBlock(properties.strength(3.0F, 3.0F)
                     .requiresCorrectToolForDrops().mapColor(MapColor.LAPIS)));
@@ -166,6 +188,12 @@ public class ModBlocks {
             properties -> new StairBlock(Blocks.LAPIS_BLOCK.defaultBlockState(), properties.strength(3.0F, 3.0F)
                     .requiresCorrectToolForDrops().mapColor(MapColor.LAPIS)));
 
+    public static final Block CHISELED_DIAMOND = registerBlock("chiseled_diamond",
+            properties -> new Block(properties
+                    .sound(SoundType.METAL)
+                    .requiresCorrectToolForDrops()
+                    .mapColor(MapColor.DIAMOND)
+                    .strength(5.0F, 6.0F)));
     public static final Block DIAMOND_SLAB = registerBlock("diamond_slab",
             properties -> new SlabBlock(properties.strength(5.0F, 6.0F)
                     .requiresCorrectToolForDrops().mapColor(MapColor.DIAMOND).sound(SoundType.METAL)));
