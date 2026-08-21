@@ -64,6 +64,14 @@ public class ModBlocks {
     public static final Block GRASS_SLAB = registerBlock("grass_slab",
             properties -> new SlabBlock(properties.strength(0.6F).mapColor(MapColor.GRASS).sound(SoundType.GRASS)));
 
+    public static final Block GRAVEL_LAYER_BLOCK = registerBlock("gravel_layer_block",
+            properties -> new SnowLayerBlock(properties.strength(0.2F).sound(SoundType.GRAVEL).mapColor(MapColor.STONE)
+                    .isViewBlocking((statex, level, pos) -> statex.getValue(SnowLayerBlock.LAYERS) >= 8)
+                    .pushReaction(PushReaction.DESTROY)
+                    .replaceable()
+                    .randomTicks()
+                    .requiresCorrectToolForDrops()));
+
     public static final Block SAND_LAYER_BLOCK = registerBlock("sand_layer_block",
             properties -> new SnowLayerBlock(properties.strength(0.2F).sound(SoundType.SAND).mapColor(MapColor.SAND)
                     .isViewBlocking((statex, level, pos) -> statex.getValue(SnowLayerBlock.LAYERS) >= 8)
@@ -769,6 +777,7 @@ public class ModBlocks {
         });
 
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.NATURAL_BLOCKS).register(output -> {
+            output.insertAfter(Blocks.GRAVEL, ModBlocks.GRAVEL_LAYER_BLOCK);
             output.insertAfter(Blocks.SAND, ModBlocks.SAND_LAYER_BLOCK);
             output.insertAfter(Blocks.RED_SAND, ModBlocks.RED_SAND_LAYER_BLOCK);
 

@@ -252,6 +252,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .group("ingredients")
                         .save(output, "tears_of_the_fallen_from_sapphire_block");
 
+                slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GRAVEL_LAYER_BLOCK, Ingredient.of(Blocks.GRAVEL))
+                        .unlockedBy(getHasName(Blocks.GRAVEL), has(Blocks.GRAVEL))
+                        .group("building")
+                        .save(output, "layered_gravel_from_gravel_block");
+
                 slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SAND_LAYER_BLOCK, Ingredient.of(Blocks.SAND))
                         .unlockedBy(getHasName(Blocks.SAND), has(Blocks.SAND))
                         .group("building")

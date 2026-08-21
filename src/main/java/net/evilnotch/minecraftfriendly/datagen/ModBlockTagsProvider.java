@@ -143,6 +143,7 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(GRASS_SLAB))
 
 
+                .add(ModBlocks.getRK(GRAVEL_LAYER_BLOCK))
                 .add(ModBlocks.getRK(SAND_LAYER_BLOCK))
                 .add(ModBlocks.getRK(RED_SAND_LAYER_BLOCK));
 
