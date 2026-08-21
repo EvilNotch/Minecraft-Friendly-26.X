@@ -28,8 +28,12 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockModelGenerators.createTrivialCube(ModBlocks.CRACKED_PURPUR_BLOCK);
 
+        blockModelGenerators.createTrivialCube(ModBlocks.RAINBOW_WOOL);
+
         blockModelGenerators.createBarsAndItem(ModBlocks.GOLD_BARS);
 
+        blockModelGenerators.createCrossBlockWithDefaultItem(ModBlocks.PINK_DAISY, BlockModelGenerators.PlantType.NOT_TINTED);
+        blockModelGenerators.createCrossBlockWithDefaultItem(ModBlocks.BUTTERCUP, BlockModelGenerators.PlantType.NOT_TINTED);
         blockModelGenerators.createCrossBlockWithDefaultItem(ModBlocks.PAEONIA, BlockModelGenerators.PlantType.NOT_TINTED);
         blockModelGenerators.createCrossBlockWithDefaultItem(ModBlocks.ROSE, BlockModelGenerators.PlantType.NOT_TINTED);
 

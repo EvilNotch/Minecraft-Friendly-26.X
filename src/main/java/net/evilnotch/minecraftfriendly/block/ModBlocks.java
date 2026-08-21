@@ -31,11 +31,22 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops().mapColor(MapColor.NETHER).instrument(NoteBlockInstrument.BASEDRUM)
                     .sound(SoundType.NETHER_BRICKS)));
 
+    public static final Block RAINBOW_WOOL = registerBlock("rainbow_wool", properties -> new Block(properties.sound(SoundType.WOOL).mapColor(DyeColor.BROWN)
+            .strength(0.8F).instrument(NoteBlockInstrument.GUITAR).ignitedByLava()));
+
     public static final Block SAPPHIRE_CLUSTER = registerBlock("sapphire_cluster", properties -> new AmethystClusterBlock(4.0F, 10.0F, properties
             .sound(SoundType.MEDIUM_AMETHYST_BUD).lightLevel(statex -> 5)));
 
     public static final Block WARPED_PETALS = registerBlock("warped_petals", properties -> new FlowerBedBlock(properties.mapColor(MapColor.WARPED_HYPHAE)
             .noCollision().sound(SoundType.PINK_PETALS).pushReaction(PushReaction.DESTROY)));
+
+    public static final Block PINK_DAISY = registerBlock("pink_daisy", properties -> new FlowerBlock(MobEffects.REGENERATION, 0.35F,
+            properties.noCollision().mapColor(MapColor.PLANT).instabreak().sound(SoundType.GRASS)
+                    .offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+
+    public static final Block BUTTERCUP = registerBlock("buttercup", properties -> new FlowerBlock(MobEffects.REGENERATION, 0.35F,
+            properties.noCollision().mapColor(MapColor.PLANT).instabreak().sound(SoundType.GRASS)
+                    .offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
 
     public static final Block PAEONIA = registerBlock("paeonia", properties -> new FlowerBlock(MobEffects.REGENERATION, 0.35F,
             properties.noCollision().mapColor(MapColor.PLANT).instabreak().sound(SoundType.GRASS)
@@ -760,6 +771,9 @@ public class ModBlocks {
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.NATURAL_BLOCKS).register(output -> {
             output.insertAfter(Blocks.SAND, ModBlocks.SAND_LAYER_BLOCK);
             output.insertAfter(Blocks.RED_SAND, ModBlocks.RED_SAND_LAYER_BLOCK);
+
+            output.insertAfter(Blocks.OXEYE_DAISY, ModBlocks.PINK_DAISY);
+            output.insertAfter(Blocks.DANDELION, ModBlocks.BUTTERCUP);
 
             output.insertAfter(Blocks.LILY_OF_THE_VALLEY, ModBlocks.PAEONIA);
             output.insertAfter(Blocks.OPEN_EYEBLOSSOM, ModBlocks.ROSE);

@@ -19,11 +19,21 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider registries) {
 
+        tag(BlockTags.WOOL)
+                .add(ModBlocks.getRK(RAINBOW_WOOL));
+
+        tag(BlockTags.OCCLUDES_VIBRATION_SIGNALS)
+                .add(ModBlocks.getRK(RAINBOW_WOOL));
+
         tag(BlockTags.FLOWERS)
+                .add(ModBlocks.getRK(PINK_DAISY))
+                .add(ModBlocks.getRK(BUTTERCUP))
                 .add(ModBlocks.getRK(PAEONIA))
                 .add(ModBlocks.getRK(ROSE));
 
         tag(BlockTags.BEE_ATTRACTIVE)
+                .add(ModBlocks.getRK(PINK_DAISY))
+                .add(ModBlocks.getRK(BUTTERCUP))
                 .add(ModBlocks.getRK(PAEONIA))
                 .add(ModBlocks.getRK(ROSE));
 

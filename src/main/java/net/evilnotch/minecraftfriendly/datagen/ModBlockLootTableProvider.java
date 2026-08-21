@@ -20,6 +20,8 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
 
         dropSelf(ModBlocks.SAPPHIRE_CLUSTER);
 
+        dropSelf(ModBlocks.PINK_DAISY);
+        dropSelf(ModBlocks.BUTTERCUP);
         dropSelf(ModBlocks.PAEONIA);
         dropSelf(ModBlocks.ROSE);
 

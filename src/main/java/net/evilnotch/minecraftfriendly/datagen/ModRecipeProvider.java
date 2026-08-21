@@ -53,6 +53,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .group("testing")
                         .save(output, "barrier_blocks_from_structure_void");
 
+                shapeless(RecipeCategory.MISC, Items.DYE.pink(), 1)
+                        .requires(ModBlocks.PINK_DAISY)
+                        .unlockedBy(getHasName(ModBlocks.PINK_DAISY), has(ModBlocks.PINK_DAISY))
+                        .group("building")
+                        .save(output, "pink_dye_from_pink_daisy");
+
+                shapeless(RecipeCategory.MISC, Items.DYE.yellow(), 1)
+                        .requires(ModBlocks.BUTTERCUP)
+                        .unlockedBy(getHasName(ModBlocks.BUTTERCUP), has(ModBlocks.BUTTERCUP))
+                        .group("building")
+                        .save(output, "yellow_dye_from_buttercup");
+
                 shaped(RecipeCategory.MISC, Blocks.ROSE_BUSH)
                         .pattern("   ")
                         .pattern(" RR")
