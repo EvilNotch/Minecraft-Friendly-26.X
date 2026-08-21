@@ -25,6 +25,8 @@ public class ModItems {
 
     public static final Item PRISMARINE = registerItem("prismarine", properties -> new Item(properties.fireResistant()));
 
+    public static final Item RUBY = registerItem("ruby", properties -> new Item(properties.fireResistant()));
+
     public static final Item INDEPENDENT_ACCIDENT = registerItem("independent_accident", properties -> new Item(properties.stacksTo(1)
             .jukeboxPlayable(ModJukeboxSongs.INDEPENDENT_ACCIDENT_KEY).rarity(Rarity.UNCOMMON)));
 
@@ -49,6 +51,7 @@ public class ModItems {
 
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS).register(output -> {
             output.insertAfter(Items.DIAMOND, ModItems.PRISMARINE);
+            output.insertAfter(Items.RAW_GOLD, ModItems.RUBY);
         });
 
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.TOOLS_AND_UTILITIES).register(output -> {

@@ -18,6 +18,13 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
 
         dropSelf(ModBlocks.NETHER_BRICK_FENCE_GATE);
 
+        dropSelf(ModBlocks.SAPPHIRE_CLUSTER);
+
+        dropSelf(ModBlocks.PAEONIA);
+        dropSelf(ModBlocks.ROSE);
+
+        add(ModBlocks.WARPED_PETALS, this::createSegmentedBlockDrops);
+
         dropSelf(ModBlocks.SAND_LAYER_BLOCK);
         dropSelf(ModBlocks.RED_SAND_LAYER_BLOCK);
 
@@ -35,7 +42,11 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
         add(ModBlocks.PETRIFIED_WARPED_SLAB, this::createSlabItemTable);
 
 
+        add(ModBlocks.DIRT_SLAB, this::createSlabItemTable);
+
         add(ModBlocks.TUBE_CORAL_SLAB, this::createSlabItemTable);
+
+        dropSelf(ModBlocks.CRACKED_PURPUR_BLOCK);
 
         dropSelf(ModBlocks.SMOOTH_STONE_STAIRS);
         dropSelf(ModBlocks.SMOOTH_STONE_WALL);
@@ -50,10 +61,13 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
         dropSelf(ModBlocks.GOLD_STAIRS);
         add(ModBlocks.GOLD_SLAB, this::createSlabItemTable);
         dropSelf(ModBlocks.GOLD_CHAIN);
-        //dropSelf(ModBlocks.GOLD_BARS);
+        dropSelf(ModBlocks.GOLD_BARS);
 
         dropSelf(ModBlocks.REDSTONE_STAIRS);
         add(ModBlocks.REDSTONE_SLAB, this::createSlabItemTable);
+
+        dropSelf(ModBlocks.RUBY_BLOCK);
+        dropSelf(ModBlocks.SAPPHIRE_BLOCK);
 
         dropSelf(ModBlocks.CHISELED_EMERALD);
         dropSelf(ModBlocks.EMERALD_STAIRS);

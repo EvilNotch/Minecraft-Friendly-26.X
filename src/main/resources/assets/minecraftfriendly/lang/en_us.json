@@ -3,11 +3,25 @@
   "item.minecraftfriendly.cooked_calamari": "Cooked Calamari",
 
   "item.minecraftfriendly.prismarine": "Prismarine",
+  "item.minecraftfriendly.ruby": "Ruby",
 
   "item.minecraftfriendly.independent_accident": "Music Disc",
   "jukebox_song.minecraftfriendly.independent_accident": "C418 - Independent Accident",
   "jukebox_song.minecraftfriendly.independent_accident.desc": "C418 - Independent Accident",
   "subtitles.minecraftfriendly.independent_accident": "C418 - Independent Accident",
+
+
+  "block.minecraftfriendly.paeonia": "Paeonia",
+  "tooltip.minecraftfriendly.paeonia": "§dUs.",
+
+  "block.minecraftfriendly.rose": "Rose",
+  "tooltip.minecraftfriendly.rose": "§4Her.",
+
+  "block.minecraftfriendly.warped_petals": "Warped Petals",
+
+  "block.minecraftfriendly.dirt_slab": "Dirt Slab",
+
+  "block.minecraftfriendly.grass_slab": "Grass Slab",
 
   "block.minecraftfriendly.petrified_spruce_slab": "Petrified Spruce Slab",
   "block.minecraftfriendly.petrified_birch_slab": "Petrified Birch Slab",
@@ -25,10 +39,14 @@
 
   "block.minecraftfriendly.nether_brick_fence_gate": "Nether Brick Fence Gate",
 
+  "block.minecraftfriendly.sapphire_cluster": "Sapphire Cluster",
+
   "block.minecraftfriendly.sand_layer_block": "Sand",
   "block.minecraftfriendly.red_sand_layer_block": "Red Sand",
 
   "block.minecraftfriendly.tube_coral_slab": "Tube Coral Slab",
+
+  "block.minecraftfriendly.cracked_purpur_block": "Cracked Purpur Block",
 
   "block.minecraftfriendly.smooth_stone_stairs": "Smooth Stone Stairs",
   "block.minecraftfriendly.smooth_stone_wall": "Smooth Stone Wall",
@@ -48,6 +66,9 @@
 
   "block.minecraftfriendly.redstone_slab": "Redstone Slab",
   "block.minecraftfriendly.redstone_stairs": "Redstone Stairs",
+
+  "block.minecraftfriendly.ruby_block": "Block of Ruby",
+  "block.minecraftfriendly.sapphire_block": "Block of Sapphire",
 
   "block.minecraftfriendly.chiseled_emerald": "Block of Chiseled Emerald",
   "block.minecraftfriendly.emerald_slab": "Emerald Slab",
@@ -162,6 +183,12 @@
   "block.minecraftfriendly.pink_concrete_fence_gate": "Pink Concrete Fence Gate",
   "block.minecraftfriendly.pink_concrete_wall": "Pink Concrete Wall",
 
+
+ "painting.minecraftfriendly.him.title":"The Man from the Fog.",
+  "painting.minecraftfriendly.him.author":"Copeland",
+
+  "painting.minecraftfriendly.blue_fields.title":"Blue Fields",
+  "painting.minecraftfriendly.blue_fields.author":"Mojang Studios",
 
 
   "creativemodetab.minecraftfriendly.extra_renditions": "Extra Renditions"

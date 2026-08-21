@@ -53,6 +53,46 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .group("testing")
                         .save(output, "barrier_blocks_from_structure_void");
 
+                shaped(RecipeCategory.MISC, Blocks.ROSE_BUSH)
+                        .pattern("   ")
+                        .pattern(" RR")
+                        .pattern(" RR")
+                        .define('R', ModBlocks.ROSE)
+                        .unlockedBy(getHasName(ModBlocks.ROSE), has(ModBlocks.ROSE))
+                        .group("building")
+                        .save(output, "rose_bush_from_rose_bouquet");
+
+                shapeless(RecipeCategory.MISC, Items.DYE.red(), 1)
+                        .requires(ModBlocks.ROSE)
+                        .unlockedBy(getHasName(ModBlocks.ROSE), has(ModBlocks.ROSE))
+                        .group("building")
+                        .save(output, "red_dye_from_rose");
+
+                shaped(RecipeCategory.MISC, Blocks.PEONY)
+                        .pattern("   ")
+                        .pattern(" PP")
+                        .pattern(" PP")
+                        .define('P', ModBlocks.PAEONIA)
+                        .unlockedBy(getHasName(ModBlocks.PAEONIA), has(ModBlocks.PAEONIA))
+                        .group("building")
+                        .save(output, "peony_from_paeonia_bouquet");
+
+                shapeless(RecipeCategory.MISC, Items.DYE.pink(), 1)
+                        .requires(ModBlocks.PAEONIA)
+                        .unlockedBy(getHasName(ModBlocks.PAEONIA), has(ModBlocks.PAEONIA))
+                        .group("building")
+                        .save(output, "pink_dye_from_paeonia");
+
+                slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DIRT_SLAB, Ingredient.of(Blocks.DIRT))
+                        .unlockedBy(getHasName(Blocks.DIRT), has(Blocks.DIRT))
+                        .group("building")
+                        .save(output, "dirt_slab_from_dirt_block");
+
+                //slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GRASS_SLAB, Ingredient.of(Blocks.GRASS_BLOCK))
+                        //.unlockedBy(getHasName(Blocks.GRASS_BLOCK), has(Blocks.GRASS_BLOCK))
+                        //.group("building")
+                        //.save(output, "grass_slab_from_grass_block");
+
                 shapeless(RecipeCategory.MISC, Blocks.PETRIFIED_OAK_SLAB, 1)
                         .requires(Blocks.OAK_SLAB)
                         .requires(Items.RESIN_CLUMP)
@@ -171,6 +211,35 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .group("building")
                         .save(output, "nether_fence_gate_from_nether_bricks_and_nether_brick_blocks");
 
+                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RUBY_BLOCK)
+                        .pattern("RRR")
+                        .pattern("RRR")
+                        .pattern("RRR")
+                        .define('R', ModItems.RUBY)
+                        .unlockedBy(getHasName(ModItems.RUBY), has(ModItems.RUBY))
+                        .group("building")
+                        .save(output, "ruby_block_from_rupies");
+
+                shapeless(RecipeCategory.MISC, ModItems.RUBY, 9)
+                        .requires(ModBlocks.RUBY_BLOCK)
+                        .unlockedBy(getHasName(ModBlocks.RUBY_BLOCK), has(ModBlocks.RUBY_BLOCK))
+                        .group("ingredients")
+                        .save(output, "rupies_from_ruby_block");
+
+                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SAPPHIRE_BLOCK)
+                        .pattern(" SS")
+                        .pattern(" SS")
+                        .define('S', ModBlocks.SAPPHIRE_CLUSTER)
+                        .unlockedBy(getHasName(ModBlocks.SAPPHIRE_CLUSTER), has(ModBlocks.SAPPHIRE_CLUSTER))
+                        .group("building")
+                        .save(output, "sapphire_block_from_tears_of_the_fallen");
+
+                shapeless(RecipeCategory.MISC, ModBlocks.SAPPHIRE_CLUSTER, 4)
+                        .requires(ModBlocks.SAPPHIRE_BLOCK)
+                        .unlockedBy(getHasName(ModBlocks.SAPPHIRE_BLOCK), has(ModBlocks.SAPPHIRE_BLOCK))
+                        .group("ingredients")
+                        .save(output, "tears_of_the_fallen_from_sapphire_block");
+
                 slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SAND_LAYER_BLOCK, Ingredient.of(Blocks.SAND))
                         .unlockedBy(getHasName(Blocks.SAND), has(Blocks.SAND))
                         .group("building")
@@ -185,6 +254,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(Blocks.TUBE_CORAL), has(Blocks.TUBE_CORAL))
                         .group("building")
                         .save(output, "tube_coral_slab_from_tube_coral_block");
+
+                smeltingResultFromBase(ModBlocks.CRACKED_PURPUR_BLOCK, Blocks.PURPUR_BLOCK);
+
+                smeltingResultFromBase(ModItems.COOKED_CALAMARI, ModItems.RAW_CALAMARI);
 
                 stairBuilder(ModBlocks.SMOOTH_STONE_STAIRS, Ingredient.of(Blocks.SMOOTH_STONE))
                         .unlockedBy(getHasName(Blocks.SMOOTH_STONE), has(Blocks.SMOOTH_STONE))

@@ -5,12 +5,13 @@ import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.item.*;
 import net.minecraft.world.item.component.SuspiciousStewEffects;
+import net.minecraft.world.item.component.TooltipDisplay;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
@@ -20,6 +21,7 @@ import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 
+import java.util.function.Consumer;
 import java.util.function.Function;
 
 public class ModBlocks {
@@ -28,6 +30,28 @@ public class ModBlocks {
             properties -> new FenceGateBlock(WoodType.CRIMSON, properties.strength(2.0F, 6.0F)
                     .requiresCorrectToolForDrops().mapColor(MapColor.NETHER).instrument(NoteBlockInstrument.BASEDRUM)
                     .sound(SoundType.NETHER_BRICKS)));
+
+    public static final Block SAPPHIRE_CLUSTER = registerBlock("sapphire_cluster", properties -> new AmethystClusterBlock(4.0F, 10.0F, properties
+            .sound(SoundType.MEDIUM_AMETHYST_BUD).lightLevel(statex -> 5)));
+
+    public static final Block WARPED_PETALS = registerBlock("warped_petals", properties -> new FlowerBedBlock(properties.mapColor(MapColor.WARPED_HYPHAE)
+            .noCollision().sound(SoundType.PINK_PETALS).pushReaction(PushReaction.DESTROY)));
+
+    public static final Block PAEONIA = registerBlock("paeonia", properties -> new FlowerBlock(MobEffects.REGENERATION, 0.35F,
+            properties.noCollision().mapColor(MapColor.PLANT).instabreak().sound(SoundType.GRASS)
+                    .offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)), Component.translatable("tooltip.minecraftfriendly.paeonia"));
+
+    public static final Block ROSE = registerBlock("rose", properties -> new FlowerBlock(MobEffects.REGENERATION, 0.35F,
+            properties.noCollision().mapColor(MapColor.PLANT).instabreak().sound(SoundType.GRASS)
+                    .offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)), Component.translatable("tooltip.minecraftfriendly.rose"));
+
+    //public static final Block BLUEBERRY_VINE = registerBlock("blueberry_vine", properties -> new CAVE)
+
+    public static final Block DIRT_SLAB = registerBlock("dirt_slab",
+            properties -> new SlabBlock(properties.strength(0.5F).mapColor(MapColor.DIRT).sound(SoundType.GRAVEL)));
+
+    public static final Block GRASS_SLAB = registerBlock("grass_slab",
+            properties -> new SlabBlock(properties.strength(0.6F).mapColor(MapColor.GRASS).sound(SoundType.GRASS)));
 
     public static final Block SAND_LAYER_BLOCK = registerBlock("sand_layer_block",
             properties -> new SnowLayerBlock(properties.strength(0.2F).sound(SoundType.SAND).mapColor(MapColor.SAND)
@@ -97,6 +121,9 @@ public class ModBlocks {
             properties -> new SlabBlock(properties.strength(2.0F, 6.0F)
                     .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.WOOD)));
 
+    public static final Block CRACKED_PURPUR_BLOCK = registerBlock("cracked_purpur_block", properties -> new Block(properties.mapColor(MapColor.COLOR_MAGENTA)
+            .instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1.5F, 6.0F)));
+
     public static final Block SMOOTH_STONE_STAIRS = registerBlock("smooth_stone_stairs",
             properties -> new StairBlock(Blocks.SMOOTH_STONE.defaultBlockState(), properties.strength(2.0F, 6.0F)
                     .requiresCorrectToolForDrops().mapColor(MapColor.STONE)));
@@ -147,8 +174,8 @@ public class ModBlocks {
     public static final Block GOLD_CHAIN = registerBlock("gold_chain", properties -> new ChainBlock(properties.strength(3.0F,
             6.0F).forceSolidOn().requiresCorrectToolForDrops().sound(SoundType.CHAIN).noOcclusion()));
 
-    //public static final Block GOLD_BARS = registerBlock("gold_bars", properties -> new IronBarsBlock(properties.strength(3.0F,
-            //6.0F).noOcclusion().sound(SoundType.METAL).requiresCorrectToolForDrops()));
+    public static final Block GOLD_BARS = registerBlock("gold_bars", properties -> new IronBarsBlock(properties.strength(3.0F,
+            6.0F).noOcclusion().sound(SoundType.IRON).requiresCorrectToolForDrops()));
 
     public static final Block REDSTONE_SLAB = registerBlock("redstone_slab",
             properties -> new SlabBlock(properties.strength(5.0F, 6.0F)
@@ -159,6 +186,22 @@ public class ModBlocks {
             properties -> new StairBlock(Blocks.REDSTONE_BLOCK.defaultBlockState(), properties.strength(5.0F, 6.0F)
                     .requiresCorrectToolForDrops().sound(SoundType.METAL).mapColor(MapColor.FIRE)
                     .isRedstoneConductor(Blocks::never)));
+
+    public static final Block RUBY_BLOCK = registerBlock("ruby_block",
+            properties -> new Block(properties
+                    .sound(SoundType.METAL)
+                    .requiresCorrectToolForDrops()
+                    .mapColor(MapColor.FIRE)
+                    .instrument(NoteBlockInstrument.BIT)
+                    .strength(5.0F, 6.0F)));
+
+    public static final Block SAPPHIRE_BLOCK = registerBlock("sapphire_block",
+            properties -> new Block(properties
+                    .sound(SoundType.METAL)
+                    .requiresCorrectToolForDrops()
+                    .mapColor(MapColor.LAPIS)
+                    .instrument(NoteBlockInstrument.BIT)
+                    .strength(5.0F, 6.0F)));
 
     public static final Block CHISELED_EMERALD = registerBlock("chiseled_emerald",
             properties -> new Block(properties
@@ -551,6 +594,27 @@ public class ModBlocks {
                         .setId(ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(MinecraftFriendly.MOD_ID, name)))));
     }
 
+    private static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function, Component... tooltips) {
+        Block toRegister = function.apply(BlockBehaviour.Properties.of()
+                .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(MinecraftFriendly.MOD_ID, name))));
+        registerBlockItem(name, toRegister, tooltips);
+        return Registry.register(BuiltInRegistries.BLOCK, Identifier.fromNamespaceAndPath(MinecraftFriendly.MOD_ID, name), toRegister);
+    }
+    private static void registerBlockItem(String name, Block block, Component... tooltips) {
+        Registry.register(BuiltInRegistries.ITEM, Identifier.fromNamespaceAndPath(MinecraftFriendly.MOD_ID, name),
+                new BlockItem(block, new Item.Properties().useBlockDescriptionPrefix()
+                        .setId(ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(MinecraftFriendly.MOD_ID, name)))) {
+                    @Override
+                    public void appendHoverText(ItemStack itemStack, TooltipContext context, TooltipDisplay display, Consumer<Component> builder, TooltipFlag tooltipFlag) {
+                        for(var component :  tooltips) {
+                            builder.accept(component);
+                        }
+
+                        super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
+                    }
+                });
+    }
+
     public static void registerBlocks() {
         MinecraftFriendly.LOGGER.info("Registering Blocks and their Creative Entries for " + MinecraftFriendly.MOD_ID);
 
@@ -591,6 +655,8 @@ public class ModBlocks {
 
             output.insertAfter(Blocks.DIAMOND_BLOCK, ModBlocks.DIAMOND_STAIRS);
             output.insertAfter(ModBlocks.DIAMOND_STAIRS, ModBlocks.DIAMOND_SLAB);
+
+            output.insertAfter(Blocks.PURPUR_BLOCK, ModBlocks.CRACKED_PURPUR_BLOCK);
         });
 
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.COLORED_BLOCKS).register(output -> {
@@ -694,6 +760,11 @@ public class ModBlocks {
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.NATURAL_BLOCKS).register(output -> {
             output.insertAfter(Blocks.SAND, ModBlocks.SAND_LAYER_BLOCK);
             output.insertAfter(Blocks.RED_SAND, ModBlocks.RED_SAND_LAYER_BLOCK);
+
+            output.insertAfter(Blocks.LILY_OF_THE_VALLEY, ModBlocks.PAEONIA);
+            output.insertAfter(Blocks.OPEN_EYEBLOSSOM, ModBlocks.ROSE);
+
+            output.insertAfter(Blocks.PINK_PETALS, ModBlocks.WARPED_PETALS);
         });
     }
 }

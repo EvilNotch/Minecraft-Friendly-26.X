@@ -19,6 +19,14 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider registries) {
 
+        tag(BlockTags.FLOWERS)
+                .add(ModBlocks.getRK(PAEONIA))
+                .add(ModBlocks.getRK(ROSE));
+
+        tag(BlockTags.BEE_ATTRACTIVE)
+                .add(ModBlocks.getRK(PAEONIA))
+                .add(ModBlocks.getRK(ROSE));
+
         tag(BlockTags.CONCRETE)
                 .add(ModBlocks.getRK(WHITE_CONCRETE_SLAB))
                 .add(ModBlocks.getRK(WHITE_CONCRETE_STAIRS))
@@ -116,13 +124,23 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(PINK_CONCRETE_FENCE_GATE))
                 .add(ModBlocks.getRK(PINK_CONCRETE_WALL));
 
+        tag(BlockTags.SHEARS_MAJOR_BREAKING_SPEED)
+                .add(ModBlocks.getRK(TUBE_CORAL_SLAB));
+
         tag(BlockTags.MINEABLE_WITH_SHOVEL)
+                .add(ModBlocks.getRK(DIRT_SLAB))
+
+                .add(ModBlocks.getRK(GRASS_SLAB))
+
+
                 .add(ModBlocks.getRK(SAND_LAYER_BLOCK))
                 .add(ModBlocks.getRK(RED_SAND_LAYER_BLOCK));
 
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
 
                 .add(ModBlocks.getRK(NETHER_BRICK_FENCE_GATE))
+
+                .add(ModBlocks.getRK(SAPPHIRE_CLUSTER))
 
                 .add(ModBlocks.getRK(PETRIFIED_SPRUCE_SLAB))
                 .add(ModBlocks.getRK(PETRIFIED_BIRCH_SLAB))
@@ -137,8 +155,7 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(PETRIFIED_CRIMSON_SLAB))
                 .add(ModBlocks.getRK(PETRIFIED_WARPED_SLAB))
 
-
-                .add(ModBlocks.getRK(TUBE_CORAL_SLAB))
+                .add(ModBlocks.getRK(CRACKED_PURPUR_BLOCK))
 
                 .add(ModBlocks.getRK(SMOOTH_STONE_STAIRS))
                 .add(ModBlocks.getRK(SMOOTH_STONE_WALL))
@@ -153,10 +170,13 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(GOLD_SLAB))
                 .add(ModBlocks.getRK(GOLD_STAIRS))
                 .add(ModBlocks.getRK(GOLD_CHAIN))
-                //.add(ModBlocks.getRK(GOLD_BARS))
+                .add(ModBlocks.getRK(GOLD_BARS))
 
                 .add(ModBlocks.getRK(REDSTONE_SLAB))
                 .add(ModBlocks.getRK(REDSTONE_STAIRS))
+
+                .add(ModBlocks.getRK(RUBY_BLOCK))
+                .add(ModBlocks.getRK(SAPPHIRE_BLOCK))
 
                 .add(ModBlocks.getRK(CHISELED_EMERALD))
                 .add(ModBlocks.getRK(EMERALD_SLAB))
@@ -284,9 +304,11 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(GOLD_SLAB))
                 .add(ModBlocks.getRK(GOLD_STAIRS))
                 .add(ModBlocks.getRK(GOLD_CHAIN))
-                //.add(ModBlocks.getRK(GOLD_BARS))
+                .add(ModBlocks.getRK(GOLD_BARS))
                 .add(ModBlocks.getRK(REDSTONE_SLAB))
                 .add(ModBlocks.getRK(REDSTONE_STAIRS))
+                .add(ModBlocks.getRK(RUBY_BLOCK))
+                .add(ModBlocks.getRK(SAPPHIRE_BLOCK))
                 .add(ModBlocks.getRK(CHISELED_EMERALD))
                 .add(ModBlocks.getRK(EMERALD_SLAB))
                 .add(ModBlocks.getRK(EMERALD_STAIRS))
@@ -300,10 +322,20 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
 
         tag(BlockTags.BEACON_BASE_BLOCKS)
                 .add(ModBlocks.getRK(CHISELED_IRON))
+                .add(ModBlocks.getRK(RUBY_BLOCK))
+                .add(ModBlocks.getRK(SAPPHIRE_BLOCK))
                 .add(ModBlocks.getRK(CHISELED_EMERALD))
                 .add(ModBlocks.getRK(CHISELED_LAPIS))
                 .add(ModBlocks.getRK(CHISELED_GOLD))
                 .add(ModBlocks.getRK(CHISELED_DIAMOND));
+
+        tag(BlockTags.DIRT).add(ModBlocks.getRK(DIRT_SLAB));
+
+
+        tag(BlockTags.SLABS).add(ModBlocks.getRK(DIRT_SLAB));
+
+
+        tag(BlockTags.SLABS).add(ModBlocks.getRK(GRASS_SLAB));
 
 
         tag(BlockTags.SLABS).add(ModBlocks.getRK(PETRIFIED_SPRUCE_SLAB));
@@ -430,7 +462,7 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
         tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.GOLD_SLAB));
         tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.GOLD_STAIRS));
         tag(BlockTags.CHAINS).add(ModBlocks.getRK(ModBlocks.GOLD_CHAIN));
-        //tag(BlockTags.BARS).add(ModBlocks.getRK(ModBlocks.GOLD_BARS));
+        tag(BlockTags.BARS).add(ModBlocks.getRK(ModBlocks.GOLD_BARS));
 
         tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.REDSTONE_SLAB));
         tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.REDSTONE_STAIRS));
@@ -446,5 +478,6 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
 
         tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.NETHERITE_SLAB));
         tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.NETHERITE_STAIRS));
+
     }
 }

@@ -22,6 +22,8 @@ public class ModCreativeModeTabs {
                         //output.accept(ModBlocks.REDSTONE_SLAB);
                         //output.accept(ModBlocks.REDSTONE_STAIRS);
                         output.accept(ModBlocks.CHISELED_GOLD);
+                        output.accept(ModBlocks.RUBY_BLOCK);
+                        output.accept(ModBlocks.SAPPHIRE_BLOCK);
                         output.accept(ModBlocks.CHISELED_EMERALD);
                         output.accept(ModBlocks.CHISELED_LAPIS);
                         output.accept(ModBlocks.CHISELED_DIAMOND);

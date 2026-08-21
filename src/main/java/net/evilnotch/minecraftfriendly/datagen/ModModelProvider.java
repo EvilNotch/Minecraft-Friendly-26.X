@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.model.ModelTemplates;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Blocks;
 
 public class ModModelProvider extends FabricModelProvider {
@@ -19,12 +20,32 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockModelGenerators.createTrivialCube(ModBlocks.CHISELED_IRON);
         blockModelGenerators.createTrivialCube(ModBlocks.CHISELED_GOLD);
+        blockModelGenerators.createTrivialCube(ModBlocks.RUBY_BLOCK);
+        blockModelGenerators.createTrivialCube(ModBlocks.SAPPHIRE_BLOCK);
         blockModelGenerators.createTrivialCube(ModBlocks.CHISELED_EMERALD);
         blockModelGenerators.createTrivialCube(ModBlocks.CHISELED_LAPIS);
         blockModelGenerators.createTrivialCube(ModBlocks.CHISELED_DIAMOND);
 
+        blockModelGenerators.createTrivialCube(ModBlocks.CRACKED_PURPUR_BLOCK);
+
+        blockModelGenerators.createBarsAndItem(ModBlocks.GOLD_BARS);
+
+        blockModelGenerators.createCrossBlockWithDefaultItem(ModBlocks.PAEONIA, BlockModelGenerators.PlantType.NOT_TINTED);
+        blockModelGenerators.createCrossBlockWithDefaultItem(ModBlocks.ROSE, BlockModelGenerators.PlantType.NOT_TINTED);
+
+        blockModelGenerators.createFlowerBed(ModBlocks.WARPED_PETALS);
+
+        blockModelGenerators.family(Blocks.DIRT)
+                        .slab(ModBlocks.DIRT_SLAB)
+                        .slab(ModBlocks.GRASS_SLAB);
+
+        //blockModelGenerators.family(Blocks.GRASS_BLOCK)
+                        //.slab(ModBlocks.GRASS_SLAB);
+
         blockModelGenerators.family(Blocks.NETHER_BRICKS)
                         .fenceGate(ModBlocks.NETHER_BRICK_FENCE_GATE);
+
+        blockModelGenerators.createAmethystCluster(ModBlocks.SAPPHIRE_CLUSTER);
 
         blockModelGenerators.family(Blocks.SPRUCE_PLANKS)
                         .slab(ModBlocks.PETRIFIED_SPRUCE_SLAB);
@@ -221,5 +242,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerators.generateFlatItem(ModItems.COOKED_CALAMARI, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.PRISMARINE, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.INDEPENDENT_ACCIDENT, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.RUBY, ModelTemplates.FLAT_ITEM);
     }
 }
