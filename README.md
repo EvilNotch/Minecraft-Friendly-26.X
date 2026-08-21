@@ -20,10 +20,18 @@ Added Calamari, WIP Textures.
 Added Prismarine from Dungeons to make Cauldron crafting harder.
 Added Iron and Golden Buttons.
 Fixed Music Disc Naming issues, and added C418 - Independent Accident found through creepers.
+Added "some" Paintings from MCD.
 Added Chiseled Blocks for metals from Jappa Textures.
 Reverted Birch Textures to a better Jappa feel.
+Added Sponge structures that spawn in cold oceans.
+Added Flora.
+Added Variants of basic things.
+Updates a lot of textures.
+Updates Lang file for better readability.
+Added Ruby and Sapphire. (WIP Functionality.)
 
 ## Experimental Features:
+Readding invisible pixels to paintings, beds, and about any block entity; may affect optifine/sodium.
 From here on out, there will no longer be blocks/items in the creative menu that aren't near finished.
 I decided to lean more towards vanilla, yet give the option for people to relive their olden days.
 Working on updating vanilla textures.
@@ -39,7 +47,6 @@ Sawmill Recipes, and Concrete Stonecutter Recipes.
 There will eventually be a dragon headed banner.
 Who said there couldn't be more fences, slabs, stairs, or walls?
 Potential additions to right-click functionality on tools with fire aspect, similar to bedrock.
-May consider readding invisible pixels to paintings in later versions of Fabric with the new Vulkan rendering system.
 Bark or some other substitute for fuel and/or log unstripping.
 
 ## Developers and Ideas are needed.
