@@ -90,8 +90,11 @@
   "block.minecraftfriendly.diamond_slab": "Diamond Slab",
   "block.minecraftfriendly.diamond_stairs": "Diamond Stairs",
 
-  "block.minecraftfriendly.netherite_slab": "Swaggiest Slab Ever",
-  "block.minecraftfriendly.netherite_stairs": "Swaggiest Stairs Ever",
+  "block.minecraftfriendly.netherite_slab": "Netherite Slab",
+  "tooltip.minecraftfriendly.netherite_slab": "Swaggiest Slab Ever.",
+
+  "block.minecraftfriendly.netherite_stairs": "Netherite Stairs",
+  "tooltip.minecraftfriendly.netherite_stairs": "Swaggiest Stairs Ever.",
 
   "block.minecraftfriendly.white_concrete_slab": "White Concrete Slab",
   "block.minecraftfriendly.white_concrete_stairs": "White Concrete Stairs",

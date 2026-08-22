@@ -264,11 +264,13 @@ public class ModBlocks {
 
     public static final Block NETHERITE_SLAB = registerBlock("netherite_slab",
             properties -> new SlabBlock(properties.strength(50.0F, 1200.0F)
-                    .requiresCorrectToolForDrops().mapColor(MapColor.COLOR_BLACK).sound(SoundType.NETHERITE_BLOCK)));
+                    .requiresCorrectToolForDrops().mapColor(MapColor.COLOR_BLACK).sound(SoundType.NETHERITE_BLOCK)),
+            Component.translatable("tooltip.minecraftfriendly.netherite_slab"));
 
     public static final Block NETHERITE_STAIRS = registerBlock("netherite_stairs",
             properties -> new StairBlock(Blocks.NETHERITE_BLOCK.defaultBlockState(), properties.strength(50.0F, 1200.0F)
-                    .requiresCorrectToolForDrops().mapColor(MapColor.COLOR_BLACK).sound(SoundType.NETHERITE_BLOCK)));
+                    .requiresCorrectToolForDrops().mapColor(MapColor.COLOR_BLACK).sound(SoundType.NETHERITE_BLOCK)),
+            Component.translatable("tooltip.minecraftfriendly.netherite_stairs"));
 
 
     //Concrete
