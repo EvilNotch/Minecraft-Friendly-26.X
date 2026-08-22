@@ -21,6 +21,7 @@ public class ModCreativeModeTabs {
                     .displayItems((parameters, output) -> {
                         //output.accept(ModBlocks.REDSTONE_SLAB);
                         //output.accept(ModBlocks.REDSTONE_STAIRS);
+                        output.accept(ModBlocks.PLATED_IRON);
                         output.accept(ModBlocks.CHISELED_GOLD);
                         output.accept(ModBlocks.RUBY_BLOCK);
                         output.accept(ModBlocks.SAPPHIRE_BLOCK);

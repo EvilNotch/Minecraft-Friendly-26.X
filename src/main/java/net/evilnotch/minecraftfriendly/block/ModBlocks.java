@@ -10,12 +10,10 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.*;
-import net.minecraft.world.item.component.SuspiciousStewEffects;
 import net.minecraft.world.item.component.TooltipDisplay;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
-import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraft.world.level.material.MapColor;
@@ -151,7 +149,7 @@ public class ModBlocks {
             properties -> new WallBlock(properties.strength(2.0F, 6.0F)
                     .requiresCorrectToolForDrops().mapColor(MapColor.STONE)));
 
-    public static final Block CHISELED_IRON = registerBlock("chiseled_iron",
+    public static final Block PLATED_IRON = registerBlock("plated_iron",
             properties -> new Block(properties
                     .sound(SoundType.METAL)
                     .requiresCorrectToolForDrops()
@@ -788,6 +786,8 @@ public class ModBlocks {
             output.insertAfter(Blocks.OPEN_EYEBLOSSOM, ModBlocks.ROSE);
 
             output.insertAfter(Blocks.PINK_PETALS, ModBlocks.WARPED_PETALS);
+
+            output.insertAfter(Blocks.AMETHYST_CLUSTER, ModBlocks.SAPPHIRE_CLUSTER);
         });
     }
 }

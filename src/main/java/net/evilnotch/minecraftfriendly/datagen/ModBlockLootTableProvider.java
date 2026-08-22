@@ -53,7 +53,7 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
         dropSelf(ModBlocks.SMOOTH_STONE_STAIRS);
         dropSelf(ModBlocks.SMOOTH_STONE_WALL);
 
-        dropSelf(ModBlocks.CHISELED_IRON);
+        dropSelf(ModBlocks.PLATED_IRON);
         dropSelf(ModBlocks.IRON_BUTTON);
         dropSelf(ModBlocks.IRON_STAIRS);
         add(ModBlocks.IRON_SLAB, this::createSlabItemTable);

@@ -171,7 +171,7 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(SMOOTH_STONE_STAIRS))
                 .add(ModBlocks.getRK(SMOOTH_STONE_WALL))
 
-                .add(ModBlocks.getRK(CHISELED_IRON))
+                .add(ModBlocks.getRK(PLATED_IRON))
                 .add(ModBlocks.getRK(IRON_BUTTON))
                 .add(ModBlocks.getRK(IRON_SLAB))
                 .add(ModBlocks.getRK(IRON_STAIRS))
@@ -301,7 +301,7 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(PINK_CONCRETE_WALL));
 
         tag(BlockTags.NEEDS_STONE_TOOL)
-                .add(ModBlocks.getRK(CHISELED_IRON))
+                .add(ModBlocks.getRK(PLATED_IRON))
                 .add(ModBlocks.getRK(IRON_BUTTON))
                 .add(ModBlocks.getRK(IRON_SLAB))
                 .add(ModBlocks.getRK(IRON_STAIRS))
@@ -332,7 +332,7 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(NETHERITE_STAIRS));
 
         tag(BlockTags.BEACON_BASE_BLOCKS)
-                .add(ModBlocks.getRK(CHISELED_IRON))
+                .add(ModBlocks.getRK(PLATED_IRON))
                 .add(ModBlocks.getRK(RUBY_BLOCK))
                 .add(ModBlocks.getRK(SAPPHIRE_BLOCK))
                 .add(ModBlocks.getRK(CHISELED_EMERALD))

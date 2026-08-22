@@ -18,7 +18,7 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockModelGenerators blockModelGenerators) {
 
-        blockModelGenerators.createTrivialCube(ModBlocks.CHISELED_IRON);
+        blockModelGenerators.createTrivialCube(ModBlocks.PLATED_IRON);
         blockModelGenerators.createTrivialCube(ModBlocks.CHISELED_GOLD);
         blockModelGenerators.createTrivialCube(ModBlocks.RUBY_BLOCK);
         blockModelGenerators.createTrivialCube(ModBlocks.SAPPHIRE_BLOCK);
