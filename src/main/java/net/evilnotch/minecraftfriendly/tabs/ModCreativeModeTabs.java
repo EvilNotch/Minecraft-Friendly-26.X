@@ -19,8 +19,6 @@ public class ModCreativeModeTabs {
                     .icon(() -> new ItemStack(ModBlocks.CHISELED_EMERALD))
                     .title(Component.translatable("creativemodetab.minecraftfriendly.extra_renditions"))
                     .displayItems((parameters, output) -> {
-                        //output.accept(ModBlocks.REDSTONE_SLAB);
-                        //output.accept(ModBlocks.REDSTONE_STAIRS);
                         output.accept(ModBlocks.PLATED_IRON);
                         output.accept(ModBlocks.CHISELED_GOLD);
                         output.accept(ModBlocks.RUBY_BLOCK);
