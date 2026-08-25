@@ -22,8 +22,12 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
 
         dropSelf(ModBlocks.PINK_DAISY);
         dropSelf(ModBlocks.BUTTERCUP);
+
         dropSelf(ModBlocks.PAEONIA);
+        add(ModBlocks.POTTED_PAEONIA, this::createPotFlowerItemTable);
+
         dropSelf(ModBlocks.ROSE);
+        add(ModBlocks.POTTED_ROSE, this::createPotFlowerItemTable);
 
         add(ModBlocks.WARPED_PETALS, this::createSegmentedBlockDrops);
 

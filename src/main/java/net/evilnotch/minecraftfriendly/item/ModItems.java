@@ -9,12 +9,10 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.*;
 
 import java.util.function.Function;
+
 
 public class ModItems {
     public static final Item RAW_CALAMARI = registerItem("raw_calamari", properties -> new Item(properties
@@ -30,6 +28,7 @@ public class ModItems {
     public static final Item INDEPENDENT_ACCIDENT = registerItem("independent_accident", properties -> new Item(properties.stacksTo(1)
             .jukeboxPlayable(ModJukeboxSongs.INDEPENDENT_ACCIDENT_KEY).rarity(Rarity.UNCOMMON)));
 
+    //public static final Item NETHERITE_SLAB = registerBlock()
 
 
     private static Item registerItem(String name, Function<Item.Properties, Item> function) {

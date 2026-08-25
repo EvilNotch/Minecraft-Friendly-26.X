@@ -1,5 +1,6 @@
 package net.evilnotch.minecraftfriendly.block;
 
+import com.mojang.datafixers.types.Func;
 import net.evilnotch.minecraftfriendly.MinecraftFriendly;
 import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.minecraft.core.Registry;
@@ -8,6 +9,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.tags.BlockItemTags;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.component.TooltipDisplay;
@@ -42,19 +44,27 @@ public class ModBlocks {
             properties.noCollision().mapColor(MapColor.PLANT).instabreak().sound(SoundType.GRASS)
                     .offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
 
+    public static final Block POTTED_PINK_DAISY = registerBlock("potted_pink_daisy", properties -> new FlowerPotBlock(ModBlocks.PINK_DAISY, properties));
+
     public static final Block BUTTERCUP = registerBlock("buttercup", properties -> new FlowerBlock(MobEffects.REGENERATION, 0.35F,
             properties.noCollision().mapColor(MapColor.PLANT).instabreak().sound(SoundType.GRASS)
                     .offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+
+    public static final Block POTTED_BUTTERCUP = registerBlock("potted_buttercup", properties -> new FlowerPotBlock(ModBlocks.BUTTERCUP, properties));
 
     public static final Block PAEONIA = registerBlock("paeonia", properties -> new FlowerBlock(MobEffects.REGENERATION, 0.35F,
             properties.noCollision().mapColor(MapColor.PLANT).instabreak().sound(SoundType.GRASS)
                     .offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)), Component.translatable("tooltip.minecraftfriendly.paeonia"));
 
+    public static final Block POTTED_PAEONIA = registerBlock("potted_paeonia", properties -> new FlowerPotBlock(ModBlocks.PAEONIA, properties));
+
     public static final Block ROSE = registerBlock("rose", properties -> new FlowerBlock(MobEffects.REGENERATION, 0.35F,
             properties.noCollision().mapColor(MapColor.PLANT).instabreak().sound(SoundType.GRASS)
                     .offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)), Component.translatable("tooltip.minecraftfriendly.rose"));
 
-    //public static final Block BLUEBERRY_VINE = registerBlock("blueberry_vine", properties -> new CAVE)
+    public static final Block POTTED_ROSE = registerBlock("potted_rose", properties -> new FlowerPotBlock(ModBlocks.ROSE, properties));
+
+    //public static final Block BLUEBERRY_VINE = registerBlock("blueberry_vine", properties -> new CaveVinesBlock());
 
     public static final Block DIRT_SLAB = registerBlock("dirt_slab",
             properties -> new SlabBlock(properties.strength(0.5F).mapColor(MapColor.DIRT).sound(SoundType.GRAVEL)));

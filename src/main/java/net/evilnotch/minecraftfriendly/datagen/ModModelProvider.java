@@ -7,7 +7,6 @@ import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.model.ModelTemplates;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Blocks;
 
 public class ModModelProvider extends FabricModelProvider {
@@ -32,10 +31,10 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockModelGenerators.createBarsAndItem(ModBlocks.GOLD_BARS);
 
-        blockModelGenerators.createCrossBlockWithDefaultItem(ModBlocks.PINK_DAISY, BlockModelGenerators.PlantType.NOT_TINTED);
-        blockModelGenerators.createCrossBlockWithDefaultItem(ModBlocks.BUTTERCUP, BlockModelGenerators.PlantType.NOT_TINTED);
-        blockModelGenerators.createCrossBlockWithDefaultItem(ModBlocks.PAEONIA, BlockModelGenerators.PlantType.NOT_TINTED);
-        blockModelGenerators.createCrossBlockWithDefaultItem(ModBlocks.ROSE, BlockModelGenerators.PlantType.NOT_TINTED);
+        blockModelGenerators.createPlantWithDefaultItem(ModBlocks.PINK_DAISY, ModBlocks.POTTED_PINK_DAISY, BlockModelGenerators.PlantType.NOT_TINTED);
+        blockModelGenerators.createPlantWithDefaultItem(ModBlocks.BUTTERCUP, ModBlocks.POTTED_BUTTERCUP, BlockModelGenerators.PlantType.NOT_TINTED);
+        blockModelGenerators.createPlantWithDefaultItem(ModBlocks.PAEONIA, ModBlocks.POTTED_PAEONIA, BlockModelGenerators.PlantType.NOT_TINTED);
+        blockModelGenerators.createPlantWithDefaultItem(ModBlocks.ROSE, ModBlocks.POTTED_ROSE, BlockModelGenerators.PlantType.NOT_TINTED);
 
         blockModelGenerators.createFlowerBed(ModBlocks.WARPED_PETALS);
 

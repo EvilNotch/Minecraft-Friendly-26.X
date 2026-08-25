@@ -25,11 +25,17 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
         tag(BlockTags.OCCLUDES_VIBRATION_SIGNALS)
                 .add(ModBlocks.getRK(RAINBOW_WOOL));
 
-        tag(BlockTags.FLOWERS)
+        tag(BlockTags.SMALL_FLOWERS)
                 .add(ModBlocks.getRK(PINK_DAISY))
                 .add(ModBlocks.getRK(BUTTERCUP))
                 .add(ModBlocks.getRK(PAEONIA))
                 .add(ModBlocks.getRK(ROSE));
+
+        tag(BlockTags.FLOWER_POTS)
+                .add(ModBlocks.getRK(POTTED_PINK_DAISY))
+                .add(ModBlocks.getRK(POTTED_BUTTERCUP))
+                .add(ModBlocks.getRK(POTTED_PAEONIA))
+                .add(ModBlocks.getRK(POTTED_ROSE));
 
         tag(BlockTags.BEE_ATTRACTIVE)
                 .add(ModBlocks.getRK(PINK_DAISY))
