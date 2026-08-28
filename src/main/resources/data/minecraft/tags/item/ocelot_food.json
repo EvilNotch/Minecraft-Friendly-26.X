@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:cooked_salmon",
+    "minecraft:cooked_cod",
+    "minecraft:tropical_fish",
+    "minecraft:chicken",
+    "minecraft:cooked_chicken",
+    "minecraftfriendly:raw_calamari",
+    "minecraftfriendly:cooked_calamari"
+  ]
+}

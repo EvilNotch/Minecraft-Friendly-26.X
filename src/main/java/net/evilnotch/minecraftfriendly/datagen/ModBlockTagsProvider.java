@@ -1,6 +1,7 @@
 package net.evilnotch.minecraftfriendly.datagen;
 
 import net.evilnotch.minecraftfriendly.block.ModBlocks;
+import net.evilnotch.minecraftfriendly.tags.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagsProvider;
 import net.minecraft.core.HolderLookup;
@@ -29,19 +30,32 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(PINK_DAISY))
                 .add(ModBlocks.getRK(BUTTERCUP))
                 .add(ModBlocks.getRK(PAEONIA))
-                .add(ModBlocks.getRK(ROSE));
+                .add(ModBlocks.getRK(ROSE))
+                .add(ModBlocks.getRK(BLUE_HYPNEA_MACROALGAE));
+
+        tag(BlockTags.FLOWERS)
+                .add(ModBlocks.getRK(PINK_DAISY))
+                .add(ModBlocks.getRK(BUTTERCUP))
+                .add(ModBlocks.getRK(PAEONIA))
+                .add(ModBlocks.getRK(ROSE))
+                .add(ModBlocks.getRK(BLUE_HYPNEA_MACROALGAE));
 
         tag(BlockTags.FLOWER_POTS)
                 .add(ModBlocks.getRK(POTTED_PINK_DAISY))
                 .add(ModBlocks.getRK(POTTED_BUTTERCUP))
                 .add(ModBlocks.getRK(POTTED_PAEONIA))
-                .add(ModBlocks.getRK(POTTED_ROSE));
+                .add(ModBlocks.getRK(POTTED_ROSE))
+                .add(ModBlocks.getRK(POTTED_BLUE_HYPNEA_MACROALGAE));
 
         tag(BlockTags.BEE_ATTRACTIVE)
                 .add(ModBlocks.getRK(PINK_DAISY))
                 .add(ModBlocks.getRK(BUTTERCUP))
                 .add(ModBlocks.getRK(PAEONIA))
-                .add(ModBlocks.getRK(ROSE));
+                .add(ModBlocks.getRK(ROSE))
+                .add(ModBlocks.getRK(BLUE_HYPNEA_MACROALGAE));
+
+        tag(BlockTags.SNIFFER_DIGGABLE_BLOCK)
+                .add(ModBlocks.getRK(BLUE_HYPNEA_MACROALGAE));
 
         tag(BlockTags.CONCRETE)
                 .add(ModBlocks.getRK(WHITE_CONCRETE_SLAB))
@@ -156,6 +170,8 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
 
                 .add(ModBlocks.getRK(NETHER_BRICK_FENCE_GATE))
+                .add(ModBlocks.getRK(CRACKED_NETHER_BRICK_STAIRS))
+                .add(ModBlocks.getRK(CRACKED_NETHER_BRICK_SLAB))
 
                 .add(ModBlocks.getRK(SAPPHIRE_CLUSTER))
 
@@ -193,7 +209,9 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(REDSTONE_STAIRS))
 
                 .add(ModBlocks.getRK(RUBY_BLOCK))
+                .add(ModBlocks.getRK(RUBY_STAIRS))
                 .add(ModBlocks.getRK(SAPPHIRE_BLOCK))
+                .add(ModBlocks.getRK(SAPPHIRE_STAIRS))
 
                 .add(ModBlocks.getRK(CHISELED_EMERALD))
                 .add(ModBlocks.getRK(EMERALD_SLAB))
@@ -324,8 +342,6 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(GOLD_BARS))
                 .add(ModBlocks.getRK(REDSTONE_SLAB))
                 .add(ModBlocks.getRK(REDSTONE_STAIRS))
-                .add(ModBlocks.getRK(RUBY_BLOCK))
-                .add(ModBlocks.getRK(SAPPHIRE_BLOCK))
                 .add(ModBlocks.getRK(CHISELED_EMERALD))
                 .add(ModBlocks.getRK(EMERALD_SLAB))
                 .add(ModBlocks.getRK(EMERALD_STAIRS))
@@ -371,6 +387,9 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
 
 
         tag(BlockTags.FENCE_GATES).add(ModBlocks.getRK(NETHER_BRICK_FENCE_GATE));
+
+        tag(BlockTags.STAIRS).add(ModBlocks.getRK(CRACKED_NETHER_BRICK_STAIRS));
+        tag(BlockTags.SLABS).add(ModBlocks.getRK(CRACKED_NETHER_BRICK_SLAB));
 
         tag(BlockTags.STAIRS).add(ModBlocks.getRK(SMOOTH_STONE_STAIRS));
         tag(BlockTags.WALLS).add(ModBlocks.getRK(SMOOTH_STONE_WALL));
@@ -495,6 +514,16 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
 
         tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.NETHERITE_SLAB));
         tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.NETHERITE_STAIRS));
+
+        tag(ModTags.Blocks.INCORRECT_FOR_EMERALD_TOOL)
+                .addTag(BlockTags.NEEDS_IRON_TOOL);
+
+        tag(ModTags.Blocks.NEEDS_EMERALD_TOOL)
+                .add(ModBlocks.getRK(SAPPHIRE_BLOCK))
+                .add(ModBlocks.getRK(SAPPHIRE_STAIRS))
+                .add(ModBlocks.getRK(SAPPHIRE_CLUSTER))
+                .add(ModBlocks.getRK(RUBY_BLOCK))
+                .add(ModBlocks.getRK(RUBY_STAIRS));
 
     }
 }

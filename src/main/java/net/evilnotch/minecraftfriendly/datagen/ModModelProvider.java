@@ -19,8 +19,12 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockModelGenerators.createTrivialCube(ModBlocks.PLATED_IRON);
         blockModelGenerators.createTrivialCube(ModBlocks.CHISELED_GOLD);
-        blockModelGenerators.createTrivialCube(ModBlocks.RUBY_BLOCK);
-        blockModelGenerators.createTrivialCube(ModBlocks.SAPPHIRE_BLOCK);
+
+        blockModelGenerators.family(ModBlocks.RUBY_BLOCK)
+                .stairs(ModBlocks.RUBY_STAIRS);
+        blockModelGenerators.family(ModBlocks.SAPPHIRE_BLOCK)
+                .stairs(ModBlocks.SAPPHIRE_STAIRS);
+
         blockModelGenerators.createTrivialCube(ModBlocks.CHISELED_EMERALD);
         blockModelGenerators.createTrivialCube(ModBlocks.CHISELED_LAPIS);
         blockModelGenerators.createTrivialCube(ModBlocks.CHISELED_DIAMOND);
@@ -35,6 +39,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockModelGenerators.createPlantWithDefaultItem(ModBlocks.BUTTERCUP, ModBlocks.POTTED_BUTTERCUP, BlockModelGenerators.PlantType.NOT_TINTED);
         blockModelGenerators.createPlantWithDefaultItem(ModBlocks.PAEONIA, ModBlocks.POTTED_PAEONIA, BlockModelGenerators.PlantType.NOT_TINTED);
         blockModelGenerators.createPlantWithDefaultItem(ModBlocks.ROSE, ModBlocks.POTTED_ROSE, BlockModelGenerators.PlantType.NOT_TINTED);
+        blockModelGenerators.createPlantWithDefaultItem(ModBlocks.BLUE_HYPNEA_MACROALGAE,
+                ModBlocks.POTTED_BLUE_HYPNEA_MACROALGAE, BlockModelGenerators.PlantType.NOT_TINTED);
 
         blockModelGenerators.createFlowerBed(ModBlocks.WARPED_PETALS);
 
@@ -47,6 +53,10 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockModelGenerators.family(Blocks.NETHER_BRICKS)
                         .fenceGate(ModBlocks.NETHER_BRICK_FENCE_GATE);
+
+        blockModelGenerators.family(Blocks.CRACKED_NETHER_BRICKS)
+                        .stairs(ModBlocks.CRACKED_NETHER_BRICK_STAIRS)
+                        .slab(ModBlocks.CRACKED_NETHER_BRICK_SLAB);
 
         blockModelGenerators.createAmethystCluster(ModBlocks.SAPPHIRE_CLUSTER);
 
@@ -246,5 +256,13 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerators.generateFlatItem(ModItems.PRISMARINE, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.INDEPENDENT_ACCIDENT, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.RUBY, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.LONGER_STRING, ModelTemplates.FLAT_ITEM);
+
+        itemModelGenerators.generateFlatItem(ModItems.EMERALD_SWORD, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.EMERALD_SHOVEL, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.EMERALD_PICKAXE, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.EMERALD_AXE, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.EMERALD_HOE, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateSpear(ModItems.EMERALD_SPEAR);
     }
 }

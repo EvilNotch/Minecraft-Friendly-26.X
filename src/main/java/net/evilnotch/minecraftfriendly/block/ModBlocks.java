@@ -31,6 +31,14 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops().mapColor(MapColor.NETHER).instrument(NoteBlockInstrument.BASEDRUM)
                     .sound(SoundType.NETHER_BRICKS)));
 
+    public static final Block CRACKED_NETHER_BRICK_SLAB = registerBlock("cracked_nether_brick_slab", properties ->
+            new SlabBlock(properties.strength(2.0F, 6.0F).requiresCorrectToolForDrops()
+                    .mapColor(MapColor.NETHER).instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.NETHER_BRICKS)));
+
+    public static final Block CRACKED_NETHER_BRICK_STAIRS = registerBlock("cracked_nether_brick_stairs", properties ->
+            new StairBlock(Blocks.CRACKED_NETHER_BRICKS.defaultBlockState(), properties.strength(2.0F, 6.0F)
+                    .requiresCorrectToolForDrops().mapColor(MapColor.NETHER).sound(SoundType.NETHER_BRICKS)));
+
     public static final Block RAINBOW_WOOL = registerBlock("rainbow_wool", properties -> new Block(properties.sound(SoundType.WOOL).mapColor(DyeColor.BROWN)
             .strength(0.8F).instrument(NoteBlockInstrument.GUITAR).ignitedByLava()));
 
@@ -63,6 +71,13 @@ public class ModBlocks {
                     .offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)), Component.translatable("tooltip.minecraftfriendly.rose"));
 
     public static final Block POTTED_ROSE = registerBlock("potted_rose", properties -> new FlowerPotBlock(ModBlocks.ROSE, properties));
+
+    public static final Block BLUE_HYPNEA_MACROALGAE = registerBlock("blue_hypnea_macroalgae",
+            properties -> new FlowerBlock(MobEffects.LEVITATION, 0.35F, properties.noCollision().mapColor(MapColor.PLANT)
+                    .instabreak().sound(SoundType.GRASS).pushReaction(PushReaction.DESTROY)));
+
+    public static final Block POTTED_BLUE_HYPNEA_MACROALGAE = registerBlock("potted_blue_hypnea_macroalgae",
+            properties -> new FlowerPotBlock(ModBlocks.BLUE_HYPNEA_MACROALGAE, properties));
 
     //public static final Block BLUEBERRY_VINE = registerBlock("blueberry_vine", properties -> new CaveVinesBlock());
 
@@ -220,7 +235,11 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.FIRE)
                     .instrument(NoteBlockInstrument.BIT)
-                    .strength(5.0F, 6.0F)));
+                    .strength(5.0F, 6.0F)), Component.translatable("tooltip.minecraftfriendly.ruby_block"));
+
+    public static final Block RUBY_STAIRS = registerBlock("ruby_stairs",
+            properties -> new StairBlock(ModBlocks.RUBY_BLOCK.defaultBlockState(), properties.strength(5.0F, 6.0F)
+                    .instrument(NoteBlockInstrument.BIT).mapColor(MapColor.FIRE).sound(SoundType.METAL)));
 
     public static final Block SAPPHIRE_BLOCK = registerBlock("sapphire_block",
             properties -> new Block(properties
@@ -229,6 +248,10 @@ public class ModBlocks {
                     .mapColor(MapColor.LAPIS)
                     .instrument(NoteBlockInstrument.BIT)
                     .strength(5.0F, 6.0F)));
+
+    public static final Block SAPPHIRE_STAIRS = registerBlock("sapphire_stairs",
+            properties -> new StairBlock(ModBlocks.SAPPHIRE_BLOCK.defaultBlockState(), properties.strength(5.0F, 6.0F)
+                    .instrument(NoteBlockInstrument.BIT).mapColor(MapColor.LAPIS).sound(SoundType.METAL)));
 
     public static final Block CHISELED_EMERALD = registerBlock("chiseled_emerald",
             properties -> new Block(properties
@@ -665,6 +688,9 @@ public class ModBlocks {
 
             output.insertAfter(Blocks.NETHER_BRICK_FENCE, ModBlocks.NETHER_BRICK_FENCE_GATE);
 
+            output.insertAfter(Blocks.CRACKED_NETHER_BRICKS, ModBlocks.CRACKED_NETHER_BRICK_STAIRS);
+            output.insertAfter(ModBlocks.CRACKED_NETHER_BRICK_STAIRS, ModBlocks.CRACKED_NETHER_BRICK_SLAB);
+
             output.insertAfter(Blocks.SMOOTH_STONE, ModBlocks.SMOOTH_STONE_STAIRS);
             output.insertAfter(Blocks.SMOOTH_STONE_SLAB, ModBlocks.SMOOTH_STONE_WALL);
 
@@ -796,6 +822,8 @@ public class ModBlocks {
 
             output.insertAfter(Blocks.LILY_OF_THE_VALLEY, ModBlocks.PAEONIA);
             output.insertAfter(Blocks.OPEN_EYEBLOSSOM, ModBlocks.ROSE);
+
+            output.insertAfter(Blocks.BLUE_ORCHID, ModBlocks.BLUE_HYPNEA_MACROALGAE);
 
             output.insertAfter(Blocks.PINK_PETALS, ModBlocks.WARPED_PETALS);
 

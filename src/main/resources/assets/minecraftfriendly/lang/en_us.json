@@ -1,9 +1,18 @@
 {
+  "item.minecraftfriendly.longer_string": "Longer String",
+
   "item.minecraftfriendly.raw_calamari": "Raw Calamari",
   "item.minecraftfriendly.cooked_calamari": "Cooked Calamari",
 
   "item.minecraftfriendly.prismarine": "Prismarine",
   "item.minecraftfriendly.ruby": "Ruby",
+
+  "item.minecraftfriendly.emerald_sword": "Emerald Sword",
+  "item.minecraftfriendly.emerald_shovel": "Emerald Shovel",
+  "item.minecraftfriendly.emerald_pickaxe": "Emerald Pickaxe",
+  "item.minecraftfriendly.emerald_axe": "Emerald Axe",
+  "item.minecraftfriendly.emerald_hoe": "Emerald Hoe",
+  "item.minecraftfriendly.emerald_spear": "Emerald Spear",
 
   "item.minecraftfriendly.independent_accident": "Music Disc",
   "jukebox_song.minecraftfriendly.independent_accident": "C418 - Independent Accident",
@@ -23,6 +32,9 @@
   "block.minecraftfriendly.rose": "Rose",
   "tooltip.minecraftfriendly.rose": "§4Her.",
   "block.minecraftfriendly.potted_rose": "Potted Rose",
+
+  "block.minecraftfriendly.blue_hypnea_macroalgae": "Blue Hypnea Macroalgae",
+  "block.minecraftfriendly.potted_blue_hypnea_macroalgae": "Potted Blue Hypnea Macroalgae",
 
   "block.minecraftfriendly.warped_petals": "Warped Petals",
 
@@ -46,6 +58,9 @@
   "block.minecraftfriendly.rainbow_wool": "Rainbow Wool",
 
   "block.minecraftfriendly.nether_brick_fence_gate": "Nether Brick Fence Gate",
+
+  "block.minecraftfriendly.cracked_nether_brick_stairs": "Cracked Nether Brick Stairs",
+  "block.minecraftfriendly.cracked_nether_brick_slab": "Cracked Nether Brick Slab",
 
   "block.minecraftfriendly.sapphire_cluster": "Sapphire Cluster",
 
@@ -78,7 +93,11 @@
   "block.minecraftfriendly.redstone_stairs": "Redstone Stairs",
 
   "block.minecraftfriendly.ruby_block": "Block of Ruby",
+  "block.minecraftfriendly.ruby_stairs": "Ruby Stairs",
+  "tooltip.minecraftfriendly.ruby_block": "§4Dung.",
+
   "block.minecraftfriendly.sapphire_block": "Block of Sapphire",
+  "block.minecraftfriendly.sapphire_stairs": "Sapphire Stairs",
 
   "block.minecraftfriendly.chiseled_emerald": "Block of Chiseled Emerald",
   "block.minecraftfriendly.emerald_slab": "Emerald Slab",

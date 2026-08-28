@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": "minecraft:stick",
+    "X": "minecraftfriendly:longer_string",
+    "I": "minecraft:iron_nugget"
+  },
+  "pattern": [
+    "  #",
+    " #X",
+    "# I"
+  ],
+  "result": {
+    "id": "minecraft:fishing_rod"
+  }
+}

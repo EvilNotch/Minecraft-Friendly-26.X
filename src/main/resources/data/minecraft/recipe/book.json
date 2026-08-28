@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "minecraft:paper",
+    "minecraft:paper",
+    "minecraft:string",
+    "#minecraftfriendly:is_animal_hide"
+  ],
+  "result": {
+    "id": "minecraft:book"
+  }
+}

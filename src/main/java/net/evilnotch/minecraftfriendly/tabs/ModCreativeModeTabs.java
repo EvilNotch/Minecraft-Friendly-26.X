@@ -22,7 +22,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.PLATED_IRON);
                         output.accept(ModBlocks.CHISELED_GOLD);
                         output.accept(ModBlocks.RUBY_BLOCK);
+                        output.accept(ModBlocks.RUBY_STAIRS);
                         output.accept(ModBlocks.SAPPHIRE_BLOCK);
+                        output.accept(ModBlocks.SAPPHIRE_STAIRS);
                         output.accept(ModBlocks.CHISELED_EMERALD);
                         output.accept(ModBlocks.CHISELED_LAPIS);
                         output.accept(ModBlocks.CHISELED_DIAMOND);
