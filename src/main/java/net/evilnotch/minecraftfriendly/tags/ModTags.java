@@ -13,6 +13,8 @@ public class ModTags {
         public static final TagKey<Block> NEEDS_GOLD_TOOL = createTag("needs_gold_tool");
         public static final TagKey<Block> NEEDS_EMERALD_TOOL = createTag("needs_emerald_tool");
         public static final TagKey<Block> INCORRECT_FOR_EMERALD_TOOL = createTag("incorrect_for_emerald_tool");
+
+        public static final TagKey<Block> BLOCK_RECIPE_VOIDER = createTag("block_recipe_voider");
         private static TagKey<Block> createTag(String name) {
             return TagKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(MinecraftFriendly.MOD_ID, name));
         }
@@ -27,6 +29,8 @@ public class ModTags {
         public static final TagKey<Item> IS_ANIMAL_HIDE = createTag("is_animal_hide");
 
         public static final TagKey<Item> IS_TICKLING = createTag("is_tickling");
+
+        public static final TagKey<Item> ITEM_RECIPE_VOIDER = createTag("item_recipe_voider");
         private static TagKey<Item> createTag(String name) {
             return TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(MinecraftFriendly.MOD_ID, name));
         }

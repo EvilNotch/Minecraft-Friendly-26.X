@@ -156,6 +156,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .group("building")
                         .save(output, "pink_dye_from_paeonia");
 
+                shapeless(RecipeCategory.MISC, Items.DYE.white(), 1)
+                        .requires(Items.WHITE_TULIP)
+                        .group("white_dye_from_white_tulip")
+                        .unlockedBy(getHasName(Items.WHITE_TULIP), has(Items.WHITE_TULIP))
+                        .save(output, "white_dye_from_white_tulip");
+
                 slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DIRT_SLAB, Ingredient.of(Blocks.DIRT))
                         .unlockedBy(getHasName(Blocks.DIRT), has(Blocks.DIRT))
                         .group("building")
