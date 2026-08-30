@@ -166,6 +166,11 @@ public class ModBlocks {
     public static final Block CRACKED_PURPUR_BLOCK = registerBlock("cracked_purpur_block", properties -> new Block(properties.mapColor(MapColor.COLOR_MAGENTA)
             .instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1.5F, 6.0F)));
 
+    public static final Block CRACKED_PURPUR_SLAB = registerBlock("cracked_purpur_slab", properties -> new SlabBlock(properties.strength(1.0F, 6.0F)
+            .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.COLOR_MAGENTA)));
+    public static final Block CRACKED_PURPUR_STAIRS = registerBlock("cracked_purpur_stairs", properties -> new StairBlock(ModBlocks.CRACKED_PURPUR_BLOCK.defaultBlockState(),
+            properties.mapColor(MapColor.COLOR_MAGENTA).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1.5F, 6.0F)));
+
     public static final Block SMOOTH_STONE_STAIRS = registerBlock("smooth_stone_stairs",
             properties -> new StairBlock(Blocks.SMOOTH_STONE.defaultBlockState(), properties.strength(2.0F, 6.0F)
                     .requiresCorrectToolForDrops().mapColor(MapColor.STONE)));
@@ -712,6 +717,8 @@ public class ModBlocks {
             output.insertAfter(ModBlocks.DIAMOND_STAIRS, ModBlocks.DIAMOND_SLAB);
 
             output.insertAfter(Blocks.PURPUR_BLOCK, ModBlocks.CRACKED_PURPUR_BLOCK);
+            output.insertAfter(Blocks.PURPUR_SLAB, ModBlocks.CRACKED_PURPUR_STAIRS);
+            output.insertAfter(ModBlocks.CRACKED_PURPUR_STAIRS, ModBlocks.CRACKED_PURPUR_SLAB);
         });
 
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.COLORED_BLOCKS).register(output -> {

@@ -189,6 +189,8 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(PETRIFIED_WARPED_SLAB))
 
                 .add(ModBlocks.getRK(CRACKED_PURPUR_BLOCK))
+                .add(ModBlocks.getRK(CRACKED_PURPUR_STAIRS))
+                .add(ModBlocks.getRK(CRACKED_PURPUR_SLAB))
 
                 .add(ModBlocks.getRK(SMOOTH_STONE_STAIRS))
                 .add(ModBlocks.getRK(SMOOTH_STONE_WALL))
@@ -390,6 +392,9 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
 
         tag(BlockTags.STAIRS).add(ModBlocks.getRK(CRACKED_NETHER_BRICK_STAIRS));
         tag(BlockTags.SLABS).add(ModBlocks.getRK(CRACKED_NETHER_BRICK_SLAB));
+
+        tag(BlockTags.STAIRS).add(ModBlocks.getRK(CRACKED_PURPUR_STAIRS));
+        tag(BlockTags.SLABS).add(ModBlocks.getRK(CRACKED_PURPUR_SLAB));
 
         tag(BlockTags.STAIRS).add(ModBlocks.getRK(SMOOTH_STONE_STAIRS));
         tag(BlockTags.WALLS).add(ModBlocks.getRK(SMOOTH_STONE_WALL));

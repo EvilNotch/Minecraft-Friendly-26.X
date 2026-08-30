@@ -29,7 +29,9 @@ public class ModModelProvider extends FabricModelProvider {
         blockModelGenerators.createTrivialCube(ModBlocks.CHISELED_LAPIS);
         blockModelGenerators.createTrivialCube(ModBlocks.CHISELED_DIAMOND);
 
-        blockModelGenerators.createTrivialCube(ModBlocks.CRACKED_PURPUR_BLOCK);
+        blockModelGenerators.family(ModBlocks.CRACKED_PURPUR_BLOCK)
+                .stairs(ModBlocks.CRACKED_PURPUR_STAIRS)
+                .slab(ModBlocks.CRACKED_PURPUR_SLAB);
 
         blockModelGenerators.createTrivialCube(ModBlocks.RAINBOW_WOOL);
 
