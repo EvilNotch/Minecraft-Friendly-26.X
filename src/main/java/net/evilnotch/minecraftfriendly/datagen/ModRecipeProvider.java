@@ -272,8 +272,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
 
 
-                //Insert Later Datagen Food Recipes here: starting with calamari.
-
                 shaped(RecipeCategory.MISC, ModBlocks.NETHER_BRICK_FENCE_GATE)
                         .pattern("   ")
                         .pattern("BNB")

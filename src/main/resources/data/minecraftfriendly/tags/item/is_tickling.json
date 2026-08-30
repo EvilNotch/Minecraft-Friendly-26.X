@@ -1,6 +1,7 @@
 {
   "values": [
     "minecraft:feather",
-    "minecraft:string"
+    "minecraft:string",
+    "minecraftfriendly:longer_string"
   ]
 }
