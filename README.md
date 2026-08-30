@@ -43,6 +43,7 @@ Gave Zombies their right to drop feathers again.
 Updated Textures for helmets to fit what is actually seen in game.
 Made Sand Renewable from base blocks.
 Added Cracked Purpur Blocks, might do a blockset.
+Fixed Pillager Outposts.
 Easter Eggs ofc.
 
 ## Experimental Features:
