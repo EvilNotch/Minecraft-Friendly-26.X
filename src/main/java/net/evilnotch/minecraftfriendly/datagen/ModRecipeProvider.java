@@ -296,6 +296,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .group("building")
                         .save(output, "cracked_nether_brick_slab_from_cracked_nether_bricks");
 
+                smeltingResultFromBase(ModBlocks.CRACKED_NETHER_BRICK_SLAB, Blocks.NETHER_BRICK_SLAB);
+
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_NETHER_BRICK_STAIRS, Blocks.CRACKED_NETHER_BRICKS);
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_NETHER_BRICK_STAIRS, Blocks.NETHER_BRICK_STAIRS);
 
@@ -303,6 +305,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(Blocks.CRACKED_NETHER_BRICKS), has(Blocks.CRACKED_NETHER_BRICKS))
                         .group("building")
                         .save(output, "cracked_nether_brick_stairs_from_cracked_nether_bricks");
+
+                smeltingResultFromBase(ModBlocks.CRACKED_NETHER_BRICK_STAIRS, Blocks.NETHER_BRICK_STAIRS);
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_NETHER_BRICK_SLAB, Blocks.CRACKED_NETHER_BRICKS);
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_NETHER_BRICK_SLAB, Blocks.NETHER_BRICK_SLAB);
@@ -357,6 +361,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .save(output, "tube_coral_slab_from_tube_coral_block");
 
                 smeltingResultFromBase(ModBlocks.CRACKED_PURPUR_BLOCK, Blocks.PURPUR_BLOCK);
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_PURPUR_BLOCK, Blocks.PURPUR_BLOCK);
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_PURPUR_SLAB, Blocks.PURPUR_SLAB);
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_PURPUR_SLAB, Blocks.PURPUR_BLOCK, 2);
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_PURPUR_SLAB, ModBlocks.CRACKED_PURPUR_BLOCK, 2);
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_PURPUR_STAIRS, Blocks.PURPUR_STAIRS);
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_PURPUR_STAIRS, Blocks.PURPUR_BLOCK);
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_PURPUR_STAIRS, ModBlocks.CRACKED_PURPUR_BLOCK);
+
+                smeltingResultFromBase(ModBlocks.CRACKED_PURPUR_SLAB, Blocks.PURPUR_SLAB);
+                smeltingResultFromBase(ModBlocks.CRACKED_PURPUR_STAIRS, Blocks.PURPUR_STAIRS);
 
                 smeltingResultFromBase(ModItems.COOKED_CALAMARI, ModItems.RAW_CALAMARI);
 
