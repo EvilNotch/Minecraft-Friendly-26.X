@@ -36,6 +36,8 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
 
         dropSelf(ModBlocks.SAND_LAYER_BLOCK);
         dropSelf(ModBlocks.RED_SAND_LAYER_BLOCK);
+        dropSelf(ModBlocks.SOUL_SAND_LAYER_BLOCK);
+        dropSelf(ModBlocks.SOUL_SOIL_LAYER_BLOCK);
 
         add(ModBlocks.PETRIFIED_SPRUCE_SLAB, this::createSlabItemTable);
         add(ModBlocks.PETRIFIED_BIRCH_SLAB, this::createSlabItemTable);

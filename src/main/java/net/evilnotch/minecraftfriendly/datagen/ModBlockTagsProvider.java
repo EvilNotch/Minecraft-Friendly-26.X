@@ -165,7 +165,17 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
 
                 .add(ModBlocks.getRK(GRAVEL_LAYER_BLOCK))
                 .add(ModBlocks.getRK(SAND_LAYER_BLOCK))
-                .add(ModBlocks.getRK(RED_SAND_LAYER_BLOCK));
+                .add(ModBlocks.getRK(RED_SAND_LAYER_BLOCK))
+                .add(ModBlocks.getRK(SOUL_SAND_LAYER_BLOCK))
+                .add(ModBlocks.getRK(SOUL_SOIL_LAYER_BLOCK));
+
+        tag(BlockTags.SOUL_SPEED_BLOCKS)
+                .add(ModBlocks.getRK(SOUL_SAND_LAYER_BLOCK))
+                .add(ModBlocks.getRK(SOUL_SOIL_LAYER_BLOCK));
+
+        tag(BlockTags.SOUL_FIRE_BASE_BLOCKS)
+                .add(ModBlocks.getRK(SOUL_SAND_LAYER_BLOCK))
+                .add(ModBlocks.getRK(SOUL_SOIL_LAYER_BLOCK));
 
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
 

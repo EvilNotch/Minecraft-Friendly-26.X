@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "#minecraftfriendly:is_emerald",
+  "base": "minecraft:golden_pickaxe",
+  "result": {
+    "id": "minecraft:emerald_pickaxe"
+  },
+  "template": "minecraftfriendly:emerald_upgrade_smithing_template"
+}

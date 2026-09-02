@@ -8,7 +8,7 @@ Shovels are now needed to make boats.
 Crafting recipes should make more sense.
 Stone cutters need loving too with new functionality for wooden blocks, concrete, and stones!
 Blazes drop glowstone similar to Console Edition.
-Jungle Leaves are no longer suffering from deforestation.
+Trees are to no longer suffer the consequences of humane idiocracy.
 Glass should be smeltable from red sand, even in a blast furnace, just like sand!
 Nether wart blocks are reversible.
 Added Nether Brick Fence Gates.
@@ -16,7 +16,7 @@ Added Cracked Nether Brick Slabs and Stairs.
 Wool can be used to make string, and so can cobwebs.
 Cat to Dog bug is reintroduced.
 Replacing Vanilla Door output recipe to 2 instead of 3 since everyone is extra and a half 🥰
-Updated Stair crafting output to 6 instead of 4. (WIP)
+Updated Stair crafting output to 6 instead of 4. (WIP For Modded Blocks)
 Added Sand Layers, and Gravel Layers.
 Added Metal Slab and Stair Variants, along with Concrete Slabs, Stairs, Fences, Fence Gates, and Walls.
 Added Calamari, WIP Textures.
@@ -34,7 +34,7 @@ Updates Lang file for better readability.
 Added Ruby and Sapphire. (WIP Functionality.)
 Added Longer String.
 Fixed Cod Texture.
-Made all animal hide able to make books.
+Made all animal hides able to make books with item tag is_animal_hide.
 Made String and Feather able to be used for brushes.
 Added more options to feed your cat, and waking up with cats more rewarding.
 Updated Fishing Rod Recipe to make more sense.
@@ -46,6 +46,11 @@ Added Cracked Purpur Blocks, might do a blockset.
 Remodeled Pillager Outpost Towers.
 Fixed Most Complaints with structures.
 Fixed White Tulip Recipe.
+Fixed Arrow Enchantment "Infinity" not accepting other types of arrows.
+Added more stone entries to crafting and tool materials.
+Evokers drop enchantment books randomly similar to bedrock.
+Updated the Creeper's face texture.
+Made Netherite and Emerald Armor and Tools be able to be fixed by their base material counterparts.
 Easter Eggs ofc.
 
 ## Experimental Features:

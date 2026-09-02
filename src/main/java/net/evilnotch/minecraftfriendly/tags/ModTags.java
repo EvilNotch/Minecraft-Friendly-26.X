@@ -24,6 +24,9 @@ public class ModTags {
         public static final TagKey<Item> REPAIRS_EMERALD_ARMOR = createTag("repairs_emerald_armor");
 
         public static final TagKey<Item> EMERALD_TOOL_MATERIALS = createTag("emerald_tool_materials");
+
+        public static final TagKey<Item> IS_EMERALD =  createTag("is_emerald");
+        public static final TagKey<Item> IS_NETHERITE = createTag("is_netherite");
         public static final TagKey<Item> GEMSTONES = createTag("gemstones");
 
         public static final TagKey<Item> IS_ANIMAL_HIDE = createTag("is_animal_hide");

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "#minecraftfriendly:is_emerald",
+  "base": "minecraft:golden_shovel",
+  "result": {
+    "id": "minecraft:emerald_shovel"
+  },
+  "template": "minecraftfriendly:emerald_upgrade_smithing_template"
+}

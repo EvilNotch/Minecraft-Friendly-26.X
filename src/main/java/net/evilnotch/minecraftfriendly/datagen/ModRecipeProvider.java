@@ -9,6 +9,7 @@ import net.minecraft.core.component.predicates.DataComponentPredicate;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.SmithingTemplateItem;
 import net.minecraft.world.item.crafting.CampfireCookingRecipe;
@@ -113,6 +114,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(Blocks.STRUCTURE_VOID), has(Blocks.STRUCTURE_VOID))
                         .group("testing")
                         .save(output, "barrier_blocks_from_structure_void");
+
+                shapeless(RecipeCategory.MISC, Items.AMETHYST_SHARD, 4)
+                        .requires(Blocks.AMETHYST_BLOCK)
+                        .unlockedBy(getHasName(Blocks.AMETHYST_BLOCK), has(Blocks.AMETHYST_BLOCK))
+                        .save(output, "amethyst_shards_from_amethyst_block");
 
                 shapeless(RecipeCategory.MISC, Items.DYE.pink(), 1)
                         .requires(ModBlocks.PINK_DAISY)
@@ -354,6 +360,20 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(Blocks.RED_SAND), has(Blocks.RED_SAND))
                         .group("building")
                         .save(output, "layered_red_sand_from_red_sand_block");
+
+                slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SOUL_SAND_LAYER_BLOCK, Ingredient.of(Blocks.SOUL_SAND))
+                        .unlockedBy(getHasName(Blocks.SOUL_SAND), has(Blocks.SOUL_SAND))
+                        .group("building")
+                        .save(output, "layered_soul_sand_from_soul_sand_block");
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SOUL_SAND_LAYER_BLOCK, Blocks.SOUL_SAND, 6);
+
+                slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SOUL_SOIL_LAYER_BLOCK, Ingredient.of(Blocks.SOUL_SOIL))
+                        .unlockedBy(getHasName(Blocks.SOUL_SOIL), has(Blocks.SOUL_SOIL))
+                        .group("building")
+                        .save(output, "layered_soul_soil_from_soul_soil_block");
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SOUL_SOIL_LAYER_BLOCK, Blocks.SOUL_SOIL, 6);
 
                 slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.TUBE_CORAL_SLAB, Ingredient.of(Blocks.TUBE_CORAL))
                         .unlockedBy(getHasName(Blocks.TUBE_CORAL), has(Blocks.TUBE_CORAL))
@@ -917,6 +937,33 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .group("ingredients")
                         .unlockedBy(getHasName(Items.STRING), has(Items.STRING))
                         .save(output, "longer_string_from_string");
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, Blocks.SNOW, Blocks.SNOW_BLOCK, 6);
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, Items.SNOWBALL, Blocks.SNOW_BLOCK, 9);
+
+                shapeless(RecipeCategory.MISC, Items.DYE.black(), 2)
+                        .requires(Items.DYE.brown())
+                        .requires(Items.DYE.blue())
+                        .unlockedBy(getHasName(Items.DYE.brown()), has(Items.DYE.brown()))
+                        .unlockedBy(getHasName(Items.DYE.blue()), has(Items.DYE.blue()))
+                        .save(output, "black_dye_from_brown_and_blue_dye");
+
+                shapeless(RecipeCategory.BUILDING_BLOCKS, Blocks.POINTED_DRIPSTONE, 2)
+                        .requires(Blocks.DRIPSTONE_BLOCK)
+                        .unlockedBy(getHasName(Blocks.DRIPSTONE_BLOCK), has(Blocks.DRIPSTONE_BLOCK))
+                        .save(output, "pointed_dripstone_from_dripstone_block");
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, Blocks.POINTED_DRIPSTONE, Blocks.DRIPSTONE_BLOCK, 2);
+
+                shaped(RecipeCategory.MISC, ModItems.EMERALD_UPGRADE_SMITHING_TEMPLATE, 2)
+                        .pattern("#E#")
+                        .pattern("#G#")
+                        .pattern("###")
+                        .define('#', Blocks.NETHERRACK)
+                        .define('G', Items.GOLD_INGOT)
+                        .define('E', ModItems.EMERALD_UPGRADE_SMITHING_TEMPLATE)
+                        .unlockedBy(getHasName(ModItems.EMERALD_UPGRADE_SMITHING_TEMPLATE), has(ModItems.EMERALD_UPGRADE_SMITHING_TEMPLATE))
+                        .save(output, "emerald_upgrade_smithing_template_duper");
 
 
             }

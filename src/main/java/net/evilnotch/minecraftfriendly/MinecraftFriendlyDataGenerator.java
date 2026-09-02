@@ -18,6 +18,7 @@ public class MinecraftFriendlyDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModRegistryDataProvider::new);
 		pack.addProvider(ModPaintingTagsProvider::new);
 		pack.addProvider(ModSoundsProvider::new);
+		pack.addProvider(ModEquipmentAssetProvider::new);
 	}
 
 	@Override

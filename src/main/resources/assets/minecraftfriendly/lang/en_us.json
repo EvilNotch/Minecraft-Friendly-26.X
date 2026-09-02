@@ -6,6 +6,7 @@
 
   "item.minecraftfriendly.prismarine": "Prismarine",
   "item.minecraftfriendly.ruby": "Ruby",
+  "tooltip.minecraftfriendly.ruby": "§4Dung.",
 
   "item.minecraftfriendly.emerald_sword": "Emerald Sword",
   "item.minecraftfriendly.emerald_shovel": "Emerald Shovel",
@@ -13,6 +14,17 @@
   "item.minecraftfriendly.emerald_axe": "Emerald Axe",
   "item.minecraftfriendly.emerald_hoe": "Emerald Hoe",
   "item.minecraftfriendly.emerald_spear": "Emerald Spear",
+
+  "item.minecraftfriendly.emerald_helmet": "Emerald Helmet",
+  "item.minecraftfriendly.emerald_chestplate": "Emerald Chestplate",
+  "item.minecraftfriendly.emerald_leggings": "Emerald Leggings",
+  "item.minecraftfriendly.emerald_boots": "Emerald Boots",
+
+  "item.minecraftfriendly.emerald_upgrade_smithing_template": "Emerald Tablet of Thoth",
+  "minecraftfriendly.smithing_template.emerald_upgrade.applies_to": "Golden Equipment",
+  "minecraftfriendly.smithing_template.emerald_upgrade.ingredients": "Emerald",
+  "minecraftfriendly.smithing_template.emerald_upgrade.base_slot": "Add golden armor, weapon, or tool",
+  "minecraftfriendly.smithing_template.emerald_upgrade.additions_slot_description": "Add Emerald Gem",
 
   "item.minecraftfriendly.independent_accident": "Music Disc",
   "jukebox_song.minecraftfriendly.independent_accident": "C418 - Independent Accident",
@@ -68,6 +80,8 @@
 
   "block.minecraftfriendly.sand_layer_block": "Sand",
   "block.minecraftfriendly.red_sand_layer_block": "Red Sand",
+  "block.minecraftfriendly.soul_sand_layer_block": "Soul Sand",
+  "block.minecraftfriendly.soul_soil_layer_block": "Soul Soil",
 
   "block.minecraftfriendly.tube_coral_slab": "Tube Coral Slab",
 
@@ -96,7 +110,6 @@
 
   "block.minecraftfriendly.ruby_block": "Block of Ruby",
   "block.minecraftfriendly.ruby_stairs": "Ruby Stairs",
-  "tooltip.minecraftfriendly.ruby_block": "§4Dung.",
 
   "block.minecraftfriendly.sapphire_block": "Block of Sapphire",
   "block.minecraftfriendly.sapphire_stairs": "Sapphire Stairs",

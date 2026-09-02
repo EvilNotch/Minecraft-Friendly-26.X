@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "#minecraftfriendly:is_emerald",
+  "base": "minecraft:golden_leggings",
+  "result": {
+    "id": "minecraft:emerald_leggings"
+  },
+  "template": "minecraftfriendly:emerald_upgrade_smithing_template"
+}

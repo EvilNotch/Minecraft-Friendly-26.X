@@ -92,24 +92,38 @@ public class ModBlocks {
                     .isViewBlocking((statex, level, pos) -> statex.getValue(SnowLayerBlock.LAYERS) >= 8)
                     .pushReaction(PushReaction.DESTROY)
                     .replaceable()
-                    .randomTicks()
-                    .requiresCorrectToolForDrops()));
+                    .randomTicks()));
 
     public static final Block SAND_LAYER_BLOCK = registerBlock("sand_layer_block",
             properties -> new SnowLayerBlock(properties.strength(0.2F).sound(SoundType.SAND).mapColor(MapColor.SAND)
                     .isViewBlocking((statex, level, pos) -> statex.getValue(SnowLayerBlock.LAYERS) >= 8)
                     .pushReaction(PushReaction.DESTROY)
                     .replaceable()
-                    .randomTicks()
-                    .requiresCorrectToolForDrops()));
+                    .randomTicks()));
 
     public static final Block RED_SAND_LAYER_BLOCK = registerBlock("red_sand_layer_block",
             properties -> new SnowLayerBlock(properties.strength(0.2F).sound(SoundType.SAND).mapColor(MapColor.FIRE)
                     .isViewBlocking((statex, level, pos) -> statex.getValue(SnowLayerBlock.LAYERS) >= 8)
                     .pushReaction(PushReaction.DESTROY)
                     .replaceable()
+                    .randomTicks()));
+
+    public static final Block SOUL_SAND_LAYER_BLOCK = registerBlock("soul_sand_layer_block", properties -> new SnowLayerBlock(
+            properties.strength(0.2F).sound(SoundType.SOUL_SAND).mapColor(MapColor.COLOR_BROWN).instrument(NoteBlockInstrument.COW_BELL).speedFactor(0.4F)
+                    .isValidSpawn(Blocks::always).isRedstoneConductor(Blocks::always).isViewBlocking(Blocks::always)
+                    .isViewBlocking((statex, level, pos) -> statex.getValue(SnowLayerBlock.LAYERS) >= 8)
+                    .pushReaction(PushReaction.DESTROY)
+                    .replaceable()
                     .randomTicks()
-                    .requiresCorrectToolForDrops()));
+    ));
+
+    public static final Block SOUL_SOIL_LAYER_BLOCK = registerBlock("soul_soil_layer_block", properties -> new SnowLayerBlock(
+            properties.strength(0.2F).sound(SoundType.SOUL_SOIL).mapColor(MapColor.COLOR_BROWN)
+                    .isViewBlocking((statex, level, pos) -> statex.getValue(SnowLayerBlock.LAYERS) >= 8)
+                    .pushReaction(PushReaction.DESTROY)
+                    .replaceable()
+                    .randomTicks()
+    ));
 
     public static final Block TUBE_CORAL_SLAB = registerBlock("tube_coral_slab",
             properties -> new SlabBlock(properties.strength(1.5F, 6.0F)
@@ -240,7 +254,7 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.FIRE)
                     .instrument(NoteBlockInstrument.BIT)
-                    .strength(5.0F, 6.0F)), Component.translatable("tooltip.minecraftfriendly.ruby_block"));
+                    .strength(5.0F, 6.0F)));
 
     public static final Block RUBY_STAIRS = registerBlock("ruby_stairs",
             properties -> new StairBlock(ModBlocks.RUBY_BLOCK.defaultBlockState(), properties.strength(5.0F, 6.0F)
@@ -823,6 +837,8 @@ public class ModBlocks {
             output.insertAfter(Blocks.GRAVEL, ModBlocks.GRAVEL_LAYER_BLOCK);
             output.insertAfter(Blocks.SAND, ModBlocks.SAND_LAYER_BLOCK);
             output.insertAfter(Blocks.RED_SAND, ModBlocks.RED_SAND_LAYER_BLOCK);
+            output.insertAfter(Blocks.SOUL_SAND, ModBlocks.SOUL_SAND_LAYER_BLOCK);
+            output.insertAfter(Blocks.SOUL_SOIL, ModBlocks.SOUL_SOIL_LAYER_BLOCK);
 
             output.insertAfter(Blocks.OXEYE_DAISY, ModBlocks.PINK_DAISY);
             output.insertAfter(Blocks.DANDELION, ModBlocks.BUTTERCUP);
@@ -835,6 +851,10 @@ public class ModBlocks {
             output.insertAfter(Blocks.PINK_PETALS, ModBlocks.WARPED_PETALS);
 
             output.insertAfter(Blocks.AMETHYST_CLUSTER, ModBlocks.SAPPHIRE_CLUSTER);
+        });
+
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.SEARCH).register(output -> {
+            //TBC
         });
     }
 }
