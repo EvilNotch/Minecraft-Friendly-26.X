@@ -189,7 +189,9 @@
       "ambient/cave/cave23",
       "ambient/cave/cave24",
       "ambient/cave/cave25",
-      "ambient/cave/cave26"
+      "ambient/cave/cave26",
+      "ambient/cave/cave27",
+      "ambient/cave/cave28"
     ],
     "subtitle": "subtitles.ambient.sound"
   },
@@ -17113,7 +17115,10 @@
   },
   "entity.ghast.death": {
     "sounds": [
-      "mob/ghast/death"
+      "mob/ghast/death",
+      "mob/ghast/death1",
+      "mob/ghast/death2",
+      "mob/ghast/death3"
     ],
     "subtitle": "subtitles.entity.ghast.death"
   },
@@ -21530,7 +21535,9 @@
     "sounds": [
       "mob/squid/death1",
       "mob/squid/death2",
-      "mob/squid/death3"
+      "mob/squid/death3",
+      "mob/squid/death4",
+      "mob/squid/death5"
     ],
     "subtitle": "subtitles.entity.squid.death"
   },
@@ -23464,7 +23471,10 @@
   },
   "entity.zombie.death": {
     "sounds": [
-      "mob/zombie/death"
+      "mob/zombie/death",
+      "mob/zombie/death1",
+      "mob/zombie/death2",
+      "mob/zombie/death3"
     ],
     "subtitle": "subtitles.entity.zombie.death"
   },
