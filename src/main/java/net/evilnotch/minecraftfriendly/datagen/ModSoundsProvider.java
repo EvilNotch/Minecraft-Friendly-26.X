@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricSoundsProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.Identifier;
+import net.minecraft.world.level.block.SoundType;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -19,6 +20,9 @@ public class ModSoundsProvider extends FabricSoundsProvider {
     protected void configure(HolderLookup.Provider registryLookup, SoundExporter exporter) {
         exporter.add(ModSounds.INDEPENDENT_ACCIDENT, SoundTypeBuilder.of(ModSounds.INDEPENDENT_ACCIDENT.value())
                 .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Identifier.fromNamespaceAndPath(MinecraftFriendly.MOD_ID, "independent_accident")).stream(true)));
+
+        exporter.add(ModSounds.HUMAN_FEEL, SoundTypeBuilder.of(ModSounds.HUMAN_FEEL.value())
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Identifier.fromNamespaceAndPath(MinecraftFriendly.MOD_ID, "human_feel")).stream(true)));
     }
 
     @Override

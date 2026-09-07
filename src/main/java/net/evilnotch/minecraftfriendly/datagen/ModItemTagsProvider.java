@@ -26,6 +26,7 @@ public class ModItemTagsProvider extends FabricTagsProvider.ItemTagsProvider {
         tag(ModTags.Items.GEMSTONES).add(ModItems.getRK(ModItems.RUBY));
 
         tag(ItemTags.CREEPER_DROP_MUSIC_DISCS).add(ModItems.getRK(ModItems.INDEPENDENT_ACCIDENT));
+        tag(ItemTags.CREEPER_DROP_MUSIC_DISCS).add(ModItems.getRK(ModItems.HUMAN_FEEL));
 
 
         tag(ItemTags.SWORDS).add(ModItems.getRK(ModItems.EMERALD_SWORD));

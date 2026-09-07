@@ -16,11 +16,15 @@ public class ModJukeboxSongs {
     public static final ResourceKey<JukeboxSong> INDEPENDENT_ACCIDENT_KEY = ResourceKey.create(Registries.JUKEBOX_SONG,
             Identifier.fromNamespaceAndPath(MinecraftFriendly.MOD_ID, "independent_accident"));
 
+    public static final ResourceKey<JukeboxSong> HUMAN_FEEL_KEY = ResourceKey.create(Registries.JUKEBOX_SONG,
+            Identifier.fromNamespaceAndPath(MinecraftFriendly.MOD_ID, "human_feel"));
+
 
 
 
     public static void bootstrap(BootstrapContext<JukeboxSong> context) {
         register(context, INDEPENDENT_ACCIDENT_KEY, ModSounds.INDEPENDENT_ACCIDENT, 251, 15);
+        register(context, HUMAN_FEEL_KEY, ModSounds.HUMAN_FEEL, 181, 13);
     }
 
     private static void register(BootstrapContext<JukeboxSong> context, ResourceKey<JukeboxSong> key,

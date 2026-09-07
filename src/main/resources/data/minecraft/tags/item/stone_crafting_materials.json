@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "minecraft:stone",
+    "minecraft:mossy_cobblestone",
     "minecraft:deepslate",
     "minecraft:sandstone",
     "minecraft:diorite",

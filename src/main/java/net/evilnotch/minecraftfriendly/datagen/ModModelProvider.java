@@ -257,7 +257,11 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerators.generateFlatItem(ModItems.RAW_CALAMARI, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.COOKED_CALAMARI, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.PRISMARINE, ModelTemplates.FLAT_ITEM);
+
+
         itemModelGenerators.generateFlatItem(ModItems.INDEPENDENT_ACCIDENT, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.HUMAN_FEEL, ModelTemplates.FLAT_ITEM);
+
         itemModelGenerators.generateFlatItem(ModItems.RUBY, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.LONGER_STRING, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.EMERALD_UPGRADE_SMITHING_TEMPLATE, ModelTemplates.FLAT_ITEM);

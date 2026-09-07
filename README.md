@@ -38,11 +38,11 @@ Made all animal hides able to make books with item tag is_animal_hide.
 Made String and Feather able to be used for brushes.
 Added more options to feed your cat, and waking up with cats more rewarding.
 Updated Fishing Rod Recipe to make more sense.
-Updated Bow recipe to be harder to get with this new replenishin string feature.
+Updated Bow recipe to be harder to get with this new replenishing string feature.
 Gave Zombies their right to drop feathers again.
 Updated Textures for helmets to fit what is actually seen in game.
 Made Sand Renewable from base blocks.
-Added Cracked Purpur Blocks, might do a blockset.
+Added Cracked Purpur Blocks, might do a block-set.
 Remodeled Pillager Outpost Towers.
 Fixed Most Complaints with structures.
 Fixed White Tulip Recipe.
@@ -85,6 +85,12 @@ I was the leaker by the way.
 Madame Rose.
 CanadianLionMC.
 Punisher_09.
+C418 - For general music
+Deadmau5 - Everything you are collab with C418
+Hat Films - Music from trailers.
+Tylor Schofield - Mario 64 x Sweden
+Tumble40 - Aria Math, but your Minecraft world is ending around you.
+Deane - Human Feel
 
 ## DISCLAIMER:
 

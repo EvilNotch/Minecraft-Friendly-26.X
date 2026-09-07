@@ -39,6 +39,9 @@ public class ModItems {
     public static final Item INDEPENDENT_ACCIDENT = registerItem("independent_accident", properties -> new Item(properties.stacksTo(1)
             .jukeboxPlayable(ModJukeboxSongs.INDEPENDENT_ACCIDENT_KEY).rarity(Rarity.UNCOMMON)));
 
+    public static final Item HUMAN_FEEL = registerItem("human_feel", properties -> new Item(properties.stacksTo(1)
+            .jukeboxPlayable(ModJukeboxSongs.HUMAN_FEEL_KEY).rarity(Rarity.UNCOMMON)));
+
     public static final Item LONGER_STRING = registerItem("longer_string", Item::new);
 
     public static final Item EMERALD_SWORD = registerItem("emerald_sword", properties -> new Item(properties.sword(ModToolMaterials.EMERALD,
@@ -168,6 +171,7 @@ public class ModItems {
             output.insertAfter(ModItems.EMERALD_AXE, ModItems.EMERALD_HOE);
 
             output.insertAfter(Items.MUSIC_DISC_MALL, ModItems.INDEPENDENT_ACCIDENT);
+            output.insertAfter(Items.MUSIC_DISC_CAT, ModItems.HUMAN_FEEL);
         });
 
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.COMBAT).register(output -> {
