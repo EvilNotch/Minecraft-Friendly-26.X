@@ -25491,6 +25491,14 @@
       {
         "name": "music/game/creative/taswell",
         "stream": true
+      },
+      {
+        "name": "music/game/creative/christmastheend",
+        "stream": true
+      },
+      {
+        "name": "music/game/creative/htheend",
+        "stream": true
       }
     ]
   },
@@ -25582,11 +25590,31 @@
         "volume": 0.4
       },
       {
+        "name": "music/game/h1",
+        "stream": true
+      },
+      {
+        "name": "music/game/h2",
+        "stream": true
+      },
+      {
+        "name": "music/game/h3",
+        "stream": true
+      },
+      {
         "name": "music/game/everythingyouare",
         "stream": true
       },
       {
         "name": "music/game/itshere",
+        "stream": true
+      },
+      {
+        "name": "music/game/flake",
+        "stream": true
+      },
+      {
+        "name": "music/game/kyoto",
         "stream": true
       },
       {
@@ -25771,6 +25799,10 @@
       {
         "name": "music/menu/mutation",
         "stream": true
+      },
+      {
+        "name": "music/menu/hmenu",
+        "stream": true
       }
     ]
   },
@@ -25796,6 +25828,10 @@
       },
       {
         "name": "music/game/nether/warmth",
+        "stream": true
+      },
+      {
+        "name": "music/game/nether/christmasn1",
         "stream": true
       }
     ]
@@ -25823,6 +25859,10 @@
       {
         "name": "music/game/nether/warmth",
         "stream": true
+      },
+      {
+        "name": "music/game/nether/hn1",
+        "stream": true
       }
     ]
   },
@@ -25848,6 +25888,10 @@
       },
       {
         "name": "music/game/nether/warmth",
+        "stream": true
+      },
+      {
+        "name": "music/game/nether/christmasn2",
         "stream": true
       }
     ]
@@ -25943,6 +25987,10 @@
       },
       {
         "name": "music/game/wet_hands",
+        "stream": true
+      },
+      {
+        "name": "music/game/nether/hn2",
         "stream": true
       }
     ]
