@@ -88,6 +88,7 @@ Punisher_09.
 C418 - For general music
 Deadmau5 - Everything you are collab with C418
 Hat Films - Music from trailers.
+Laura Shigihara aka PVZ Composer - Cube Land
 Tylor Schofield - Mario 64 x Sweden
 Tumble40 - Aria Math, but your Minecraft world is ending around you.
 Deane - Human Feel

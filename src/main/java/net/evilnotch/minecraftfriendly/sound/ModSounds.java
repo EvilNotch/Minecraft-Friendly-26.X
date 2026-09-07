@@ -14,6 +14,8 @@ public class ModSounds {
     public static final Holder.Reference<SoundEvent> INDEPENDENT_ACCIDENT = registerJukeboxSong("independent_accident");
     public static final Holder.Reference<SoundEvent> HUMAN_FEEL = registerJukeboxSong("human_feel");
 
+    public static final Holder.Reference<SoundEvent> CUBE_LAND = registerJukeboxSong("cube_land");
+
     private static Holder.Reference<SoundEvent> registerJukeboxSong(String name) {
         Identifier id = Identifier.fromNamespaceAndPath(MinecraftFriendly.MOD_ID, name);
         return Registry.registerForHolder(BuiltInRegistries.SOUND_EVENT, id, SoundEvent.createVariableRangeEvent(id));

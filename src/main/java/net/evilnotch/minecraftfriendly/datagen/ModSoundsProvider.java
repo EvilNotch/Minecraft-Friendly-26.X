@@ -23,6 +23,9 @@ public class ModSoundsProvider extends FabricSoundsProvider {
 
         exporter.add(ModSounds.HUMAN_FEEL, SoundTypeBuilder.of(ModSounds.HUMAN_FEEL.value())
                 .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Identifier.fromNamespaceAndPath(MinecraftFriendly.MOD_ID, "human_feel")).stream(true)));
+
+        exporter.add(ModSounds.CUBE_LAND, SoundTypeBuilder.of(ModSounds.CUBE_LAND.value())
+                .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Identifier.fromNamespaceAndPath(MinecraftFriendly.MOD_ID, "cube_land")).stream(true)));
     }
 
     @Override

@@ -261,6 +261,7 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerators.generateFlatItem(ModItems.INDEPENDENT_ACCIDENT, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.HUMAN_FEEL, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.CUBE_LAND, ModelTemplates.FLAT_ITEM);
 
         itemModelGenerators.generateFlatItem(ModItems.RUBY, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.LONGER_STRING, ModelTemplates.FLAT_ITEM);
