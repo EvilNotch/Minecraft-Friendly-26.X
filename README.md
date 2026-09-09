@@ -53,7 +53,9 @@ Added more stone entries to crafting and tool materials.
 Evokers drop enchantment books randomly similar to bedrock.
 Updated the Creeper's face texture.
 Made Netherite and Emerald Armor and Tools be able to be fixed by their base material counterparts.
-Added various sounds and music that can play.
+Added various music that can play.
+Added more cave noises.
+Added Potion of Decay, will try to make it more in tune with bedrock later.
 Easter Eggs ofc.
 
 ## Experimental Features:
