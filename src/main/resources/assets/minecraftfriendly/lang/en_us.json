@@ -110,10 +110,10 @@
 
   "block.minecraftfriendly.chiseled_gold": "Block of Chiseled Gold",
   "block.minecraftfriendly.gold_button": "Golden Button",
-  "block.minecraftfriendly.gold_slab": "Gold Slab",
-  "block.minecraftfriendly.gold_stairs": "Gold Stairs",
-  "block.minecraftfriendly.gold_chain": "Gold Chain",
-  "block.minecraftfriendly.gold_bars": "Gold Bars",
+  "block.minecraftfriendly.gold_slab": "Golden Slab",
+  "block.minecraftfriendly.gold_stairs": "Golden Stairs",
+  "block.minecraftfriendly.gold_chain": "Golden Chain",
+  "block.minecraftfriendly.gold_bars": "Golden Bars",
 
   "block.minecraftfriendly.redstone_slab": "Redstone Slab",
   "block.minecraftfriendly.redstone_stairs": "Redstone Stairs",
@@ -246,6 +246,11 @@
 
   "painting.minecraftfriendly.blue_fields.title":"Blue Fields",
   "painting.minecraftfriendly.blue_fields.author":"Mojang Studios",
+
+  "item.minecraft.potion.effect.potion_of_decay": "Potion of Decay",
+  "item.minecraft.splash_potion.effect.potion_of_decay": "Splash Potion of Decay",
+  "item.minecraft.lingering_potion.effect.potion_of_decay": "Lingering Potion of Decay",
+  "item.minecraft.tipped_arrow.effect.potion_of_decay": "Arrow of Decay",
 
 
   "creativemodetab.minecraftfriendly.extra_renditions": "Extra Renditions"
