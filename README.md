@@ -17,7 +17,7 @@ Wool can be used to make string, and so can cobwebs.
 Cat to Dog bug is reintroduced.
 Replacing Vanilla Door output recipe to 2 instead of 3 since everyone is extra and a half 🥰
 Updated Stair crafting output to 6 instead of 4.
-Added Sand Layers, and Gravel Layers.
+Added Sand Layers, Soul Soil Layers, and Gravel Layers.
 Added Metal Slab and Stair Variants, along with Concrete Slabs, Stairs, Fences, Fence Gates, and Walls.
 Added Calamari, WIP Textures.
 Added Prismarine from Dungeons to make Cauldron crafting harder, made from Prismarine Crystals.
@@ -37,6 +37,7 @@ Fixed Cod Texture.
 Made all animal hides able to make books with item tag is_animal_hide.
 Updated Zombie Texture.
 Made String and Feather able to be used for brushes.
+Made Magma, Blaze Powder, Gunpowder, String, and Flowers a viable fuel source.
 Added more options to feed your cat, and waking up with cats more rewarding.
 Updated Fishing Rod Recipe to make more sense.
 Updated Bow recipe to be harder to get with this new replenishing string feature.
