@@ -824,7 +824,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(Items.DYE.blue()), has(Items.DYE.blue()))
                         .save(output, "black_dye_from_brown_and_blue_dye");
 
-                shapeless(RecipeCategory.BUILDING_BLOCKS, Blocks.POINTED_DRIPSTONE, 2)
+                shapeless(RecipeCategory.BUILDING_BLOCKS, Blocks.POINTED_DRIPSTONE, 4)
                         .requires(Blocks.DRIPSTONE_BLOCK)
                         .unlockedBy(getHasName(Blocks.DRIPSTONE_BLOCK), has(Blocks.DRIPSTONE_BLOCK))
                         .save(output, "pointed_dripstone_from_dripstone_block");
@@ -840,6 +840,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .define('E', ModItems.EMERALD_UPGRADE_SMITHING_TEMPLATE)
                         .unlockedBy(getHasName(ModItems.EMERALD_UPGRADE_SMITHING_TEMPLATE), has(ModItems.EMERALD_UPGRADE_SMITHING_TEMPLATE))
                         .save(output, "emerald_upgrade_smithing_template_duper");
+
+                smeltingResultFromBase(Blocks.COPPER_BLOCK.weathering().unaffected(), Blocks.RAW_COPPER_BLOCK);
+                smeltingResultFromBase(Blocks.IRON_BLOCK, Blocks.RAW_IRON_BLOCK);
+                smeltingResultFromBase(Blocks.GOLD_BLOCK, Blocks.RAW_GOLD_BLOCK);
 
 
             }
