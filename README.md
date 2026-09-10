@@ -12,6 +12,7 @@ Trees are to no longer suffer the consequences of humane idiocracy.
 Glass should be smeltable from red sand, even in a blast furnace, just like sand!
 Nether wart blocks are reversible.
 Added Nether Brick Fence Gates.
+Gave all current Cracked Blocks their own Stairs and Slabs.
 Added Cracked Nether Brick Slabs and Stairs.
 Wool can be used to make string, and so can cobwebs.
 Cat to Dog bug is reintroduced.
@@ -38,13 +39,14 @@ Made all animal hides able to make books with item tag is_animal_hide.
 Updated Zombie Texture.
 Made String and Feather able to be used for brushes.
 Made Magma, Blaze Powder, Gunpowder, String, and Flowers a viable fuel source.
+Made Raw Ore Blocks Smeltable (Not Blastable).
 Added more options to feed your cat, and waking up with cats more rewarding.
 Updated Fishing Rod Recipe to make more sense.
 Updated Bow recipe to be harder to get with this new replenishing string feature.
 Gave Zombies their right to drop feathers again.
 Updated Textures for helmets to fit what is actually seen in game.
 Made Sand Renewable from base blocks.
-Added Cracked Purpur Blocks, might do a block-set.
+Added Cracked Purpur Block Set.
 Remodeled Pillager Outpost Towers.
 Fixed Most Complaints with structures.
 Fixed White Tulip Recipe.

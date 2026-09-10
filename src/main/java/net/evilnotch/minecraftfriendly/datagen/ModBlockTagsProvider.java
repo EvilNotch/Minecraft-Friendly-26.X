@@ -205,6 +205,18 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(SMOOTH_STONE_STAIRS))
                 .add(ModBlocks.getRK(SMOOTH_STONE_WALL))
 
+                .add(ModBlocks.getRK(CRACKED_STONE_BRICK_SLAB))
+                .add(ModBlocks.getRK(CRACKED_STONE_BRICK_STAIRS))
+
+                .add(ModBlocks.getRK(CRACKED_POLISHED_BLACKSTONE_BRICK_SLAB))
+                .add(ModBlocks.getRK(CRACKED_POLISHED_BLACKSTONE_BRICK_STAIRS))
+
+                .add(ModBlocks.getRK(CRACKED_DEEPSLATE_TILE_SLAB))
+                .add(ModBlocks.getRK(CRACKED_DEEPSLATE_TILE_STAIRS))
+
+                .add(ModBlocks.getRK(CRACKED_DEEPSLATE_BRICK_SLAB))
+                .add(ModBlocks.getRK(CRACKED_DEEPSLATE_BRICK_STAIRS))
+
                 .add(ModBlocks.getRK(PLATED_IRON))
                 .add(ModBlocks.getRK(IRON_BUTTON))
                 .add(ModBlocks.getRK(IRON_SLAB))
@@ -408,6 +420,18 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
 
         tag(BlockTags.STAIRS).add(ModBlocks.getRK(SMOOTH_STONE_STAIRS));
         tag(BlockTags.WALLS).add(ModBlocks.getRK(SMOOTH_STONE_WALL));
+
+        tag(BlockTags.STAIRS).add(ModBlocks.getRK(CRACKED_STONE_BRICK_STAIRS));
+        tag(BlockTags.SLABS).add(ModBlocks.getRK(CRACKED_STONE_BRICK_SLAB));
+
+        tag(BlockTags.STAIRS).add(ModBlocks.getRK(CRACKED_POLISHED_BLACKSTONE_BRICK_STAIRS));
+        tag(BlockTags.SLABS).add(ModBlocks.getRK(CRACKED_POLISHED_BLACKSTONE_BRICK_SLAB));
+
+        tag(BlockTags.STAIRS).add(ModBlocks.getRK(CRACKED_DEEPSLATE_TILE_STAIRS));
+        tag(BlockTags.SLABS).add(ModBlocks.getRK(CRACKED_DEEPSLATE_TILE_SLAB));
+
+        tag(BlockTags.STAIRS).add(ModBlocks.getRK(CRACKED_DEEPSLATE_BRICK_STAIRS));
+        tag(BlockTags.SLABS).add(ModBlocks.getRK(CRACKED_DEEPSLATE_BRICK_SLAB));
 
         tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.WHITE_CONCRETE_SLAB));
         tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.WHITE_CONCRETE_STAIRS));

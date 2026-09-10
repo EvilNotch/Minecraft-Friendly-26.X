@@ -250,6 +250,22 @@ public class ModModelProvider extends FabricModelProvider {
         blockModelGenerators.family(Blocks.SMOOTH_STONE)
                 .stairs(ModBlocks.SMOOTH_STONE_STAIRS)
                 .wall(ModBlocks.SMOOTH_STONE_WALL);
+
+        blockModelGenerators.family(Blocks.CRACKED_STONE_BRICKS)
+                        .slab(ModBlocks.CRACKED_STONE_BRICK_SLAB)
+                        .stairs(ModBlocks.CRACKED_STONE_BRICK_STAIRS);
+
+        blockModelGenerators.family(Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS)
+                        .slab(ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_SLAB)
+                        .stairs(ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_STAIRS);
+
+        blockModelGenerators.family(Blocks.CRACKED_DEEPSLATE_TILES)
+                .slab(ModBlocks.CRACKED_DEEPSLATE_TILE_SLAB)
+                .stairs(ModBlocks.CRACKED_DEEPSLATE_TILE_STAIRS);
+
+        blockModelGenerators.family(Blocks.CRACKED_DEEPSLATE_BRICKS)
+                .slab(ModBlocks.CRACKED_DEEPSLATE_BRICK_SLAB)
+                .stairs(ModBlocks.CRACKED_DEEPSLATE_BRICK_STAIRS);
     }
 
     @Override

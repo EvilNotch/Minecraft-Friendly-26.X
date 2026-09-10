@@ -102,6 +102,18 @@
   "block.minecraftfriendly.smooth_stone_stairs": "Smooth Stone Stairs",
   "block.minecraftfriendly.smooth_stone_wall": "Smooth Stone Wall",
 
+  "block.minecraftfriendly.cracked_stone_brick_slab": "Cracked Stone Brick Slab",
+  "block.minecraftfriendly.cracked_stone_brick_stairs": "Cracked Stone Brick Stairs",
+
+  "block.minecraftfriendly.cracked_polished_blackstone_brick_slab": "Cracked Polished Blackstone Brick Slab",
+  "block.minecraftfriendly.cracked_polished_blackstone_brick_stairs": "Cracked Polished Blackstone Brick Stairs",
+
+  "block.minecraftfriendly.cracked_deepslate_tile_slab": "Cracked Deepslate Tile Slab",
+  "block.minecraftfriendly.cracked_deepslate_tile_stairs": "Cracked Deepslate Tile Stairs",
+
+  "block.minecraftfriendly.cracked_deepslate_brick_slab": "Cracked Deepslate Brick Slab",
+  "block.minecraftfriendly.cracked_deepslate_brick_stairs": "Cracked Deepslate Brick Stairs",
+
   "block.minecraftfriendly.plated_iron": "Block of Plated Iron",
   "block.minecraftfriendly.iron_button": "Ironic Button",
   "block.minecraftfriendly.iron_slab": "Iron Slab",

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "building",
+  "key": {
+    "#": "minecraftfriendly:cracked_purpur_block"
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "id": "minecraftfriendly:cracked_purpur_stairs"
+  }
+}

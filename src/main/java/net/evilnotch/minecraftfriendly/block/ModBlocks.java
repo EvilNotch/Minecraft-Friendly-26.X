@@ -39,6 +39,38 @@ public class ModBlocks {
             new StairBlock(Blocks.CRACKED_NETHER_BRICKS.defaultBlockState(), properties.strength(2.0F, 6.0F)
                     .requiresCorrectToolForDrops().mapColor(MapColor.NETHER).sound(SoundType.NETHER_BRICKS)));
 
+    public static final Block CRACKED_DEEPSLATE_TILE_SLAB = registerBlock("cracked_deepslate_tile_slab", properties ->
+            new SlabBlock(properties.strength(3.0F, 6.0F).requiresCorrectToolForDrops()
+                    .mapColor(MapColor.DEEPSLATE).instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.DEEPSLATE_TILES)));
+
+    public static final Block CRACKED_DEEPSLATE_TILE_STAIRS = registerBlock("cracked_deepslate_tile_stairs", properties ->
+            new StairBlock(Blocks.CRACKED_DEEPSLATE_TILES.defaultBlockState(), properties.strength(3.0F, 6.0F)
+                    .requiresCorrectToolForDrops().mapColor(MapColor.DEEPSLATE).sound(SoundType.DEEPSLATE_TILES)));
+
+    public static final Block CRACKED_DEEPSLATE_BRICK_SLAB = registerBlock("cracked_deepslate_brick_slab", properties ->
+            new SlabBlock(properties.strength(3.0F, 6.0F).requiresCorrectToolForDrops()
+                    .mapColor(MapColor.DEEPSLATE).instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.DEEPSLATE_BRICKS)));
+
+    public static final Block CRACKED_DEEPSLATE_BRICK_STAIRS = registerBlock("cracked_deepslate_brick_stairs", properties ->
+            new StairBlock(Blocks.CRACKED_DEEPSLATE_BRICKS.defaultBlockState(), properties.strength(3.0F, 6.0F)
+                    .requiresCorrectToolForDrops().mapColor(MapColor.DEEPSLATE).sound(SoundType.DEEPSLATE_BRICKS)));
+
+    public static final Block CRACKED_STONE_BRICK_SLAB = registerBlock("cracked_stone_brick_slab", properties ->
+            new SlabBlock(properties.strength(1.5F, 6.0F).requiresCorrectToolForDrops()
+                    .mapColor(MapColor.DEEPSLATE).instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE)));
+
+    public static final Block CRACKED_STONE_BRICK_STAIRS = registerBlock("cracked_stone_brick_stairs", properties ->
+            new StairBlock(Blocks.CRACKED_STONE_BRICKS.defaultBlockState(), properties.strength(1.5F, 6.0F)
+                    .requiresCorrectToolForDrops().mapColor(MapColor.STONE).sound(SoundType.STONE)));
+
+    public static final Block CRACKED_POLISHED_BLACKSTONE_BRICK_SLAB = registerBlock("cracked_polished_blackstone_brick_slab", properties ->
+            new SlabBlock(properties.strength(1.5F, 6.0F).requiresCorrectToolForDrops()
+                    .mapColor(MapColor.COLOR_BLACK).instrument(NoteBlockInstrument.BASEDRUM)));
+
+    public static final Block CRACKED_POLISHED_BLACKSTONE_BRICK_STAIRS = registerBlock("cracked_polished_blackstone_brick_stairs", properties ->
+            new StairBlock(Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS.defaultBlockState(), properties.strength(1.5F, 6.0F)
+                    .requiresCorrectToolForDrops().mapColor(MapColor.COLOR_BLACK)));
+
     public static final Block RAINBOW_WOOL = registerBlock("rainbow_wool", properties -> new Block(properties.sound(SoundType.WOOL).mapColor(DyeColor.BROWN)
             .strength(0.8F).instrument(NoteBlockInstrument.GUITAR).ignitedByLava()));
 
@@ -712,6 +744,18 @@ public class ModBlocks {
 
             output.insertAfter(Blocks.SMOOTH_STONE, ModBlocks.SMOOTH_STONE_STAIRS);
             output.insertAfter(Blocks.SMOOTH_STONE_SLAB, ModBlocks.SMOOTH_STONE_WALL);
+
+            output.insertAfter(Blocks.CRACKED_STONE_BRICKS, ModBlocks.CRACKED_STONE_BRICK_STAIRS);
+            output.insertAfter(ModBlocks.CRACKED_STONE_BRICK_STAIRS, Blocks.STONE_BRICK_SLAB);
+
+            output.insertAfter(Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS, ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_STAIRS);
+            output.insertAfter(ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_STAIRS, ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_SLAB);
+
+            output.insertAfter(Blocks.CRACKED_DEEPSLATE_TILES, ModBlocks.CRACKED_DEEPSLATE_TILE_STAIRS);
+            output.insertAfter(ModBlocks.CRACKED_DEEPSLATE_TILE_STAIRS, ModBlocks.CRACKED_DEEPSLATE_TILE_SLAB);
+
+            output.insertAfter(Blocks.CRACKED_DEEPSLATE_BRICKS, ModBlocks.CRACKED_DEEPSLATE_BRICK_STAIRS);
+            output.insertAfter(ModBlocks.CRACKED_DEEPSLATE_BRICK_STAIRS, ModBlocks.CRACKED_DEEPSLATE_BRICK_SLAB);
 
             output.insertAfter(Blocks.IRON_BLOCK, ModBlocks.IRON_STAIRS);
             output.insertAfter(ModBlocks.IRON_STAIRS, ModBlocks.IRON_SLAB);

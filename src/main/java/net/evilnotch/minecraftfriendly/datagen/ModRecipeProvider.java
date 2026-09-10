@@ -391,6 +391,38 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
                 wall(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SMOOTH_STONE_WALL, Blocks.SMOOTH_STONE);
 
+                slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_DEEPSLATE_TILE_SLAB, Ingredient.of(Blocks.CRACKED_DEEPSLATE_TILES))
+                        .unlockedBy(getHasName(Blocks.CRACKED_DEEPSLATE_TILES), has(Blocks.CRACKED_DEEPSLATE_TILES))
+                        .group("building")
+                        .save(output, "cracked_deepslate_tile_slab_from_cracked_deepslate_tiles");
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_DEEPSLATE_TILE_STAIRS, Blocks.CRACKED_DEEPSLATE_TILES);
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_DEEPSLATE_TILE_SLAB, Blocks.CRACKED_DEEPSLATE_TILES);
+
+                slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_DEEPSLATE_BRICK_SLAB, Ingredient.of(Blocks.CRACKED_DEEPSLATE_BRICKS))
+                        .unlockedBy(getHasName(Blocks.CRACKED_DEEPSLATE_BRICKS), has(Blocks.CRACKED_DEEPSLATE_BRICKS))
+                        .group("building")
+                        .save(output, "cracked_deepslate_brick_slab_from_cracked_deepslate_bricks");
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_DEEPSLATE_BRICK_STAIRS, Blocks.CRACKED_DEEPSLATE_BRICKS);
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_DEEPSLATE_BRICK_SLAB, Blocks.CRACKED_DEEPSLATE_BRICKS);
+
+                slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_STONE_BRICK_SLAB, Ingredient.of(Blocks.CRACKED_STONE_BRICKS))
+                        .unlockedBy(getHasName(Blocks.CRACKED_STONE_BRICKS), has(Blocks.CRACKED_STONE_BRICKS))
+                        .group("building")
+                        .save(output, "cracked_stone_brick_slab_from_cracked_stone_bricks");
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_STONE_BRICK_STAIRS, Blocks.CRACKED_STONE_BRICKS);
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_STONE_BRICK_SLAB, Blocks.CRACKED_STONE_BRICKS);
+
+                slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_SLAB, Ingredient.of(Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS))
+                        .unlockedBy(getHasName(Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS), has(Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS))
+                        .group("building")
+                        .save(output, "cracked_polished_blackstone_brick_slab_from_cracked_polished_blackstone_bricks");
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_STAIRS, Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS);
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_SLAB, Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS);
+
                 slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.IRON_SLAB, Ingredient.of(Blocks.IRON_BLOCK))
                         .unlockedBy(getHasName(Blocks.IRON_BLOCK), has(Blocks.IRON_BLOCK))
                         .group("building")
