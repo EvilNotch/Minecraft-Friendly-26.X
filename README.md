@@ -78,6 +78,10 @@ feel free to use it in any way that abides by Fabric and Minecraft Legal Terms.
 ## TODO:
 Added Input Ordering of Additions to Creative Search.
 Sawmill Recipes, and congruency in recipe output.
+Terracotta and Glazed Terracotta Block-sets.
+Ore slabs/stairs.
+More terrain building options.
+More Structures.
 There will eventually be a dragon headed banner.
 Emerald Upgrades to Gold.
 Who said there couldn't be more fences, slabs, stairs, or walls?
