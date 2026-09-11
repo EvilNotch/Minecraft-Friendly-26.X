@@ -21,10 +21,10 @@
 	},
 	"contact": {
 		"email": "MrAnonymous135@proton.me",
-		"fabric-homepage": "https://fabricmc.net/",
-		"inspirations": "https://www.youtube.com/@canadianlion",
-		"fabric-template": "https://github.com/FabricMC/fabric-example-mod",
-		"source-code": "https://github.com/EvilNotch/Minecraft-Friendly-26.X"
+		"homepage": "https://www.youtube.com/@OfficialEvilNotch",
+		"issues": "https://github.com/EvilNotch/Minecraft-Friendly-26.X/issues",
+		"sources": "https://github.com/EvilNotch/Minecraft-Friendly-26.X/",
+		"inspirations": "https://www.youtube.com/@canadianlion"
 	},
 	"license": "MIT-License",
 	"icon": "assets/minecraftfriendly/icon.png",
