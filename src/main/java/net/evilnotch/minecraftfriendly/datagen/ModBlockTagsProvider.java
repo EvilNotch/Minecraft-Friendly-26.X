@@ -21,10 +21,74 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
     protected void addTags(HolderLookup.Provider registries) {
 
         tag(BlockTags.WOOL)
-                .add(ModBlocks.getRK(RAINBOW_WOOL));
+                .add(ModBlocks.getRK(RAINBOW_WOOL))
+                .add(ModBlocks.getRK(WHITE_WOOL_SLAB))
+                .add(ModBlocks.getRK(WHITE_WOOL_STAIRS))
+                .add(ModBlocks.getRK(LIGHT_GRAY_WOOL_SLAB))
+                .add(ModBlocks.getRK(LIGHT_GRAY_WOOL_STAIRS))
+                .add(ModBlocks.getRK(GRAY_WOOL_SLAB))
+                .add(ModBlocks.getRK(GRAY_WOOL_STAIRS))
+                .add(ModBlocks.getRK(BLACK_WOOL_SLAB))
+                .add(ModBlocks.getRK(BLACK_WOOL_STAIRS))
+                .add(ModBlocks.getRK(BROWN_WOOL_SLAB))
+                .add(ModBlocks.getRK(BROWN_WOOL_STAIRS))
+                .add(ModBlocks.getRK(RED_WOOL_SLAB))
+                .add(ModBlocks.getRK(RED_WOOL_STAIRS))
+                .add(ModBlocks.getRK(ORANGE_WOOL_SLAB))
+                .add(ModBlocks.getRK(ORANGE_WOOL_STAIRS))
+                .add(ModBlocks.getRK(YELLOW_WOOL_SLAB))
+                .add(ModBlocks.getRK(YELLOW_WOOL_STAIRS))
+                .add(ModBlocks.getRK(LIME_WOOL_SLAB))
+                .add(ModBlocks.getRK(LIME_WOOL_STAIRS))
+                .add(ModBlocks.getRK(GREEN_WOOL_SLAB))
+                .add(ModBlocks.getRK(GREEN_WOOL_STAIRS))
+                .add(ModBlocks.getRK(CYAN_WOOL_SLAB))
+                .add(ModBlocks.getRK(CYAN_WOOL_STAIRS))
+                .add(ModBlocks.getRK(LIGHT_BLUE_WOOL_SLAB))
+                .add(ModBlocks.getRK(LIGHT_BLUE_WOOL_STAIRS))
+                .add(ModBlocks.getRK(BLUE_WOOL_SLAB))
+                .add(ModBlocks.getRK(BLUE_WOOL_STAIRS))
+                .add(ModBlocks.getRK(PURPLE_WOOL_SLAB))
+                .add(ModBlocks.getRK(PURPLE_WOOL_STAIRS))
+                .add(ModBlocks.getRK(MAGENTA_WOOL_SLAB))
+                .add(ModBlocks.getRK(MAGENTA_WOOL_STAIRS))
+                .add(ModBlocks.getRK(PINK_WOOL_SLAB))
+                .add(ModBlocks.getRK(PINK_WOOL_STAIRS));
 
         tag(BlockTags.OCCLUDES_VIBRATION_SIGNALS)
-                .add(ModBlocks.getRK(RAINBOW_WOOL));
+                .add(ModBlocks.getRK(RAINBOW_WOOL))
+                .add(ModBlocks.getRK(WHITE_WOOL_SLAB))
+                .add(ModBlocks.getRK(WHITE_WOOL_STAIRS))
+                .add(ModBlocks.getRK(LIGHT_GRAY_WOOL_SLAB))
+                .add(ModBlocks.getRK(LIGHT_GRAY_WOOL_STAIRS))
+                .add(ModBlocks.getRK(GRAY_WOOL_SLAB))
+                .add(ModBlocks.getRK(GRAY_WOOL_STAIRS))
+                .add(ModBlocks.getRK(BLACK_WOOL_SLAB))
+                .add(ModBlocks.getRK(BLACK_WOOL_STAIRS))
+                .add(ModBlocks.getRK(BROWN_WOOL_SLAB))
+                .add(ModBlocks.getRK(BROWN_WOOL_STAIRS))
+                .add(ModBlocks.getRK(RED_WOOL_SLAB))
+                .add(ModBlocks.getRK(RED_WOOL_STAIRS))
+                .add(ModBlocks.getRK(ORANGE_WOOL_SLAB))
+                .add(ModBlocks.getRK(ORANGE_WOOL_STAIRS))
+                .add(ModBlocks.getRK(YELLOW_WOOL_SLAB))
+                .add(ModBlocks.getRK(YELLOW_WOOL_STAIRS))
+                .add(ModBlocks.getRK(LIME_WOOL_SLAB))
+                .add(ModBlocks.getRK(LIME_WOOL_STAIRS))
+                .add(ModBlocks.getRK(GREEN_WOOL_SLAB))
+                .add(ModBlocks.getRK(GREEN_WOOL_STAIRS))
+                .add(ModBlocks.getRK(CYAN_WOOL_SLAB))
+                .add(ModBlocks.getRK(CYAN_WOOL_STAIRS))
+                .add(ModBlocks.getRK(LIGHT_BLUE_WOOL_SLAB))
+                .add(ModBlocks.getRK(LIGHT_BLUE_WOOL_STAIRS))
+                .add(ModBlocks.getRK(BLUE_WOOL_SLAB))
+                .add(ModBlocks.getRK(BLUE_WOOL_STAIRS))
+                .add(ModBlocks.getRK(PURPLE_WOOL_SLAB))
+                .add(ModBlocks.getRK(PURPLE_WOOL_STAIRS))
+                .add(ModBlocks.getRK(MAGENTA_WOOL_SLAB))
+                .add(ModBlocks.getRK(MAGENTA_WOOL_STAIRS))
+                .add(ModBlocks.getRK(PINK_WOOL_SLAB))
+                .add(ModBlocks.getRK(PINK_WOOL_STAIRS));
 
         tag(BlockTags.SMALL_FLOWERS)
                 .add(ModBlocks.getRK(PINK_DAISY))
@@ -155,12 +219,43 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(PINK_CONCRETE_WALL));
 
         tag(BlockTags.SHEARS_MAJOR_BREAKING_SPEED)
-                .add(ModBlocks.getRK(TUBE_CORAL_SLAB));
+                .add(ModBlocks.getRK(TUBE_CORAL_SLAB))
+                .add(ModBlocks.getRK(RAINBOW_WOOL))
+                .add(ModBlocks.getRK(WHITE_WOOL_SLAB))
+                .add(ModBlocks.getRK(WHITE_WOOL_STAIRS))
+                .add(ModBlocks.getRK(LIGHT_GRAY_WOOL_SLAB))
+                .add(ModBlocks.getRK(LIGHT_GRAY_WOOL_STAIRS))
+                .add(ModBlocks.getRK(GRAY_WOOL_SLAB))
+                .add(ModBlocks.getRK(GRAY_WOOL_STAIRS))
+                .add(ModBlocks.getRK(BLACK_WOOL_SLAB))
+                .add(ModBlocks.getRK(BLACK_WOOL_STAIRS))
+                .add(ModBlocks.getRK(BROWN_WOOL_SLAB))
+                .add(ModBlocks.getRK(BROWN_WOOL_STAIRS))
+                .add(ModBlocks.getRK(RED_WOOL_SLAB))
+                .add(ModBlocks.getRK(RED_WOOL_STAIRS))
+                .add(ModBlocks.getRK(ORANGE_WOOL_SLAB))
+                .add(ModBlocks.getRK(ORANGE_WOOL_STAIRS))
+                .add(ModBlocks.getRK(YELLOW_WOOL_SLAB))
+                .add(ModBlocks.getRK(YELLOW_WOOL_STAIRS))
+                .add(ModBlocks.getRK(LIME_WOOL_SLAB))
+                .add(ModBlocks.getRK(LIME_WOOL_STAIRS))
+                .add(ModBlocks.getRK(GREEN_WOOL_SLAB))
+                .add(ModBlocks.getRK(GREEN_WOOL_STAIRS))
+                .add(ModBlocks.getRK(CYAN_WOOL_SLAB))
+                .add(ModBlocks.getRK(CYAN_WOOL_STAIRS))
+                .add(ModBlocks.getRK(LIGHT_BLUE_WOOL_SLAB))
+                .add(ModBlocks.getRK(LIGHT_BLUE_WOOL_STAIRS))
+                .add(ModBlocks.getRK(BLUE_WOOL_SLAB))
+                .add(ModBlocks.getRK(BLUE_WOOL_STAIRS))
+                .add(ModBlocks.getRK(PURPLE_WOOL_SLAB))
+                .add(ModBlocks.getRK(PURPLE_WOOL_STAIRS))
+                .add(ModBlocks.getRK(MAGENTA_WOOL_SLAB))
+                .add(ModBlocks.getRK(MAGENTA_WOOL_STAIRS))
+                .add(ModBlocks.getRK(PINK_WOOL_SLAB))
+                .add(ModBlocks.getRK(PINK_WOOL_STAIRS));
 
         tag(BlockTags.MINEABLE_WITH_SHOVEL)
                 .add(ModBlocks.getRK(DIRT_SLAB))
-
-                .add(ModBlocks.getRK(GRASS_SLAB))
 
 
                 .add(ModBlocks.getRK(GRAVEL_LAYER_BLOCK))
@@ -392,7 +487,6 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
         tag(BlockTags.SLABS).add(ModBlocks.getRK(DIRT_SLAB));
 
 
-        tag(BlockTags.SLABS).add(ModBlocks.getRK(GRASS_SLAB));
 
 
         tag(BlockTags.SLABS).add(ModBlocks.getRK(PETRIFIED_SPRUCE_SLAB));
@@ -528,6 +622,51 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
         tag(BlockTags.FENCES).add(ModBlocks.getRK(PINK_CONCRETE_FENCE));
         tag(BlockTags.FENCE_GATES).add(ModBlocks.getRK(PINK_CONCRETE_FENCE_GATE));
         tag(BlockTags.WALLS).add(ModBlocks.getRK(PINK_CONCRETE_WALL));
+
+        tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.WHITE_WOOL_SLAB));
+        tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.WHITE_WOOL_STAIRS));
+
+        tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.LIGHT_GRAY_WOOL_SLAB));
+        tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.LIGHT_GRAY_WOOL_STAIRS));
+
+        tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.GRAY_WOOL_SLAB));
+        tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.GRAY_WOOL_STAIRS));
+
+        tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.BLACK_WOOL_SLAB));
+        tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.BLACK_WOOL_STAIRS));
+
+        tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.BROWN_WOOL_SLAB));
+        tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.BROWN_WOOL_STAIRS));
+
+        tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.RED_WOOL_SLAB));
+        tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.RED_WOOL_STAIRS));
+
+        tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.ORANGE_WOOL_SLAB));
+        tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.ORANGE_WOOL_STAIRS));
+
+        tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.YELLOW_WOOL_SLAB));
+        tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.YELLOW_WOOL_STAIRS));
+
+        tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.LIME_WOOL_SLAB));
+        tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.LIME_WOOL_STAIRS));
+
+        tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.GREEN_WOOL_SLAB));
+        tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.GREEN_WOOL_STAIRS));
+
+        tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.LIGHT_BLUE_WOOL_SLAB));
+        tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.LIGHT_BLUE_WOOL_STAIRS));
+
+        tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.BLUE_WOOL_SLAB));
+        tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.BLUE_WOOL_STAIRS));
+
+        tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.PURPLE_WOOL_SLAB));
+        tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.PURPLE_WOOL_STAIRS));
+
+        tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.MAGENTA_WOOL_SLAB));
+        tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.MAGENTA_WOOL_STAIRS));
+
+        tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.PINK_WOOL_SLAB));
+        tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.PINK_WOOL_STAIRS));
 
         tag(BlockTags.BUTTONS).add(ModBlocks.getRK(ModBlocks.IRON_BUTTON));
         tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.IRON_SLAB));

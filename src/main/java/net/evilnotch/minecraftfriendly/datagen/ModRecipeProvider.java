@@ -169,11 +169,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .group("building")
                         .save(output, "dirt_slab_from_dirt_block");
 
-                //slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GRASS_SLAB, Ingredient.of(Blocks.GRASS_BLOCK))
-                        //.unlockedBy(getHasName(Blocks.GRASS_BLOCK), has(Blocks.GRASS_BLOCK))
-                        //.group("building")
-                        //.save(output, "grass_slab_from_grass_block");
-
                 shapeless(RecipeCategory.MISC, Blocks.PETRIFIED_OAK_SLAB, 1)
                         .requires(Blocks.OAK_SLAB)
                         .requires(Items.RESIN_CLUMP)
@@ -422,6 +417,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_STAIRS, Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS);
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_SLAB, Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS);
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PLATED_IRON, Blocks.IRON_BLOCK);
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.IRON_STAIRS, Blocks.IRON_BLOCK);
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.IRON_SLAB, Blocks.IRON_BLOCK, 2);
 
                 slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.IRON_SLAB, Ingredient.of(Blocks.IRON_BLOCK))
                         .unlockedBy(getHasName(Blocks.IRON_BLOCK), has(Blocks.IRON_BLOCK))
@@ -432,6 +430,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(Blocks.GOLD_BLOCK), has(Blocks.GOLD_BLOCK))
                         .group("building")
                         .save(output, "gold_slab_from_gold_block");
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_GOLD, Blocks.GOLD_BLOCK);
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GOLD_SLAB, Blocks.GOLD_BLOCK, 2);
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GOLD_STAIRS, Blocks.GOLD_BLOCK);
 
                 slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.REDSTONE_SLAB, Ingredient.of(Blocks.REDSTONE_BLOCK))
                         .unlockedBy(getHasName(Blocks.REDSTONE_BLOCK), has(Blocks.REDSTONE_BLOCK))
@@ -444,6 +446,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(ModBlocks.CHISELED_EMERALD), has(ModBlocks.CHISELED_EMERALD))
                         .group("misc")
                         .save(output, "emeralds_from_chiseled_emerald_block");
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_EMERALD, Blocks.EMERALD_BLOCK);
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.EMERALD_SLAB, Blocks.EMERALD_BLOCK, 2);
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.EMERALD_STAIRS, Blocks.EMERALD_BLOCK);
 
                 shapeless(RecipeCategory.MISC, Blocks.GILDED_BLACKSTONE, 1)
                         .requires(Items.GOLD_INGOT)
@@ -463,10 +469,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .group("building")
                         .save(output, "lapis_slab_from_lapis_block");
 
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_LAPIS, Blocks.LAPIS_BLOCK);
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LAPIS_SLAB, Blocks.LAPIS_BLOCK, 2);
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LAPIS_STAIRS, Blocks.LAPIS_BLOCK);
+
                 slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DIAMOND_SLAB, Ingredient.of(Blocks.DIAMOND_BLOCK))
                         .unlockedBy(getHasName(Blocks.DIAMOND_BLOCK), has(Blocks.DIAMOND_BLOCK))
                         .group("building")
                         .save(output, "diamond_slab_from_diamond_block");
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_DIAMOND, Blocks.DIAMOND_BLOCK);
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DIAMOND_SLAB, Blocks.DIAMOND_BLOCK, 2);
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DIAMOND_STAIRS, Blocks.DIAMOND_BLOCK);
 
                 slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WHITE_CONCRETE_SLAB, Ingredient.of(Blocks.CONCRETE.white()))
                         .unlockedBy(getHasName(Blocks.CONCRETE.white()), has(Blocks.CONCRETE.white()))
@@ -835,6 +849,102 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 wall(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_CONCRETE_WALL, Blocks.CONCRETE.pink());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_CONCRETE_STAIRS, Blocks.CONCRETE.pink());
+
+                shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RAINBOW_WOOL, 6)
+                        .requires(Blocks.WOOL.red())
+                        .requires(Blocks.WOOL.orange())
+                        .requires(Blocks.WOOL.yellow())
+                        .requires(Blocks.WOOL.lime())
+                        .requires(Blocks.WOOL.blue())
+                        .requires(Blocks.WOOL.purple())
+                        .unlockedBy(getHasName(Blocks.WOOL.red()), has(Blocks.WOOL.red()))
+                        .unlockedBy(getHasName(Blocks.WOOL.orange()), has(Blocks.WOOL.orange()))
+                        .unlockedBy(getHasName(Blocks.WOOL.yellow()), has(Blocks.WOOL.yellow()))
+                        .unlockedBy(getHasName(Blocks.WOOL.lime()), has(Blocks.WOOL.lime()))
+                        .unlockedBy(getHasName(Blocks.WOOL.blue()), has(Blocks.WOOL.blue()))
+                        .unlockedBy(getHasName(Blocks.WOOL.purple()), has(Blocks.WOOL.purple()))
+                        .group("building")
+                        .save(output, "rainbow_wool_recipe");
+
+                slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WHITE_WOOL_SLAB, Ingredient.of(Blocks.WOOL.white()))
+                        .unlockedBy(getHasName(Blocks.WOOL.white()), has(Blocks.WOOL.white()))
+                        .group("building")
+                        .save(output, "white_wool_slab_from_white_wool");
+
+                slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_GRAY_WOOL_SLAB, Ingredient.of(Blocks.WOOL.lightGray()))
+                        .unlockedBy(getHasName(Blocks.WOOL.lightGray()), has(Blocks.WOOL.lightGray()))
+                        .group("building")
+                        .save(output, "light_gray_wool_slab_from_light_gray_wool");
+
+                slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GRAY_WOOL_SLAB, Ingredient.of(Blocks.WOOL.gray()))
+                        .unlockedBy(getHasName(Blocks.WOOL.gray()), has(Blocks.WOOL.gray()))
+                        .group("building")
+                        .save(output, "gray_wool_slab_from_gray_wool");
+
+                slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLACK_WOOL_SLAB, Ingredient.of(Blocks.WOOL.black()))
+                        .unlockedBy(getHasName(Blocks.WOOL.black()), has(Blocks.WOOL.black()))
+                        .group("building")
+                        .save(output, "black_wool_slab_from_black_wool");
+
+                slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BROWN_WOOL_SLAB, Ingredient.of(Blocks.WOOL.brown()))
+                        .unlockedBy(getHasName(Blocks.WOOL.brown()), has(Blocks.WOOL.brown()))
+                        .group("building")
+                        .save(output, "brown_wool_slab_from_brown_wool");
+
+                slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_WOOL_SLAB, Ingredient.of(Blocks.WOOL.red()))
+                        .unlockedBy(getHasName(Blocks.WOOL.red()), has(Blocks.WOOL.red()))
+                        .group("building")
+                        .save(output, "red_wool_slab_from_red_wool");
+
+                slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ORANGE_WOOL_SLAB, Ingredient.of(Blocks.WOOL.orange()))
+                        .unlockedBy(getHasName(Blocks.WOOL.orange()), has(Blocks.WOOL.orange()))
+                        .group("building")
+                        .save(output, "orange_wool_slab_from_orange_wool");
+
+                slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.YELLOW_WOOL_SLAB, Ingredient.of(Blocks.WOOL.yellow()))
+                        .unlockedBy(getHasName(Blocks.WOOL.yellow()), has(Blocks.WOOL.yellow()))
+                        .group("building")
+                        .save(output, "yellow_wool_slab_from_yellow_wool");
+
+                slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIME_WOOL_SLAB, Ingredient.of(Blocks.WOOL.lime()))
+                        .unlockedBy(getHasName(Blocks.WOOL.lime()), has(Blocks.WOOL.lime()))
+                        .group("building")
+                        .save(output, "lime_wool_slab_from_lime_wool");
+
+                slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GREEN_WOOL_SLAB, Ingredient.of(Blocks.WOOL.green()))
+                        .unlockedBy(getHasName(Blocks.WOOL.green()), has(Blocks.WOOL.green()))
+                        .group("building")
+                        .save(output, "green_wool_slab_from_green_wool");
+
+                slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CYAN_WOOL_SLAB, Ingredient.of(Blocks.WOOL.cyan()))
+                        .unlockedBy(getHasName(Blocks.WOOL.cyan()), has(Blocks.WOOL.cyan()))
+                        .group("building")
+                        .save(output, "cyan_wool_slab_from_cyan_wool");
+
+                slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_BLUE_WOOL_SLAB, Ingredient.of(Blocks.WOOL.lightBlue()))
+                        .unlockedBy(getHasName(Blocks.WOOL.lightBlue()), has(Blocks.WOOL.lightBlue()))
+                        .group("building")
+                        .save(output, "light_blue_wool_slab_from_light_blue_wool");
+
+                slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLUE_WOOL_SLAB, Ingredient.of(Blocks.WOOL.blue()))
+                        .unlockedBy(getHasName(Blocks.WOOL.blue()), has(Blocks.WOOL.blue()))
+                        .group("building")
+                        .save(output, "blue_wool_slab_from_blue_wool");
+
+                slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PURPLE_WOOL_SLAB, Ingredient.of(Blocks.WOOL.purple()))
+                        .unlockedBy(getHasName(Blocks.WOOL.purple()), has(Blocks.WOOL.purple()))
+                        .group("building")
+                        .save(output, "purple_wool_slab_from_purple_wool");
+
+                slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAGENTA_WOOL_SLAB, Ingredient.of(Blocks.WOOL.magenta()))
+                        .unlockedBy(getHasName(Blocks.WOOL.magenta()), has(Blocks.WOOL.magenta()))
+                        .group("building")
+                        .save(output, "magenta_wool_slab_from_magenta_wool");
+
+                slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_WOOL_SLAB, Ingredient.of(Blocks.WOOL.pink()))
+                        .unlockedBy(getHasName(Blocks.WOOL.pink()), has(Blocks.WOOL.pink()))
+                        .group("building")
+                        .save(output, "pink_wool_slab_from_pink_wool");
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, Blocks.SAND, Blocks.GRAVEL, 2);
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, Items.FLINT, Blocks.GRAVEL, 2);

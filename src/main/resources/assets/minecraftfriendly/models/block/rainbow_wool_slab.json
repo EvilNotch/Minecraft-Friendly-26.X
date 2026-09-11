@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "minecraftfriendly:block/rainbow_wool",
+    "side": "minecraftfriendly:block/rainbow_wool",
+    "top": "minecraftfriendly:block/rainbow_wool"
+  }
+}

@@ -74,6 +74,125 @@ public class ModBlocks {
     public static final Block RAINBOW_WOOL = registerBlock("rainbow_wool", properties -> new Block(properties.sound(SoundType.WOOL).mapColor(DyeColor.BROWN)
             .strength(0.8F).instrument(NoteBlockInstrument.GUITAR).ignitedByLava()));
 
+    //public static final Block RAINBOW_WOOL_STAIRS = registerBlock("rainbow_wool_stairs", properties ->
+            //new StairBlock(ModBlocks.RAINBOW_WOOL.defaultBlockState(), properties.strength(0.8F)
+                    //.mapColor(DyeColor.BROWN).sound(SoundType.WOOL).ignitedByLava().instrument(NoteBlockInstrument.GUITAR)));
+
+    //public static final Block RAINBOW_WOOL_SLAB = registerBlock("rainbow_wool_slab", properties ->
+            //new SlabBlock(properties.strength(0.8F).mapColor(DyeColor.BROWN).instrument(NoteBlockInstrument.GUITAR).ignitedByLava()));
+
+    public static final Block WHITE_WOOL_STAIRS = registerBlock("white_wool_stairs", properties ->
+            new StairBlock(Blocks.WOOL.white().defaultBlockState(), properties.strength(0.8F)
+                    .mapColor(DyeColor.WHITE).sound(SoundType.WOOL).ignitedByLava().instrument(NoteBlockInstrument.GUITAR)));
+
+    public static final Block WHITE_WOOL_SLAB = registerBlock("white_wool_slab", properties ->
+            new SlabBlock(properties.strength(0.8F).mapColor(DyeColor.WHITE).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
+
+    public static final Block LIGHT_GRAY_WOOL_STAIRS = registerBlock("light_gray_wool_stairs", properties ->
+            new StairBlock(Blocks.WOOL.lightGray().defaultBlockState(), properties.strength(0.8F)
+                    .mapColor(DyeColor.LIGHT_GRAY).sound(SoundType.WOOL).ignitedByLava().instrument(NoteBlockInstrument.GUITAR)));
+
+    public static final Block LIGHT_GRAY_WOOL_SLAB = registerBlock("light_gray_wool_slab", properties ->
+            new SlabBlock(properties.strength(0.8F).mapColor(DyeColor.LIGHT_GRAY).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
+
+    public static final Block GRAY_WOOL_STAIRS = registerBlock("gray_wool_stairs", properties ->
+            new StairBlock(Blocks.WOOL.gray().defaultBlockState(), properties.strength(0.8F)
+                    .mapColor(DyeColor.GRAY).sound(SoundType.WOOL).ignitedByLava().instrument(NoteBlockInstrument.GUITAR)));
+
+    public static final Block GRAY_WOOL_SLAB = registerBlock("gray_wool_slab", properties ->
+            new SlabBlock(properties.strength(0.8F).mapColor(DyeColor.GRAY).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
+
+    public static final Block BLACK_WOOL_STAIRS = registerBlock("black_wool_stairs", properties ->
+            new StairBlock(Blocks.WOOL.black().defaultBlockState(), properties.strength(0.8F)
+                    .mapColor(DyeColor.BLACK).sound(SoundType.WOOL).ignitedByLava().instrument(NoteBlockInstrument.GUITAR)));
+
+    public static final Block BLACK_WOOL_SLAB = registerBlock("black_wool_slab", properties ->
+            new SlabBlock(properties.strength(0.8F).mapColor(DyeColor.BLACK).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
+
+    public static final Block BROWN_WOOL_STAIRS = registerBlock("brown_wool_stairs", properties ->
+            new StairBlock(Blocks.WOOL.brown().defaultBlockState(), properties.strength(0.8F)
+                    .mapColor(DyeColor.BROWN).sound(SoundType.WOOL).ignitedByLava().instrument(NoteBlockInstrument.GUITAR)));
+
+    public static final Block BROWN_WOOL_SLAB = registerBlock("brown_wool_slab", properties ->
+            new SlabBlock(properties.strength(0.8F).mapColor(DyeColor.BROWN).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
+
+    public static final Block RED_WOOL_STAIRS = registerBlock("red_wool_stairs", properties ->
+            new StairBlock(Blocks.WOOL.red().defaultBlockState(), properties.strength(0.8F)
+                    .mapColor(DyeColor.RED).sound(SoundType.WOOL).ignitedByLava().instrument(NoteBlockInstrument.GUITAR)));
+
+    public static final Block RED_WOOL_SLAB = registerBlock("red_wool_slab", properties ->
+            new SlabBlock(properties.strength(0.8F).mapColor(DyeColor.RED).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
+
+    public static final Block ORANGE_WOOL_STAIRS = registerBlock("orange_wool_stairs", properties ->
+            new StairBlock(Blocks.WOOL.orange().defaultBlockState(), properties.strength(0.8F)
+                    .mapColor(DyeColor.ORANGE).sound(SoundType.WOOL).ignitedByLava().instrument(NoteBlockInstrument.GUITAR)));
+
+    public static final Block ORANGE_WOOL_SLAB = registerBlock("orange_wool_slab", properties ->
+            new SlabBlock(properties.strength(0.8F).mapColor(DyeColor.ORANGE).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
+
+    public static final Block YELLOW_WOOL_STAIRS = registerBlock("yellow_wool_stairs", properties ->
+            new StairBlock(Blocks.WOOL.yellow().defaultBlockState(), properties.strength(0.8F)
+                    .mapColor(DyeColor.YELLOW).sound(SoundType.WOOL).ignitedByLava().instrument(NoteBlockInstrument.GUITAR)));
+
+    public static final Block YELLOW_WOOL_SLAB = registerBlock("yellow_wool_slab", properties ->
+            new SlabBlock(properties.strength(0.8F).mapColor(DyeColor.YELLOW).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
+
+    public static final Block LIME_WOOL_STAIRS = registerBlock("lime_wool_stairs", properties ->
+            new StairBlock(Blocks.WOOL.lime().defaultBlockState(), properties.strength(0.8F)
+                    .mapColor(DyeColor.LIME).sound(SoundType.WOOL).ignitedByLava().instrument(NoteBlockInstrument.GUITAR)));
+
+    public static final Block LIME_WOOL_SLAB = registerBlock("lime_wool_slab", properties ->
+            new SlabBlock(properties.strength(0.8F).mapColor(DyeColor.LIME).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
+
+    public static final Block GREEN_WOOL_STAIRS = registerBlock("green_wool_stairs", properties ->
+            new StairBlock(Blocks.WOOL.green().defaultBlockState(), properties.strength(0.8F)
+                    .mapColor(DyeColor.GREEN).sound(SoundType.WOOL).ignitedByLava().instrument(NoteBlockInstrument.GUITAR)));
+
+    public static final Block GREEN_WOOL_SLAB = registerBlock("green_wool_slab", properties ->
+            new SlabBlock(properties.strength(0.8F).mapColor(DyeColor.GREEN).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
+
+    public static final Block CYAN_WOOL_STAIRS = registerBlock("cyan_wool_stairs", properties ->
+            new StairBlock(Blocks.WOOL.cyan().defaultBlockState(), properties.strength(0.8F)
+                    .mapColor(DyeColor.CYAN).sound(SoundType.WOOL).ignitedByLava().instrument(NoteBlockInstrument.GUITAR)));
+
+    public static final Block CYAN_WOOL_SLAB = registerBlock("cyan_wool_slab", properties ->
+            new SlabBlock(properties.strength(0.8F).mapColor(DyeColor.CYAN).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
+
+    public static final Block LIGHT_BLUE_WOOL_STAIRS = registerBlock("light_blue_wool_stairs", properties ->
+            new StairBlock(Blocks.WOOL.lightBlue().defaultBlockState(), properties.strength(0.8F)
+                    .mapColor(DyeColor.LIGHT_BLUE).sound(SoundType.WOOL).ignitedByLava().instrument(NoteBlockInstrument.GUITAR)));
+
+    public static final Block LIGHT_BLUE_WOOL_SLAB = registerBlock("light_blue_wool_slab", properties ->
+            new SlabBlock(properties.strength(0.8F).mapColor(DyeColor.LIGHT_BLUE).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
+
+    public static final Block BLUE_WOOL_STAIRS = registerBlock("blue_wool_stairs", properties ->
+            new StairBlock(Blocks.WOOL.blue().defaultBlockState(), properties.strength(0.8F)
+                    .mapColor(DyeColor.BLUE).sound(SoundType.WOOL).ignitedByLava().instrument(NoteBlockInstrument.GUITAR)));
+
+    public static final Block BLUE_WOOL_SLAB = registerBlock("blue_wool_slab", properties ->
+            new SlabBlock(properties.strength(0.8F).mapColor(DyeColor.BLUE).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
+
+    public static final Block PURPLE_WOOL_STAIRS = registerBlock("purple_wool_stairs", properties ->
+            new StairBlock(Blocks.WOOL.purple().defaultBlockState(), properties.strength(0.8F)
+                    .mapColor(DyeColor.PURPLE).sound(SoundType.WOOL).ignitedByLava().instrument(NoteBlockInstrument.GUITAR)));
+
+    public static final Block PURPLE_WOOL_SLAB = registerBlock("purple_wool_slab", properties ->
+            new SlabBlock(properties.strength(0.8F).mapColor(DyeColor.PURPLE).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
+
+    public static final Block MAGENTA_WOOL_STAIRS = registerBlock("magenta_wool_stairs", properties ->
+            new StairBlock(Blocks.WOOL.magenta().defaultBlockState(), properties.strength(0.8F)
+                    .mapColor(DyeColor.MAGENTA).sound(SoundType.WOOL).ignitedByLava().instrument(NoteBlockInstrument.GUITAR)));
+
+    public static final Block MAGENTA_WOOL_SLAB = registerBlock("magenta_wool_slab", properties ->
+            new SlabBlock(properties.strength(0.8F).mapColor(DyeColor.MAGENTA).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
+
+    public static final Block PINK_WOOL_STAIRS = registerBlock("pink_wool_stairs", properties ->
+            new StairBlock(Blocks.WOOL.pink().defaultBlockState(), properties.strength(0.8F)
+                    .mapColor(DyeColor.PINK).sound(SoundType.WOOL).ignitedByLava().instrument(NoteBlockInstrument.GUITAR)));
+
+    public static final Block PINK_WOOL_SLAB = registerBlock("pink_wool_slab", properties ->
+            new SlabBlock(properties.strength(0.8F).mapColor(DyeColor.PINK).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
+
     public static final Block SAPPHIRE_CLUSTER = registerBlock("sapphire_cluster", properties -> new AmethystClusterBlock(4.0F, 10.0F, properties
             .sound(SoundType.MEDIUM_AMETHYST_BUD).lightLevel(statex -> 5)));
 
@@ -115,9 +234,6 @@ public class ModBlocks {
 
     public static final Block DIRT_SLAB = registerBlock("dirt_slab",
             properties -> new SlabBlock(properties.strength(0.5F).mapColor(MapColor.DIRT).sound(SoundType.GRAVEL)));
-
-    public static final Block GRASS_SLAB = registerBlock("grass_slab",
-            properties -> new SlabBlock(properties.strength(0.6F).mapColor(MapColor.GRASS).sound(SoundType.GRASS)));
 
     public static final Block GRAVEL_LAYER_BLOCK = registerBlock("gravel_layer_block",
             properties -> new SnowLayerBlock(properties.strength(0.2F).sound(SoundType.GRAVEL).mapColor(MapColor.STONE)
@@ -746,7 +862,7 @@ public class ModBlocks {
             output.insertAfter(Blocks.SMOOTH_STONE_SLAB, ModBlocks.SMOOTH_STONE_WALL);
 
             output.insertAfter(Blocks.CRACKED_STONE_BRICKS, ModBlocks.CRACKED_STONE_BRICK_STAIRS);
-            output.insertAfter(ModBlocks.CRACKED_STONE_BRICK_STAIRS, Blocks.STONE_BRICK_SLAB);
+            output.insertAfter(ModBlocks.CRACKED_STONE_BRICK_STAIRS, ModBlocks.CRACKED_STONE_BRICK_SLAB);
 
             output.insertAfter(Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS, ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_STAIRS);
             output.insertAfter(ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_STAIRS, ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_SLAB);
@@ -875,6 +991,72 @@ public class ModBlocks {
             output.insertAfter(ModBlocks.PINK_CONCRETE_SLAB, ModBlocks.PINK_CONCRETE_FENCE);
             output.insertAfter(ModBlocks.PINK_CONCRETE_FENCE, ModBlocks.PINK_CONCRETE_FENCE_GATE);
             output.insertAfter(ModBlocks.PINK_CONCRETE_FENCE_GATE, ModBlocks.PINK_CONCRETE_WALL);
+
+            output.insertAfter(Blocks.WOOL.pink(), ModBlocks.RAINBOW_WOOL);
+
+            output.insertAfter(Blocks.WOOL.white(), ModBlocks.WHITE_WOOL_STAIRS);
+            output.insertAfter(ModBlocks.WHITE_WOOL_STAIRS, ModBlocks.WHITE_WOOL_SLAB);
+            output.insertAfter(ModBlocks.WHITE_WOOL_SLAB, Blocks.CARPET.white());
+
+            output.insertAfter(Blocks.WOOL.lightGray(), ModBlocks.LIGHT_GRAY_WOOL_STAIRS);
+            output.insertAfter(ModBlocks.LIGHT_GRAY_WOOL_STAIRS, ModBlocks.LIGHT_GRAY_WOOL_SLAB);
+            output.insertAfter(ModBlocks.LIGHT_GRAY_WOOL_SLAB, Blocks.CARPET.lightGray());
+
+            output.insertAfter(Blocks.WOOL.gray(), ModBlocks.GRAY_WOOL_STAIRS);
+            output.insertAfter(ModBlocks.GRAY_WOOL_STAIRS, ModBlocks.GRAY_WOOL_SLAB);
+            output.insertAfter(ModBlocks.GRAY_WOOL_SLAB, Blocks.CARPET.gray());
+
+            output.insertAfter(Blocks.WOOL.black(), ModBlocks.BLACK_WOOL_STAIRS);
+            output.insertAfter(ModBlocks.BLACK_WOOL_STAIRS, ModBlocks.BLACK_WOOL_SLAB);
+            output.insertAfter(ModBlocks.BLACK_WOOL_SLAB, Blocks.CARPET.black());
+
+            output.insertAfter(Blocks.WOOL.brown(), ModBlocks.BROWN_WOOL_STAIRS);
+            output.insertAfter(ModBlocks.BROWN_WOOL_STAIRS, ModBlocks.BROWN_WOOL_SLAB);
+            output.insertAfter(ModBlocks.BROWN_WOOL_SLAB, Blocks.CARPET.brown());
+
+            output.insertAfter(Blocks.WOOL.red(), ModBlocks.RED_WOOL_STAIRS);
+            output.insertAfter(ModBlocks.RED_WOOL_STAIRS, ModBlocks.RED_WOOL_SLAB);
+            output.insertAfter(ModBlocks.RED_WOOL_SLAB, Blocks.CARPET.red());
+
+            output.insertAfter(Blocks.WOOL.orange(), ModBlocks.ORANGE_WOOL_STAIRS);
+            output.insertAfter(ModBlocks.ORANGE_WOOL_STAIRS, ModBlocks.ORANGE_WOOL_SLAB);
+            output.insertAfter(ModBlocks.ORANGE_WOOL_SLAB, Blocks.CARPET.orange());
+
+            output.insertAfter(Blocks.WOOL.yellow(), ModBlocks.YELLOW_WOOL_STAIRS);
+            output.insertAfter(ModBlocks.YELLOW_WOOL_STAIRS, ModBlocks.YELLOW_WOOL_SLAB);
+            output.insertAfter(ModBlocks.YELLOW_WOOL_SLAB, Blocks.CARPET.yellow());
+
+            output.insertAfter(Blocks.WOOL.lime(), ModBlocks.LIME_WOOL_STAIRS);
+            output.insertAfter(ModBlocks.LIME_WOOL_STAIRS, ModBlocks.LIME_WOOL_SLAB);
+            output.insertAfter(ModBlocks.LIME_WOOL_SLAB, Blocks.CARPET.lime());
+
+            output.insertAfter(Blocks.WOOL.green(), ModBlocks.GREEN_WOOL_STAIRS);
+            output.insertAfter(ModBlocks.GREEN_WOOL_STAIRS, ModBlocks.GREEN_WOOL_SLAB);
+            output.insertAfter(ModBlocks.GREEN_WOOL_SLAB, Blocks.CARPET.green());
+
+            output.insertAfter(Blocks.WOOL.cyan(), ModBlocks.CYAN_WOOL_STAIRS);
+            output.insertAfter(ModBlocks.CYAN_WOOL_STAIRS, ModBlocks.CYAN_WOOL_SLAB);
+            output.insertAfter(ModBlocks.CYAN_WOOL_SLAB, Blocks.CARPET.cyan());
+
+            output.insertAfter(Blocks.WOOL.lightBlue(), ModBlocks.LIGHT_BLUE_WOOL_STAIRS);
+            output.insertAfter(ModBlocks.LIGHT_BLUE_WOOL_STAIRS, ModBlocks.LIGHT_BLUE_WOOL_SLAB);
+            output.insertAfter(ModBlocks.LIGHT_BLUE_WOOL_SLAB, Blocks.CARPET.lightBlue());
+
+            output.insertAfter(Blocks.WOOL.blue(), ModBlocks.BLUE_WOOL_STAIRS);
+            output.insertAfter(ModBlocks.BLUE_WOOL_STAIRS, ModBlocks.BLUE_WOOL_SLAB);
+            output.insertAfter(ModBlocks.BLUE_WOOL_SLAB, Blocks.CARPET.blue());
+
+            output.insertAfter(Blocks.WOOL.purple(), ModBlocks.PURPLE_WOOL_STAIRS);
+            output.insertAfter(ModBlocks.PURPLE_WOOL_STAIRS, ModBlocks.PURPLE_WOOL_SLAB);
+            output.insertAfter(ModBlocks.PURPLE_WOOL_SLAB, Blocks.CARPET.purple());
+
+            output.insertAfter(Blocks.WOOL.magenta(), ModBlocks.MAGENTA_WOOL_STAIRS);
+            output.insertAfter(ModBlocks.MAGENTA_WOOL_STAIRS, ModBlocks.MAGENTA_WOOL_SLAB);
+            output.insertAfter(ModBlocks.MAGENTA_WOOL_SLAB, Blocks.CARPET.magenta());
+
+            output.insertAfter(Blocks.WOOL.pink(), ModBlocks.PINK_WOOL_STAIRS);
+            output.insertAfter(ModBlocks.PINK_WOOL_STAIRS, ModBlocks.PINK_WOOL_SLAB);
+            output.insertAfter(ModBlocks.PINK_WOOL_SLAB, Blocks.CARPET.pink());
         });
 
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.NATURAL_BLOCKS).register(output -> {

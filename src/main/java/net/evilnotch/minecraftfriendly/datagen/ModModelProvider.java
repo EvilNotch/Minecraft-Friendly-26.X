@@ -7,7 +7,9 @@ import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
+import net.minecraft.client.data.models.ModelProvider;
 import net.minecraft.client.data.models.model.ModelTemplates;
+import net.minecraft.client.data.models.model.TextureMapping;
 import net.minecraft.world.level.block.Blocks;
 
 public class ModModelProvider extends FabricModelProvider {
@@ -18,7 +20,6 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockModelGenerators blockModelGenerators) {
 
-        blockModelGenerators.createTrivialCube(ModBlocks.PLATED_IRON);
         blockModelGenerators.createTrivialCube(ModBlocks.CHISELED_GOLD);
 
         blockModelGenerators.family(ModBlocks.RUBY_BLOCK)
@@ -34,8 +35,6 @@ public class ModModelProvider extends FabricModelProvider {
                 .stairs(ModBlocks.CRACKED_PURPUR_STAIRS)
                 .slab(ModBlocks.CRACKED_PURPUR_SLAB);
 
-        blockModelGenerators.createTrivialCube(ModBlocks.RAINBOW_WOOL);
-
         blockModelGenerators.createBarsAndItem(ModBlocks.GOLD_BARS);
 
         blockModelGenerators.createPlantWithDefaultItem(ModBlocks.PINK_DAISY, ModBlocks.POTTED_PINK_DAISY, BlockModelGenerators.PlantType.NOT_TINTED);
@@ -48,11 +47,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockModelGenerators.createFlowerBed(ModBlocks.WARPED_PETALS);
 
         blockModelGenerators.family(Blocks.DIRT)
-                        .slab(ModBlocks.DIRT_SLAB)
-                        .slab(ModBlocks.GRASS_SLAB);
-
-        //blockModelGenerators.family(Blocks.GRASS_BLOCK)
-                        //.slab(ModBlocks.GRASS_SLAB);
+                        .slab(ModBlocks.DIRT_SLAB);
 
         blockModelGenerators.family(Blocks.NETHER_BRICKS)
                         .fenceGate(ModBlocks.NETHER_BRICK_FENCE_GATE);
@@ -215,6 +210,70 @@ public class ModModelProvider extends FabricModelProvider {
                 .fence(ModBlocks.PINK_CONCRETE_FENCE)
                 .fenceGate(ModBlocks.PINK_CONCRETE_FENCE_GATE)
                 .wall(ModBlocks.PINK_CONCRETE_WALL);
+
+        blockModelGenerators.family(Blocks.WOOL.white())
+                        .slab(ModBlocks.WHITE_WOOL_SLAB)
+                        .stairs(ModBlocks.WHITE_WOOL_STAIRS);
+
+        blockModelGenerators.family(Blocks.WOOL.lightGray())
+                .slab(ModBlocks.LIGHT_GRAY_WOOL_SLAB)
+                .stairs(ModBlocks.LIGHT_GRAY_WOOL_STAIRS);
+
+        blockModelGenerators.family(Blocks.WOOL.gray())
+                .slab(ModBlocks.GRAY_WOOL_SLAB)
+                .stairs(ModBlocks.GRAY_WOOL_STAIRS);
+
+        blockModelGenerators.family(Blocks.WOOL.black())
+                .slab(ModBlocks.BLACK_WOOL_SLAB)
+                .stairs(ModBlocks.BLACK_WOOL_STAIRS);
+
+        blockModelGenerators.family(Blocks.WOOL.brown())
+                .slab(ModBlocks.BROWN_WOOL_SLAB)
+                .stairs(ModBlocks.BROWN_WOOL_STAIRS);
+
+        blockModelGenerators.family(Blocks.WOOL.red())
+                .slab(ModBlocks.RED_WOOL_SLAB)
+                .stairs(ModBlocks.RED_WOOL_STAIRS);
+
+        blockModelGenerators.family(Blocks.WOOL.orange())
+                .slab(ModBlocks.ORANGE_WOOL_SLAB)
+                .stairs(ModBlocks.ORANGE_WOOL_STAIRS);
+
+        blockModelGenerators.family(Blocks.WOOL.yellow())
+                .slab(ModBlocks.YELLOW_WOOL_SLAB)
+                .stairs(ModBlocks.YELLOW_WOOL_STAIRS);
+
+        blockModelGenerators.family(Blocks.WOOL.lime())
+                .slab(ModBlocks.LIME_WOOL_SLAB)
+                .stairs(ModBlocks.LIME_WOOL_STAIRS);
+
+        blockModelGenerators.family(Blocks.WOOL.green())
+                .slab(ModBlocks.GREEN_WOOL_SLAB)
+                .stairs(ModBlocks.GREEN_WOOL_STAIRS);
+
+        blockModelGenerators.family(Blocks.WOOL.cyan())
+                .slab(ModBlocks.CYAN_WOOL_SLAB)
+                .stairs(ModBlocks.CYAN_WOOL_STAIRS);
+
+        blockModelGenerators.family(Blocks.WOOL.lightBlue())
+                .slab(ModBlocks.LIGHT_BLUE_WOOL_SLAB)
+                .stairs(ModBlocks.LIGHT_BLUE_WOOL_STAIRS);
+
+        blockModelGenerators.family(Blocks.WOOL.blue())
+                .slab(ModBlocks.BLUE_WOOL_SLAB)
+                .stairs(ModBlocks.BLUE_WOOL_STAIRS);
+
+        blockModelGenerators.family(Blocks.WOOL.purple())
+                .slab(ModBlocks.PURPLE_WOOL_SLAB)
+                .stairs(ModBlocks.PURPLE_WOOL_STAIRS);
+
+        blockModelGenerators.family(Blocks.WOOL.magenta())
+                .slab(ModBlocks.MAGENTA_WOOL_SLAB)
+                .stairs(ModBlocks.MAGENTA_WOOL_STAIRS);
+
+        blockModelGenerators.family(Blocks.WOOL.pink())
+                .slab(ModBlocks.PINK_WOOL_SLAB)
+                .stairs(ModBlocks.PINK_WOOL_STAIRS);
 
         blockModelGenerators.family(Blocks.IRON_BLOCK)
                 .slab(ModBlocks.IRON_SLAB)

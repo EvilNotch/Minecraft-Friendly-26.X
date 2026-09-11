@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "minecraftfriendly:block/rainbow_wool_side",
+    "north": "minecraftfriendly:block/rainbow_wool_side",
+    "south": "minecraftfriendly:block/rainbow_wool_side",
+    "east": "minecraftfriendly:block/rainbow_wool_side",
+    "west": "minecraftfriendly:block/rainbow_wool_side",
+    "up": "minecraftfriendly:block/rainbow_wool_top",
+    "down": "minecraftfriendly:block/rainbow_wool_bottom"
+  }
+}

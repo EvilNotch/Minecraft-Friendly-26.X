@@ -19,7 +19,9 @@ Cat to Dog bug is reintroduced.
 Replacing Vanilla Door output recipe to 2 instead of 3 since everyone is extra and a half 🥰
 Updated Stair crafting output to 6 instead of 4.
 Added Sand Layers, Soul Soil Layers, and Gravel Layers.
-Added Metal Slab and Stair Variants, along with Concrete Slabs, Stairs, Fences, Fence Gates, and Walls.
+Added Metal Slab and Stair Variants.
+Backported Concrete and Wool Block-sets.
+Backported a Minecraft Map Texture.
 Added Calamari, WIP Textures.
 Added Prismarine from Dungeons to make Cauldron crafting harder, made from Prismarine Crystals.
 Added Iron and Golden Buttons.

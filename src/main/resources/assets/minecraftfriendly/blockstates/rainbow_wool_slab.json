@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "minecraftfriendly:block/rainbow_wool_slab"
+    },
+    "type=double": {
+      "model": "minecraftfriendly:block/rainbow_wool"
+    },
+    "type=top": {
+      "model": "minecraftfriendly:block/rainbow_wool_slab_top"
+    }
+  }
+}

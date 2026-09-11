@@ -204,5 +204,58 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
         dropSelf(ModBlocks.PINK_CONCRETE_FENCE);
         dropSelf(ModBlocks.PINK_CONCRETE_FENCE_GATE);
         dropSelf(ModBlocks.PINK_CONCRETE_WALL);
+
+
+        dropSelf(ModBlocks.RAINBOW_WOOL);
+        //dropSelf(ModBlocks.RAINBOW_WOOL_STAIRS);
+        //add(ModBlocks.RAINBOW_WOOL_SLAB, this::createSlabItemTable);
+
+        dropSelf(ModBlocks.WHITE_WOOL_STAIRS);
+        add(ModBlocks.WHITE_WOOL_SLAB, this::createSlabItemTable);
+
+        dropSelf(ModBlocks.LIGHT_GRAY_WOOL_STAIRS);
+        add(ModBlocks.LIGHT_GRAY_WOOL_SLAB, this::createSlabItemTable);
+
+        dropSelf(ModBlocks.GRAY_WOOL_STAIRS);
+        add(ModBlocks.GRAY_WOOL_SLAB, this::createSlabItemTable);
+
+        dropSelf(ModBlocks.BLACK_WOOL_STAIRS);
+        add(ModBlocks.BLACK_WOOL_SLAB, this::createSlabItemTable);
+
+        dropSelf(ModBlocks.BROWN_WOOL_STAIRS);
+        add(ModBlocks.BROWN_WOOL_SLAB, this::createSlabItemTable);
+
+        dropSelf(ModBlocks.RED_WOOL_STAIRS);
+        add(ModBlocks.RED_WOOL_SLAB, this::createSlabItemTable);
+
+        dropSelf(ModBlocks.ORANGE_WOOL_STAIRS);
+        add(ModBlocks.ORANGE_WOOL_SLAB, this::createSlabItemTable);
+
+        dropSelf(ModBlocks.YELLOW_WOOL_STAIRS);
+        add(ModBlocks.YELLOW_WOOL_SLAB, this::createSlabItemTable);
+
+        dropSelf(ModBlocks.LIME_WOOL_STAIRS);
+        add(ModBlocks.LIME_WOOL_SLAB, this::createSlabItemTable);
+
+        dropSelf(ModBlocks.GREEN_WOOL_STAIRS);
+        add(ModBlocks.GREEN_WOOL_SLAB, this::createSlabItemTable);
+
+        dropSelf(ModBlocks.CYAN_WOOL_STAIRS);
+        add(ModBlocks.CYAN_WOOL_SLAB, this::createSlabItemTable);
+
+        dropSelf(ModBlocks.LIGHT_BLUE_WOOL_STAIRS);
+        add(ModBlocks.LIGHT_BLUE_WOOL_SLAB, this::createSlabItemTable);
+
+        dropSelf(ModBlocks.BLUE_WOOL_STAIRS);
+        add(ModBlocks.BLUE_WOOL_SLAB, this::createSlabItemTable);
+
+        dropSelf(ModBlocks.PURPLE_WOOL_STAIRS);
+        add(ModBlocks.PURPLE_WOOL_SLAB, this::createSlabItemTable);
+
+        dropSelf(ModBlocks.MAGENTA_WOOL_STAIRS);
+        add(ModBlocks.MAGENTA_WOOL_SLAB, this::createSlabItemTable);
+
+        dropSelf(ModBlocks.PINK_WOOL_STAIRS);
+        add(ModBlocks.PINK_WOOL_SLAB, this::createSlabItemTable);
     }
 }

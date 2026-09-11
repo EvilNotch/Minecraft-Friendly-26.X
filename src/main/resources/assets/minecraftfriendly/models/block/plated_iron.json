@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "minecraftfriendly:block/plated_iron_side",
+    "north": "minecraftfriendly:block/plated_iron_side",
+    "south": "minecraftfriendly:block/plated_iron_side",
+    "east": "minecraftfriendly:block/plated_iron_side",
+    "west": "minecraftfriendly:block/plated_iron_side",
+    "up": "minecraftfriendly:block/plated_iron_top",
+    "down": "minecraftfriendly:block/plated_iron_bottom"
+  }
+}

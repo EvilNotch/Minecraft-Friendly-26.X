@@ -62,8 +62,6 @@
 
   "block.minecraftfriendly.dirt_slab": "Dirt Slab",
 
-  "block.minecraftfriendly.grass_slab": "Grass Slab",
-
   "block.minecraftfriendly.petrified_spruce_slab": "Petrified Spruce Slab",
   "block.minecraftfriendly.petrified_birch_slab": "Petrified Birch Slab",
   "block.minecraftfriendly.petrified_jungle_slab": "Petrified Jungle Slab",
@@ -78,6 +76,54 @@
   "block.minecraftfriendly.petrified_warped_slab": "Petrified Warped Slab",
 
   "block.minecraftfriendly.rainbow_wool": "Rainbow Wool",
+
+  "block.minecraftfriendly.white_wool_slab": "White Wool Slab",
+  "block.minecraftfriendly.white_wool_stairs": "White Wool Stairs",
+
+  "block.minecraftfriendly.light_gray_wool_slab": "Light Gray Wool Slab",
+  "block.minecraftfriendly.light_gray_wool_stairs": "Light Gray Wool Stairs",
+
+  "block.minecraftfriendly.gray_wool_slab": "Gray Wool Slab",
+  "block.minecraftfriendly.gray_wool_stairs": "Gray Wool Stairs",
+
+  "block.minecraftfriendly.black_wool_slab": "Black Wool Slab",
+  "block.minecraftfriendly.black_wool_stairs": "Black Wool Stairs",
+
+  "block.minecraftfriendly.brown_wool_slab": "Brown Wool Slab",
+  "block.minecraftfriendly.brown_wool_stairs": "Brown Wool Stairs",
+
+  "block.minecraftfriendly.red_wool_slab": "Red Wool Slab",
+  "block.minecraftfriendly.red_wool_stairs": "Red Wool Stairs",
+
+  "block.minecraftfriendly.orange_wool_slab": "Orange Wool Slab",
+  "block.minecraftfriendly.orange_wool_stairs": "Orange Wool Stairs",
+
+  "block.minecraftfriendly.yellow_wool_slab": "Yellow Wool Slab",
+  "block.minecraftfriendly.yellow_wool_stairs": "Yellow Wool Stairs",
+
+  "block.minecraftfriendly.lime_wool_slab": "Lime Wool Slab",
+  "block.minecraftfriendly.lime_wool_stairs": "Lime Wool Stairs",
+
+  "block.minecraftfriendly.green_wool_slab": "Green Wool Slab",
+  "block.minecraftfriendly.green_wool_stairs": "Green Wool Stairs",
+
+  "block.minecraftfriendly.cyan_wool_slab": "Cyan Wool Slab",
+  "block.minecraftfriendly.cyan_wool_stairs": "Cyan Wool Stairs",
+
+  "block.minecraftfriendly.light_blue_wool_slab": "Light Blue Wool Slab",
+  "block.minecraftfriendly.light_blue_wool_stairs": "Light Blue Wool Stairs",
+
+  "block.minecraftfriendly.blue_wool_slab": "Blue Wool Slab",
+  "block.minecraftfriendly.blue_wool_stairs": "Blue Wool Stairs",
+
+  "block.minecraftfriendly.purple_wool_slab": "Purple Wool Slab",
+  "block.minecraftfriendly.purple_wool_stairs": "Purple Wool Stairs",
+
+  "block.minecraftfriendly.magenta_wool_slab": "Magenta Wool Slab",
+  "block.minecraftfriendly.magenta_wool_stairs": "Magenta Wool Stairs",
+
+  "block.minecraftfriendly.pink_wool_slab": "Pink Wool Slab",
+  "block.minecraftfriendly.pink_wool_stairs": "Pink Wool Stairs",
 
   "block.minecraftfriendly.nether_brick_fence_gate": "Nether Brick Fence Gate",
 
@@ -116,8 +162,8 @@
 
   "block.minecraftfriendly.plated_iron": "Block of Plated Iron",
   "block.minecraftfriendly.iron_button": "Ironic Button",
-  "block.minecraftfriendly.iron_slab": "Iron Slab",
-  "block.minecraftfriendly.iron_stairs": "Iron Stairs",
+  "block.minecraftfriendly.iron_slab": "Ironic Slab",
+  "block.minecraftfriendly.iron_stairs": "Ironic Stairs",
 
 
   "block.minecraftfriendly.chiseled_gold": "Block of Chiseled Gold",
