@@ -14,6 +14,7 @@ public class ModFuels {
             builder.add(ModItems.LONGER_STRING, context.baseSmeltTime() / 2);
             builder.add(ItemTags.BEE_FOOD, context.baseSmeltTime() / 2);
             builder.add(Items.GUNPOWDER, context.baseSmeltTime() / 2);
+            builder.add(Items.CHORUS_PLANT, context.baseSmeltTime() / 2);
         }); //Can also just input a number value if I don't want to adjust from vanilla.
     }
 }

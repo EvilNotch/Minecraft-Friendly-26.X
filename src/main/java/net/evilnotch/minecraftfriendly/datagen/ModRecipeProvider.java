@@ -987,6 +987,52 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 smeltingResultFromBase(Blocks.IRON_BLOCK, Blocks.RAW_IRON_BLOCK);
                 smeltingResultFromBase(Blocks.GOLD_BLOCK, Blocks.RAW_GOLD_BLOCK);
 
+                smeltingResultFromBase(Items.QUARTZ, Blocks.DIORITE);
+
+                shaped(RecipeCategory.DECORATIONS, Blocks.END_ROD, 4)
+                        .pattern("/")
+                        .pattern("#")
+                        .define('#', Items.POPPED_CHORUS_FRUIT)
+                        .define('/', Items.BREEZE_ROD)
+                        .unlockedBy(getHasName(Items.POPPED_CHORUS_FRUIT), has(Items.POPPED_CHORUS_FRUIT))
+                        .save(output, "end_rod_from_breeze_rod");
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, Blocks.CLAY, Blocks.DIRT, 2);
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, Blocks.CLAY, Blocks.ROOTED_DIRT, 2);
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, Blocks.CLAY, Blocks.COARSE_DIRT, 2);
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, Blocks.CLAY, Blocks.MUD, 4);
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, Blocks.ROOTED_DIRT, Blocks.MUD);
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, Blocks.DIRT, Blocks.ROOTED_DIRT);
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, Blocks.DIRT, Blocks.COARSE_DIRT);
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, Blocks.FARMLAND, Blocks.DIRT);
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, Blocks.FARMLAND, Blocks.ROOTED_DIRT);
+                stonecutterResultFromBase(RecipeCategory.FOOD, Blocks.HAY_BLOCK, Items.WHEAT, 12);
+                stonecutterResultFromBase(RecipeCategory.FOOD, Blocks.HAY_BLOCK, Items.WHEAT_SEEDS, 8);
+
+                shapeless(RecipeCategory.BUILDING_BLOCKS, Blocks.MOSSY_COBBLESTONE)
+                        .requires(Blocks.MOSS_CARPET)
+                        .requires(Blocks.COBBLESTONE)
+                        .unlockedBy(getHasName(Blocks.MOSS_CARPET), has(Blocks.MOSS_CARPET))
+                        .save(output, "mossy_cobblestone_from_mossy_carpet_block");
+
+
+                shapeless(RecipeCategory.BUILDING_BLOCKS, Blocks.MOSSY_COBBLESTONE, 4)
+                        .requires(Blocks.MOSS_BLOCK)
+                        .requires(Blocks.COBBLESTONE)
+                        .unlockedBy(getHasName(Blocks.MOSS_CARPET), has(Blocks.MOSS_CARPET))
+                        .save(output, "mossy_cobblestone_from_moss_block");
+
+
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WHITE_GLAZED_TERRACOTTA_STAIRS, Blocks.GLAZED_TERRACOTTA.white());
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WHITE_GLAZED_TERRACOTTA_SLAB, Blocks.GLAZED_TERRACOTTA.white(), 2);
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_GRAY_GLAZED_TERRACOTTA_STAIRS, Blocks.GLAZED_TERRACOTTA.lightGray());
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_GRAY_GLAZED_TERRACOTTA_SLAB, Blocks.GLAZED_TERRACOTTA.lightGray(), 2);
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GRAY_GLAZED_TERRACOTTA_STAIRS, Blocks.GLAZED_TERRACOTTA.gray());
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GRAY_GLAZED_TERRACOTTA_SLAB, Blocks.GLAZED_TERRACOTTA.gray(), 2);
+
 
             }
         };

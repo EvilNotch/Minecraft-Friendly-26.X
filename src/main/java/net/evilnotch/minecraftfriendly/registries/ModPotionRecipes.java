@@ -9,7 +9,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 public class ModPotionRecipes {
     public static void registerPotionRecipes() {
         FabricPotionBrewingBuilder.BUILD.register(builder -> {
-            builder.registerPotionRecipe(Potions.AWKWARD, Ingredient.of(Items.WITHER_SKELETON_SKULL), ModPotions.POTION_OF_DECAY);
+            builder.registerPotionRecipe(Potions.AWKWARD, Ingredient.of(Items.WITHER_ROSE), ModPotions.POTION_OF_DECAY);
         });
     }
 }

@@ -21,74 +21,10 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
     protected void addTags(HolderLookup.Provider registries) {
 
         tag(BlockTags.WOOL)
-                .add(ModBlocks.getRK(RAINBOW_WOOL))
-                .add(ModBlocks.getRK(WHITE_WOOL_SLAB))
-                .add(ModBlocks.getRK(WHITE_WOOL_STAIRS))
-                .add(ModBlocks.getRK(LIGHT_GRAY_WOOL_SLAB))
-                .add(ModBlocks.getRK(LIGHT_GRAY_WOOL_STAIRS))
-                .add(ModBlocks.getRK(GRAY_WOOL_SLAB))
-                .add(ModBlocks.getRK(GRAY_WOOL_STAIRS))
-                .add(ModBlocks.getRK(BLACK_WOOL_SLAB))
-                .add(ModBlocks.getRK(BLACK_WOOL_STAIRS))
-                .add(ModBlocks.getRK(BROWN_WOOL_SLAB))
-                .add(ModBlocks.getRK(BROWN_WOOL_STAIRS))
-                .add(ModBlocks.getRK(RED_WOOL_SLAB))
-                .add(ModBlocks.getRK(RED_WOOL_STAIRS))
-                .add(ModBlocks.getRK(ORANGE_WOOL_SLAB))
-                .add(ModBlocks.getRK(ORANGE_WOOL_STAIRS))
-                .add(ModBlocks.getRK(YELLOW_WOOL_SLAB))
-                .add(ModBlocks.getRK(YELLOW_WOOL_STAIRS))
-                .add(ModBlocks.getRK(LIME_WOOL_SLAB))
-                .add(ModBlocks.getRK(LIME_WOOL_STAIRS))
-                .add(ModBlocks.getRK(GREEN_WOOL_SLAB))
-                .add(ModBlocks.getRK(GREEN_WOOL_STAIRS))
-                .add(ModBlocks.getRK(CYAN_WOOL_SLAB))
-                .add(ModBlocks.getRK(CYAN_WOOL_STAIRS))
-                .add(ModBlocks.getRK(LIGHT_BLUE_WOOL_SLAB))
-                .add(ModBlocks.getRK(LIGHT_BLUE_WOOL_STAIRS))
-                .add(ModBlocks.getRK(BLUE_WOOL_SLAB))
-                .add(ModBlocks.getRK(BLUE_WOOL_STAIRS))
-                .add(ModBlocks.getRK(PURPLE_WOOL_SLAB))
-                .add(ModBlocks.getRK(PURPLE_WOOL_STAIRS))
-                .add(ModBlocks.getRK(MAGENTA_WOOL_SLAB))
-                .add(ModBlocks.getRK(MAGENTA_WOOL_STAIRS))
-                .add(ModBlocks.getRK(PINK_WOOL_SLAB))
-                .add(ModBlocks.getRK(PINK_WOOL_STAIRS));
+                .add(ModBlocks.getRK(RAINBOW_WOOL));
 
         tag(BlockTags.OCCLUDES_VIBRATION_SIGNALS)
-                .add(ModBlocks.getRK(RAINBOW_WOOL))
-                .add(ModBlocks.getRK(WHITE_WOOL_SLAB))
-                .add(ModBlocks.getRK(WHITE_WOOL_STAIRS))
-                .add(ModBlocks.getRK(LIGHT_GRAY_WOOL_SLAB))
-                .add(ModBlocks.getRK(LIGHT_GRAY_WOOL_STAIRS))
-                .add(ModBlocks.getRK(GRAY_WOOL_SLAB))
-                .add(ModBlocks.getRK(GRAY_WOOL_STAIRS))
-                .add(ModBlocks.getRK(BLACK_WOOL_SLAB))
-                .add(ModBlocks.getRK(BLACK_WOOL_STAIRS))
-                .add(ModBlocks.getRK(BROWN_WOOL_SLAB))
-                .add(ModBlocks.getRK(BROWN_WOOL_STAIRS))
-                .add(ModBlocks.getRK(RED_WOOL_SLAB))
-                .add(ModBlocks.getRK(RED_WOOL_STAIRS))
-                .add(ModBlocks.getRK(ORANGE_WOOL_SLAB))
-                .add(ModBlocks.getRK(ORANGE_WOOL_STAIRS))
-                .add(ModBlocks.getRK(YELLOW_WOOL_SLAB))
-                .add(ModBlocks.getRK(YELLOW_WOOL_STAIRS))
-                .add(ModBlocks.getRK(LIME_WOOL_SLAB))
-                .add(ModBlocks.getRK(LIME_WOOL_STAIRS))
-                .add(ModBlocks.getRK(GREEN_WOOL_SLAB))
-                .add(ModBlocks.getRK(GREEN_WOOL_STAIRS))
-                .add(ModBlocks.getRK(CYAN_WOOL_SLAB))
-                .add(ModBlocks.getRK(CYAN_WOOL_STAIRS))
-                .add(ModBlocks.getRK(LIGHT_BLUE_WOOL_SLAB))
-                .add(ModBlocks.getRK(LIGHT_BLUE_WOOL_STAIRS))
-                .add(ModBlocks.getRK(BLUE_WOOL_SLAB))
-                .add(ModBlocks.getRK(BLUE_WOOL_STAIRS))
-                .add(ModBlocks.getRK(PURPLE_WOOL_SLAB))
-                .add(ModBlocks.getRK(PURPLE_WOOL_STAIRS))
-                .add(ModBlocks.getRK(MAGENTA_WOOL_SLAB))
-                .add(ModBlocks.getRK(MAGENTA_WOOL_STAIRS))
-                .add(ModBlocks.getRK(PINK_WOOL_SLAB))
-                .add(ModBlocks.getRK(PINK_WOOL_STAIRS));
+                .add(ModBlocks.getRK(RAINBOW_WOOL));
 
         tag(BlockTags.SMALL_FLOWERS)
                 .add(ModBlocks.getRK(PINK_DAISY))
@@ -122,137 +58,73 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(BLUE_HYPNEA_MACROALGAE));
 
         tag(BlockTags.CONCRETE)
-                .add(ModBlocks.getRK(WHITE_CONCRETE_SLAB))
-                .add(ModBlocks.getRK(WHITE_CONCRETE_STAIRS))
                 .add(ModBlocks.getRK(WHITE_CONCRETE_FENCE))
                 .add(ModBlocks.getRK(WHITE_CONCRETE_FENCE_GATE))
                 .add(ModBlocks.getRK(WHITE_CONCRETE_WALL))
 
-                .add(ModBlocks.getRK(LIGHT_GRAY_CONCRETE_SLAB))
-                .add(ModBlocks.getRK(LIGHT_GRAY_CONCRETE_STAIRS))
                 .add(ModBlocks.getRK(LIGHT_GRAY_CONCRETE_FENCE))
                 .add(ModBlocks.getRK(LIGHT_GRAY_CONCRETE_FENCE_GATE))
                 .add(ModBlocks.getRK(LIGHT_GRAY_CONCRETE_WALL))
 
-                .add(ModBlocks.getRK(GRAY_CONCRETE_SLAB))
-                .add(ModBlocks.getRK(GRAY_CONCRETE_STAIRS))
                 .add(ModBlocks.getRK(GRAY_CONCRETE_FENCE))
                 .add(ModBlocks.getRK(GRAY_CONCRETE_FENCE_GATE))
                 .add(ModBlocks.getRK(GRAY_CONCRETE_WALL))
 
-                .add(ModBlocks.getRK(BLACK_CONCRETE_SLAB))
-                .add(ModBlocks.getRK(BLACK_CONCRETE_STAIRS))
                 .add(ModBlocks.getRK(BLACK_CONCRETE_FENCE))
                 .add(ModBlocks.getRK(BLACK_CONCRETE_FENCE_GATE))
                 .add(ModBlocks.getRK(BLACK_CONCRETE_WALL))
 
-                .add(ModBlocks.getRK(BROWN_CONCRETE_SLAB))
-                .add(ModBlocks.getRK(BROWN_CONCRETE_STAIRS))
                 .add(ModBlocks.getRK(BROWN_CONCRETE_FENCE))
                 .add(ModBlocks.getRK(BROWN_CONCRETE_FENCE_GATE))
                 .add(ModBlocks.getRK(BROWN_CONCRETE_WALL))
 
-                .add(ModBlocks.getRK(RED_CONCRETE_SLAB))
-                .add(ModBlocks.getRK(RED_CONCRETE_STAIRS))
                 .add(ModBlocks.getRK(RED_CONCRETE_FENCE))
                 .add(ModBlocks.getRK(RED_CONCRETE_FENCE_GATE))
                 .add(ModBlocks.getRK(RED_CONCRETE_WALL))
 
-                .add(ModBlocks.getRK(ORANGE_CONCRETE_SLAB))
-                .add(ModBlocks.getRK(ORANGE_CONCRETE_STAIRS))
                 .add(ModBlocks.getRK(ORANGE_CONCRETE_FENCE))
                 .add(ModBlocks.getRK(ORANGE_CONCRETE_FENCE_GATE))
                 .add(ModBlocks.getRK(ORANGE_CONCRETE_WALL))
 
-                .add(ModBlocks.getRK(YELLOW_CONCRETE_SLAB))
-                .add(ModBlocks.getRK(YELLOW_CONCRETE_STAIRS))
                 .add(ModBlocks.getRK(YELLOW_CONCRETE_FENCE))
                 .add(ModBlocks.getRK(YELLOW_CONCRETE_FENCE_GATE))
                 .add(ModBlocks.getRK(YELLOW_CONCRETE_WALL))
 
-                .add(ModBlocks.getRK(LIME_CONCRETE_SLAB))
-                .add(ModBlocks.getRK(LIME_CONCRETE_STAIRS))
                 .add(ModBlocks.getRK(LIME_CONCRETE_FENCE))
                 .add(ModBlocks.getRK(LIME_CONCRETE_FENCE_GATE))
                 .add(ModBlocks.getRK(LIME_CONCRETE_WALL))
 
-                .add(ModBlocks.getRK(GREEN_CONCRETE_SLAB))
-                .add(ModBlocks.getRK(GREEN_CONCRETE_STAIRS))
                 .add(ModBlocks.getRK(GREEN_CONCRETE_FENCE))
                 .add(ModBlocks.getRK(GREEN_CONCRETE_FENCE_GATE))
                 .add(ModBlocks.getRK(GREEN_CONCRETE_WALL))
 
-                .add(ModBlocks.getRK(CYAN_CONCRETE_SLAB))
-                .add(ModBlocks.getRK(CYAN_CONCRETE_STAIRS))
                 .add(ModBlocks.getRK(CYAN_CONCRETE_FENCE))
                 .add(ModBlocks.getRK(CYAN_CONCRETE_FENCE_GATE))
                 .add(ModBlocks.getRK(CYAN_CONCRETE_WALL))
 
-                .add(ModBlocks.getRK(LIGHT_BLUE_CONCRETE_SLAB))
-                .add(ModBlocks.getRK(LIGHT_BLUE_CONCRETE_STAIRS))
                 .add(ModBlocks.getRK(LIGHT_BLUE_CONCRETE_FENCE))
                 .add(ModBlocks.getRK(LIGHT_BLUE_CONCRETE_FENCE_GATE))
                 .add(ModBlocks.getRK(LIGHT_BLUE_CONCRETE_WALL))
 
-                .add(ModBlocks.getRK(BLUE_CONCRETE_SLAB))
-                .add(ModBlocks.getRK(BLUE_CONCRETE_STAIRS))
                 .add(ModBlocks.getRK(BLUE_CONCRETE_FENCE))
                 .add(ModBlocks.getRK(BLUE_CONCRETE_FENCE_GATE))
                 .add(ModBlocks.getRK(BLUE_CONCRETE_WALL))
 
-                .add(ModBlocks.getRK(PURPLE_CONCRETE_SLAB))
-                .add(ModBlocks.getRK(PURPLE_CONCRETE_STAIRS))
                 .add(ModBlocks.getRK(PURPLE_CONCRETE_FENCE))
                 .add(ModBlocks.getRK(PURPLE_CONCRETE_FENCE_GATE))
                 .add(ModBlocks.getRK(PURPLE_CONCRETE_WALL))
 
-                .add(ModBlocks.getRK(MAGENTA_CONCRETE_SLAB))
-                .add(ModBlocks.getRK(MAGENTA_CONCRETE_STAIRS))
                 .add(ModBlocks.getRK(MAGENTA_CONCRETE_FENCE))
                 .add(ModBlocks.getRK(MAGENTA_CONCRETE_FENCE_GATE))
                 .add(ModBlocks.getRK(MAGENTA_CONCRETE_WALL))
-                
-                .add(ModBlocks.getRK(PINK_CONCRETE_SLAB))
-                .add(ModBlocks.getRK(PINK_CONCRETE_STAIRS))
+
                 .add(ModBlocks.getRK(PINK_CONCRETE_FENCE))
                 .add(ModBlocks.getRK(PINK_CONCRETE_FENCE_GATE))
                 .add(ModBlocks.getRK(PINK_CONCRETE_WALL));
 
         tag(BlockTags.SHEARS_MAJOR_BREAKING_SPEED)
                 .add(ModBlocks.getRK(TUBE_CORAL_SLAB))
-                .add(ModBlocks.getRK(RAINBOW_WOOL))
-                .add(ModBlocks.getRK(WHITE_WOOL_SLAB))
-                .add(ModBlocks.getRK(WHITE_WOOL_STAIRS))
-                .add(ModBlocks.getRK(LIGHT_GRAY_WOOL_SLAB))
-                .add(ModBlocks.getRK(LIGHT_GRAY_WOOL_STAIRS))
-                .add(ModBlocks.getRK(GRAY_WOOL_SLAB))
-                .add(ModBlocks.getRK(GRAY_WOOL_STAIRS))
-                .add(ModBlocks.getRK(BLACK_WOOL_SLAB))
-                .add(ModBlocks.getRK(BLACK_WOOL_STAIRS))
-                .add(ModBlocks.getRK(BROWN_WOOL_SLAB))
-                .add(ModBlocks.getRK(BROWN_WOOL_STAIRS))
-                .add(ModBlocks.getRK(RED_WOOL_SLAB))
-                .add(ModBlocks.getRK(RED_WOOL_STAIRS))
-                .add(ModBlocks.getRK(ORANGE_WOOL_SLAB))
-                .add(ModBlocks.getRK(ORANGE_WOOL_STAIRS))
-                .add(ModBlocks.getRK(YELLOW_WOOL_SLAB))
-                .add(ModBlocks.getRK(YELLOW_WOOL_STAIRS))
-                .add(ModBlocks.getRK(LIME_WOOL_SLAB))
-                .add(ModBlocks.getRK(LIME_WOOL_STAIRS))
-                .add(ModBlocks.getRK(GREEN_WOOL_SLAB))
-                .add(ModBlocks.getRK(GREEN_WOOL_STAIRS))
-                .add(ModBlocks.getRK(CYAN_WOOL_SLAB))
-                .add(ModBlocks.getRK(CYAN_WOOL_STAIRS))
-                .add(ModBlocks.getRK(LIGHT_BLUE_WOOL_SLAB))
-                .add(ModBlocks.getRK(LIGHT_BLUE_WOOL_STAIRS))
-                .add(ModBlocks.getRK(BLUE_WOOL_SLAB))
-                .add(ModBlocks.getRK(BLUE_WOOL_STAIRS))
-                .add(ModBlocks.getRK(PURPLE_WOOL_SLAB))
-                .add(ModBlocks.getRK(PURPLE_WOOL_STAIRS))
-                .add(ModBlocks.getRK(MAGENTA_WOOL_SLAB))
-                .add(ModBlocks.getRK(MAGENTA_WOOL_STAIRS))
-                .add(ModBlocks.getRK(PINK_WOOL_SLAB))
-                .add(ModBlocks.getRK(PINK_WOOL_STAIRS));
+                .add(ModBlocks.getRK(RAINBOW_WOOL));
 
         tag(BlockTags.MINEABLE_WITH_SHOVEL)
                 .add(ModBlocks.getRK(DIRT_SLAB))
@@ -347,101 +219,78 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(NETHERITE_SLAB))
                 .add(ModBlocks.getRK(NETHERITE_STAIRS))
 
-                .add(ModBlocks.getRK(WHITE_CONCRETE_SLAB))
-                .add(ModBlocks.getRK(WHITE_CONCRETE_STAIRS))
                 .add(ModBlocks.getRK(WHITE_CONCRETE_FENCE))
                 .add(ModBlocks.getRK(WHITE_CONCRETE_FENCE_GATE))
                 .add(ModBlocks.getRK(WHITE_CONCRETE_WALL))
 
-                .add(ModBlocks.getRK(LIGHT_GRAY_CONCRETE_SLAB))
-                .add(ModBlocks.getRK(LIGHT_GRAY_CONCRETE_STAIRS))
                 .add(ModBlocks.getRK(LIGHT_GRAY_CONCRETE_FENCE))
                 .add(ModBlocks.getRK(LIGHT_GRAY_CONCRETE_FENCE_GATE))
                 .add(ModBlocks.getRK(LIGHT_GRAY_CONCRETE_WALL))
 
-                .add(ModBlocks.getRK(GRAY_CONCRETE_SLAB))
-                .add(ModBlocks.getRK(GRAY_CONCRETE_STAIRS))
                 .add(ModBlocks.getRK(GRAY_CONCRETE_FENCE))
                 .add(ModBlocks.getRK(GRAY_CONCRETE_FENCE_GATE))
                 .add(ModBlocks.getRK(GRAY_CONCRETE_WALL))
 
-                .add(ModBlocks.getRK(BLACK_CONCRETE_SLAB))
-                .add(ModBlocks.getRK(BLACK_CONCRETE_STAIRS))
                 .add(ModBlocks.getRK(BLACK_CONCRETE_FENCE))
                 .add(ModBlocks.getRK(BLACK_CONCRETE_FENCE_GATE))
                 .add(ModBlocks.getRK(BLACK_CONCRETE_WALL))
 
-                .add(ModBlocks.getRK(BROWN_CONCRETE_SLAB))
-                .add(ModBlocks.getRK(BROWN_CONCRETE_STAIRS))
                 .add(ModBlocks.getRK(BROWN_CONCRETE_FENCE))
                 .add(ModBlocks.getRK(BROWN_CONCRETE_FENCE_GATE))
                 .add(ModBlocks.getRK(BROWN_CONCRETE_WALL))
 
-                .add(ModBlocks.getRK(RED_CONCRETE_SLAB))
-                .add(ModBlocks.getRK(RED_CONCRETE_STAIRS))
                 .add(ModBlocks.getRK(RED_CONCRETE_FENCE))
                 .add(ModBlocks.getRK(RED_CONCRETE_FENCE_GATE))
                 .add(ModBlocks.getRK(RED_CONCRETE_WALL))
 
-                .add(ModBlocks.getRK(ORANGE_CONCRETE_SLAB))
-                .add(ModBlocks.getRK(ORANGE_CONCRETE_STAIRS))
                 .add(ModBlocks.getRK(ORANGE_CONCRETE_FENCE))
                 .add(ModBlocks.getRK(ORANGE_CONCRETE_FENCE_GATE))
                 .add(ModBlocks.getRK(ORANGE_CONCRETE_WALL))
 
-                .add(ModBlocks.getRK(YELLOW_CONCRETE_SLAB))
-                .add(ModBlocks.getRK(YELLOW_CONCRETE_STAIRS))
                 .add(ModBlocks.getRK(YELLOW_CONCRETE_FENCE))
                 .add(ModBlocks.getRK(YELLOW_CONCRETE_FENCE_GATE))
                 .add(ModBlocks.getRK(YELLOW_CONCRETE_WALL))
 
-                .add(ModBlocks.getRK(LIME_CONCRETE_SLAB))
-                .add(ModBlocks.getRK(LIME_CONCRETE_STAIRS))
                 .add(ModBlocks.getRK(LIME_CONCRETE_FENCE))
                 .add(ModBlocks.getRK(LIME_CONCRETE_FENCE_GATE))
                 .add(ModBlocks.getRK(LIME_CONCRETE_WALL))
 
-                .add(ModBlocks.getRK(GREEN_CONCRETE_SLAB))
-                .add(ModBlocks.getRK(GREEN_CONCRETE_STAIRS))
                 .add(ModBlocks.getRK(GREEN_CONCRETE_FENCE))
                 .add(ModBlocks.getRK(GREEN_CONCRETE_FENCE_GATE))
                 .add(ModBlocks.getRK(GREEN_CONCRETE_WALL))
 
-                .add(ModBlocks.getRK(CYAN_CONCRETE_SLAB))
-                .add(ModBlocks.getRK(CYAN_CONCRETE_STAIRS))
                 .add(ModBlocks.getRK(CYAN_CONCRETE_FENCE))
                 .add(ModBlocks.getRK(CYAN_CONCRETE_FENCE_GATE))
                 .add(ModBlocks.getRK(CYAN_CONCRETE_WALL))
 
-                .add(ModBlocks.getRK(LIGHT_BLUE_CONCRETE_SLAB))
-                .add(ModBlocks.getRK(LIGHT_BLUE_CONCRETE_STAIRS))
                 .add(ModBlocks.getRK(LIGHT_BLUE_CONCRETE_FENCE))
                 .add(ModBlocks.getRK(LIGHT_BLUE_CONCRETE_FENCE_GATE))
                 .add(ModBlocks.getRK(LIGHT_BLUE_CONCRETE_WALL))
 
-                .add(ModBlocks.getRK(BLUE_CONCRETE_SLAB))
-                .add(ModBlocks.getRK(BLUE_CONCRETE_STAIRS))
                 .add(ModBlocks.getRK(BLUE_CONCRETE_FENCE))
                 .add(ModBlocks.getRK(BLUE_CONCRETE_FENCE_GATE))
                 .add(ModBlocks.getRK(BLUE_CONCRETE_WALL))
 
-                .add(ModBlocks.getRK(PURPLE_CONCRETE_SLAB))
-                .add(ModBlocks.getRK(PURPLE_CONCRETE_STAIRS))
                 .add(ModBlocks.getRK(PURPLE_CONCRETE_FENCE))
                 .add(ModBlocks.getRK(PURPLE_CONCRETE_FENCE_GATE))
                 .add(ModBlocks.getRK(PURPLE_CONCRETE_WALL))
 
-                .add(ModBlocks.getRK(MAGENTA_CONCRETE_SLAB))
-                .add(ModBlocks.getRK(MAGENTA_CONCRETE_STAIRS))
                 .add(ModBlocks.getRK(MAGENTA_CONCRETE_FENCE))
                 .add(ModBlocks.getRK(MAGENTA_CONCRETE_FENCE_GATE))
                 .add(ModBlocks.getRK(MAGENTA_CONCRETE_WALL))
 
-                .add(ModBlocks.getRK(PINK_CONCRETE_SLAB))
-                .add(ModBlocks.getRK(PINK_CONCRETE_STAIRS))
                 .add(ModBlocks.getRK(PINK_CONCRETE_FENCE))
                 .add(ModBlocks.getRK(PINK_CONCRETE_FENCE_GATE))
-                .add(ModBlocks.getRK(PINK_CONCRETE_WALL));
+                .add(ModBlocks.getRK(PINK_CONCRETE_WALL))
+
+                .add(ModBlocks.getRK(WHITE_GLAZED_TERRACOTTA_STAIRS))
+                .add(ModBlocks.getRK(WHITE_GLAZED_TERRACOTTA_SLAB))
+
+                .add(ModBlocks.getRK(LIGHT_GRAY_GLAZED_TERRACOTTA_STAIRS))
+                .add(ModBlocks.getRK(LIGHT_GRAY_GLAZED_TERRACOTTA_SLAB))
+
+                .add(ModBlocks.getRK(GRAY_GLAZED_TERRACOTTA_STAIRS))
+                .add(ModBlocks.getRK(GRAY_GLAZED_TERRACOTTA_SLAB));
 
         tag(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.getRK(PLATED_IRON))
@@ -527,146 +376,78 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
         tag(BlockTags.STAIRS).add(ModBlocks.getRK(CRACKED_DEEPSLATE_BRICK_STAIRS));
         tag(BlockTags.SLABS).add(ModBlocks.getRK(CRACKED_DEEPSLATE_BRICK_SLAB));
 
-        tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.WHITE_CONCRETE_SLAB));
-        tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.WHITE_CONCRETE_STAIRS));
         tag(BlockTags.FENCES).add(ModBlocks.getRK(WHITE_CONCRETE_FENCE));
         tag(BlockTags.FENCE_GATES).add(ModBlocks.getRK(WHITE_CONCRETE_FENCE_GATE));
         tag(BlockTags.WALLS).add(ModBlocks.getRK(WHITE_CONCRETE_WALL));
 
-        tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.LIGHT_GRAY_CONCRETE_SLAB));
-        tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.LIGHT_GRAY_CONCRETE_STAIRS));
         tag(BlockTags.FENCES).add(ModBlocks.getRK(LIGHT_GRAY_CONCRETE_FENCE));
         tag(BlockTags.FENCE_GATES).add(ModBlocks.getRK(LIGHT_GRAY_CONCRETE_FENCE_GATE));
         tag(BlockTags.WALLS).add(ModBlocks.getRK(LIGHT_GRAY_CONCRETE_WALL));
 
-        tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.GRAY_CONCRETE_SLAB));
-        tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.GRAY_CONCRETE_STAIRS));
         tag(BlockTags.FENCES).add(ModBlocks.getRK(GRAY_CONCRETE_FENCE));
         tag(BlockTags.FENCE_GATES).add(ModBlocks.getRK(GRAY_CONCRETE_FENCE_GATE));
         tag(BlockTags.WALLS).add(ModBlocks.getRK(GRAY_CONCRETE_WALL));
 
-        tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.BLACK_CONCRETE_SLAB));
-        tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.BLACK_CONCRETE_STAIRS));
         tag(BlockTags.FENCES).add(ModBlocks.getRK(BLACK_CONCRETE_FENCE));
         tag(BlockTags.FENCE_GATES).add(ModBlocks.getRK(BLACK_CONCRETE_FENCE_GATE));
         tag(BlockTags.WALLS).add(ModBlocks.getRK(BLACK_CONCRETE_WALL));
 
-        tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.BROWN_CONCRETE_SLAB));
-        tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.BROWN_CONCRETE_STAIRS));
         tag(BlockTags.FENCES).add(ModBlocks.getRK(BROWN_CONCRETE_FENCE));
         tag(BlockTags.FENCE_GATES).add(ModBlocks.getRK(BROWN_CONCRETE_FENCE_GATE));
         tag(BlockTags.WALLS).add(ModBlocks.getRK(BROWN_CONCRETE_WALL));
 
-        tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.RED_CONCRETE_SLAB));
-        tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.RED_CONCRETE_STAIRS));
         tag(BlockTags.FENCES).add(ModBlocks.getRK(RED_CONCRETE_FENCE));
         tag(BlockTags.FENCE_GATES).add(ModBlocks.getRK(RED_CONCRETE_FENCE_GATE));
         tag(BlockTags.WALLS).add(ModBlocks.getRK(RED_CONCRETE_WALL));
 
-        tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.ORANGE_CONCRETE_SLAB));
-        tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.ORANGE_CONCRETE_STAIRS));
         tag(BlockTags.FENCES).add(ModBlocks.getRK(ORANGE_CONCRETE_FENCE));
         tag(BlockTags.FENCE_GATES).add(ModBlocks.getRK(ORANGE_CONCRETE_FENCE_GATE));
         tag(BlockTags.WALLS).add(ModBlocks.getRK(ORANGE_CONCRETE_WALL));
 
-        tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.YELLOW_CONCRETE_SLAB));
-        tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.YELLOW_CONCRETE_STAIRS));
         tag(BlockTags.FENCES).add(ModBlocks.getRK(YELLOW_CONCRETE_FENCE));
         tag(BlockTags.FENCE_GATES).add(ModBlocks.getRK(YELLOW_CONCRETE_FENCE_GATE));
         tag(BlockTags.WALLS).add(ModBlocks.getRK(YELLOW_CONCRETE_WALL));
 
-        tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.LIME_CONCRETE_SLAB));
-        tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.LIME_CONCRETE_STAIRS));
         tag(BlockTags.FENCES).add(ModBlocks.getRK(LIME_CONCRETE_FENCE));
         tag(BlockTags.FENCE_GATES).add(ModBlocks.getRK(LIME_CONCRETE_FENCE_GATE));
         tag(BlockTags.WALLS).add(ModBlocks.getRK(LIME_CONCRETE_WALL));
 
-        tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.GREEN_CONCRETE_SLAB));
-        tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.GREEN_CONCRETE_STAIRS));
         tag(BlockTags.FENCES).add(ModBlocks.getRK(GREEN_CONCRETE_FENCE));
         tag(BlockTags.FENCE_GATES).add(ModBlocks.getRK(GREEN_CONCRETE_FENCE_GATE));
         tag(BlockTags.WALLS).add(ModBlocks.getRK(GREEN_CONCRETE_WALL));
 
-        tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.CYAN_CONCRETE_SLAB));
-        tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.CYAN_CONCRETE_STAIRS));
         tag(BlockTags.FENCES).add(ModBlocks.getRK(CYAN_CONCRETE_FENCE));
         tag(BlockTags.FENCE_GATES).add(ModBlocks.getRK(CYAN_CONCRETE_FENCE_GATE));
         tag(BlockTags.WALLS).add(ModBlocks.getRK(CYAN_CONCRETE_WALL));
 
-        tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.LIGHT_BLUE_CONCRETE_SLAB));
-        tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.LIGHT_BLUE_CONCRETE_STAIRS));
         tag(BlockTags.FENCES).add(ModBlocks.getRK(LIGHT_BLUE_CONCRETE_FENCE));
         tag(BlockTags.FENCE_GATES).add(ModBlocks.getRK(LIGHT_BLUE_CONCRETE_FENCE_GATE));
         tag(BlockTags.WALLS).add(ModBlocks.getRK(LIGHT_BLUE_CONCRETE_WALL));
 
-        tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.BLUE_CONCRETE_SLAB));
-        tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.BLUE_CONCRETE_STAIRS));
         tag(BlockTags.FENCES).add(ModBlocks.getRK(BLUE_CONCRETE_FENCE));
         tag(BlockTags.FENCE_GATES).add(ModBlocks.getRK(BLUE_CONCRETE_FENCE_GATE));
         tag(BlockTags.WALLS).add(ModBlocks.getRK(BLUE_CONCRETE_WALL));
 
-        tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.PURPLE_CONCRETE_SLAB));
-        tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.PURPLE_CONCRETE_STAIRS));
         tag(BlockTags.FENCES).add(ModBlocks.getRK(PURPLE_CONCRETE_FENCE));
         tag(BlockTags.FENCE_GATES).add(ModBlocks.getRK(PURPLE_CONCRETE_FENCE_GATE));
         tag(BlockTags.WALLS).add(ModBlocks.getRK(PURPLE_CONCRETE_WALL));
 
-        tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.MAGENTA_CONCRETE_SLAB));
-        tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.MAGENTA_CONCRETE_STAIRS));
         tag(BlockTags.FENCES).add(ModBlocks.getRK(MAGENTA_CONCRETE_FENCE));
         tag(BlockTags.FENCE_GATES).add(ModBlocks.getRK(MAGENTA_CONCRETE_FENCE_GATE));
         tag(BlockTags.WALLS).add(ModBlocks.getRK(MAGENTA_CONCRETE_WALL));
 
-        tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.PINK_CONCRETE_SLAB));
-        tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.PINK_CONCRETE_STAIRS));
         tag(BlockTags.FENCES).add(ModBlocks.getRK(PINK_CONCRETE_FENCE));
         tag(BlockTags.FENCE_GATES).add(ModBlocks.getRK(PINK_CONCRETE_FENCE_GATE));
         tag(BlockTags.WALLS).add(ModBlocks.getRK(PINK_CONCRETE_WALL));
 
-        tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.WHITE_WOOL_SLAB));
-        tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.WHITE_WOOL_STAIRS));
+        tag(BlockTags.STAIRS).add(ModBlocks.getRK(WHITE_GLAZED_TERRACOTTA_STAIRS));
+        tag(BlockTags.SLABS).add(ModBlocks.getRK(WHITE_GLAZED_TERRACOTTA_SLAB));
 
-        tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.LIGHT_GRAY_WOOL_SLAB));
-        tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.LIGHT_GRAY_WOOL_STAIRS));
+        tag(BlockTags.STAIRS).add(ModBlocks.getRK(LIGHT_GRAY_GLAZED_TERRACOTTA_STAIRS));
+        tag(BlockTags.SLABS).add(ModBlocks.getRK(LIGHT_GRAY_GLAZED_TERRACOTTA_SLAB));
 
-        tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.GRAY_WOOL_SLAB));
-        tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.GRAY_WOOL_STAIRS));
-
-        tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.BLACK_WOOL_SLAB));
-        tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.BLACK_WOOL_STAIRS));
-
-        tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.BROWN_WOOL_SLAB));
-        tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.BROWN_WOOL_STAIRS));
-
-        tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.RED_WOOL_SLAB));
-        tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.RED_WOOL_STAIRS));
-
-        tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.ORANGE_WOOL_SLAB));
-        tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.ORANGE_WOOL_STAIRS));
-
-        tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.YELLOW_WOOL_SLAB));
-        tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.YELLOW_WOOL_STAIRS));
-
-        tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.LIME_WOOL_SLAB));
-        tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.LIME_WOOL_STAIRS));
-
-        tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.GREEN_WOOL_SLAB));
-        tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.GREEN_WOOL_STAIRS));
-
-        tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.LIGHT_BLUE_WOOL_SLAB));
-        tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.LIGHT_BLUE_WOOL_STAIRS));
-
-        tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.BLUE_WOOL_SLAB));
-        tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.BLUE_WOOL_STAIRS));
-
-        tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.PURPLE_WOOL_SLAB));
-        tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.PURPLE_WOOL_STAIRS));
-
-        tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.MAGENTA_WOOL_SLAB));
-        tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.MAGENTA_WOOL_STAIRS));
-
-        tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.PINK_WOOL_SLAB));
-        tag(BlockTags.STAIRS).add(ModBlocks.getRK(ModBlocks.PINK_WOOL_STAIRS));
+        tag(BlockTags.STAIRS).add(ModBlocks.getRK(GRAY_GLAZED_TERRACOTTA_STAIRS));
+        tag(BlockTags.SLABS).add(ModBlocks.getRK(GRAY_GLAZED_TERRACOTTA_SLAB));
 
         tag(BlockTags.BUTTONS).add(ModBlocks.getRK(ModBlocks.IRON_BUTTON));
         tag(BlockTags.SLABS).add(ModBlocks.getRK(ModBlocks.IRON_SLAB));

@@ -67,6 +67,7 @@ public class ModBlocks {
             new SlabBlock(properties.strength(1.5F, 6.0F).requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_BLACK).instrument(NoteBlockInstrument.BASEDRUM)));
 
+
     public static final Block CRACKED_POLISHED_BLACKSTONE_BRICK_STAIRS = registerBlock("cracked_polished_blackstone_brick_stairs", properties ->
             new StairBlock(Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS.defaultBlockState(), properties.strength(1.5F, 6.0F)
                     .requiresCorrectToolForDrops().mapColor(MapColor.COLOR_BLACK)));
@@ -81,151 +82,39 @@ public class ModBlocks {
     //public static final Block RAINBOW_WOOL_SLAB = registerBlock("rainbow_wool_slab", properties ->
             //new SlabBlock(properties.strength(0.8F).mapColor(DyeColor.BROWN).instrument(NoteBlockInstrument.GUITAR).ignitedByLava()));
 
-    public static final Block WHITE_WOOL_STAIRS = registerBlock("white_wool_stairs", properties ->
-            new StairBlock(Blocks.WOOL.white().defaultBlockState(), properties.strength(0.8F)
-                    .mapColor(DyeColor.WHITE).sound(SoundType.WOOL).ignitedByLava().instrument(NoteBlockInstrument.GUITAR)));
-
-    public static final Block WHITE_WOOL_SLAB = registerBlock("white_wool_slab", properties ->
-            new SlabBlock(properties.strength(0.8F).mapColor(DyeColor.WHITE).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
-
-    public static final Block LIGHT_GRAY_WOOL_STAIRS = registerBlock("light_gray_wool_stairs", properties ->
-            new StairBlock(Blocks.WOOL.lightGray().defaultBlockState(), properties.strength(0.8F)
-                    .mapColor(DyeColor.LIGHT_GRAY).sound(SoundType.WOOL).ignitedByLava().instrument(NoteBlockInstrument.GUITAR)));
-
-    public static final Block LIGHT_GRAY_WOOL_SLAB = registerBlock("light_gray_wool_slab", properties ->
-            new SlabBlock(properties.strength(0.8F).mapColor(DyeColor.LIGHT_GRAY).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
-
-    public static final Block GRAY_WOOL_STAIRS = registerBlock("gray_wool_stairs", properties ->
-            new StairBlock(Blocks.WOOL.gray().defaultBlockState(), properties.strength(0.8F)
-                    .mapColor(DyeColor.GRAY).sound(SoundType.WOOL).ignitedByLava().instrument(NoteBlockInstrument.GUITAR)));
-
-    public static final Block GRAY_WOOL_SLAB = registerBlock("gray_wool_slab", properties ->
-            new SlabBlock(properties.strength(0.8F).mapColor(DyeColor.GRAY).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
-
-    public static final Block BLACK_WOOL_STAIRS = registerBlock("black_wool_stairs", properties ->
-            new StairBlock(Blocks.WOOL.black().defaultBlockState(), properties.strength(0.8F)
-                    .mapColor(DyeColor.BLACK).sound(SoundType.WOOL).ignitedByLava().instrument(NoteBlockInstrument.GUITAR)));
-
-    public static final Block BLACK_WOOL_SLAB = registerBlock("black_wool_slab", properties ->
-            new SlabBlock(properties.strength(0.8F).mapColor(DyeColor.BLACK).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
-
-    public static final Block BROWN_WOOL_STAIRS = registerBlock("brown_wool_stairs", properties ->
-            new StairBlock(Blocks.WOOL.brown().defaultBlockState(), properties.strength(0.8F)
-                    .mapColor(DyeColor.BROWN).sound(SoundType.WOOL).ignitedByLava().instrument(NoteBlockInstrument.GUITAR)));
-
-    public static final Block BROWN_WOOL_SLAB = registerBlock("brown_wool_slab", properties ->
-            new SlabBlock(properties.strength(0.8F).mapColor(DyeColor.BROWN).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
-
-    public static final Block RED_WOOL_STAIRS = registerBlock("red_wool_stairs", properties ->
-            new StairBlock(Blocks.WOOL.red().defaultBlockState(), properties.strength(0.8F)
-                    .mapColor(DyeColor.RED).sound(SoundType.WOOL).ignitedByLava().instrument(NoteBlockInstrument.GUITAR)));
-
-    public static final Block RED_WOOL_SLAB = registerBlock("red_wool_slab", properties ->
-            new SlabBlock(properties.strength(0.8F).mapColor(DyeColor.RED).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
-
-    public static final Block ORANGE_WOOL_STAIRS = registerBlock("orange_wool_stairs", properties ->
-            new StairBlock(Blocks.WOOL.orange().defaultBlockState(), properties.strength(0.8F)
-                    .mapColor(DyeColor.ORANGE).sound(SoundType.WOOL).ignitedByLava().instrument(NoteBlockInstrument.GUITAR)));
-
-    public static final Block ORANGE_WOOL_SLAB = registerBlock("orange_wool_slab", properties ->
-            new SlabBlock(properties.strength(0.8F).mapColor(DyeColor.ORANGE).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
-
-    public static final Block YELLOW_WOOL_STAIRS = registerBlock("yellow_wool_stairs", properties ->
-            new StairBlock(Blocks.WOOL.yellow().defaultBlockState(), properties.strength(0.8F)
-                    .mapColor(DyeColor.YELLOW).sound(SoundType.WOOL).ignitedByLava().instrument(NoteBlockInstrument.GUITAR)));
-
-    public static final Block YELLOW_WOOL_SLAB = registerBlock("yellow_wool_slab", properties ->
-            new SlabBlock(properties.strength(0.8F).mapColor(DyeColor.YELLOW).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
-
-    public static final Block LIME_WOOL_STAIRS = registerBlock("lime_wool_stairs", properties ->
-            new StairBlock(Blocks.WOOL.lime().defaultBlockState(), properties.strength(0.8F)
-                    .mapColor(DyeColor.LIME).sound(SoundType.WOOL).ignitedByLava().instrument(NoteBlockInstrument.GUITAR)));
-
-    public static final Block LIME_WOOL_SLAB = registerBlock("lime_wool_slab", properties ->
-            new SlabBlock(properties.strength(0.8F).mapColor(DyeColor.LIME).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
-
-    public static final Block GREEN_WOOL_STAIRS = registerBlock("green_wool_stairs", properties ->
-            new StairBlock(Blocks.WOOL.green().defaultBlockState(), properties.strength(0.8F)
-                    .mapColor(DyeColor.GREEN).sound(SoundType.WOOL).ignitedByLava().instrument(NoteBlockInstrument.GUITAR)));
-
-    public static final Block GREEN_WOOL_SLAB = registerBlock("green_wool_slab", properties ->
-            new SlabBlock(properties.strength(0.8F).mapColor(DyeColor.GREEN).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
-
-    public static final Block CYAN_WOOL_STAIRS = registerBlock("cyan_wool_stairs", properties ->
-            new StairBlock(Blocks.WOOL.cyan().defaultBlockState(), properties.strength(0.8F)
-                    .mapColor(DyeColor.CYAN).sound(SoundType.WOOL).ignitedByLava().instrument(NoteBlockInstrument.GUITAR)));
-
-    public static final Block CYAN_WOOL_SLAB = registerBlock("cyan_wool_slab", properties ->
-            new SlabBlock(properties.strength(0.8F).mapColor(DyeColor.CYAN).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
-
-    public static final Block LIGHT_BLUE_WOOL_STAIRS = registerBlock("light_blue_wool_stairs", properties ->
-            new StairBlock(Blocks.WOOL.lightBlue().defaultBlockState(), properties.strength(0.8F)
-                    .mapColor(DyeColor.LIGHT_BLUE).sound(SoundType.WOOL).ignitedByLava().instrument(NoteBlockInstrument.GUITAR)));
-
-    public static final Block LIGHT_BLUE_WOOL_SLAB = registerBlock("light_blue_wool_slab", properties ->
-            new SlabBlock(properties.strength(0.8F).mapColor(DyeColor.LIGHT_BLUE).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
-
-    public static final Block BLUE_WOOL_STAIRS = registerBlock("blue_wool_stairs", properties ->
-            new StairBlock(Blocks.WOOL.blue().defaultBlockState(), properties.strength(0.8F)
-                    .mapColor(DyeColor.BLUE).sound(SoundType.WOOL).ignitedByLava().instrument(NoteBlockInstrument.GUITAR)));
-
-    public static final Block BLUE_WOOL_SLAB = registerBlock("blue_wool_slab", properties ->
-            new SlabBlock(properties.strength(0.8F).mapColor(DyeColor.BLUE).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
-
-    public static final Block PURPLE_WOOL_STAIRS = registerBlock("purple_wool_stairs", properties ->
-            new StairBlock(Blocks.WOOL.purple().defaultBlockState(), properties.strength(0.8F)
-                    .mapColor(DyeColor.PURPLE).sound(SoundType.WOOL).ignitedByLava().instrument(NoteBlockInstrument.GUITAR)));
-
-    public static final Block PURPLE_WOOL_SLAB = registerBlock("purple_wool_slab", properties ->
-            new SlabBlock(properties.strength(0.8F).mapColor(DyeColor.PURPLE).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
-
-    public static final Block MAGENTA_WOOL_STAIRS = registerBlock("magenta_wool_stairs", properties ->
-            new StairBlock(Blocks.WOOL.magenta().defaultBlockState(), properties.strength(0.8F)
-                    .mapColor(DyeColor.MAGENTA).sound(SoundType.WOOL).ignitedByLava().instrument(NoteBlockInstrument.GUITAR)));
-
-    public static final Block MAGENTA_WOOL_SLAB = registerBlock("magenta_wool_slab", properties ->
-            new SlabBlock(properties.strength(0.8F).mapColor(DyeColor.MAGENTA).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
-
-    public static final Block PINK_WOOL_STAIRS = registerBlock("pink_wool_stairs", properties ->
-            new StairBlock(Blocks.WOOL.pink().defaultBlockState(), properties.strength(0.8F)
-                    .mapColor(DyeColor.PINK).sound(SoundType.WOOL).ignitedByLava().instrument(NoteBlockInstrument.GUITAR)));
-
-    public static final Block PINK_WOOL_SLAB = registerBlock("pink_wool_slab", properties ->
-            new SlabBlock(properties.strength(0.8F).mapColor(DyeColor.PINK).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
-
     public static final Block SAPPHIRE_CLUSTER = registerBlock("sapphire_cluster", properties -> new AmethystClusterBlock(4.0F, 10.0F, properties
             .sound(SoundType.MEDIUM_AMETHYST_BUD).lightLevel(statex -> 5)));
 
-    public static final Block WARPED_PETALS = registerBlock("warped_petals", properties -> new FlowerBedBlock(properties.mapColor(MapColor.WARPED_HYPHAE)
-            .noCollision().sound(SoundType.PINK_PETALS).pushReaction(PushReaction.DESTROY)));
+    //public static final Block WARPED_PETALS = registerBlock("warped_petals", properties -> new FlowerBedBlock(properties.mapColor(MapColor.WARPED_HYPHAE)
+            //.noCollision().sound(SoundType.PINK_PETALS).pushReaction(PushReaction.PUSH)));
 
     public static final Block PINK_DAISY = registerBlock("pink_daisy", properties -> new FlowerBlock(MobEffects.REGENERATION, 0.35F,
             properties.noCollision().mapColor(MapColor.PLANT).instabreak().sound(SoundType.GRASS)
-                    .offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+                    .offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.PUSH)));
 
     public static final Block POTTED_PINK_DAISY = registerBlock("potted_pink_daisy", properties -> new FlowerPotBlock(ModBlocks.PINK_DAISY, properties));
 
     public static final Block BUTTERCUP = registerBlock("buttercup", properties -> new FlowerBlock(MobEffects.REGENERATION, 0.35F,
             properties.noCollision().mapColor(MapColor.PLANT).instabreak().sound(SoundType.GRASS)
-                    .offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+                    .offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.PUSH)));
 
     public static final Block POTTED_BUTTERCUP = registerBlock("potted_buttercup", properties -> new FlowerPotBlock(ModBlocks.BUTTERCUP, properties));
 
     public static final Block PAEONIA = registerBlock("paeonia", properties -> new FlowerBlock(MobEffects.REGENERATION, 0.35F,
             properties.noCollision().mapColor(MapColor.PLANT).instabreak().sound(SoundType.GRASS)
-                    .offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)), Component.translatable("tooltip.minecraftfriendly.paeonia"));
+                    .offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.PUSH)), Component.translatable("tooltip.minecraftfriendly.paeonia"));
 
     public static final Block POTTED_PAEONIA = registerBlock("potted_paeonia", properties -> new FlowerPotBlock(ModBlocks.PAEONIA, properties));
 
     public static final Block ROSE = registerBlock("rose", properties -> new FlowerBlock(MobEffects.REGENERATION, 0.35F,
             properties.noCollision().mapColor(MapColor.PLANT).instabreak().sound(SoundType.GRASS)
-                    .offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)), Component.translatable("tooltip.minecraftfriendly.rose"));
+                    .offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.PUSH)), Component.translatable("tooltip.minecraftfriendly.rose"));
 
     public static final Block POTTED_ROSE = registerBlock("potted_rose", properties -> new FlowerPotBlock(ModBlocks.ROSE, properties));
 
     public static final Block BLUE_HYPNEA_MACROALGAE = registerBlock("blue_hypnea_macroalgae",
             properties -> new FlowerBlock(MobEffects.LEVITATION, 0.35F, properties.noCollision().mapColor(MapColor.PLANT)
-                    .instabreak().sound(SoundType.GRASS).pushReaction(PushReaction.DESTROY)));
+                    .instabreak().sound(SoundType.GRASS).pushReaction(PushReaction.PUSH)));
 
     public static final Block POTTED_BLUE_HYPNEA_MACROALGAE = registerBlock("potted_blue_hypnea_macroalgae",
             properties -> new FlowerPotBlock(ModBlocks.BLUE_HYPNEA_MACROALGAE, properties));
@@ -237,38 +126,33 @@ public class ModBlocks {
 
     public static final Block GRAVEL_LAYER_BLOCK = registerBlock("gravel_layer_block",
             properties -> new SnowLayerBlock(properties.strength(0.2F).sound(SoundType.GRAVEL).mapColor(MapColor.STONE)
-                    .isViewBlocking((statex, level, pos) -> statex.getValue(SnowLayerBlock.LAYERS) >= 8)
-                    .pushReaction(PushReaction.DESTROY)
+                    .pushReaction(PushReaction.PUSH)
                     .replaceable()
                     .randomTicks()));
 
     public static final Block SAND_LAYER_BLOCK = registerBlock("sand_layer_block",
             properties -> new SnowLayerBlock(properties.strength(0.2F).sound(SoundType.SAND).mapColor(MapColor.SAND)
-                    .isViewBlocking((statex, level, pos) -> statex.getValue(SnowLayerBlock.LAYERS) >= 8)
-                    .pushReaction(PushReaction.DESTROY)
+                    .pushReaction(PushReaction.PUSH)
                     .replaceable()
                     .randomTicks()));
 
     public static final Block RED_SAND_LAYER_BLOCK = registerBlock("red_sand_layer_block",
             properties -> new SnowLayerBlock(properties.strength(0.2F).sound(SoundType.SAND).mapColor(MapColor.FIRE)
-                    .isViewBlocking((statex, level, pos) -> statex.getValue(SnowLayerBlock.LAYERS) >= 8)
-                    .pushReaction(PushReaction.DESTROY)
+                    .pushReaction(PushReaction.PUSH)
                     .replaceable()
                     .randomTicks()));
 
     public static final Block SOUL_SAND_LAYER_BLOCK = registerBlock("soul_sand_layer_block", properties -> new SnowLayerBlock(
             properties.strength(0.2F).sound(SoundType.SOUL_SAND).mapColor(MapColor.COLOR_BROWN).instrument(NoteBlockInstrument.COW_BELL).speedFactor(0.4F)
-                    .isValidSpawn(Blocks::always).isRedstoneConductor(Blocks::always).isViewBlocking(Blocks::always)
-                    .isViewBlocking((statex, level, pos) -> statex.getValue(SnowLayerBlock.LAYERS) >= 8)
-                    .pushReaction(PushReaction.DESTROY)
+                    .isValidSpawn(Blocks::always).isRedstoneConductor(Blocks::always)
+                    .pushReaction(PushReaction.PUSH)
                     .replaceable()
                     .randomTicks()
     ));
 
     public static final Block SOUL_SOIL_LAYER_BLOCK = registerBlock("soul_soil_layer_block", properties -> new SnowLayerBlock(
             properties.strength(0.2F).sound(SoundType.SOUL_SOIL).mapColor(MapColor.COLOR_BROWN)
-                    .isViewBlocking((statex, level, pos) -> statex.getValue(SnowLayerBlock.LAYERS) >= 8)
-                    .pushReaction(PushReaction.DESTROY)
+                    .pushReaction(PushReaction.PUSH)
                     .replaceable()
                     .randomTicks()
     ));
@@ -474,12 +358,6 @@ public class ModBlocks {
 
 
     //Concrete
-    public static final Block WHITE_CONCRETE_STAIRS = registerBlock("white_concrete_stairs",
-            properties -> new StairBlock(Blocks.CONCRETE.white().defaultBlockState(), properties.strength(1.8F)
-                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
-    public static final Block WHITE_CONCRETE_SLAB = registerBlock("white_concrete_slab",
-            properties -> new SlabBlock(properties.strength(1.8F)
-                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
 
     public static final Block WHITE_CONCRETE_FENCE = registerBlock("white_concrete_fence",
             properties -> new FenceBlock(properties.strength(1.8F)
@@ -491,14 +369,6 @@ public class ModBlocks {
 
     public static final Block WHITE_CONCRETE_WALL = registerBlock("white_concrete_wall",
             properties -> new WallBlock(properties.strength(1.8F)
-                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
-
-    public static final Block LIGHT_GRAY_CONCRETE_STAIRS = registerBlock("light_gray_concrete_stairs",
-            properties -> new StairBlock(Blocks.CONCRETE.lightGray().defaultBlockState(), properties.strength(1.8F)
-                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
-
-    public static final Block LIGHT_GRAY_CONCRETE_SLAB = registerBlock("light_gray_concrete_slab",
-            properties -> new SlabBlock(properties.strength(1.8F)
                     .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
 
     public static final Block LIGHT_GRAY_CONCRETE_FENCE = registerBlock("light_gray_concrete_fence",
@@ -513,14 +383,6 @@ public class ModBlocks {
             properties -> new WallBlock(properties.strength(1.8F)
                     .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
 
-    public static final Block GRAY_CONCRETE_STAIRS = registerBlock("gray_concrete_stairs",
-            properties -> new StairBlock(Blocks.CONCRETE.gray().defaultBlockState(), properties.strength(1.8F)
-                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
-
-    public static final Block GRAY_CONCRETE_SLAB = registerBlock("gray_concrete_slab",
-            properties -> new SlabBlock(properties.strength(1.8F)
-                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
-
     public static final Block GRAY_CONCRETE_FENCE = registerBlock("gray_concrete_fence",
             properties -> new FenceBlock(properties.strength(1.8F)
                     .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
@@ -531,14 +393,6 @@ public class ModBlocks {
 
     public static final Block GRAY_CONCRETE_WALL = registerBlock("gray_concrete_wall",
             properties -> new WallBlock(properties.strength(1.8F)
-                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
-
-    public static final Block BLACK_CONCRETE_STAIRS = registerBlock("black_concrete_stairs",
-            properties -> new StairBlock(Blocks.CONCRETE.black().defaultBlockState(), properties.strength(1.8F)
-                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
-
-    public static final Block BLACK_CONCRETE_SLAB = registerBlock("black_concrete_slab",
-            properties -> new SlabBlock(properties.strength(1.8F)
                     .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
 
     public static final Block BLACK_CONCRETE_FENCE = registerBlock("black_concrete_fence",
@@ -553,14 +407,6 @@ public class ModBlocks {
             properties -> new WallBlock(properties.strength(1.8F)
                     .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
 
-    public static final Block BROWN_CONCRETE_STAIRS = registerBlock("brown_concrete_stairs",
-            properties -> new StairBlock(Blocks.CONCRETE.brown().defaultBlockState(), properties.strength(1.8F)
-                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
-
-    public static final Block BROWN_CONCRETE_SLAB = registerBlock("brown_concrete_slab",
-            properties -> new SlabBlock(properties.strength(1.8F)
-                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
-
     public static final Block BROWN_CONCRETE_FENCE = registerBlock("brown_concrete_fence",
             properties -> new FenceBlock(properties.strength(1.8F)
                     .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
@@ -571,14 +417,6 @@ public class ModBlocks {
 
     public static final Block BROWN_CONCRETE_WALL = registerBlock("brown_concrete_wall",
             properties -> new WallBlock(properties.strength(1.8F)
-                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
-
-    public static final Block RED_CONCRETE_STAIRS = registerBlock("red_concrete_stairs",
-            properties -> new StairBlock(Blocks.CONCRETE.red().defaultBlockState(), properties.strength(1.8F)
-                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
-
-    public static final Block RED_CONCRETE_SLAB = registerBlock("red_concrete_slab",
-            properties -> new SlabBlock(properties.strength(1.8F)
                     .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
 
     public static final Block RED_CONCRETE_FENCE = registerBlock("red_concrete_fence",
@@ -593,14 +431,6 @@ public class ModBlocks {
             properties -> new WallBlock(properties.strength(1.8F)
                     .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
 
-    public static final Block ORANGE_CONCRETE_STAIRS = registerBlock("orange_concrete_stairs",
-            properties -> new StairBlock(Blocks.CONCRETE.orange().defaultBlockState(), properties.strength(1.8F)
-                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
-
-    public static final Block ORANGE_CONCRETE_SLAB = registerBlock("orange_concrete_slab",
-            properties -> new SlabBlock(properties.strength(1.8F)
-                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
-
     public static final Block ORANGE_CONCRETE_FENCE = registerBlock("orange_concrete_fence",
             properties -> new FenceBlock(properties.strength(1.8F)
                     .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
@@ -611,14 +441,6 @@ public class ModBlocks {
 
     public static final Block ORANGE_CONCRETE_WALL = registerBlock("orange_concrete_wall",
             properties -> new WallBlock(properties.strength(1.8F)
-                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
-
-    public static final Block YELLOW_CONCRETE_STAIRS = registerBlock("yellow_concrete_stairs",
-            properties -> new StairBlock(Blocks.CONCRETE.yellow().defaultBlockState(), properties.strength(1.8F)
-                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
-
-    public static final Block YELLOW_CONCRETE_SLAB = registerBlock("yellow_concrete_slab",
-            properties -> new SlabBlock(properties.strength(1.8F)
                     .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
 
     public static final Block YELLOW_CONCRETE_FENCE = registerBlock("yellow_concrete_fence",
@@ -633,14 +455,6 @@ public class ModBlocks {
             properties -> new WallBlock(properties.strength(1.8F)
                     .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
 
-    public static final Block LIME_CONCRETE_STAIRS = registerBlock("lime_concrete_stairs",
-            properties -> new StairBlock(Blocks.CONCRETE.lime().defaultBlockState(), properties.strength(1.8F)
-                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
-
-    public static final Block LIME_CONCRETE_SLAB = registerBlock("lime_concrete_slab",
-            properties -> new SlabBlock(properties.strength(1.8F)
-                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
-
     public static final Block LIME_CONCRETE_FENCE = registerBlock("lime_concrete_fence",
             properties -> new FenceBlock(properties.strength(1.8F)
                     .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
@@ -651,14 +465,6 @@ public class ModBlocks {
 
     public static final Block LIME_CONCRETE_WALL = registerBlock("lime_concrete_wall",
             properties -> new WallBlock(properties.strength(1.8F)
-                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
-
-    public static final Block GREEN_CONCRETE_STAIRS = registerBlock("green_concrete_stairs",
-            properties -> new StairBlock(Blocks.CONCRETE.green().defaultBlockState(), properties.strength(1.8F)
-                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
-
-    public static final Block GREEN_CONCRETE_SLAB = registerBlock("green_concrete_slab",
-            properties -> new SlabBlock(properties.strength(1.8F)
                     .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
 
     public static final Block GREEN_CONCRETE_FENCE = registerBlock("green_concrete_fence",
@@ -673,14 +479,6 @@ public class ModBlocks {
             properties -> new WallBlock(properties.strength(1.8F)
                     .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
 
-    public static final Block CYAN_CONCRETE_STAIRS = registerBlock("cyan_concrete_stairs",
-            properties -> new StairBlock(Blocks.CONCRETE.cyan().defaultBlockState(), properties.strength(1.8F)
-                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
-
-    public static final Block CYAN_CONCRETE_SLAB = registerBlock("cyan_concrete_slab",
-            properties -> new SlabBlock(properties.strength(1.8F)
-                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
-
     public static final Block CYAN_CONCRETE_FENCE = registerBlock("cyan_concrete_fence",
             properties -> new FenceBlock(properties.strength(1.8F)
                     .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
@@ -691,14 +489,6 @@ public class ModBlocks {
 
     public static final Block CYAN_CONCRETE_WALL = registerBlock("cyan_concrete_wall",
             properties -> new WallBlock(properties.strength(1.8F)
-                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
-
-    public static final Block LIGHT_BLUE_CONCRETE_STAIRS = registerBlock("light_blue_concrete_stairs",
-            properties -> new StairBlock(Blocks.CONCRETE.lightBlue().defaultBlockState(), properties.strength(1.8F)
-                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
-
-    public static final Block LIGHT_BLUE_CONCRETE_SLAB = registerBlock("light_blue_concrete_slab",
-            properties -> new SlabBlock(properties.strength(1.8F)
                     .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
 
     public static final Block LIGHT_BLUE_CONCRETE_FENCE = registerBlock("light_blue_concrete_fence",
@@ -713,14 +503,6 @@ public class ModBlocks {
             properties -> new WallBlock(properties.strength(1.8F)
                     .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
 
-    public static final Block BLUE_CONCRETE_STAIRS = registerBlock("blue_concrete_stairs",
-            properties -> new StairBlock(Blocks.CONCRETE.blue().defaultBlockState(), properties.strength(1.8F)
-                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
-
-    public static final Block BLUE_CONCRETE_SLAB = registerBlock("blue_concrete_slab",
-            properties -> new SlabBlock(properties.strength(1.8F)
-                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
-
     public static final Block BLUE_CONCRETE_FENCE = registerBlock("blue_concrete_fence",
             properties -> new FenceBlock(properties.strength(1.8F)
                     .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
@@ -731,14 +513,6 @@ public class ModBlocks {
 
     public static final Block BLUE_CONCRETE_WALL = registerBlock("blue_concrete_wall",
             properties -> new WallBlock(properties.strength(1.8F)
-                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
-
-    public static final Block PURPLE_CONCRETE_STAIRS = registerBlock("purple_concrete_stairs",
-            properties -> new StairBlock(Blocks.CONCRETE.purple().defaultBlockState(), properties.strength(1.8F)
-                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
-
-    public static final Block PURPLE_CONCRETE_SLAB = registerBlock("purple_concrete_slab",
-            properties -> new SlabBlock(properties.strength(1.8F)
                     .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
 
     public static final Block PURPLE_CONCRETE_FENCE = registerBlock("purple_concrete_fence",
@@ -753,14 +527,6 @@ public class ModBlocks {
             properties -> new WallBlock(properties.strength(1.8F)
                     .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
 
-    public static final Block MAGENTA_CONCRETE_STAIRS = registerBlock("magenta_concrete_stairs",
-            properties -> new StairBlock(Blocks.CONCRETE.magenta().defaultBlockState(), properties.strength(1.8F)
-                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
-
-    public static final Block MAGENTA_CONCRETE_SLAB = registerBlock("magenta_concrete_slab",
-            properties -> new SlabBlock(properties.strength(1.8F)
-                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
-
     public static final Block MAGENTA_CONCRETE_FENCE = registerBlock("magenta_concrete_fence",
             properties -> new FenceBlock(properties.strength(1.8F)
                     .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
@@ -771,14 +537,6 @@ public class ModBlocks {
 
     public static final Block MAGENTA_CONCRETE_WALL = registerBlock("magenta_concrete_wall",
             properties -> new WallBlock(properties.strength(1.8F)
-                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
-
-    public static final Block PINK_CONCRETE_STAIRS = registerBlock("pink_concrete_stairs",
-            properties -> new StairBlock(Blocks.CONCRETE.pink().defaultBlockState(), properties.strength(1.8F)
-                    .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
-
-    public static final Block PINK_CONCRETE_SLAB = registerBlock("pink_concrete_slab",
-            properties -> new SlabBlock(properties.strength(1.8F)
                     .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
 
     public static final Block PINK_CONCRETE_FENCE = registerBlock("pink_concrete_fence",
@@ -794,6 +552,40 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
 
     //Terracotta
+
+    //public static final Block WHITE_TERRACOTTA_STAIRS = registerBlock("white_terracotta_stairs",
+            //properties -> new StairBlock(Blocks.TERRACOTTA.defaultBlockState(), properties.strength(1.8F)
+                    //.requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
+
+    //public static final Block WHITE_CONCRETE_SLAB = registerBlock("white_concrete_slab",
+           // properties -> new SlabBlock(properties.strength(1.8F)
+                  //  .requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM)));
+
+    //Glazed Terracotta
+
+    public static final Block WHITE_GLAZED_TERRACOTTA_STAIRS = registerBlock("white_glazed_terracotta_stairs",
+            properties -> new StairBlock(Blocks.GLAZED_TERRACOTTA.white().defaultBlockState(), properties.strength(1.4F)
+                    .mapColor(MapColor.TERRACOTTA_WHITE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().pushReaction(PushReaction.PUSH)));
+
+    public static final Block WHITE_GLAZED_TERRACOTTA_SLAB = registerBlock("white_glazed_terracotta_slab",
+            properties -> new SlabBlock(properties.strength(1.4F).mapColor(MapColor.TERRACOTTA_WHITE).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresCorrectToolForDrops().pushReaction(PushReaction.PUSH)));
+
+    public static final Block LIGHT_GRAY_GLAZED_TERRACOTTA_STAIRS = registerBlock("light_gray_glazed_terracotta_stairs",
+            properties -> new StairBlock(Blocks.GLAZED_TERRACOTTA.lightGray().defaultBlockState(), properties.strength(1.4F)
+                    .mapColor(MapColor.TERRACOTTA_LIGHT_GRAY).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().pushReaction(PushReaction.PUSH)));
+
+    public static final Block LIGHT_GRAY_GLAZED_TERRACOTTA_SLAB = registerBlock("light_gray_glazed_terracotta_slab",
+            properties -> new SlabBlock(properties.strength(1.4F).mapColor(MapColor.TERRACOTTA_LIGHT_GRAY).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresCorrectToolForDrops().pushReaction(PushReaction.PUSH)));
+
+    public static final Block GRAY_GLAZED_TERRACOTTA_STAIRS = registerBlock("gray_glazed_terracotta_stairs",
+            properties -> new StairBlock(Blocks.GLAZED_TERRACOTTA.gray().defaultBlockState(), properties.strength(1.4F)
+                    .mapColor(MapColor.TERRACOTTA_GRAY).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().pushReaction(PushReaction.PUSH)));
+
+    public static final Block GRAY_GLAZED_TERRACOTTA_SLAB = registerBlock("gray_glazed_terracotta_slab",
+            properties -> new SlabBlock(properties.strength(1.4F).mapColor(MapColor.TERRACOTTA_GRAY).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresCorrectToolForDrops().pushReaction(PushReaction.PUSH)));
 
 
 
@@ -858,14 +650,33 @@ public class ModBlocks {
             output.insertAfter(Blocks.CRACKED_NETHER_BRICKS, ModBlocks.CRACKED_NETHER_BRICK_STAIRS);
             output.insertAfter(ModBlocks.CRACKED_NETHER_BRICK_STAIRS, ModBlocks.CRACKED_NETHER_BRICK_SLAB);
 
+            output.insertAfter(Blocks.STONE_BRICKS, Blocks.STONE_BRICK_STAIRS);
+            output.insertAfter(Blocks.STONE_BRICK_STAIRS, Blocks.STONE_BRICK_SLAB);
+            output.insertBefore(Blocks.CRACKED_STONE_BRICKS, Blocks.STONE_BRICK_STAIRS);
+            output.insertBefore(Blocks.CRACKED_STONE_BRICKS, Blocks.STONE_BRICK_SLAB);
+            output.insertAfter(Blocks.STONE_BRICK_SLAB, Blocks.STONE_BRICK_WALL);
+            output.insertBefore(Blocks.CRACKED_STONE_BRICKS, Blocks.STONE_BRICK_WALL);
+
             output.insertAfter(Blocks.SMOOTH_STONE, ModBlocks.SMOOTH_STONE_STAIRS);
             output.insertAfter(Blocks.SMOOTH_STONE_SLAB, ModBlocks.SMOOTH_STONE_WALL);
 
             output.insertAfter(Blocks.CRACKED_STONE_BRICKS, ModBlocks.CRACKED_STONE_BRICK_STAIRS);
             output.insertAfter(ModBlocks.CRACKED_STONE_BRICK_STAIRS, ModBlocks.CRACKED_STONE_BRICK_SLAB);
 
+            output.insertBefore(Blocks.STONE_BRICKS, Blocks.CHISELED_STONE_BRICKS);
+
+            output.insertBefore(Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS, Blocks.POLISHED_BLACKSTONE_BRICK_STAIRS);
+            output.insertBefore(Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS, Blocks.POLISHED_BLACKSTONE_BRICK_SLAB);
+            output.insertBefore(Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS, Blocks.POLISHED_BLACKSTONE_BRICK_WALL);
+
             output.insertAfter(Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS, ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_STAIRS);
             output.insertAfter(ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_STAIRS, ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_SLAB);
+
+            output.insertAfter(Blocks.DEEPSLATE_BRICKS, Blocks.DEEPSLATE_BRICK_STAIRS);
+            output.insertAfter(Blocks.DEEPSLATE_BRICK_STAIRS, Blocks.DEEPSLATE_BRICK_SLAB);
+            output.insertBefore(Blocks.CRACKED_DEEPSLATE_BRICKS, Blocks.DEEPSLATE_BRICK_SLAB);
+            output.insertAfter(Blocks.DEEPSLATE_BRICK_SLAB, Blocks.DEEPSLATE_BRICK_WALL);
+            output.insertBefore(Blocks.CRACKED_DEEPSLATE_BRICKS, Blocks.DEEPSLATE_BRICK_WALL);
 
             output.insertAfter(Blocks.CRACKED_DEEPSLATE_TILES, ModBlocks.CRACKED_DEEPSLATE_TILE_STAIRS);
             output.insertAfter(ModBlocks.CRACKED_DEEPSLATE_TILE_STAIRS, ModBlocks.CRACKED_DEEPSLATE_TILE_SLAB);
@@ -896,167 +707,17 @@ public class ModBlocks {
         });
 
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.COLORED_BLOCKS).register(output -> {
-            output.insertAfter(Blocks.CONCRETE.white(), ModBlocks.WHITE_CONCRETE_STAIRS);
-            output.insertAfter(ModBlocks.WHITE_CONCRETE_STAIRS, ModBlocks.WHITE_CONCRETE_SLAB);
-            output.insertAfter(ModBlocks.WHITE_CONCRETE_SLAB, ModBlocks.WHITE_CONCRETE_FENCE);
-            output.insertAfter(ModBlocks.WHITE_CONCRETE_FENCE, ModBlocks.WHITE_CONCRETE_FENCE_GATE);
-            output.insertAfter(ModBlocks.WHITE_CONCRETE_FENCE_GATE, ModBlocks.WHITE_CONCRETE_WALL);
-
-            output.insertAfter(Blocks.CONCRETE.lightGray(), ModBlocks.LIGHT_GRAY_CONCRETE_STAIRS);
-            output.insertAfter(ModBlocks.LIGHT_GRAY_CONCRETE_STAIRS, ModBlocks.LIGHT_GRAY_CONCRETE_SLAB);
-            output.insertAfter(ModBlocks.LIGHT_GRAY_CONCRETE_SLAB, ModBlocks.LIGHT_GRAY_CONCRETE_FENCE);
-            output.insertAfter(ModBlocks.LIGHT_GRAY_CONCRETE_FENCE, ModBlocks.LIGHT_GRAY_CONCRETE_FENCE_GATE);
-            output.insertAfter(ModBlocks.LIGHT_GRAY_CONCRETE_FENCE_GATE, ModBlocks.LIGHT_GRAY_CONCRETE_WALL);
-
-            output.insertAfter(Blocks.CONCRETE.gray(), ModBlocks.GRAY_CONCRETE_STAIRS);
-            output.insertAfter(ModBlocks.GRAY_CONCRETE_STAIRS, ModBlocks.GRAY_CONCRETE_SLAB);
-            output.insertAfter(ModBlocks.GRAY_CONCRETE_SLAB, ModBlocks.GRAY_CONCRETE_FENCE);
-            output.insertAfter(ModBlocks.GRAY_CONCRETE_FENCE, ModBlocks.GRAY_CONCRETE_FENCE_GATE);
-            output.insertAfter(ModBlocks.GRAY_CONCRETE_FENCE_GATE, ModBlocks.GRAY_CONCRETE_WALL);
-
-            output.insertAfter(Blocks.CONCRETE.black(), ModBlocks.BLACK_CONCRETE_STAIRS);
-            output.insertAfter(ModBlocks.BLACK_CONCRETE_STAIRS, ModBlocks.BLACK_CONCRETE_SLAB);
-            output.insertAfter(ModBlocks.BLACK_CONCRETE_SLAB, ModBlocks.BLACK_CONCRETE_FENCE);
-            output.insertAfter(ModBlocks.BLACK_CONCRETE_FENCE, ModBlocks.BLACK_CONCRETE_FENCE_GATE);
-            output.insertAfter(ModBlocks.BLACK_CONCRETE_FENCE_GATE, ModBlocks.BLACK_CONCRETE_WALL);
-
-            output.insertAfter(Blocks.CONCRETE.brown(), ModBlocks.BROWN_CONCRETE_STAIRS);
-            output.insertAfter(ModBlocks.BROWN_CONCRETE_STAIRS, ModBlocks.BROWN_CONCRETE_SLAB);
-            output.insertAfter(ModBlocks.BROWN_CONCRETE_SLAB, ModBlocks.BROWN_CONCRETE_FENCE);
-            output.insertAfter(ModBlocks.BROWN_CONCRETE_FENCE, ModBlocks.BROWN_CONCRETE_FENCE_GATE);
-            output.insertAfter(ModBlocks.BROWN_CONCRETE_FENCE_GATE, ModBlocks.BROWN_CONCRETE_WALL);
-
-            output.insertAfter(Blocks.CONCRETE.red(), ModBlocks.RED_CONCRETE_STAIRS);
-            output.insertAfter(ModBlocks.RED_CONCRETE_STAIRS, ModBlocks.RED_CONCRETE_SLAB);
-            output.insertAfter(ModBlocks.RED_CONCRETE_SLAB, ModBlocks.RED_CONCRETE_FENCE);
-            output.insertAfter(ModBlocks.RED_CONCRETE_FENCE, ModBlocks.RED_CONCRETE_FENCE_GATE);
-            output.insertAfter(ModBlocks.RED_CONCRETE_FENCE_GATE, ModBlocks.RED_CONCRETE_WALL);
-
-            output.insertAfter(Blocks.CONCRETE.orange(), ModBlocks.ORANGE_CONCRETE_STAIRS);
-            output.insertAfter(ModBlocks.ORANGE_CONCRETE_STAIRS, ModBlocks.ORANGE_CONCRETE_SLAB);
-            output.insertAfter(ModBlocks.ORANGE_CONCRETE_SLAB, ModBlocks.ORANGE_CONCRETE_FENCE);
-            output.insertAfter(ModBlocks.ORANGE_CONCRETE_FENCE, ModBlocks.ORANGE_CONCRETE_FENCE_GATE);
-            output.insertAfter(ModBlocks.ORANGE_CONCRETE_FENCE_GATE, ModBlocks.ORANGE_CONCRETE_WALL);
-
-            output.insertAfter(Blocks.CONCRETE.yellow(), ModBlocks.YELLOW_CONCRETE_STAIRS);
-            output.insertAfter(ModBlocks.YELLOW_CONCRETE_STAIRS, ModBlocks.YELLOW_CONCRETE_SLAB);
-            output.insertAfter(ModBlocks.YELLOW_CONCRETE_SLAB, ModBlocks.YELLOW_CONCRETE_FENCE);
-            output.insertAfter(ModBlocks.YELLOW_CONCRETE_FENCE, ModBlocks.YELLOW_CONCRETE_FENCE_GATE);
-            output.insertAfter(ModBlocks.YELLOW_CONCRETE_FENCE_GATE, ModBlocks.YELLOW_CONCRETE_WALL);
-
-            output.insertAfter(Blocks.CONCRETE.lime(), ModBlocks.LIME_CONCRETE_STAIRS);
-            output.insertAfter(ModBlocks.LIME_CONCRETE_STAIRS, ModBlocks.LIME_CONCRETE_SLAB);
-            output.insertAfter(ModBlocks.LIME_CONCRETE_SLAB, ModBlocks.LIME_CONCRETE_FENCE);
-            output.insertAfter(ModBlocks.LIME_CONCRETE_FENCE, ModBlocks.LIME_CONCRETE_FENCE_GATE);
-            output.insertAfter(ModBlocks.LIME_CONCRETE_FENCE_GATE, ModBlocks.LIME_CONCRETE_WALL);
-
-            output.insertAfter(Blocks.CONCRETE.green(), ModBlocks.GREEN_CONCRETE_STAIRS);
-            output.insertAfter(ModBlocks.GREEN_CONCRETE_STAIRS, ModBlocks.GREEN_CONCRETE_SLAB);
-            output.insertAfter(ModBlocks.GREEN_CONCRETE_SLAB, ModBlocks.GREEN_CONCRETE_FENCE);
-            output.insertAfter(ModBlocks.GREEN_CONCRETE_FENCE, ModBlocks.GREEN_CONCRETE_FENCE_GATE);
-            output.insertAfter(ModBlocks.GREEN_CONCRETE_FENCE_GATE, ModBlocks.GREEN_CONCRETE_WALL);
-
-            output.insertAfter(Blocks.CONCRETE.cyan(), ModBlocks.CYAN_CONCRETE_STAIRS);
-            output.insertAfter(ModBlocks.CYAN_CONCRETE_STAIRS, ModBlocks.CYAN_CONCRETE_SLAB);
-            output.insertAfter(ModBlocks.CYAN_CONCRETE_SLAB, ModBlocks.CYAN_CONCRETE_FENCE);
-            output.insertAfter(ModBlocks.CYAN_CONCRETE_FENCE, ModBlocks.CYAN_CONCRETE_FENCE_GATE);
-            output.insertAfter(ModBlocks.CYAN_CONCRETE_FENCE_GATE, ModBlocks.CYAN_CONCRETE_WALL);
-
-            output.insertAfter(Blocks.CONCRETE.lightBlue(), ModBlocks.LIGHT_BLUE_CONCRETE_STAIRS);
-            output.insertAfter(ModBlocks.LIGHT_BLUE_CONCRETE_STAIRS, ModBlocks.LIGHT_BLUE_CONCRETE_SLAB);
-            output.insertAfter(ModBlocks.LIGHT_BLUE_CONCRETE_SLAB, ModBlocks.LIGHT_BLUE_CONCRETE_FENCE);
-            output.insertAfter(ModBlocks.LIGHT_BLUE_CONCRETE_FENCE, ModBlocks.LIGHT_BLUE_CONCRETE_FENCE_GATE);
-            output.insertAfter(ModBlocks.LIGHT_BLUE_CONCRETE_FENCE_GATE, ModBlocks.LIGHT_BLUE_CONCRETE_WALL);
-
-            output.insertAfter(Blocks.CONCRETE.blue(), ModBlocks.BLUE_CONCRETE_STAIRS);
-            output.insertAfter(ModBlocks.BLUE_CONCRETE_STAIRS, ModBlocks.BLUE_CONCRETE_SLAB);
-            output.insertAfter(ModBlocks.BLUE_CONCRETE_SLAB, ModBlocks.BLUE_CONCRETE_FENCE);
-            output.insertAfter(ModBlocks.BLUE_CONCRETE_FENCE, ModBlocks.BLUE_CONCRETE_FENCE_GATE);
-            output.insertAfter(ModBlocks.BLUE_CONCRETE_FENCE_GATE, ModBlocks.BLUE_CONCRETE_WALL);
-
-            output.insertAfter(Blocks.CONCRETE.purple(), ModBlocks.PURPLE_CONCRETE_STAIRS);
-            output.insertAfter(ModBlocks.PURPLE_CONCRETE_STAIRS, ModBlocks.PURPLE_CONCRETE_SLAB);
-            output.insertAfter(ModBlocks.PURPLE_CONCRETE_SLAB, ModBlocks.PURPLE_CONCRETE_FENCE);
-            output.insertAfter(ModBlocks.PURPLE_CONCRETE_FENCE, ModBlocks.PURPLE_CONCRETE_FENCE_GATE);
-            output.insertAfter(ModBlocks.PURPLE_CONCRETE_FENCE_GATE, ModBlocks.PURPLE_CONCRETE_WALL);
-
-            output.insertAfter(Blocks.CONCRETE.magenta(), ModBlocks.MAGENTA_CONCRETE_STAIRS);
-            output.insertAfter(ModBlocks.MAGENTA_CONCRETE_STAIRS, ModBlocks.MAGENTA_CONCRETE_SLAB);
-            output.insertAfter(ModBlocks.MAGENTA_CONCRETE_SLAB, ModBlocks.MAGENTA_CONCRETE_FENCE);
-            output.insertAfter(ModBlocks.MAGENTA_CONCRETE_FENCE, ModBlocks.MAGENTA_CONCRETE_FENCE_GATE);
-            output.insertAfter(ModBlocks.MAGENTA_CONCRETE_FENCE_GATE, ModBlocks.MAGENTA_CONCRETE_WALL);
-
-            output.insertAfter(Blocks.CONCRETE.pink(), ModBlocks.PINK_CONCRETE_STAIRS);
-            output.insertAfter(ModBlocks.PINK_CONCRETE_STAIRS, ModBlocks.PINK_CONCRETE_SLAB);
-            output.insertAfter(ModBlocks.PINK_CONCRETE_SLAB, ModBlocks.PINK_CONCRETE_FENCE);
-            output.insertAfter(ModBlocks.PINK_CONCRETE_FENCE, ModBlocks.PINK_CONCRETE_FENCE_GATE);
-            output.insertAfter(ModBlocks.PINK_CONCRETE_FENCE_GATE, ModBlocks.PINK_CONCRETE_WALL);
 
             output.insertAfter(Blocks.WOOL.pink(), ModBlocks.RAINBOW_WOOL);
 
-            output.insertAfter(Blocks.WOOL.white(), ModBlocks.WHITE_WOOL_STAIRS);
-            output.insertAfter(ModBlocks.WHITE_WOOL_STAIRS, ModBlocks.WHITE_WOOL_SLAB);
-            output.insertAfter(ModBlocks.WHITE_WOOL_SLAB, Blocks.CARPET.white());
+            output.insertAfter(Blocks.GLAZED_TERRACOTTA.white(), ModBlocks.WHITE_GLAZED_TERRACOTTA_STAIRS);
+            output.insertAfter(ModBlocks.WHITE_GLAZED_TERRACOTTA_STAIRS, ModBlocks.WHITE_GLAZED_TERRACOTTA_SLAB);
 
-            output.insertAfter(Blocks.WOOL.lightGray(), ModBlocks.LIGHT_GRAY_WOOL_STAIRS);
-            output.insertAfter(ModBlocks.LIGHT_GRAY_WOOL_STAIRS, ModBlocks.LIGHT_GRAY_WOOL_SLAB);
-            output.insertAfter(ModBlocks.LIGHT_GRAY_WOOL_SLAB, Blocks.CARPET.lightGray());
+            output.insertAfter(Blocks.GLAZED_TERRACOTTA.lightGray(), ModBlocks.LIGHT_GRAY_GLAZED_TERRACOTTA_STAIRS);
+            output.insertAfter(ModBlocks.LIGHT_GRAY_GLAZED_TERRACOTTA_STAIRS, ModBlocks.LIGHT_GRAY_GLAZED_TERRACOTTA_SLAB);
 
-            output.insertAfter(Blocks.WOOL.gray(), ModBlocks.GRAY_WOOL_STAIRS);
-            output.insertAfter(ModBlocks.GRAY_WOOL_STAIRS, ModBlocks.GRAY_WOOL_SLAB);
-            output.insertAfter(ModBlocks.GRAY_WOOL_SLAB, Blocks.CARPET.gray());
-
-            output.insertAfter(Blocks.WOOL.black(), ModBlocks.BLACK_WOOL_STAIRS);
-            output.insertAfter(ModBlocks.BLACK_WOOL_STAIRS, ModBlocks.BLACK_WOOL_SLAB);
-            output.insertAfter(ModBlocks.BLACK_WOOL_SLAB, Blocks.CARPET.black());
-
-            output.insertAfter(Blocks.WOOL.brown(), ModBlocks.BROWN_WOOL_STAIRS);
-            output.insertAfter(ModBlocks.BROWN_WOOL_STAIRS, ModBlocks.BROWN_WOOL_SLAB);
-            output.insertAfter(ModBlocks.BROWN_WOOL_SLAB, Blocks.CARPET.brown());
-
-            output.insertAfter(Blocks.WOOL.red(), ModBlocks.RED_WOOL_STAIRS);
-            output.insertAfter(ModBlocks.RED_WOOL_STAIRS, ModBlocks.RED_WOOL_SLAB);
-            output.insertAfter(ModBlocks.RED_WOOL_SLAB, Blocks.CARPET.red());
-
-            output.insertAfter(Blocks.WOOL.orange(), ModBlocks.ORANGE_WOOL_STAIRS);
-            output.insertAfter(ModBlocks.ORANGE_WOOL_STAIRS, ModBlocks.ORANGE_WOOL_SLAB);
-            output.insertAfter(ModBlocks.ORANGE_WOOL_SLAB, Blocks.CARPET.orange());
-
-            output.insertAfter(Blocks.WOOL.yellow(), ModBlocks.YELLOW_WOOL_STAIRS);
-            output.insertAfter(ModBlocks.YELLOW_WOOL_STAIRS, ModBlocks.YELLOW_WOOL_SLAB);
-            output.insertAfter(ModBlocks.YELLOW_WOOL_SLAB, Blocks.CARPET.yellow());
-
-            output.insertAfter(Blocks.WOOL.lime(), ModBlocks.LIME_WOOL_STAIRS);
-            output.insertAfter(ModBlocks.LIME_WOOL_STAIRS, ModBlocks.LIME_WOOL_SLAB);
-            output.insertAfter(ModBlocks.LIME_WOOL_SLAB, Blocks.CARPET.lime());
-
-            output.insertAfter(Blocks.WOOL.green(), ModBlocks.GREEN_WOOL_STAIRS);
-            output.insertAfter(ModBlocks.GREEN_WOOL_STAIRS, ModBlocks.GREEN_WOOL_SLAB);
-            output.insertAfter(ModBlocks.GREEN_WOOL_SLAB, Blocks.CARPET.green());
-
-            output.insertAfter(Blocks.WOOL.cyan(), ModBlocks.CYAN_WOOL_STAIRS);
-            output.insertAfter(ModBlocks.CYAN_WOOL_STAIRS, ModBlocks.CYAN_WOOL_SLAB);
-            output.insertAfter(ModBlocks.CYAN_WOOL_SLAB, Blocks.CARPET.cyan());
-
-            output.insertAfter(Blocks.WOOL.lightBlue(), ModBlocks.LIGHT_BLUE_WOOL_STAIRS);
-            output.insertAfter(ModBlocks.LIGHT_BLUE_WOOL_STAIRS, ModBlocks.LIGHT_BLUE_WOOL_SLAB);
-            output.insertAfter(ModBlocks.LIGHT_BLUE_WOOL_SLAB, Blocks.CARPET.lightBlue());
-
-            output.insertAfter(Blocks.WOOL.blue(), ModBlocks.BLUE_WOOL_STAIRS);
-            output.insertAfter(ModBlocks.BLUE_WOOL_STAIRS, ModBlocks.BLUE_WOOL_SLAB);
-            output.insertAfter(ModBlocks.BLUE_WOOL_SLAB, Blocks.CARPET.blue());
-
-            output.insertAfter(Blocks.WOOL.purple(), ModBlocks.PURPLE_WOOL_STAIRS);
-            output.insertAfter(ModBlocks.PURPLE_WOOL_STAIRS, ModBlocks.PURPLE_WOOL_SLAB);
-            output.insertAfter(ModBlocks.PURPLE_WOOL_SLAB, Blocks.CARPET.purple());
-
-            output.insertAfter(Blocks.WOOL.magenta(), ModBlocks.MAGENTA_WOOL_STAIRS);
-            output.insertAfter(ModBlocks.MAGENTA_WOOL_STAIRS, ModBlocks.MAGENTA_WOOL_SLAB);
-            output.insertAfter(ModBlocks.MAGENTA_WOOL_SLAB, Blocks.CARPET.magenta());
-
-            output.insertAfter(Blocks.WOOL.pink(), ModBlocks.PINK_WOOL_STAIRS);
-            output.insertAfter(ModBlocks.PINK_WOOL_STAIRS, ModBlocks.PINK_WOOL_SLAB);
-            output.insertAfter(ModBlocks.PINK_WOOL_SLAB, Blocks.CARPET.pink());
+            output.insertAfter(Blocks.GLAZED_TERRACOTTA.gray(), ModBlocks.GRAY_GLAZED_TERRACOTTA_STAIRS);
+            output.insertAfter(ModBlocks.GRAY_GLAZED_TERRACOTTA_STAIRS, ModBlocks.GRAY_GLAZED_TERRACOTTA_SLAB);
         });
 
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.NATURAL_BLOCKS).register(output -> {
@@ -1073,8 +734,6 @@ public class ModBlocks {
             output.insertAfter(Blocks.OPEN_EYEBLOSSOM, ModBlocks.ROSE);
 
             output.insertAfter(Blocks.BLUE_ORCHID, ModBlocks.BLUE_HYPNEA_MACROALGAE);
-
-            output.insertAfter(Blocks.PINK_PETALS, ModBlocks.WARPED_PETALS);
 
             output.insertAfter(Blocks.AMETHYST_CLUSTER, ModBlocks.SAPPHIRE_CLUSTER);
         });

@@ -32,8 +32,6 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
         dropSelf(ModBlocks.ROSE);
         add(ModBlocks.POTTED_ROSE, this::createPotFlowerItemTable);
 
-        add(ModBlocks.WARPED_PETALS, this::createSegmentedBlockDrops);
-
         dropSelf(ModBlocks.SAND_LAYER_BLOCK);
         dropSelf(ModBlocks.RED_SAND_LAYER_BLOCK);
         dropSelf(ModBlocks.SOUL_SAND_LAYER_BLOCK);
@@ -109,153 +107,82 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
         dropSelf(ModBlocks.NETHERITE_STAIRS);
         add(ModBlocks.NETHERITE_SLAB, this::createSlabItemTable);
 
-        dropSelf(ModBlocks.WHITE_CONCRETE_STAIRS);
-        add(ModBlocks.WHITE_CONCRETE_SLAB, this::createSlabItemTable);
         dropSelf(ModBlocks.WHITE_CONCRETE_FENCE);
         dropSelf(ModBlocks.WHITE_CONCRETE_FENCE_GATE);
         dropSelf(ModBlocks.WHITE_CONCRETE_WALL);
 
-        dropSelf(ModBlocks.LIGHT_GRAY_CONCRETE_STAIRS);
-        add(ModBlocks.LIGHT_GRAY_CONCRETE_SLAB, this::createSlabItemTable);
         dropSelf(ModBlocks.LIGHT_GRAY_CONCRETE_FENCE);
         dropSelf(ModBlocks.LIGHT_GRAY_CONCRETE_FENCE_GATE);
         dropSelf(ModBlocks.LIGHT_GRAY_CONCRETE_WALL);
 
-        dropSelf(ModBlocks.GRAY_CONCRETE_STAIRS);
-        add(ModBlocks.GRAY_CONCRETE_SLAB, this::createSlabItemTable);
         dropSelf(ModBlocks.GRAY_CONCRETE_FENCE);
         dropSelf(ModBlocks.GRAY_CONCRETE_FENCE_GATE);
         dropSelf(ModBlocks.GRAY_CONCRETE_WALL);
 
-        dropSelf(ModBlocks.BLACK_CONCRETE_STAIRS);
-        add(ModBlocks.BLACK_CONCRETE_SLAB, this::createSlabItemTable);
         dropSelf(ModBlocks.BLACK_CONCRETE_FENCE);
         dropSelf(ModBlocks.BLACK_CONCRETE_FENCE_GATE);
         dropSelf(ModBlocks.BLACK_CONCRETE_WALL);
 
-        dropSelf(ModBlocks.BROWN_CONCRETE_STAIRS);
-        add(ModBlocks.BROWN_CONCRETE_SLAB, this::createSlabItemTable);
         dropSelf(ModBlocks.BROWN_CONCRETE_FENCE);
         dropSelf(ModBlocks.BROWN_CONCRETE_FENCE_GATE);
         dropSelf(ModBlocks.BROWN_CONCRETE_WALL);
 
-        dropSelf(ModBlocks.RED_CONCRETE_STAIRS);
-        add(ModBlocks.RED_CONCRETE_SLAB, this::createSlabItemTable);
         dropSelf(ModBlocks.RED_CONCRETE_FENCE);
         dropSelf(ModBlocks.RED_CONCRETE_FENCE_GATE);
         dropSelf(ModBlocks.RED_CONCRETE_WALL);
 
-        dropSelf(ModBlocks.ORANGE_CONCRETE_STAIRS);
-        add(ModBlocks.ORANGE_CONCRETE_SLAB, this::createSlabItemTable);
         dropSelf(ModBlocks.ORANGE_CONCRETE_FENCE);
         dropSelf(ModBlocks.ORANGE_CONCRETE_FENCE_GATE);
         dropSelf(ModBlocks.ORANGE_CONCRETE_WALL);
 
-        dropSelf(ModBlocks.YELLOW_CONCRETE_STAIRS);
-        add(ModBlocks.YELLOW_CONCRETE_SLAB, this::createSlabItemTable);
         dropSelf(ModBlocks.YELLOW_CONCRETE_FENCE);
         dropSelf(ModBlocks.YELLOW_CONCRETE_FENCE_GATE);
         dropSelf(ModBlocks.YELLOW_CONCRETE_WALL);
 
-        dropSelf(ModBlocks.LIME_CONCRETE_STAIRS);
-        add(ModBlocks.LIME_CONCRETE_SLAB, this::createSlabItemTable);
         dropSelf(ModBlocks.LIME_CONCRETE_FENCE);
         dropSelf(ModBlocks.LIME_CONCRETE_FENCE_GATE);
         dropSelf(ModBlocks.LIME_CONCRETE_WALL);
 
-        dropSelf(ModBlocks.GREEN_CONCRETE_STAIRS);
-        add(ModBlocks.GREEN_CONCRETE_SLAB, this::createSlabItemTable);
         dropSelf(ModBlocks.GREEN_CONCRETE_FENCE);
         dropSelf(ModBlocks.GREEN_CONCRETE_FENCE_GATE);
         dropSelf(ModBlocks.GREEN_CONCRETE_WALL);
 
-        dropSelf(ModBlocks.CYAN_CONCRETE_STAIRS);
-        add(ModBlocks.CYAN_CONCRETE_SLAB, this::createSlabItemTable);
         dropSelf(ModBlocks.CYAN_CONCRETE_FENCE);
         dropSelf(ModBlocks.CYAN_CONCRETE_FENCE_GATE);
         dropSelf(ModBlocks.CYAN_CONCRETE_WALL);
 
-        dropSelf(ModBlocks.LIGHT_BLUE_CONCRETE_STAIRS);
-        add(ModBlocks.LIGHT_BLUE_CONCRETE_SLAB, this::createSlabItemTable);
         dropSelf(ModBlocks.LIGHT_BLUE_CONCRETE_FENCE);
         dropSelf(ModBlocks.LIGHT_BLUE_CONCRETE_FENCE_GATE);
         dropSelf(ModBlocks.LIGHT_BLUE_CONCRETE_WALL);
 
-        dropSelf(ModBlocks.BLUE_CONCRETE_STAIRS);
-        add(ModBlocks.BLUE_CONCRETE_SLAB, this::createSlabItemTable);
         dropSelf(ModBlocks.BLUE_CONCRETE_FENCE);
         dropSelf(ModBlocks.BLUE_CONCRETE_FENCE_GATE);
         dropSelf(ModBlocks.BLUE_CONCRETE_WALL);
 
-        dropSelf(ModBlocks.PURPLE_CONCRETE_STAIRS);
-        add(ModBlocks.PURPLE_CONCRETE_SLAB, this::createSlabItemTable);
         dropSelf(ModBlocks.PURPLE_CONCRETE_FENCE);
         dropSelf(ModBlocks.PURPLE_CONCRETE_FENCE_GATE);
         dropSelf(ModBlocks.PURPLE_CONCRETE_WALL);
 
-        dropSelf(ModBlocks.MAGENTA_CONCRETE_STAIRS);
-        add(ModBlocks.MAGENTA_CONCRETE_SLAB, this::createSlabItemTable);
         dropSelf(ModBlocks.MAGENTA_CONCRETE_FENCE);
         dropSelf(ModBlocks.MAGENTA_CONCRETE_FENCE_GATE);
         dropSelf(ModBlocks.MAGENTA_CONCRETE_WALL);
 
-        dropSelf(ModBlocks.PINK_CONCRETE_STAIRS);
-        add(ModBlocks.PINK_CONCRETE_SLAB, this::createSlabItemTable);
         dropSelf(ModBlocks.PINK_CONCRETE_FENCE);
         dropSelf(ModBlocks.PINK_CONCRETE_FENCE_GATE);
         dropSelf(ModBlocks.PINK_CONCRETE_WALL);
+
+        dropSelf(ModBlocks.WHITE_GLAZED_TERRACOTTA_STAIRS);
+        add(ModBlocks.WHITE_GLAZED_TERRACOTTA_SLAB, this::createSlabItemTable);
+
+        dropSelf(ModBlocks.LIGHT_GRAY_GLAZED_TERRACOTTA_STAIRS);
+        add(ModBlocks.LIGHT_GRAY_GLAZED_TERRACOTTA_SLAB, this::createSlabItemTable);
+
+        dropSelf(ModBlocks.GRAY_GLAZED_TERRACOTTA_STAIRS);
+        add(ModBlocks.GRAY_GLAZED_TERRACOTTA_SLAB, this::createSlabItemTable);
 
 
         dropSelf(ModBlocks.RAINBOW_WOOL);
         //dropSelf(ModBlocks.RAINBOW_WOOL_STAIRS);
         //add(ModBlocks.RAINBOW_WOOL_SLAB, this::createSlabItemTable);
-
-        dropSelf(ModBlocks.WHITE_WOOL_STAIRS);
-        add(ModBlocks.WHITE_WOOL_SLAB, this::createSlabItemTable);
-
-        dropSelf(ModBlocks.LIGHT_GRAY_WOOL_STAIRS);
-        add(ModBlocks.LIGHT_GRAY_WOOL_SLAB, this::createSlabItemTable);
-
-        dropSelf(ModBlocks.GRAY_WOOL_STAIRS);
-        add(ModBlocks.GRAY_WOOL_SLAB, this::createSlabItemTable);
-
-        dropSelf(ModBlocks.BLACK_WOOL_STAIRS);
-        add(ModBlocks.BLACK_WOOL_SLAB, this::createSlabItemTable);
-
-        dropSelf(ModBlocks.BROWN_WOOL_STAIRS);
-        add(ModBlocks.BROWN_WOOL_SLAB, this::createSlabItemTable);
-
-        dropSelf(ModBlocks.RED_WOOL_STAIRS);
-        add(ModBlocks.RED_WOOL_SLAB, this::createSlabItemTable);
-
-        dropSelf(ModBlocks.ORANGE_WOOL_STAIRS);
-        add(ModBlocks.ORANGE_WOOL_SLAB, this::createSlabItemTable);
-
-        dropSelf(ModBlocks.YELLOW_WOOL_STAIRS);
-        add(ModBlocks.YELLOW_WOOL_SLAB, this::createSlabItemTable);
-
-        dropSelf(ModBlocks.LIME_WOOL_STAIRS);
-        add(ModBlocks.LIME_WOOL_SLAB, this::createSlabItemTable);
-
-        dropSelf(ModBlocks.GREEN_WOOL_STAIRS);
-        add(ModBlocks.GREEN_WOOL_SLAB, this::createSlabItemTable);
-
-        dropSelf(ModBlocks.CYAN_WOOL_STAIRS);
-        add(ModBlocks.CYAN_WOOL_SLAB, this::createSlabItemTable);
-
-        dropSelf(ModBlocks.LIGHT_BLUE_WOOL_STAIRS);
-        add(ModBlocks.LIGHT_BLUE_WOOL_SLAB, this::createSlabItemTable);
-
-        dropSelf(ModBlocks.BLUE_WOOL_STAIRS);
-        add(ModBlocks.BLUE_WOOL_SLAB, this::createSlabItemTable);
-
-        dropSelf(ModBlocks.PURPLE_WOOL_STAIRS);
-        add(ModBlocks.PURPLE_WOOL_SLAB, this::createSlabItemTable);
-
-        dropSelf(ModBlocks.MAGENTA_WOOL_STAIRS);
-        add(ModBlocks.MAGENTA_WOOL_SLAB, this::createSlabItemTable);
-
-        dropSelf(ModBlocks.PINK_WOOL_STAIRS);
-        add(ModBlocks.PINK_WOOL_SLAB, this::createSlabItemTable);
     }
 }
